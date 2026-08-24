@@ -1,0 +1,45 @@
+---
+import { getLocaleConfig, type Locale } from '@/lib/i18n';
+import { absoluteUrl, siteName } from '@/lib/seo';
+
+interface AlternateLink {
+  locale: Locale;
+  path: string;
+}
+
+interface Props {
+  title: string;
+  description: string;
+  canonicalPath: string;
+  locale: Locale;
+  site: URL;
+  image?: string;
+  alternates?: AlternateLink[];
+  jsonLd?: Record<string, unknown>;
+}
+
+const { title, description, canonicalPath, locale, site, image, alternates = [], jsonLd } = Astro.props;
+const canonical = absoluteUrl(canonicalPath, site);
+const imageUrl = image ? absoluteUrl(image, site) : undefined;
+const fullTitle = `${title} | ${siteName}`;
+---
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{fullTitle}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+<meta property="og:site_name" content={siteName} />
+<meta property="og:title" content={fullTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:type" content="website" />
+<meta property="og:url" content={canonical} />
+<meta property="og:locale" content={locale === 'es' ? 'es_ES' : 'en_GB'} />
+{imageUrl && <meta property="og:image" content={imageUrl} />}
+<meta name="twitter:card" content={imageUrl ? 'summary_large_image' : 'summary'} />
+{alternates.map((alternate) => (
+  <link rel="alternate" hreflang={getLocaleConfig(alternate.locale).htmlLang} href={absoluteUrl(alternate.path, site)} />
+))}
+<link rel="alternate" hreflang="x-default" href={absoluteUrl('/', site)} />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+{jsonLd && <script type="application/ld+json" is:inline set:html={JSON.stringify(jsonLd)} />}
