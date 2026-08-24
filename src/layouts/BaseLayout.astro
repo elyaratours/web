@@ -17,6 +17,7 @@ interface Props {
   image?: string;
   alternates?: AlternateLink[];
   jsonLd?: Record<string, unknown>;
+  ogType?: 'website' | 'article';
 }
 
 const {
@@ -27,6 +28,7 @@ const {
   image,
   alternates = locales.map((item) => ({ locale: item, path: `/${item}/` })),
   jsonLd,
+  ogType = 'website',
 } = Astro.props;
 const copy = getLocaleConfig(locale);
 const site = Astro.site ?? new URL('https://web-elyara.example');
@@ -45,6 +47,7 @@ const otherLocale = locale === 'es' ? 'en' : 'es';
       image={image}
       alternates={alternates}
       jsonLd={jsonLd}
+      ogType={ogType}
     />
   </head>
   <body class="font-sans antialiased">
@@ -55,6 +58,7 @@ const otherLocale = locale === 'es' ? 'en' : 'es';
         </a>
         <div class="hidden items-center gap-7 text-sm font-bold text-alhambra-night md:flex">
           <a class="hover:text-alhambra-clay" href={`/${locale}/#tours`}>{copy.navTours}</a>
+          <a class="hover:text-alhambra-clay" href={`/${locale}/blog/`}>{copy.navBlog}</a>
           <a class="hover:text-alhambra-clay" href={`/${locale}/#experience`}>{copy.navAbout}</a>
           <a class="hover:text-alhambra-clay" href={`/${otherLocale}/`}>{getLocaleConfig(otherLocale).label}</a>
         </div>
@@ -74,6 +78,8 @@ const otherLocale = locale === 'es' ? 'en' : 'es';
           <p class="mt-3 max-w-xl text-sm leading-7 text-white/75">{copy.heroText}</p>
         </div>
         <div class="flex gap-3 text-sm font-bold">
+          <a href={`/${locale}/blog/`} class="hover:text-alhambra-sand">{copy.navBlog}</a>
+          <span class="text-white/30">/</span>
           <a href="/es/" class="hover:text-alhambra-sand">ES</a>
           <span class="text-white/30">/</span>
           <a href="/en/" class="hover:text-alhambra-sand">EN</a>

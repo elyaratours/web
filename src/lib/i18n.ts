@@ -7,9 +7,20 @@ export const localeConfig = {
     htmlLang: 'es',
     label: 'Espanol',
     navTours: 'Rutas',
+    navBlog: 'Cuaderno',
     navAbout: 'La experiencia',
     reserve: 'Reservar por WhatsApp',
     viewTour: 'Ver ruta',
+    readArticle: 'Leer historia',
+    blogEyebrow: 'Cuaderno de Granada',
+    blogTitle: 'Historias, secretos y consejos para mirar Granada de otra forma',
+    blogIntro:
+      'Un cuaderno vivo con leyendas, datos curiosos, recomendaciones y noticias culturales para descubrir la ciudad con mas calma y personalidad.',
+    allArticles: 'Ultimas historias',
+    backToBlog: 'Volver al cuaderno',
+    publishedOn: 'Publicado',
+    relatedToursTitle: 'Camina esta historia',
+    relatedToursText: 'Conecta este relato con una ruta guiada por Granada y reserva por WhatsApp o enlace externo.',
     featuredTours: 'Rutas destacadas',
     allTours: 'Todas las rutas',
     duration: 'Duracion',
@@ -27,9 +38,20 @@ export const localeConfig = {
     htmlLang: 'en',
     label: 'English',
     navTours: 'Tours',
+    navBlog: 'Journal',
     navAbout: 'Experience',
     reserve: 'Reserve via WhatsApp',
     viewTour: 'View tour',
+    readArticle: 'Read story',
+    blogEyebrow: 'Granada Journal',
+    blogTitle: 'Stories, secrets and local tips to see Granada differently',
+    blogIntro:
+      'A living journal of legends, curiosities, recommendations and cultural news to discover the city with more calm and personality.',
+    allArticles: 'Latest stories',
+    backToBlog: 'Back to journal',
+    publishedOn: 'Published',
+    relatedToursTitle: 'Walk this story',
+    relatedToursText: 'Connect this story with a guided route through Granada and reserve via WhatsApp or an external link.',
     featuredTours: 'Featured tours',
     allTours: 'All tours',
     duration: 'Duration',
@@ -45,10 +67,36 @@ export const localeConfig = {
   },
 } satisfies Record<Locale, Record<string, string>>;
 
+const blogCategoryLabels = {
+  es: {
+    news: 'Noticias',
+    curiosity: 'Dato curioso',
+    recommendation: 'Recomendacion',
+    story: 'Historia',
+    legend: 'Leyenda',
+    history: 'Historia local',
+    'route-inspiration': 'Inspiracion de ruta',
+  },
+  en: {
+    news: 'News',
+    curiosity: 'Curiosity',
+    recommendation: 'Recommendation',
+    story: 'Story',
+    legend: 'Legend',
+    history: 'Local history',
+    'route-inspiration': 'Route inspiration',
+  },
+} satisfies Record<Locale, Record<string, string>>;
+
 export function getLocaleConfig(locale: Locale) {
   return localeConfig[locale];
 }
 
 export function isLocale(value: string): value is Locale {
   return locales.includes(value as Locale);
+}
+
+export function getBlogCategoryLabel(locale: Locale, category: string) {
+  const labels: Record<string, string> = blogCategoryLabels[locale];
+  return labels[category] ?? category;
 }

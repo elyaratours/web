@@ -16,9 +16,10 @@ interface Props {
   image?: string;
   alternates?: AlternateLink[];
   jsonLd?: Record<string, unknown>;
+  ogType?: 'website' | 'article';
 }
 
-const { title, description, canonicalPath, locale, site, image, alternates = [], jsonLd } = Astro.props;
+const { title, description, canonicalPath, locale, site, image, alternates = [], jsonLd, ogType = 'website' } = Astro.props;
 const canonical = absoluteUrl(canonicalPath, site);
 const imageUrl = image ? absoluteUrl(image, site) : undefined;
 const fullTitle = `${title} | ${siteName}`;
@@ -32,7 +33,7 @@ const fullTitle = `${title} | ${siteName}`;
 <meta property="og:site_name" content={siteName} />
 <meta property="og:title" content={fullTitle} />
 <meta property="og:description" content={description} />
-<meta property="og:type" content="website" />
+<meta property="og:type" content={ogType} />
 <meta property="og:url" content={canonical} />
 <meta property="og:locale" content={locale === 'es' ? 'es_ES' : 'en_GB'} />
 {imageUrl && <meta property="og:image" content={imageUrl} />}

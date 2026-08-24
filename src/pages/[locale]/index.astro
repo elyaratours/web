@@ -1,6 +1,7 @@
 ---
 import { ArrowRight, Landmark, MapPinned, MessageCircle } from '@lucide/astro';
 import TourCard from '@/components/TourCard.astro';
+import TravelerReviewsMosaic from '@/components/TravelerReviewsMosaic.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { getLocaleConfig, locales, type Locale } from '@/lib/i18n';
 import { getPublishedTours } from '@/lib/tours';
@@ -79,4 +80,6 @@ const alternates = locales.map((item) => ({ locale: item, path: `/${item}/` }));
       {tours.map((tour) => <TourCard tour={tour} />)}
     </div>
   </section>
+
+  <TravelerReviewsMosaic locale={locale} />
 </BaseLayout>
