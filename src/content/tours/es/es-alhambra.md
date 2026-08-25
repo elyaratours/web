@@ -1,21 +1,21 @@
 ---
 locale: es
 translationKey: alhambra
-title: "Alhambra esencial al atardecer"
+title: "Alhambra: símbolos, poder y belleza"
 routeSlug: "alhambra"
 duration: "3 horas"
-price: "Desde 45 EUR"
+price: "Desde 20 EUR"
 languages:
   - "Espanol"
   - "English"
 image: "/images/alhambra-courtyard.webp"
 imageAlt: "Patio nazari de la Alhambra al caer la tarde"
 reservationUrl: "https://wa.me/34600000000?text=Hola%2C%20quiero%20reservar%20el%20tour%20Alhambra%20esencial"
-seoDescription: "Tour guiado por la Alhambra de Granada con contexto historico, patios nazaries y miradores al atardecer para visitantes curiosos."
+seoDescription: "Descubre la Alhambra a través de sus símbolos, su arquitectura y las historias de poder que marcaron el reino nazarí, entre palacios, patios y jardines."
 featured: true
 order: 1
 ---
 
-Un recorrido pausado para entender la Alhambra como ciudad palatina, fortaleza y simbolo vivo de Granada. Caminamos entre patios, jardines y miradores leyendo el paisaje con calma.
+La Alhambra no es solo un conjunto de palacios: es la expresión de una dinastía que convirtió la arquitectura en una forma de representar el poder.
 
-La ruta esta pensada para viajeros que quieren contexto, no solo una sucesion de fechas. Hablamos de dinastias, agua, arquitectura, vida cotidiana y la relacion visual entre la Alhambra, el Albaicin y Sierra Nevada.
+Durante la visita descubriremos qué esconden sus inscripciones, símbolos y decoraciones, cómo vivían los sultanes nazaríes y por qué cada patio, torre y jardín fue diseñado con una intención. Una forma de recorrer la Alhambra entendiendo no solo lo que vemos, sino también lo que sus muros querían contar.

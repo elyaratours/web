@@ -56,10 +56,10 @@ const otherLocale = locale === 'es' ? 'en' : 'es';
   </head>
   <body class="font-sans antialiased">
     <header class="sticky top-0 z-40 border-b border-white/60 bg-alhambra-sand/85 backdrop-blur-xl">
-      <nav class="section-shell flex h-20 items-center justify-between gap-3 sm:gap-4" aria-label="Primary navigation">
-        <a href={`/${locale}/`} class="flex min-w-0 items-center gap-2 font-serif text-lg font-bold tracking-tight text-alhambra-night sm:gap-3 sm:text-2xl">
-          <img src="/favicon.svg" alt="" class="h-8 w-8 shrink-0 sm:h-9 sm:w-9" aria-hidden="true" />
-          <span>{siteName}</span>
+      <nav class="section-shell flex min-h-20 flex-wrap items-center justify-between gap-3 py-3 sm:gap-4 sm:py-0" aria-label="Primary navigation">
+        <a href={`/${locale}/`} class="flex min-w-0 items-center gap-2 font-serif text-base font-bold tracking-tight text-alhambra-night sm:gap-3 sm:text-2xl">
+          <img src="/images/elyara-header-logo.png" alt="" class="h-10 w-10 shrink-0 object-contain sm:h-12 sm:w-12" aria-hidden="true" />
+          <span class="whitespace-nowrap">{siteName}</span>
         </a>
         <div class="hidden items-center gap-5 text-sm font-bold text-alhambra-night lg:gap-7 md:flex">
           <a class="hover:text-alhambra-clay" href={`/${locale}/#tours`}>{copy.navTours}</a>

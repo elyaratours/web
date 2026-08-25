@@ -1,21 +1,22 @@
 ---
 locale: es
 translationKey: albaicin
-title: "Albaicin y miradores secretos"
+title: "El alma de Granada"
 routeSlug: "albaicin"
-duration: "2 horas"
-price: "Desde 25 EUR"
+duration: "3 horas"
+price: "Desde 20 EUR"
 languages:
   - "Espanol"
   - "English"
 image: "/images/albaicin-lanes.webp"
 imageAlt: "Calle estrecha del Albaicin con casas blancas"
 reservationUrl: "https://wa.me/34600000000?text=Hola%2C%20quiero%20reservar%20el%20tour%20Albaicin"
-seoDescription: "Ruta guiada por el Albaicin de Granada con miradores, callejuelas, historia morisca y ambiente local lejos del recorrido mas masificado."
+seoDescription: "Descubre el alma de Granada en una ruta por el centro histórico, la antigua judería, el Albaicín, Paseo de los Tristes y el Sacromonte."
 featured: true
 order: 2
 ---
 
-El Albaicin se descubre mejor a pie, dejando que las calles cambien el ritmo. Esta ruta une miradores conocidos con rincones mas silenciosos donde todavia se entiende el trazado medieval del barrio.
+Granada se entiende mejor caminando entre sus barrios, dejando que cada calle revele una etapa distinta de su historia. Esta ruta recorre el centro histórico, la antigua judería, el Albaicín, el Paseo de los Tristes y el Sacromonte, uniendo algunos de los lugares más emblemáticos de la ciudad.
 
-Seguimos la huella andalusi y morisca, las casas blancas, los cármenes y la relacion constante con la Alhambra al otro lado del valle del Darro.
+Seguimos las huellas de las culturas que dieron forma a Granada, desde su pasado andalusí y judío hasta la ciudad cristiana y la tradición del Sacromonte, entre callejuelas, miradores y rincones donde la historia sigue muy presente.
+
