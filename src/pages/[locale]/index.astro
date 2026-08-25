@@ -1,5 +1,6 @@
 ---
 import { ArrowRight, Landmark, MapPinned, MessageCircle } from '@lucide/astro';
+import TailorMadeHomeSection from '@/components/TailorMadeHomeSection.astro';
 import TourCard from '@/components/TourCard.astro';
 import TravelerReviewsMosaic from '@/components/TravelerReviewsMosaic.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
@@ -80,6 +81,8 @@ const alternates = locales.map((item) => ({ locale: item, path: `/${item}/` }));
       {tours.map((tour) => <TourCard tour={tour} />)}
     </div>
   </section>
+
+  <TailorMadeHomeSection locale={locale} />
 
   <TravelerReviewsMosaic locale={locale} />
 </BaseLayout>

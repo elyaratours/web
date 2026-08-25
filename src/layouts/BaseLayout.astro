@@ -1,6 +1,6 @@
 ---
 import SeoHead from '@/components/SeoHead.astro';
-import { getLocaleConfig, locales, type Locale } from '@/lib/i18n';
+import { getLocaleConfig, getTailorMadePath, locales, type Locale } from '@/lib/i18n';
 import { siteName } from '@/lib/seo';
 import '@/styles/global.css';
 
@@ -57,8 +57,9 @@ const otherLocale = locale === 'es' ? 'en' : 'es';
           <img src="/favicon.svg" alt="" class="h-8 w-8 shrink-0 sm:h-9 sm:w-9" aria-hidden="true" />
           <span>{siteName}</span>
         </a>
-        <div class="hidden items-center gap-7 text-sm font-bold text-alhambra-night md:flex">
+        <div class="hidden items-center gap-5 text-sm font-bold text-alhambra-night lg:gap-7 md:flex">
           <a class="hover:text-alhambra-clay" href={`/${locale}/#tours`}>{copy.navTours}</a>
+          <a class="hover:text-alhambra-clay" href={getTailorMadePath(locale)}>{copy.navTailorMade}</a>
           <a class="hover:text-alhambra-clay" href={`/${locale}/blog/`}>{copy.navBlog}</a>
           <a class="hover:text-alhambra-clay" href={`/${locale}/#experience`}>{copy.navAbout}</a>
           <a class="hover:text-alhambra-clay" href={`/${otherLocale}/`}>{getLocaleConfig(otherLocale).label}</a>
