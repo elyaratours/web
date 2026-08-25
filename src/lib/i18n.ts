@@ -10,6 +10,7 @@ export const localeConfig = {
     navBlog: 'Cuaderno',
     navAbout: 'La experiencia',
     navTailorMade: 'Viajes a medida',
+    navContact: 'Contacto',
     footerContact: 'Contacto',
     reserve: 'Reservar por WhatsApp',
     viewTour: 'Ver ruta',
@@ -43,6 +44,7 @@ export const localeConfig = {
     navBlog: 'Journal',
     navAbout: 'Experience',
     navTailorMade: 'Tailor-made',
+    navContact: 'Contact',
     footerContact: 'Contact',
     reserve: 'Reserve via WhatsApp',
     viewTour: 'View tour',
@@ -70,6 +72,64 @@ export const localeConfig = {
     metaHome: 'Tourism routes and private tours in Granada with cultural experiences in Spanish and English.',
   },
 } satisfies Record<Locale, Record<string, string>>;
+
+export const contactEmail = 'elyaratours@gmail.com';
+export const instagramHandle = '@elyaratours';
+export const instagramUrl = 'https://instagram.com/elyaratours';
+
+export const contactContent = {
+  es: {
+    routeSlug: 'contacto',
+    title: 'Contacto',
+    eyebrow: 'Hablemos',
+    heading: 'Hablemos de tu visita a Granada',
+    intro:
+      'Si tienes una pregunta, quieres reservar una ruta privada o necesitas orientar tu viaje, puedes escribirnos directamente por correo o Instagram.',
+    emailLabel: 'Email',
+    instagramLabel: 'Instagram',
+    emailCta: 'Escribir un correo',
+    instagramCta: 'Ver Instagram',
+    reasonsTitle: 'Para que puedes escribirnos',
+    reasons: ['Reservas de rutas', 'Rutas privadas', 'Viajes a medida', 'Dudas sobre Granada'],
+    footerLink: 'Ver pagina de contacto',
+    metaDescription:
+      'Contacta con Elyara Tours Granada por email o Instagram para rutas privadas, viajes a medida y preguntas sobre tu visita a Granada.',
+  },
+  en: {
+    routeSlug: 'contact',
+    title: 'Contact',
+    eyebrow: 'Let us talk',
+    heading: 'Let us talk about your visit to Granada',
+    intro:
+      'If you have a question, want to book a private route or need help shaping your trip, you can contact us directly by email or Instagram.',
+    emailLabel: 'Email',
+    instagramLabel: 'Instagram',
+    emailCta: 'Send an email',
+    instagramCta: 'View Instagram',
+    reasonsTitle: 'What you can write about',
+    reasons: ['Route reservations', 'Private routes', 'Tailor-made trip planning', 'Questions about Granada'],
+    footerLink: 'View contact page',
+    metaDescription:
+      'Contact Elyara Tours Granada by email or Instagram for private routes, tailor-made trip planning and questions about visiting Granada.',
+  },
+} satisfies Record<
+  Locale,
+  {
+    routeSlug: string;
+    title: string;
+    eyebrow: string;
+    heading: string;
+    intro: string;
+    emailLabel: string;
+    instagramLabel: string;
+    emailCta: string;
+    instagramCta: string;
+    reasonsTitle: string;
+    reasons: string[];
+    footerLink: string;
+    metaDescription: string;
+  }
+>;
 
 export const tailorMadeContent = {
   es: {
@@ -199,6 +259,14 @@ const blogCategoryLabels = {
 
 export function getLocaleConfig(locale: Locale) {
   return localeConfig[locale];
+}
+
+export function getContactContent(locale: Locale) {
+  return contactContent[locale];
+}
+
+export function getContactPath(locale: Locale) {
+  return `/${locale}/${contactContent[locale].routeSlug}/`;
 }
 
 export function getTailorMadeContent(locale: Locale) {
