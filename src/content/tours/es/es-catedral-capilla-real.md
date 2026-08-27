@@ -4,7 +4,7 @@ translationKey: cathedral-royal-chapel
 title: "Catedral y Capilla Real"
 routeSlug: "catedral-capilla-real"
 duration: "2 horas"
-price: "Desde 18 EUR"
+price: "Desde 20 EUR"
 languages:
   - "Espanol"
   - "English"

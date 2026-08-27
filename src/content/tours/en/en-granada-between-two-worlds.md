@@ -4,7 +4,7 @@ translationKey: granada-two-worlds
 title: "Granada Between Two Worlds"
 routeSlug: "granada-between-two-worlds"
 duration: "2.5 hours"
-price: "From 18 EUR"
+price: "From 12 EUR"
 languages:
   - "English"
   - "Spanish"

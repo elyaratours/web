@@ -4,7 +4,7 @@ translationKey: granada-new-world
 title: "1492 Granada and the New World"
 routeSlug: "granada-new-world"
 duration: "2.5 hours"
-price: "From 30 EUR"
+price: "From 15 EUR"
 languages:
   - "English"
   - "Spanish"

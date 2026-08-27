@@ -4,7 +4,7 @@ translationKey: cathedral-royal-chapel
 title: "Cathedral and Royal Chapel"
 routeSlug: "cathedral-royal-chapel"
 duration: "2 hours"
-price: "From 18 EUR"
+price: "From 20 EUR"
 languages:
   - "English"
   - "Spanish"

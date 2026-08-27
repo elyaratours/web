@@ -4,7 +4,7 @@ translationKey: alhambra-beyond-palaces
 title: "La Alhambra más allá de los palacios"
 routeSlug: "alhambra-mas-alla-palacios"
 duration: "3 horas"
-price: "Desde 20 EUR"
+price: "Desde 15 EUR"
 languages:
   - "Espanol"
   - "English"
