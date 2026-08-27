@@ -1,10 +1,10 @@
 ---
 locale: en
 translationKey: albaicin
-title: "Albaicin and Hidden Viewpoints"
+title: "The Soul of Granada"
 routeSlug: "albaicin"
-duration: "2 hours"
-price: "From 25 EUR"
+duration: "3 hours"
+price: "From 20 EUR"
 languages:
   - "English"
   - "Spanish"
@@ -16,6 +16,7 @@ featured: true
 order: 2
 ---
 
-The Albaicin is best understood on foot, letting the streets set the pace. This route links famous viewpoints with quieter corners where the medieval fabric of the neighborhood is still visible.
+Discover the many sides of Granada on a journey through the neighbourhoods that have shaped its identity over the centuries. Each one tells a different part of the city’s story, from its Islamic past and Christian transformation to the traditions, communities and ways of life that still give Granada its unmistakable character.
 
-We follow Andalusi and Morisco traces, whitewashed houses, traditional cármenes and the constant dialogue with the Alhambra across the Darro valley.
+
+This is the most complete way to experience the city beyond individual monuments. Along the way, we uncover how history, culture, landscape and local life come together, connecting different parts of Granada into one story and revealing the essence that makes the city so unique.

@@ -31,10 +31,12 @@ export const localeConfig = {
     languages: 'Idiomas',
     backToTours: 'Volver a rutas',
     heroEyebrow: 'Rutas culturales en Granada',
-    heroTitle: 'Camina Granada con historias, miradores y contexto local',
+    heroTitle: 'Granada, más allá de la postal',
     heroText:
-      'Tours privados y rutas a pie para descubrir la Alhambra, el Albaicin y la ciudad historica con una mirada cercana y cultural.',
+      'Tours privados y rutas a pie para descubrir la historia, los personajes y los rincones que dan sentido a la ciudad.',
     heroImageAlt: 'Vista desde una ventana a jardines y tejados historicos de Granada',
+    footerIntro:
+      'Tours privados y rutas a pie para descubrir la Alhambra, el Albaicin y la ciudad historica con una mirada cercana y cultural.',
     catalogIntro: 'Elige una ruta y empieza la reserva por WhatsApp o enlace externo.',
     metaHome: 'Rutas turisticas y tours privados en Granada con experiencias culturales en espanol e ingles.',
   },
@@ -66,10 +68,12 @@ export const localeConfig = {
     languages: 'Languages',
     backToTours: 'Back to tours',
     heroEyebrow: 'Cultural routes in Granada',
-    heroTitle: 'Walk Granada through stories, viewpoints and local context',
+    heroTitle: 'Granada, beyond the postcard',
     heroText:
-      'Private tours and walking routes to discover the Alhambra, the Albaicin and the historic city with a warm cultural perspective.',
+      'Private tours and walking experiences that reveal the history, characters and hidden corners behind the city',
     heroImageAlt: 'View from a window toward gardens and historic rooftops in Granada',
+    footerIntro:
+      'Private tours and walking routes to discover the Alhambra, the Albaicin and the historic city with a warm cultural perspective.',
     catalogIntro: 'Choose a route and start booking through WhatsApp or an external link.',
     metaHome: 'Tourism routes and private tours in Granada with cultural experiences in Spanish and English.',
   },
