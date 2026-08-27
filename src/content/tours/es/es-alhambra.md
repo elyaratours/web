@@ -8,7 +8,7 @@ price: "Desde 20 EUR"
 languages:
   - "Espanol"
   - "English"
-image: "/images/alhambra-courtyard.webp"
+image: "/images/alhambra.jpg"
 imageAlt: "Patio nazari de la Alhambra al caer la tarde"
 reservationUrl: "https://wa.me/34600000000?text=Hola%2C%20quiero%20reservar%20el%20tour%20Alhambra%20esencial"
 seoDescription: "Descubre la Alhambra a través de sus símbolos, su arquitectura y las historias de poder que marcaron el reino nazarí, entre palacios, patios y jardines."

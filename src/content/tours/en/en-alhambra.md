@@ -8,7 +8,7 @@ price: "From 45 EUR"
 languages:
   - "English"
   - "Spanish"
-image: "/images/alhambra-courtyard.webp"
+image: "/images/alhambra.jpg"
 imageAlt: "Nasrid courtyard in the Alhambra at sunset"
 reservationUrl: "https://wa.me/34600000000?text=Hello%2C%20I%20would%20like%20to%20book%20the%20Essential%20Alhambra%20tour"
 seoDescription: "Guided Alhambra tour in Granada with historical context, Nasrid courtyards and sunset viewpoints for curious travelers."
