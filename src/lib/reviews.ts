@@ -29,15 +29,15 @@ export const reviewMosaicItems = [
   {
     id: 'group-after-walk',
     type: 'photo',
-    image: '/images/groups/group_a.jpg',
+    image: '/images/foto-clientes-1.jpeg',
     featured: true,
     alt: {
-      es: 'Grupo de viajeros durante una ruta cultural en Granada',
-      en: 'Group of travelers during a cultural route in Granada',
+      es: 'Atardecer sobre Granada visto desde el Albaicin',
+      en: 'Sunset over Granada seen from the Albaicin',
     },
     caption: {
-      es: 'Un recuerdo compartido despues de caminar Granada con calma.',
-      en: 'A shared memory after walking Granada at an easy pace.',
+      es: 'Granada cambia de color cuando la ruta termina al atardecer.',
+      en: 'Granada changes color as the route ends at sunset.',
     },
   },
   {
@@ -64,14 +64,14 @@ export const reviewMosaicItems = [
   {
     id: 'group-viewpoint',
     type: 'photo',
-    image: '/images/groups/group_b.jpg',
+    image: '/images/Foto-clientes-2.jpeg',
     alt: {
-      es: 'Grupo de viajeros disfrutando una parada durante una ruta en Granada',
-      en: 'Group of travelers enjoying a stop during a route in Granada',
+      es: 'Vista de la Alhambra y Granada desde un mirador al anochecer',
+      en: 'View of the Alhambra and Granada from a viewpoint at dusk',
     },
     caption: {
-      es: 'Pausas, preguntas y rincones que se quedan en la memoria.',
-      en: 'Pauses, questions and corners that stay in memory.',
+      es: 'Miradores para detenerse, mirar y entender la ciudad con calma.',
+      en: 'Viewpoints for pausing, looking and understanding the city slowly.',
     },
   },
   {
@@ -120,14 +120,14 @@ export const reviewMosaicItems = [
   {
     id: 'group-city-route',
     type: 'photo',
-    image: '/images/groups/group_c.jpg',
+    image: '/images/Foto-clientes-3.jpeg',
     alt: {
-      es: 'Grupo de viajeros al final de una visita guiada por Granada',
-      en: 'Group of travelers at the end of a guided visit through Granada',
+      es: 'Carmen granadino rodeado de vegetacion y jardines',
+      en: 'Granada carmen house surrounded by greenery and gardens',
     },
     caption: {
-      es: 'Grupos pequenos para escuchar, mirar y disfrutar sin prisa.',
-      en: 'Small groups for listening, looking and enjoying without rushing.',
+      es: 'Rincones verdes que cuentan otra forma de vivir Granada.',
+      en: 'Green corners that reveal another way of experiencing Granada.',
     },
   },
 ] satisfies ReviewMosaicItem[];
