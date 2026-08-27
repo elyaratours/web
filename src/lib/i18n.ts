@@ -34,6 +34,7 @@ export const localeConfig = {
     heroTitle: 'Camina Granada con historias, miradores y contexto local',
     heroText:
       'Tours privados y rutas a pie para descubrir la Alhambra, el Albaicin y la ciudad historica con una mirada cercana y cultural.',
+    heroImageAlt: 'Vista desde una ventana a jardines y tejados historicos de Granada',
     catalogIntro: 'Elige una ruta y empieza la reserva por WhatsApp o enlace externo.',
     metaHome: 'Rutas turisticas y tours privados en Granada con experiencias culturales en espanol e ingles.',
   },
@@ -68,6 +69,7 @@ export const localeConfig = {
     heroTitle: 'Walk Granada through stories, viewpoints and local context',
     heroText:
       'Private tours and walking routes to discover the Alhambra, the Albaicin and the historic city with a warm cultural perspective.',
+    heroImageAlt: 'View from a window toward gardens and historic rooftops in Granada',
     catalogIntro: 'Choose a route and start booking through WhatsApp or an external link.',
     metaHome: 'Tourism routes and private tours in Granada with cultural experiences in Spanish and English.',
   },
