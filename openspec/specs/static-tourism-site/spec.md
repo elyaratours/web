@@ -228,6 +228,21 @@ The system SHALL present Elyara's approved brand logos in the browser tab and gl
 - **WHEN** a visitor views the global header on mobile or desktop
 - **THEN** the header keeps the logo, brand text, navigation, and reservation call to action usable without visual overlap
 
+### Requirement: Header brand favicon
+The system SHALL display the site favicon as a brand mark immediately to the left of the site title in the public header while preserving the title text and navigation access.
+
+#### Scenario: Visitor views the desktop header
+- **WHEN** a visitor opens a public page on a desktop-width viewport
+- **THEN** the header displays the favicon to the left of the `Elyara Tours Granada` title as part of the site brand presentation
+
+#### Scenario: Visitor views the mobile header
+- **WHEN** a visitor opens a public page on a mobile-width viewport
+- **THEN** the favicon and title remain visually aligned and do not obstruct navigation links or header readability
+
+#### Scenario: Visitor uses assistive technology
+- **WHEN** a visitor navigates the header with assistive technology
+- **THEN** the favicon does not introduce redundant or confusing accessible text separate from the existing site title
+
 ### Requirement: Additional Granada tour offerings
 The system SHALL add four additional localized Granada tour offerings to the public tour catalog without replacing the existing published tours.
 
@@ -269,3 +284,41 @@ The system SHALL display the provided approved `1492 New World Order` artwork as
 #### Scenario: Other localized tour imagery remains unchanged
 - **WHEN** visitors view other tours or non-English localized tour entries
 - **THEN** the system preserves their existing configured tour images unless they explicitly reference the same approved artwork
+
+### Requirement: Spanish 1492 Nuevo Orden Mundial approved image
+The system SHALL display the provided approved Spanish `1492 Nuevo Orden Mundial` artwork as the public tour image for the Spanish `1492 Nuevo Orden Mundial` tour wherever that tour's image is rendered.
+
+#### Scenario: Visitor sees the Spanish 1492 Nuevo Orden Mundial tour in the catalog
+- **WHEN** a visitor views a Spanish tour catalog or listing that includes the `1492 Nuevo Orden Mundial` tour
+- **THEN** the tour card displays the provided approved Spanish `1492 Nuevo Orden Mundial` artwork as that tour's image
+
+#### Scenario: Visitor opens the Spanish 1492 Nuevo Orden Mundial tour detail page
+- **WHEN** a visitor opens the Spanish `1492 Nuevo Orden Mundial` tour detail page
+- **THEN** the page displays the provided approved Spanish `1492 Nuevo Orden Mundial` artwork as the tour's main image
+
+#### Scenario: English tour imagery remains unchanged
+- **WHEN** visitors view the English `Granada and the New World` tour
+- **THEN** the system preserves its existing configured English artwork image
+
+### Requirement: Alma de Granada approved image
+The system SHALL display the provided `almagranada.jpg` image as the public tour image for the Spanish `El alma de Granada` tour and the English `Albaicin and Hidden Viewpoints` tour wherever those tours' images are rendered.
+
+#### Scenario: Visitor sees the Spanish El alma de Granada tour in the catalog
+- **WHEN** a visitor views a Spanish tour catalog or listing that includes the `El alma de Granada` tour
+- **THEN** the tour card displays the provided `almagranada.jpg` image as that tour's image
+
+#### Scenario: Visitor opens the Spanish El alma de Granada tour detail page
+- **WHEN** a visitor opens the Spanish `El alma de Granada` tour detail page
+- **THEN** the page displays the provided `almagranada.jpg` image as the tour's main image
+
+#### Scenario: Visitor sees the English Albaicin and Hidden Viewpoints tour in the catalog
+- **WHEN** a visitor views an English tour catalog or listing that includes the `Albaicin and Hidden Viewpoints` tour
+- **THEN** the tour card displays the provided `almagranada.jpg` image as that tour's image
+
+#### Scenario: Visitor opens the English Albaicin and Hidden Viewpoints tour detail page
+- **WHEN** a visitor opens the English `Albaicin and Hidden Viewpoints` tour detail page
+- **THEN** the page displays the provided `almagranada.jpg` image as the tour's main image
+
+#### Scenario: Other tour imagery remains unchanged
+- **WHEN** visitors view other tours
+- **THEN** the system preserves their existing configured tour images unless they explicitly reference the same approved image

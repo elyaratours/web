@@ -8,7 +8,7 @@ price: "From 25 EUR"
 languages:
   - "English"
   - "Spanish"
-image: "/images/albaicin-lanes.webp"
+image: "/images/almagranada.jpg"
 imageAlt: "Narrow Albaicin lane with white houses"
 reservationUrl: "https://wa.me/34600000000?text=Hello%2C%20I%20would%20like%20to%20book%20the%20Albaicin%20tour"
 seoDescription: "Guided Albaicin walking route in Granada with viewpoints, Moorish history, quiet lanes and local atmosphere beyond the busiest paths."
