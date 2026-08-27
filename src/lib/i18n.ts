@@ -38,6 +38,13 @@ export const localeConfig = {
     footerIntro:
       'Tours privados y rutas a pie para descubrir la Alhambra, el Albaicin y la ciudad historica con una mirada cercana y cultural.',
     catalogIntro: 'Elige una ruta y empieza la reserva por WhatsApp o enlace externo.',
+    experienceHistoricalTitle: 'Contexto historico',
+    experienceHistoricalText:
+      'Rutas narradas para entender monumentos, barrios y paisajes sin convertir la visita en una clase pesada.',
+    experienceWalkableTitle: 'Ritmo caminable',
+    experienceWalkableText: 'Itinerarios pensados para mirar, preguntar, hacer pausas y disfrutar de Granada con calma.',
+    experienceDirectTitle: 'Reserva directa',
+    experienceDirectText: 'La reserva empieza por WhatsApp o enlace externo. Sin cuentas, pagos internos ni checkout.',
     metaHome: 'Rutas turisticas y tours privados en Granada con experiencias culturales en espanol e ingles.',
   },
   en: {
@@ -75,6 +82,13 @@ export const localeConfig = {
     footerIntro:
       'Private tours and walking routes to discover the Alhambra, the Albaicin and the historic city with a warm cultural perspective.',
     catalogIntro: 'Choose a route and start booking through WhatsApp or an external link.',
+    experienceHistoricalTitle: 'Historical context',
+    experienceHistoricalText:
+      'Narrated routes to understand monuments, neighborhoods and landscapes without turning the visit into a heavy lecture.',
+    experienceWalkableTitle: 'Walkable pace',
+    experienceWalkableText: 'Itineraries designed to look around, ask questions, pause and enjoy Granada at a calm pace.',
+    experienceDirectTitle: 'Direct booking',
+    experienceDirectText: 'Booking starts via WhatsApp or an external link. No accounts, internal payments or checkout.',
     metaHome: 'Tourism routes and private tours in Granada with cultural experiences in Spanish and English.',
   },
 } satisfies Record<Locale, Record<string, string>>;
