@@ -8,7 +8,7 @@ price: "From 20 EUR"
 languages:
   - "English"
   - "Spanish"
-image: "/images/alhambra-courtyard.webp"
+image: "/images/puerta-del-vino-01.jpg"
 imageAlt: "Nasrid courtyard in the Alhambra at sunset"
 reservationUrl: "https://wa.me/34600000000?text=Hello%2C%20I%20would%20like%20to%20book%20The%20Alhambra%20Beyond%20the%20Palaces"
 seoDescription: "Cultural Alhambra visit beyond the palace highlights, exploring symbols, landscape, power, water and daily life in Granada."
