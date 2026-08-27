@@ -140,6 +140,7 @@ export const tailorMadeContent = {
     title: 'Viajes y rutas disenadas para ti',
     intro:
       'Si vienes con poco tiempo, intereses concretos o una idea especial, podemos ayudarte a organizar tu visita o disenar una ruta privada en Granada con un ritmo realista y una mirada cultural.',
+    imageAlt: 'Mapa ilustrado de Granada con Albaicin, Sacromonte, Alhambra, Generalife, Realejo y Centro',
     homeText:
       'Consultoria de viaje y rutas personalizadas para descubrir Granada sin ir corriendo ni seguir un itinerario generico.',
     cta: 'Disenar mi ruta',
@@ -179,6 +180,7 @@ export const tailorMadeContent = {
     title: 'Tailor-made routes for your trip',
     intro:
       'If you are traveling with limited time, specific interests or a special idea, we can help you shape your Granada visit or design a private route with a realistic pace and cultural perspective.',
+    imageAlt: 'Illustrated map of Granada with the Albaicin, Sacromonte, Alhambra, Generalife, Realejo and city center',
     homeText:
       'Trip consultation and personalized routes to discover Granada without rushing or following a generic itinerary.',
     cta: 'Plan my route',
@@ -219,6 +221,7 @@ export const tailorMadeContent = {
     eyebrow: string;
     title: string;
     intro: string;
+    imageAlt: string;
     homeText: string;
     cta: string;
     secondaryCta: string;

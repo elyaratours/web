@@ -33,7 +33,7 @@ const alternates = locales.map((item) => ({ locale: item, path: getTailorMadePat
   description={content.metaDescription}
   locale={locale}
   canonicalPath={getTailorMadePath(locale)}
-  image="/images/granada-cathedral.webp"
+  image="/images/mapa.png"
   alternates={alternates}
 >
   <article class="section-shell py-12 lg:py-20">
@@ -56,7 +56,7 @@ const alternates = locales.map((item) => ({ locale: item, path: getTailorMadePat
         </div>
       </div>
       <div class="card overflow-hidden p-4">
-        <img src="/images/granada-cathedral.webp" alt="Granada historic center" class="h-[28rem] w-full rounded-[1.5rem] object-cover" />
+        <img src="/images/mapa.png" alt={content.imageAlt} class="h-[28rem] w-full rounded-[1.5rem] object-cover" />
       </div>
     </section>
 
