@@ -8,8 +8,8 @@ price: "From 18 EUR"
 languages:
   - "English"
   - "Spanish"
-image: "/images/albaicin-lanes.webp"
-imageAlt: "Narrow Albaicin lane with white houses"
+image: "/images/miradoresyleyendas.jpg"
+imageAlt: "Illustration of an Albaicin street with the Alhambra in the background"
 reservationUrl: "https://wa.me/34600000000?text=Hello%2C%20I%20would%20like%20to%20book%20Granada%20Viewpoints%20and%20Legends"
 seoDescription: "Granada walking route through viewpoints, legends and Albaicin corners to discover popular stories and memorable city views."
 featured: false

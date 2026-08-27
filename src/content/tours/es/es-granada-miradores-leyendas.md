@@ -8,8 +8,8 @@ price: "Desde 18 EUR"
 languages:
   - "Espanol"
   - "English"
-image: "/images/albaicin-lanes.webp"
-imageAlt: "Calle estrecha del Albaicin con casas blancas"
+image: "/images/miradoresyleyendas.jpg"
+imageAlt: "Ilustracion de una calle del Albaicin con la Alhambra al fondo"
 reservationUrl: "https://wa.me/34600000000?text=Hola%2C%20quiero%20reservar%20Granada%20entre%20miradores%20y%20leyendas"
 seoDescription: "Ruta por Granada entre miradores, leyendas y rincones del Albaicin para descubrir historias populares y vistas memorables de la ciudad."
 featured: false

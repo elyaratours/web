@@ -8,7 +8,7 @@ price: "Desde 18 EUR"
 languages:
   - "Espanol"
   - "English"
-image: "/images/granada-cathedral.webp"
+image: "/images/centro-albayzin.jpg"
 imageAlt: "Fachada historica en el centro de Granada"
 reservationUrl: "https://wa.me/34600000000?text=Hola%2C%20quiero%20reservar%20Granada%20entre%20dos%20mundos"
 seoDescription: "Ruta historica por Granada entre el mundo andalusi y la ciudad cristiana, conectando memoria, poder y transformacion urbana."

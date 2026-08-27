@@ -8,7 +8,7 @@ price: "From 18 EUR"
 languages:
   - "English"
   - "Spanish"
-image: "/images/granada-cathedral.webp"
+image: "/images/centro-albayzin.jpg"
 imageAlt: "Historic facade in central Granada"
 reservationUrl: "https://wa.me/34600000000?text=Hello%2C%20I%20would%20like%20to%20book%20Granada%20Between%20Two%20Worlds"
 seoDescription: "Historical Granada walking route between the Andalusi world and the Christian city, connecting memory, power and urban change."
