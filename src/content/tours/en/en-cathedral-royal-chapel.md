@@ -8,8 +8,8 @@ price: "From 18 EUR"
 languages:
   - "English"
   - "Spanish"
-image: "/images/granada-cathedral.webp"
-imageAlt: "Historic facade in central Granada"
+image: "/images/23.jpg"
+imageAlt: "Interior of Granada Cathedral with an ornate dome and altar"
 reservationUrl: "https://wa.me/34600000000?text=Hello%2C%20I%20would%20like%20to%20book%20Cathedral%20and%20Royal%20Chapel"
 seoDescription: "Granada Cathedral and Royal Chapel route to discover art, symbols of power, dynastic memory and the Christian city."
 featured: false
