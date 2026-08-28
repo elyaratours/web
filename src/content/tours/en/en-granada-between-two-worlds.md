@@ -8,8 +8,8 @@ price: "From 12 EUR"
 languages:
   - "English"
   - "Spanish"
-image: "/images/centro-albayzin.jpg"
-imageAlt: "Historic facade in central Granada"
+image: "/images/2mundos.jpeg"
+imageAlt: "View from a window toward Granada gardens and historic rooftops"
 reservationUrl: "mailto:elyaratours@gmail.com?subject=Granada%20Between%20Two%20Worlds"
 seoDescription: "Historical Granada walking route between the Andalusi world and the Christian city, connecting memory, power and urban change."
 featured: false

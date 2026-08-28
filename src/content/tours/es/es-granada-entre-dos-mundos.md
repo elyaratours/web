@@ -8,8 +8,8 @@ price: "Desde 12 EUR"
 languages:
   - "Espanol"
   - "English"
-image: "/images/centro-albayzin.jpg"
-imageAlt: "Fachada historica en el centro de Granada"
+image: "/images/2mundos.jpeg"
+imageAlt: "Vista desde una ventana hacia jardines y tejados historicos de Granada"
 reservationUrl: "mailto:elyaratours@gmail.com?subject=Granada%20entre%20dos%20mundos"
 seoDescription: "Ruta historica por Granada entre el mundo andalusi y la ciudad cristiana, conectando memoria, poder y transformacion urbana."
 featured: false
