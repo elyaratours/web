@@ -112,6 +112,7 @@ export const contactContent = {
     reasonsTitle: 'Para que puedes escribirnos',
     reasons: ['Reservas de rutas', 'Rutas privadas', 'Viajes a medida', 'Dudas sobre Granada'],
     footerLink: 'Ver pagina de contacto',
+    imageAlt: 'Ilustracion acuarela de un cuaderno de viaje sobre Granada y la Alhambra',
     metaDescription:
       'Contacta con Elyara Tours Granada por email o Instagram para rutas privadas, viajes a medida y preguntas sobre tu visita a Granada.',
   },
@@ -129,6 +130,7 @@ export const contactContent = {
     reasonsTitle: 'What you can write about',
     reasons: ['Route reservations', 'Private routes', 'Tailor-made trip planning', 'Questions about Granada'],
     footerLink: 'View contact page',
+    imageAlt: 'Watercolor illustration of a Granada travel notebook and the Alhambra',
     metaDescription:
       'Contact Elyara Tours Granada by email or Instagram for private routes, tailor-made trip planning and questions about visiting Granada.',
   },
@@ -147,6 +149,7 @@ export const contactContent = {
     reasonsTitle: string;
     reasons: string[];
     footerLink: string;
+    imageAlt: string;
     metaDescription: string;
   }
 >;

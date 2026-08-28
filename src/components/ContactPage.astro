@@ -18,6 +18,7 @@ interface Props {
 const { locale } = Astro.props;
 const content = getContactContent(locale);
 const alternates = locales.map((item) => ({ locale: item, path: getContactPath(item) }));
+const contactImage = '/images/Contacto.png';
 ---
 
 <BaseLayout
@@ -25,7 +26,7 @@ const alternates = locales.map((item) => ({ locale: item, path: getContactPath(i
   description={content.metaDescription}
   locale={locale}
   canonicalPath={getContactPath(locale)}
-  image="/images/granada-cathedral.webp"
+  image={contactImage}
   alternates={alternates}
   hideReserveCta
 >
@@ -42,7 +43,7 @@ const alternates = locales.map((item) => ({ locale: item, path: getContactPath(i
         <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-700">{content.intro}</p>
       </div>
       <div class="card overflow-hidden p-4">
-        <img src="/images/granada-cathedral.webp" alt="Granada historic center" class="h-[24rem] w-full rounded-[1.5rem] object-cover" />
+        <img src={contactImage} alt={content.imageAlt} class="h-[24rem] w-full rounded-[1.5rem] object-cover" />
       </div>
     </section>
 
