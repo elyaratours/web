@@ -10,7 +10,7 @@ languages:
   - "English"
 image: "/images/almagranada.jpg"
 imageAlt: "Calle estrecha del Albaicin con casas blancas"
-reservationUrl: "https://wa.me/34600000000?text=Hola%2C%20quiero%20reservar%20el%20tour%20Albaicin"
+reservationUrl: "mailto:elyaratours@gmail.com?subject=El%20alma%20de%20Granada"
 seoDescription: "La forma más completa de descubrir Granada a través de los barrios, historias y culturas que han dado forma a su identidad."
 featured: true
 order: 2

@@ -1,7 +1,7 @@
 ---
 import { Mail } from '@lucide/astro';
 import SeoHead from '@/components/SeoHead.astro';
-import { contactEmail, getContactContent, getContactPath, getLocaleConfig, getTailorMadePath, instagramHandle, instagramUrl, locales, type Locale } from '@/lib/i18n';
+import { contactEmail, getContactContent, getContactPath, getEmailReservationUrl, getLocaleConfig, getTailorMadePath, instagramHandle, instagramUrl, locales, type Locale } from '@/lib/i18n';
 import { siteName } from '@/lib/seo';
 import '@/styles/global.css';
 
@@ -71,7 +71,7 @@ const otherLocale = locale === 'es' ? 'en' : 'es';
         </div>
         {
           !hideReserveCta && (
-            <a class="btn-primary px-4 py-2 text-xs" href="https://wa.me/34600000000" target="_blank" rel="noreferrer">
+            <a class="btn-primary px-4 py-2 text-xs" href={getEmailReservationUrl()}>
               {copy.reserve}
             </a>
           )

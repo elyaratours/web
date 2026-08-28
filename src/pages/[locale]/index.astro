@@ -1,10 +1,10 @@
 ---
-import { ArrowRight, Landmark, MapPinned, MessageCircle } from '@lucide/astro';
+import { ArrowRight, Landmark, Mail, MapPinned } from '@lucide/astro';
 import TailorMadeHomeSection from '@/components/TailorMadeHomeSection.astro';
 import TourCard from '@/components/TourCard.astro';
 import TravelerReviewsMosaic from '@/components/TravelerReviewsMosaic.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
-import { getLocaleConfig, locales, type Locale } from '@/lib/i18n';
+import { getEmailReservationUrl, getLocaleConfig, locales, type Locale } from '@/lib/i18n';
 import { getPublishedTours } from '@/lib/tours';
 
 export function getStaticPaths() {
@@ -30,14 +30,14 @@ const alternates = locales.map((item) => ({ locale: item, path: `/${item}/` }));
           {copy.allTours}
           <ArrowRight class="h-4 w-4" aria-hidden="true" />
         </a>
-        <a class="btn-secondary" href="https://wa.me/34600000000" target="_blank" rel="noreferrer">
+        <a class="btn-secondary" href={getEmailReservationUrl()}>
           {copy.reserve}
         </a>
       </div>
     </div>
     <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
       <div class="card overflow-hidden p-4">
-        <img src="/images/Granada-main.jpeg" alt={copy.heroImageAlt} class="h-72 w-full rounded-[1.5rem] object-cover" />
+        <img src="/images/alhambra-clouds.jpeg" alt={copy.heroImageAlt} class="h-72 w-full rounded-[1.5rem] object-cover" />
       </div>
       <div class="card grid gap-4 p-6 sm:content-center">
         <div class="flex items-start gap-4">
@@ -64,7 +64,7 @@ const alternates = locales.map((item) => ({ locale: item, path: `/${item}/` }));
         <p class="mt-3 text-sm leading-7 text-slate-700">{copy.experienceWalkableText}</p>
       </div>
       <div>
-        <MessageCircle class="h-8 w-8 text-alhambra-clay" aria-hidden="true" />
+        <Mail class="h-8 w-8 text-alhambra-clay" aria-hidden="true" />
         <h2 class="mt-4 font-serif text-2xl font-bold text-alhambra-night">{copy.experienceDirectTitle}</h2>
         <p class="mt-3 text-sm leading-7 text-slate-700">{copy.experienceDirectText}</p>
       </div>

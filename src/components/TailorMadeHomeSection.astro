@@ -1,6 +1,6 @@
 ---
-import { ArrowRight, Compass, MessageCircle, Sparkles } from '@lucide/astro';
-import { getTailorMadeContent, getTailorMadePath, getTailorMadeWhatsAppUrl, type Locale } from '@/lib/i18n';
+import { ArrowRight, Compass, Mail, Sparkles } from '@lucide/astro';
+import { getTailorMadeContent, getTailorMadeEmailUrl, getTailorMadePath, type Locale } from '@/lib/i18n';
 
 interface Props {
   locale: Locale;
@@ -9,7 +9,7 @@ interface Props {
 const { locale } = Astro.props;
 const content = getTailorMadeContent(locale);
 const pagePath = getTailorMadePath(locale);
-const whatsappUrl = getTailorMadeWhatsAppUrl(locale);
+const emailUrl = getTailorMadeEmailUrl();
 ---
 
 <section class="section-shell py-12" id="tailor-made">
@@ -41,7 +41,7 @@ const whatsappUrl = getTailorMadeWhatsAppUrl(locale);
             <p class="mt-3 text-sm leading-7 text-white/75">{content.consultationText}</p>
           </div>
           <div class="rounded-[1.5rem] border border-white/10 bg-white/10 p-5">
-            <MessageCircle class="h-6 w-6 text-alhambra-sand" aria-hidden="true" />
+            <Mail class="h-6 w-6 text-alhambra-sand" aria-hidden="true" />
             <h3 class="mt-4 font-serif text-2xl font-bold">{content.routeTitle}</h3>
             <p class="mt-3 text-sm leading-7 text-white/75">{content.routeText}</p>
           </div>
@@ -52,9 +52,9 @@ const whatsappUrl = getTailorMadeWhatsAppUrl(locale);
             {content.cta}
             <ArrowRight class="h-4 w-4" aria-hidden="true" />
           </a>
-          <a class="btn-secondary border-white/20 bg-white/10 text-white hover:bg-white hover:text-alhambra-night" href={whatsappUrl} target="_blank" rel="noreferrer">
-            <MessageCircle class="h-4 w-4" aria-hidden="true" />
-            WhatsApp
+          <a class="btn-secondary border-white/20 bg-white/10 text-white hover:bg-white hover:text-alhambra-night" href={emailUrl}>
+            <Mail class="h-4 w-4" aria-hidden="true" />
+            Email
           </a>
         </div>
       </div>

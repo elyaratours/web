@@ -12,7 +12,7 @@ export const localeConfig = {
     navTailorMade: 'Viajes a medida',
     navContact: 'Contacto',
     footerContact: 'Contacto',
-    reserve: 'Reservar por WhatsApp',
+    reserve: 'Reservar por email',
     viewTour: 'Ver ruta',
     readArticle: 'Leer historia',
     blogEyebrow: 'Cuaderno de Granada',
@@ -23,7 +23,7 @@ export const localeConfig = {
     backToBlog: 'Volver al cuaderno',
     publishedOn: 'Publicado',
     relatedToursTitle: 'Camina esta historia',
-    relatedToursText: 'Conecta este relato con una ruta guiada por Granada y reserva por WhatsApp o enlace externo.',
+    relatedToursText: 'Conecta este relato con una ruta guiada por Granada y reserva por email.',
     featuredTours: 'Rutas destacadas',
     allTours: 'Todas las rutas',
     duration: 'Duracion',
@@ -34,17 +34,17 @@ export const localeConfig = {
     heroTitle: 'Granada, más allá de la postal',
     heroText:
       'Tours privados y rutas a pie para descubrir la historia, los personajes y los rincones que dan sentido a la ciudad.',
-    heroImageAlt: 'Vista desde una ventana a jardines y tejados historicos de Granada',
+    heroImageAlt: 'La Alhambra bajo nubes dramaticas vista desde el Albaicin',
     footerIntro:
       'Tours privados y rutas a pie para descubrir la Alhambra, el Albaicin y la ciudad historica con una mirada cercana y cultural.',
-    catalogIntro: 'Elige una ruta y empieza la reserva por WhatsApp o enlace externo.',
+    catalogIntro: 'Elige una ruta y empieza la reserva por email.',
     experienceHistoricalTitle: 'Contexto historico',
     experienceHistoricalText:
       'Rutas narradas para entender monumentos, barrios y paisajes sin convertir la visita en una clase pesada.',
     experienceWalkableTitle: 'Ritmo caminable',
     experienceWalkableText: 'Itinerarios pensados para mirar, preguntar, hacer pausas y disfrutar de Granada con calma.',
     experienceDirectTitle: 'Reserva directa',
-    experienceDirectText: 'La reserva empieza por WhatsApp o enlace externo. Sin cuentas, pagos internos ni checkout.',
+    experienceDirectText: 'La reserva empieza por email. Sin cuentas, pagos internos ni checkout.',
     metaHome: 'Rutas turisticas y tours privados en Granada con experiencias culturales en espanol e ingles.',
   },
   en: {
@@ -56,7 +56,7 @@ export const localeConfig = {
     navTailorMade: 'Tailor-made',
     navContact: 'Contact',
     footerContact: 'Contact',
-    reserve: 'Reserve via WhatsApp',
+    reserve: 'Reserve by email',
     viewTour: 'View tour',
     readArticle: 'Read story',
     blogEyebrow: 'Granada Journal',
@@ -67,7 +67,7 @@ export const localeConfig = {
     backToBlog: 'Back to journal',
     publishedOn: 'Published',
     relatedToursTitle: 'Walk this story',
-    relatedToursText: 'Connect this story with a guided route through Granada and reserve via WhatsApp or an external link.',
+    relatedToursText: 'Connect this story with a guided route through Granada and reserve by email.',
     featuredTours: 'Featured tours',
     allTours: 'All tours',
     duration: 'Duration',
@@ -78,17 +78,17 @@ export const localeConfig = {
     heroTitle: 'Granada, beyond the postcard',
     heroText:
       'Private tours and walking experiences that reveal the history, characters and hidden corners behind the city',
-    heroImageAlt: 'View from a window toward gardens and historic rooftops in Granada',
+    heroImageAlt: 'The Alhambra beneath dramatic clouds from the Albaicin',
     footerIntro:
       'Private tours and walking routes to discover the Alhambra, the Albaicin and the historic city with a warm cultural perspective.',
-    catalogIntro: 'Choose a route and start booking through WhatsApp or an external link.',
+    catalogIntro: 'Choose a route and start booking by email.',
     experienceHistoricalTitle: 'Historical context',
     experienceHistoricalText:
       'Narrated routes to understand monuments, neighborhoods and landscapes without turning the visit into a heavy lecture.',
     experienceWalkableTitle: 'Walkable pace',
     experienceWalkableText: 'Itineraries designed to look around, ask questions, pause and enjoy Granada at a calm pace.',
     experienceDirectTitle: 'Direct booking',
-    experienceDirectText: 'Booking starts via WhatsApp or an external link. No accounts, internal payments or checkout.',
+    experienceDirectText: 'Booking starts by email. No accounts, internal payments or checkout.',
     metaHome: 'Tourism routes and private tours in Granada with cultural experiences in Spanish and English.',
   },
 } satisfies Record<Locale, Record<string, string>>;
@@ -96,6 +96,7 @@ export const localeConfig = {
 export const contactEmail = 'elyaratours@gmail.com';
 export const instagramHandle = '@elyaratours';
 export const instagramUrl = 'https://instagram.com/elyaratours';
+export const emailReservationUrl = `mailto:${contactEmail}`;
 
 export const contactContent = {
   es: {
@@ -176,7 +177,7 @@ export const tailorMadeContent = {
     process: [
       'Nos cuentas fechas, numero de personas, idioma, ritmo e intereses.',
       'Te proponemos una idea realista para tu tiempo en Granada.',
-      'Ajustamos la ruta o consultoria y cerramos la reserva por WhatsApp.',
+      'Ajustamos la ruta o consultoria y cerramos la reserva por email.',
     ],
     inspirationTitle: 'Ideas para inspirarte',
     inspiration: [
@@ -192,8 +193,6 @@ export const tailorMadeContent = {
     pageTitle: 'Viajes y rutas a medida en Granada',
     metaDescription:
       'Consultoria de viaje y rutas privadas personalizadas en Granada para organizar tu visita segun fechas, intereses, idioma y ritmo.',
-    whatsappText:
-      'Hola, quiero consultar una ruta o viaje personalizado en Granada. Fechas: Numero de personas: Intereses: Idioma:',
   },
   en: {
     routeSlug: 'tailor-made-trips',
@@ -216,7 +215,7 @@ export const tailorMadeContent = {
     process: [
       'Tell us your dates, group size, language, pace and interests.',
       'We suggest a realistic idea for your time in Granada.',
-      'We adjust the route or consultation and confirm everything through WhatsApp.',
+      'We adjust the route or consultation and confirm everything by email.',
     ],
     inspirationTitle: 'Ideas for inspiration',
     inspiration: [
@@ -232,8 +231,6 @@ export const tailorMadeContent = {
     pageTitle: 'Tailor-made trips and routes in Granada',
     metaDescription:
       'Trip consultation and personalized private routes in Granada to shape your visit around dates, interests, language and pace.',
-    whatsappText:
-      'Hello, I would like to ask about a tailor-made route or trip in Granada. Dates: Number of people: Interests: Language:',
   },
 } satisfies Record<
   Locale,
@@ -258,7 +255,6 @@ export const tailorMadeContent = {
     details: string[];
     pageTitle: string;
     metaDescription: string;
-    whatsappText: string;
   }
 >;
 
@@ -303,8 +299,16 @@ export function getTailorMadePath(locale: Locale) {
   return `/${locale}/${tailorMadeContent[locale].routeSlug}/`;
 }
 
-export function getTailorMadeWhatsAppUrl(locale: Locale) {
-  return `https://wa.me/34600000000?text=${encodeURIComponent(tailorMadeContent[locale].whatsappText)}`;
+export function getEmailReservationUrl() {
+  return emailReservationUrl;
+}
+
+export function getTourReservationEmailUrl(tourTitle: string) {
+  return `${emailReservationUrl}?subject=${encodeURIComponent(tourTitle)}`;
+}
+
+export function getTailorMadeEmailUrl() {
+  return getEmailReservationUrl();
 }
 
 export function isLocale(value: string): value is Locale {

@@ -10,7 +10,7 @@ languages:
   - "English"
 image: "/images/1492-nuevo-orden-mundial.webp"
 imageAlt: "Ilustracion del tour 1492 Nuevo Orden Mundial"
-reservationUrl: "https://wa.me/34600000000?text=Hola%2C%20quiero%20reservar%20Granada%20y%20el%20Nuevo%20Mundo"
+reservationUrl: "mailto:elyaratours@gmail.com?subject=1492%20Nuevo%20Orden%20Mundial"
 seoDescription: "Ruta historica por Granada y su relacion con el Nuevo Mundo, el último baluarte musulmán, la ciudad cristiana, la Capilla Real y los cambios del siglo XVI."
 featured: false
 order: 3

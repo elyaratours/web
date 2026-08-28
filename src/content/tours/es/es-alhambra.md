@@ -10,7 +10,7 @@ languages:
   - "English"
 image: "/images/alhambra.jpg"
 imageAlt: "Patio nazari de la Alhambra al caer la tarde"
-reservationUrl: "https://wa.me/34600000000?text=Hola%2C%20quiero%20reservar%20el%20tour%20Alhambra%20esencial"
+reservationUrl: "mailto:elyaratours@gmail.com?subject=Alhambra%3A%20s%C3%ADmbolos%2C%20poder%20y%20belleza"
 seoDescription: "Descubre la Alhambra a través de sus símbolos, su arquitectura y las historias de poder que marcaron el reino nazarí, entre palacios, patios y jardines."
 featured: true
 order: 1

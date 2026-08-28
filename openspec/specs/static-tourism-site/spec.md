@@ -38,15 +38,20 @@ The system SHALL provide a public detail page for each published tour with at le
 - **THEN** the system displays all offered languages on the tour detail page
 
 ### Requirement: External reservation flow
-The system SHALL start reservations through external links or WhatsApp rather than an internal booking or payment flow.
+The system SHALL start reservations through email links to `elyaratours@gmail.com` rather than WhatsApp, internal booking forms, checkout, or payment flows.
 
 #### Scenario: Visitor selects reserve action
-- **WHEN** a visitor activates a reservation call to action
-- **THEN** the system directs the visitor to the configured external booking destination or WhatsApp conversation
+- **WHEN** a visitor activates a general reservation call to action that is not tied to a concrete tour
+- **THEN** the system opens a clean `mailto:elyaratours@gmail.com` link without prefilled subject or body text
+
+#### Scenario: Visitor selects a concrete tour reserve action
+- **WHEN** a visitor activates a reservation call to action for a specific published tour
+- **THEN** the system opens a `mailto:elyaratours@gmail.com` link with a prefilled subject containing only the selected tour name
+- **AND** the system does not prefill dates, group size, number of people, language, itinerary details, or body text
 
 #### Scenario: Visitor completes no internal checkout
 - **WHEN** a visitor browses tour pages
-- **THEN** the system does not require account creation, payment processing, or internal checkout to start a reservation
+- **THEN** the system does not require account creation, payment processing, internal form submission, or internal checkout to start a reservation
 
 ### Requirement: Spanish and English public experience
 The system SHALL provide Spanish and English foundations for public navigation, routes, metadata, and tour content.
@@ -82,17 +87,21 @@ The system SHALL display localized copy for the three introductory experience ca
 - **THEN** the system preserves the existing three-card order, icons, section placement, responsive layout, and booking behavior
 
 ### Requirement: Localized home approved hero image
-The system SHALL display the provided `Granada-main.jpeg` image as the main hero image on the Spanish and English localized home pages, with localized accessible text.
+The system SHALL display `/images/alhambra-clouds.jpeg` as the main hero image on the Spanish and English localized home pages, with localized accessible text and appropriate framing.
 
 #### Scenario: Spanish visitor sees approved home hero image
 - **WHEN** a visitor opens the Spanish home page at `/es/`
-- **THEN** the hero displays `/images/Granada-main.jpeg` as the main image
-- **AND** the hero image uses Spanish accessible text
+- **THEN** the hero displays `/images/alhambra-clouds.jpeg` as the main image
+- **AND** the hero image uses Spanish accessible text describing the Alhambra beneath clouds
 
 #### Scenario: English visitor sees approved home hero image
 - **WHEN** a visitor opens the English home page at `/en/`
-- **THEN** the hero displays `/images/Granada-main.jpeg` as the main image
-- **AND** the hero image uses English accessible text
+- **THEN** the hero displays `/images/alhambra-clouds.jpeg` as the main image
+- **AND** the hero image uses English accessible text describing the Alhambra beneath clouds
+
+#### Scenario: Sunset image is not used on localized home pages
+- **WHEN** a visitor opens the Spanish or English localized home page
+- **THEN** the hero does not display `/images/alhambra-sunset.jpeg`
 
 #### Scenario: Localized home behavior remains unchanged
 - **WHEN** the localized home page is displayed after the hero image update
@@ -246,11 +255,11 @@ The system SHALL provide localized standalone pages explaining the tailor-made o
 - **THEN** the page exposes localized title, description, canonical URL, and language-aware alternate metadata
 
 ### Requirement: Tailor-made external inquiry flow
-The system SHALL start tailor-made trip and route inquiries through external WhatsApp links rather than an internal form, account flow, checkout, or payment process.
+The system SHALL start tailor-made trip and route inquiries through email links to `elyaratours@gmail.com` rather than WhatsApp, internal forms, account flows, checkout, or payment processing.
 
 #### Scenario: Visitor starts tailor-made inquiry
 - **WHEN** a visitor activates a tailor-made inquiry call to action
-- **THEN** the system opens an external WhatsApp conversation with prefilled text requesting key trip details such as dates, group size, interests, and language
+- **THEN** the system opens a clean `mailto:elyaratours@gmail.com` link without prefilled subject or body text
 
 #### Scenario: Visitor browses tailor-made offer
 - **WHEN** a visitor browses the tailor-made home section or standalone page
@@ -375,7 +384,7 @@ The system SHALL add four additional localized Granada tour offerings to the pub
 
 #### Scenario: New tour reservation starts externally
 - **WHEN** a visitor activates the reservation call to action for any newly added tour
-- **THEN** the system opens an external WhatsApp conversation or configured external reservation destination without requiring account creation, internal checkout, payment processing, or internal form submission
+- **THEN** the system opens a `mailto:elyaratours@gmail.com` link with a prefilled subject containing only the selected tour name and without requiring account creation, internal checkout, payment processing, or internal form submission
 
 ### Requirement: English Granada and the New World approved image
 The system SHALL display the provided approved `1492 New World Order` artwork as the public tour image for the English `Granada and the New World` tour wherever that tour's image is rendered.

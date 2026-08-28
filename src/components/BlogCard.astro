@@ -11,6 +11,7 @@ const { post } = Astro.props;
 const copy = getLocaleConfig(post.data.locale);
 const href = getBlogPostPath(post);
 const date = new Intl.DateTimeFormat(copy.htmlLang, { dateStyle: 'medium' }).format(post.data.publishedDate);
+const imageStyle = post.data.imagePosition ? `object-position: ${post.data.imagePosition};` : undefined;
 ---
 
 <article class="card group overflow-hidden">
@@ -21,6 +22,7 @@ const date = new Intl.DateTimeFormat(copy.htmlLang, { dateStyle: 'medium' }).for
           src={post.data.image}
           alt={post.data.imageAlt ?? post.data.title}
           class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+          style={imageStyle}
           loading="lazy"
         />
         <div class="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-bold text-alhambra-clay">

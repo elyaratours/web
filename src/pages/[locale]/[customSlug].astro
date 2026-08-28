@@ -1,11 +1,11 @@
 ---
-import { ArrowLeft, CalendarDays, CircleCheck, Compass, MessageCircle, Sparkles } from '@lucide/astro';
+import { ArrowLeft, CalendarDays, CircleCheck, Compass, Mail, Sparkles } from '@lucide/astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import {
   getLocaleConfig,
   getTailorMadeContent,
   getTailorMadePath,
-  getTailorMadeWhatsAppUrl,
+  getTailorMadeEmailUrl,
   locales,
   type Locale,
 } from '@/lib/i18n';
@@ -24,7 +24,7 @@ export function getStaticPaths() {
 const { locale } = Astro.props as { locale: Locale };
 const copy = getLocaleConfig(locale);
 const content = getTailorMadeContent(locale);
-const whatsappUrl = getTailorMadeWhatsAppUrl(locale);
+const emailUrl = getTailorMadeEmailUrl();
 const alternates = locales.map((item) => ({ locale: item, path: getTailorMadePath(item) }));
 ---
 
@@ -48,8 +48,8 @@ const alternates = locales.map((item) => ({ locale: item, path: getTailorMadePat
         <h1 class="mt-4 max-w-4xl font-serif text-5xl font-bold leading-tight text-alhambra-night sm:text-6xl">{content.title}</h1>
         <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-700">{content.intro}</p>
         <div class="mt-8 flex flex-wrap gap-3">
-          <a class="btn-primary" href={whatsappUrl} target="_blank" rel="noreferrer">
-            <MessageCircle class="h-4 w-4" aria-hidden="true" />
+          <a class="btn-primary" href={emailUrl}>
+            <Mail class="h-4 w-4" aria-hidden="true" />
             {content.cta}
           </a>
           <a class="btn-secondary" href="#how-it-works">{content.secondaryCta}</a>
@@ -118,8 +118,8 @@ const alternates = locales.map((item) => ({ locale: item, path: getTailorMadePat
           }
         </ul>
       </div>
-      <a class="btn-primary" href={whatsappUrl} target="_blank" rel="noreferrer">
-        <MessageCircle class="h-4 w-4" aria-hidden="true" />
+      <a class="btn-primary" href={emailUrl}>
+        <Mail class="h-4 w-4" aria-hidden="true" />
         {content.cta}
       </a>
     </section>

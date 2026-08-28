@@ -64,15 +64,21 @@ The system SHALL provide search engine metadata for blog listing and article det
 - **THEN** the page includes title, description, canonical URL, open graph metadata, and JSON-LD structured data describing the article
 
 ### Requirement: Editorial-to-tour discovery
-The system SHALL allow editorial articles to connect readers to relevant published tours without introducing an internal booking or payment flow.
+The system SHALL allow editorial articles to connect readers to relevant published tours and email-based reservation actions without introducing an internal booking or payment flow.
 
 #### Scenario: Article references related tours
 - **WHEN** a published article is associated with one or more published tours in the same language
 - **THEN** the article detail page presents links or calls to action to those related tour pages
 
 #### Scenario: Visitor follows a reservation call to action from editorial content
-- **WHEN** a visitor activates a reservation-oriented action from an editorial article or related tour prompt
-- **THEN** the system directs the visitor to the configured external booking destination or WhatsApp conversation rather than an internal checkout
+- **WHEN** a visitor activates a reservation-oriented action from editorial content that is not tied to one concrete tour
+- **THEN** the system opens a clean `mailto:elyaratours@gmail.com` link rather than an internal checkout or WhatsApp conversation
+- **AND** the system does not prefill subject or body text
+
+#### Scenario: Visitor reserves a specific related tour
+- **WHEN** a visitor reaches a specific related tour and activates that tour's reservation action
+- **THEN** the system opens a `mailto:elyaratours@gmail.com` link with a prefilled subject containing only the selected tour name rather than an internal checkout or WhatsApp conversation
+- **AND** the system does not prefill dates, group size, number of people, language, itinerary details, or body text
 
 ### Requirement: Granada pomegranate symbol article localization
 The system SHALL publish the Granada pomegranate symbol editorial topic in both the Spanish `Cuaderno` and the English `Journal`.

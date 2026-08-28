@@ -10,7 +10,7 @@ languages:
   - "English"
 image: "/images/puerta-del-vino-01.jpg"
 imageAlt: "Patio nazari de la Alhambra al caer la tarde"
-reservationUrl: "https://wa.me/34600000000?text=Hola%2C%20quiero%20reservar%20La%20Alhambra%20mas%20alla%20de%20los%20palacios"
+reservationUrl: "mailto:elyaratours@gmail.com?subject=La%20Alhambra%20m%C3%A1s%20all%C3%A1%20de%20los%20palacios"
 seoDescription: "Visita cultural para entender la Alhambra mas alla de sus palacios, explorando simbolos, paisaje, poder, agua y vida cotidiana."
 featured: false
 order: 6

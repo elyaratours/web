@@ -34,6 +34,7 @@ const blog = defineCollection({
     publishedDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
     image: z.string().startsWith('/images/').optional(),
+    imagePosition: z.enum(['center', 'top', 'bottom', 'left', 'right', 'center top', 'center bottom']).optional(),
     imageAlt: z.string().min(1).optional(),
     author: z.string().min(1).default('Elyara Tours Granada'),
     seoDescription: z.string().min(50),

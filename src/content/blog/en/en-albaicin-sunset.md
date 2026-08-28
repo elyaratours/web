@@ -7,6 +7,7 @@ excerpt: "When the light starts to fall, the Albaicin stops being only a beautif
 category: "recommendation"
 publishedDate: "2026-08-20"
 image: "/images/sunset.jpeg"
+imagePosition: "center bottom"
 imageAlt: "Sunset over the Albaicin and Granada"
 author: "Elyara Tours Granada"
 seoDescription: "Tips for walking through Granada's Albaicin at sunset, with viewpoints, quiet streets and a slower way to experience the historic neighborhood."
