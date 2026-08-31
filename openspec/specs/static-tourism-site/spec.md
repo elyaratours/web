@@ -8,8 +8,9 @@ Provides the public static website capability for a tourism route business, allo
 The system SHALL provide a statically generated public website suitable for hosting on GitHub Pages with a custom domain and root-path routing.
 
 #### Scenario: Visitor opens the home page
-- **WHEN** a visitor navigates to the site's root URL
-- **THEN** the system displays a tourism-focused home page introducing the route business and highlighting available tours or routes
+- **WHEN** a visitor navigates to the site's root URL at `/`
+- **THEN** the system resolves the visitor to the approved Spanish localized home page at `/es/`
+- **AND** the root experience does not display separate root-only landing copy
 
 #### Scenario: Site is deployed to custom-domain GitHub Pages
 - **WHEN** the site is built for production deployment
@@ -108,8 +109,9 @@ The system SHALL display `/images/alhambra-clouds.jpeg` as the main hero image o
 - **THEN** the system preserves the existing localized hero copy, calls to action, tour catalog, tailor-made section, traveler reviews section, and routing behavior
 
 #### Scenario: Root landing page remains unchanged
-- **WHEN** a visitor opens the root landing page at `/`
-- **THEN** the system preserves the existing root landing page image unless that page is explicitly updated by a separate change
+- **WHEN** a visitor opens the root URL at `/` after root routing is updated
+- **THEN** the system does not display a standalone root landing page image
+- **AND** the visitor reaches the Spanish localized home experience that uses `/images/alhambra-clouds.jpeg` as its main hero image
 
 ### Requirement: Localized home approved hero copy
 The system SHALL display the approved Spanish and English hero title and body copy on the localized home pages while preserving the previous footer intro copy.

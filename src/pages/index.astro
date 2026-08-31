@@ -1,59 +1,23 @@
 ---
-import { ArrowRight, MapPin, Sparkles } from '@lucide/astro';
-import TourCard from '@/components/TourCard.astro';
-import BaseLayout from '@/layouts/BaseLayout.astro';
-import { getPublishedTours } from '@/lib/tours';
-
-const tours = await getPublishedTours('es');
-const featuredTours = tours.filter((tour) => tour.data.featured).slice(0, 2);
+const destination = '/es/';
+const canonicalUrl = new URL(destination, Astro.site ?? Astro.url).toString();
 ---
 
-<BaseLayout
-  title="Rutas culturales y tours privados en Granada"
-  description="Tours privados y rutas turisticas en Granada para descubrir la Alhambra, el Albaicin y la ciudad historica en espanol e ingles."
-  canonicalPath="/"
-  locale="es"
-  alternates={[{ locale: 'es', path: '/es/' }, { locale: 'en', path: '/en/' }]}
->
-  <section class="section-shell grid gap-10 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:py-24">
-    <div>
-      <p class="eyebrow">Granada a pie</p>
-      <h1 class="mt-5 max-w-4xl font-serif text-5xl font-bold leading-[0.95] tracking-tight text-alhambra-night sm:text-6xl lg:text-7xl">
-        Rutas con historia, calma y mirada local.
-      </h1>
-      <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-700">
-        Elyara reune tours culturales para entender Granada desde sus barrios, sus miradores y sus grandes monumentos. Elige idioma y empieza a explorar.
-      </p>
-      <div class="mt-8 flex flex-wrap gap-3">
-        <a class="btn-primary" href="/es/#tours">
-          Ver rutas en espanol
-          <ArrowRight class="h-4 w-4" aria-hidden="true" />
-        </a>
-        <a class="btn-secondary" href="/en/#tours">Explore in English</a>
-      </div>
-    </div>
-    <div class="card relative overflow-hidden p-5">
-      <img src="/images/alhambra-courtyard.webp" alt="Patio de la Alhambra" class="h-[28rem] w-full rounded-[1.5rem] object-cover" />
-      <div class="absolute bottom-8 left-8 right-8 rounded-3xl bg-white/90 p-5 shadow-warm backdrop-blur">
-        <p class="flex items-center gap-2 text-sm font-bold text-alhambra-clay">
-          <MapPin class="h-4 w-4" aria-hidden="true" />
-          Granada, Andalucia
-        </p>
-        <p class="mt-2 font-serif text-2xl font-bold text-alhambra-night">Alhambra, Albaicin y rutas historicas</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-shell py-10" id="tours">
-    <div class="mb-8 flex items-end justify-between gap-6">
-      <div>
-        <p class="eyebrow">Rutas destacadas</p>
-        <h2 class="mt-3 font-serif text-4xl font-bold text-alhambra-night">Empieza por Granada esencial</h2>
-      </div>
-      <Sparkles class="hidden h-10 w-10 text-alhambra-clay sm:block" aria-hidden="true" />
-    </div>
-    <div class="grid gap-6 md:grid-cols-2">
-      {featuredTours.map((tour) => <TourCard tour={tour} />)}
-    </div>
-  </section>
-</BaseLayout>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="refresh" content={`0;url=${destination}`} />
+    <link rel="canonical" href={canonicalUrl} />
+    <title>Redirigiendo a Elyara</title>
+    <script is:inline>
+      window.location.replace('/es/');
+    </script>
+  </head>
+  <body>
+    <main>
+      <p>Redirigiendo a <a href={destination}>la pagina principal en espanol</a>.</p>
+    </main>
+  </body>
+</html>
