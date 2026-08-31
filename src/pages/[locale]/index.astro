@@ -18,28 +18,28 @@ const alternates = locales.map((item) => ({ locale: item, path: `/${item}/` }));
 ---
 
 <BaseLayout title={copy.heroTitle} description={copy.metaHome} locale={locale} canonicalPath={`/${locale}/`} alternates={alternates}>
-  <section class="section-shell grid gap-10 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:py-24">
+  <section class="section-shell grid gap-8 py-10 sm:py-16 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:py-24">
     <div>
       <p class="eyebrow">{copy.heroEyebrow}</p>
-      <h1 class="mt-5 max-w-4xl font-serif text-5xl font-bold leading-[0.95] tracking-tight text-alhambra-night sm:text-6xl lg:text-7xl">
+      <h1 class="mt-4 max-w-4xl font-serif text-4xl font-bold leading-[0.98] tracking-tight text-alhambra-night sm:mt-5 sm:text-6xl lg:text-7xl">
         {copy.heroTitle}
       </h1>
-      <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-700">{copy.heroText}</p>
-      <div class="mt-8 flex flex-wrap gap-3">
-        <a class="btn-primary" href="#tours">
+      <p class="mt-5 max-w-2xl text-base leading-7 text-slate-700 sm:mt-6 sm:text-lg sm:leading-8">{copy.heroText}</p>
+      <div class="mt-7 grid gap-3 sm:mt-8 sm:flex sm:flex-wrap">
+        <a class="btn-primary w-full sm:w-auto" href="#tours">
           {copy.allTours}
           <ArrowRight class="h-4 w-4" aria-hidden="true" />
         </a>
-        <a class="btn-secondary" href={getEmailReservationUrl()}>
+        <a class="btn-secondary w-full sm:w-auto" href={getEmailReservationUrl()}>
           {copy.reserve}
         </a>
       </div>
     </div>
     <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
-      <div class="card overflow-hidden p-4">
-        <img src="/images/alhambra-clouds.jpeg" alt={copy.heroImageAlt} class="h-72 w-full rounded-[1.5rem] object-cover" />
+      <div class="card overflow-hidden p-3 sm:p-4">
+        <img src="/images/alhambra-clouds.jpeg" alt={copy.heroImageAlt} class="h-56 w-full rounded-[1.25rem] object-cover sm:h-72 sm:rounded-[1.5rem]" />
       </div>
-      <div class="card grid gap-4 p-6 sm:content-center">
+      <div class="card grid gap-4 p-5 sm:content-center sm:p-6">
         <div class="flex items-start gap-4">
           <span class="rounded-2xl bg-alhambra-tile/10 p-3 text-alhambra-tile"><MapPinned class="h-6 w-6" aria-hidden="true" /></span>
           <div>
@@ -51,8 +51,8 @@ const alternates = locales.map((item) => ({ locale: item, path: `/${item}/` }));
     </div>
   </section>
 
-  <section class="section-shell py-12" id="experience">
-    <div class="card grid gap-8 p-8 md:grid-cols-3">
+  <section class="section-shell py-8 sm:py-12" id="experience">
+    <div class="card grid gap-6 p-5 sm:gap-8 sm:p-8 md:grid-cols-3">
       <div>
         <Landmark class="h-8 w-8 text-alhambra-clay" aria-hidden="true" />
         <h2 class="mt-4 font-serif text-2xl font-bold text-alhambra-night">{copy.experienceHistoricalTitle}</h2>
@@ -71,10 +71,10 @@ const alternates = locales.map((item) => ({ locale: item, path: `/${item}/` }));
     </div>
   </section>
 
-  <section class="section-shell py-12" id="tours">
+  <section class="section-shell py-8 sm:py-12" id="tours">
     <div class="mb-8 max-w-3xl">
       <p class="eyebrow">{copy.featuredTours}</p>
-      <h2 class="mt-3 font-serif text-4xl font-bold text-alhambra-night">{copy.allTours}</h2>
+      <h2 class="mt-3 font-serif text-3xl font-bold text-alhambra-night sm:text-4xl">{copy.allTours}</h2>
       <p class="mt-4 text-slate-700">{copy.catalogIntro}</p>
     </div>
     <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">

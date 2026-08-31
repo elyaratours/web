@@ -35,14 +35,14 @@ const popupItems = reviewMosaicItems.map((item) => {
 });
 ---
 
-<section class="section-shell py-12" id="reviews">
+<section class="section-shell py-8 sm:py-12" id="reviews">
   <div class="mb-8 max-w-3xl">
     <p class="eyebrow">{copy.eyebrow}</p>
-    <h2 class="mt-3 font-serif text-4xl font-bold text-alhambra-night">{copy.title}</h2>
+    <h2 class="mt-3 font-serif text-3xl font-bold text-alhambra-night sm:text-4xl">{copy.title}</h2>
     <p class="mt-4 text-slate-700">{copy.intro}</p>
   </div>
 
-  <div class="grid auto-rows-[11rem] grid-cols-2 gap-3 sm:gap-4 md:grid-cols-6 md:auto-rows-[12rem]">
+  <div class="grid auto-rows-[10.5rem] grid-cols-2 gap-3 sm:auto-rows-[11rem] sm:gap-4 md:grid-cols-6 md:auto-rows-[12rem]">
     {
       reviewMosaicItems.map((item, index) => {
         const desktopSpan = item.featured ? 'md:col-span-3 md:row-span-2' : 'md:col-span-2';
@@ -51,14 +51,14 @@ const popupItems = reviewMosaicItems.map((item) => {
           return (
             <button
               type="button"
-              class={`group relative overflow-hidden rounded-[1.75rem] border border-white/70 bg-alhambra-night text-left shadow-warm transition hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-alhambra-clay focus:ring-offset-2 ${desktopSpan}`}
+              class={`group relative overflow-hidden rounded-[1.35rem] border border-white/70 bg-alhambra-night text-left shadow-warm transition hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-alhambra-clay focus:ring-offset-2 sm:rounded-[1.75rem] ${desktopSpan}`}
               data-review-open
               data-review-id={item.id}
               aria-label={`${copy.openPhoto}: ${item.caption[locale]}`}
             >
               <img src={item.image} alt={item.alt[locale]} class="h-full w-full object-cover opacity-95 transition duration-500 group-hover:scale-105" loading="lazy" />
-              <span class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-alhambra-night/90 to-transparent p-4 text-white">
-                <span class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.22em] text-alhambra-sand">
+              <span class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-alhambra-night/90 to-transparent p-3 text-white sm:p-4">
+                <span class="inline-flex items-center gap-2 text-[0.68rem] font-bold uppercase tracking-[0.18em] text-alhambra-sand sm:text-xs sm:tracking-[0.22em]">
                   <Camera class="h-4 w-4" aria-hidden="true" />
                   {copy.openPhoto}
                 </span>
@@ -73,18 +73,18 @@ const popupItems = reviewMosaicItems.map((item) => {
         return (
           <button
             type="button"
-            class={`card group flex min-h-0 flex-col justify-between p-4 text-left transition hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-alhambra-clay focus:ring-offset-2 sm:p-5 ${desktopSpan} ${tone}`}
+            class={`card group flex min-h-0 flex-col justify-between p-3 text-left transition hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-alhambra-clay focus:ring-offset-2 sm:p-5 ${desktopSpan} ${tone}`}
             data-review-open
             data-review-id={item.id}
             aria-label={`${copy.openReview}: ${item.traveler}`}
           >
             <span>
               <Quote class="h-6 w-6 text-alhambra-clay" aria-hidden="true" />
-              <span class="mt-3 block overflow-hidden text-sm font-semibold leading-6 text-alhambra-night sm:text-base md:text-lg md:leading-7">
+              <span class="mt-2 block overflow-hidden text-sm font-semibold leading-6 text-alhambra-night line-clamp-4 sm:mt-3 sm:text-base md:text-lg md:leading-7">
                 {item.excerpt[locale]}
               </span>
             </span>
-            <span class="mt-3 block text-xs font-bold uppercase tracking-[0.18em] text-alhambra-clay">
+            <span class="mt-2 block text-[0.65rem] font-bold uppercase tracking-[0.14em] text-alhambra-clay sm:mt-3 sm:text-xs sm:tracking-[0.18em]">
               {item.traveler} · {item.origin[locale]}
             </span>
           </button>
@@ -95,7 +95,7 @@ const popupItems = reviewMosaicItems.map((item) => {
 
   <dialog
     id={dialogId}
-    class="w-[min(92vw,48rem)] rounded-[2rem] border border-white/70 bg-white/95 p-0 text-alhambra-night shadow-warm backdrop:bg-alhambra-night/70 backdrop:backdrop-blur-sm"
+    class="max-h-[calc(100dvh-2rem)] w-[calc(100vw-2rem)] overflow-y-auto rounded-[1.5rem] border border-white/70 bg-white/95 p-0 text-alhambra-night shadow-warm backdrop:bg-alhambra-night/70 backdrop:backdrop-blur-sm sm:w-[min(92vw,48rem)] sm:rounded-[2rem]"
     aria-labelledby={dialogTitleId}
     data-review-dialog
   >
@@ -108,9 +108,9 @@ const popupItems = reviewMosaicItems.map((item) => {
       >
         <X class="h-5 w-5" aria-hidden="true" />
       </button>
-      <div class="pr-10">
+      <div class="pr-12">
         <p class="eyebrow">{copy.eyebrow}</p>
-        <h3 id={dialogTitleId} class="mt-2 font-serif text-3xl font-bold text-alhambra-night" data-review-dialog-title></h3>
+        <h3 id={dialogTitleId} class="mt-2 font-serif text-2xl font-bold text-alhambra-night sm:text-3xl" data-review-dialog-title></h3>
       </div>
       <div class="mt-6" data-review-dialog-body></div>
     </div>
@@ -141,7 +141,7 @@ const popupItems = reviewMosaicItems.map((item) => {
     const image = document.createElement('img');
     image.src = item.image;
     image.alt = item.alt;
-    image.className = 'max-h-[70vh] w-full rounded-[1.5rem] object-contain';
+    image.className = 'max-h-[62vh] w-full rounded-[1.25rem] object-contain sm:max-h-[70vh] sm:rounded-[1.5rem]';
 
     const caption = document.createElement('figcaption');
     caption.className = 'text-sm leading-7 text-slate-700';
@@ -156,7 +156,7 @@ const popupItems = reviewMosaicItems.map((item) => {
     title.textContent = item.traveler;
 
     const quote = document.createElement('blockquote');
-    quote.className = 'font-serif text-2xl font-bold leading-snug text-alhambra-night sm:text-3xl';
+    quote.className = 'font-serif text-xl font-bold leading-snug text-alhambra-night sm:text-3xl';
     quote.textContent = `"${item.text}"`;
 
     const meta = document.createElement('p');

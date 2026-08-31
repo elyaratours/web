@@ -35,18 +35,18 @@ const jsonLd = createTourJsonLd(tour, site);
   alternates={alternates}
   jsonLd={jsonLd}
 >
-  <article class="section-shell py-12 lg:py-20">
+  <article class="section-shell py-8 sm:py-12 lg:py-20">
     <a href={`/${tour.data.locale}/#tours`} class="inline-flex items-center gap-2 text-sm font-bold text-alhambra-clay hover:text-alhambra-night">
       <ArrowLeft class="h-4 w-4" aria-hidden="true" />
       {copy.backToTours}
     </a>
 
-    <div class="mt-8 grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
+    <div class="mt-7 grid gap-8 sm:mt-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
       <div>
         <p class="eyebrow">Granada tour</p>
-        <h1 class="mt-4 font-serif text-5xl font-bold leading-tight text-alhambra-night sm:text-6xl">{tour.data.title}</h1>
-        <p class="mt-5 max-w-2xl text-lg leading-8 text-slate-700">{tour.data.seoDescription}</p>
-        <div class="mt-8 grid gap-3 text-sm text-slate-700 sm:grid-cols-3">
+        <h1 class="mt-4 font-serif text-4xl font-bold leading-tight text-alhambra-night sm:text-5xl lg:text-6xl">{tour.data.title}</h1>
+        <p class="mt-5 max-w-2xl text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">{tour.data.seoDescription}</p>
+        <div class="mt-7 grid gap-3 text-sm text-slate-700 sm:mt-8 sm:grid-cols-3">
           <div class="card flex items-center gap-3 p-4">
             <Clock class="h-5 w-5 text-alhambra-clay" aria-hidden="true" />
             <div>
@@ -70,20 +70,20 @@ const jsonLd = createTourJsonLd(tour, site);
           </div>
         </div>
       </div>
-      <div class="card overflow-hidden p-4">
-        <img src={tour.data.image} alt={tour.data.imageAlt} class="h-[28rem] w-full rounded-[1.5rem] object-cover" />
+      <div class="card overflow-hidden p-3 sm:p-4">
+        <img src={tour.data.image} alt={tour.data.imageAlt} class="h-64 w-full rounded-[1.25rem] object-cover sm:h-[28rem] sm:rounded-[1.5rem]" />
       </div>
     </div>
 
-    <div class="mt-12 grid gap-10 lg:grid-cols-[minmax(0,1fr)_22rem] lg:items-start">
-      <div class="card p-8">
+    <div class="mt-10 grid gap-6 sm:mt-12 lg:grid-cols-[minmax(0,1fr)_22rem] lg:items-start">
+      <div class="card order-2 p-5 sm:p-8 lg:order-none">
         <div class="prose prose-slate max-w-none prose-headings:font-serif prose-headings:text-alhambra-night prose-a:text-alhambra-clay">
           <Content />
         </div>
       </div>
-      <aside class="card sticky top-28 p-6">
+      <aside class="card order-1 p-5 sm:p-6 lg:sticky lg:top-28 lg:order-none">
         <p class="eyebrow">{copy.reserve}</p>
-        <h2 class="mt-3 font-serif text-3xl font-bold text-alhambra-night">{tour.data.title}</h2>
+        <h2 class="mt-3 font-serif text-2xl font-bold text-alhambra-night sm:text-3xl">{tour.data.title}</h2>
         <p class="mt-4 text-sm leading-7 text-slate-700">{copy.catalogIntro}</p>
         <a class="btn-primary mt-6 w-full" href={tour.data.reservationUrl} target="_blank" rel="noreferrer">
           <Mail class="h-4 w-4" aria-hidden="true" />
