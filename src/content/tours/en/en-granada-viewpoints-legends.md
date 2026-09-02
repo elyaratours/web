@@ -16,6 +16,6 @@ featured: false
 order: 4
 ---
 
-Granada changes when you see it from above. This route links viewpoints, narrow lanes and popular stories to reveal a city shaped by memory, landscape and legend.
+Granada changes when seen from above. This tour brings together viewpoints, narrow streets and popular stories to discover a city shaped by memory, landscape and legend.
 
-We walk through places where the Alhambra, the Albaicin and the Darro valley meet visually, while exploring stories passed down through generations, local characters and corners that help explain Granada's imagination.
+We will explore the Albaicín and Sacromonte, walking through places where the Alhambra, the Darro Valley and these historic neighbourhoods come together visually, while discovering stories passed down from generation to generation, local characters and hidden corners that help explain Granada’s collective imagination.

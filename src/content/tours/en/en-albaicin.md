@@ -16,7 +16,8 @@ featured: true
 order: 2
 ---
 
-Discover the many sides of Granada on a journey through the neighbourhoods that have shaped its identity over the centuries. Each one tells a different part of the city’s story, from its Islamic past and Christian transformation to the traditions, communities and ways of life that still give Granada its unmistakable character.
+Discover the many faces of Granada on a journey through the neighbourhoods that have shaped its identity over the centuries. Each one tells a different part of the city’s story, from its Islamic past and Christian transformation to the traditions, communities and ways of life that still give Granada its unmistakable character today.
 
+This is the most complete way to discover the city beyond its monuments. Along the way, you will see how history, culture, landscape and local life are woven together, connecting different parts of Granada into one story and revealing the essence that makes this city so special.
 
-This is the most complete way to experience the city beyond individual monuments. Along the way, we uncover how history, culture, landscape and local life come together, connecting different parts of Granada into one story and revealing the essence that makes the city so unique.
+A journey through the Historic Centre, the Albaicín, the Sacromonte and one of Granada’s most iconic walks along the Darro.

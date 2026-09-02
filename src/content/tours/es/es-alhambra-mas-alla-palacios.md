@@ -19,3 +19,5 @@ order: 6
 La Alhambra no se agota en sus salas mas famosas. Esta visita propone mirar el conjunto como una ciudad palatina, una fortaleza, un sistema de agua y un paisaje construido para representar poder y belleza.
 
 Nos detenemos en simbolos, inscripciones, jardines, vistas y espacios de transito para entender como se vivia y se gobernaba desde la colina roja, y por que la Alhambra sigue dialogando con Granada siglos despues.
+
+Recorreremos los exteriores de la Alhambra para descubrir la huella de Carlos V, el papel fundamental del agua, la ciudad palatina nazarí, sus torres y algunas de las leyendas que han dado forma a su historia.

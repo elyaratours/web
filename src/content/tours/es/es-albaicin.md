@@ -20,3 +20,5 @@ Descubre las muchas caras de Granada en un recorrido por los barrios que han dad
 
 
 Esta es la forma más completa de conocer la ciudad más allá de sus monumentos. A lo largo del recorrido descubrirás cómo la historia, la cultura, el paisaje y la vida local se entrelazan, conectando distintas partes de Granada en una misma historia y revelando la esencia que hace de esta ciudad un lugar tan especial.
+
+Un recorrido por el Centro Histórico, el Albaicín, el Sacromonte y uno de los paseos más emblemáticos junto al Darro.

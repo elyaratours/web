@@ -16,6 +16,8 @@ featured: false
 order: 3
 ---
 
-Granada does not end in 1492: another story begins there. This route looks at the city after the Christian conquest and its symbolic role in the opening toward the New World.
+Granada does not end in 1492: another story begins. This tour explores the city after the Christian conquest and its symbolic role in opening the way to the New World.
 
-We walk through the historic center to connect power, memory, religion, trade and urban transformation in the sixteenth century.
+We will connect power, memory, religion, trade and urban transformation in the 16th century.
+
+We will walk through the former Jewish quarter and Granada’s historic centre, before discovering the Cathedral and the Royal Chapel, two essential places for understanding how the city changed after the Christian conquest.

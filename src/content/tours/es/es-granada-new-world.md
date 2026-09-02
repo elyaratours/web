@@ -18,4 +18,6 @@ order: 3
 
 Granada no termina en 1492: empieza otra historia. Esta ruta observa la ciudad tras la conquista cristiana y su papel simbolico en la apertura hacia el Nuevo Mundo.
 
-Recorremos espacios del centro historico para conectar poder, memoria, religion, comercio y transformacion urbana en el siglo XVI.
+Conectaremos poder, memoria, religion, comercio y transformacion urbana en el siglo XVI.
+
+Recorreremos la antigua judería y el centro histórico de Granada, para descubrir después la Catedral y la Capilla Real, dos espacios fundamentales para entender la transformación de la ciudad tras la conquista cristiana.
