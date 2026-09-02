@@ -31,7 +31,7 @@ export const localeConfig = {
     languages: 'Idiomas',
     backToTours: 'Volver a rutas',
     heroEyebrow: 'Rutas culturales en Granada',
-    heroTitle: 'Granada, más allá de la postal',
+    heroTitle: 'Granada, una historia en cada paso',
     heroText:
       'Tours privados y rutas a pie para descubrir la historia, los personajes y los rincones que dan sentido a la ciudad.',
     heroImageAlt: 'La Alhambra bajo nubes dramaticas vista desde el Albaicin',
@@ -75,9 +75,9 @@ export const localeConfig = {
     languages: 'Languages',
     backToTours: 'Back to tours',
     heroEyebrow: 'Cultural routes in Granada',
-    heroTitle: 'Granada, beyond the postcard',
+    heroTitle: 'Granada, a story in every step',
     heroText:
-      'Private tours and walking experiences that reveal the history, characters and hidden corners behind the city',
+      'Private tours and walking routes to discover the history, characters and corners that give meaning to the city.',
     heroImageAlt: 'The Alhambra beneath dramatic clouds from the Albaicin',
     footerIntro:
       'Private tours and walking routes to discover the Alhambra, the Albaicin and the historic city with a warm cultural perspective.',

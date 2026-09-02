@@ -118,13 +118,13 @@ The system SHALL display the approved Spanish and English hero title and body co
 
 #### Scenario: Spanish visitor sees approved hero copy
 - **WHEN** a visitor opens the Spanish home page at `/es/`
-- **THEN** the hero title displays `Granada, más allá de la postal`
+- **THEN** the hero title displays `Granada, una historia en cada paso`
 - **AND** the hero body displays `Tours privados y rutas a pie para descubrir la historia, los personajes y los rincones que dan sentido a la ciudad.`
 
 #### Scenario: English visitor sees approved hero copy
 - **WHEN** a visitor opens the English home page at `/en/`
-- **THEN** the hero title displays `Granada, beyond the postcard`
-- **AND** the hero body displays `Private tours and walking experiences that reveal the history, characters and hidden corners behind the city`
+- **THEN** the hero title displays `Granada, a story in every step`
+- **AND** the hero body displays `Private tours and walking routes to discover the history, characters and corners that give meaning to the city.`
 
 #### Scenario: Footer intro copy remains unchanged
 - **WHEN** a visitor views the footer after the localized hero copy update
