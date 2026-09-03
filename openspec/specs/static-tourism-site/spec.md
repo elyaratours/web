@@ -60,7 +60,7 @@ The system SHALL start reservations through email links to `elyaratours@gmail.co
 - **THEN** the system does not require account creation, payment processing, internal form submission, or internal checkout to start a reservation
 
 ### Requirement: Localized home reservation calendar
-The system SHALL display a localized reservation calendar on the Spanish and English home pages that presents scheduled tour availability for the next 2 months.
+The system SHALL display a localized reservation calendar on the Spanish and English home pages after the home tour catalog, presenting scheduled tour availability for the next 2 months.
 
 #### Scenario: Spanish visitor sees home reservation calendar
 - **WHEN** a visitor opens `/es/`
@@ -71,6 +71,11 @@ The system SHALL display a localized reservation calendar on the Spanish and Eng
 - **WHEN** a visitor opens `/en/`
 - **THEN** the system displays an English calendar section with scheduled availability for the next 2 months
 - **AND** English-language scheduled dates identify `The Soul of Granada` at 10:00
+
+#### Scenario: Visitor sees calendar after the tour catalog
+- **WHEN** a visitor opens a localized home page
+- **THEN** the system displays the reservation calendar after the home tour catalog
+- **AND** the calendar remains before the Tailor-made/Viajes a medida section and traveler reviews section
 
 #### Scenario: Visitor selects an available home calendar date
 - **WHEN** a visitor selects a date with scheduled availability on the localized home calendar
