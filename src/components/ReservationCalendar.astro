@@ -1,5 +1,5 @@
 ---
-import { CalendarDays, Clock, Mail, MapPinned } from '@lucide/astro';
+import { CalendarDays, ChevronLeft, ChevronRight, Clock, Mail, MapPinned } from '@lucide/astro';
 import { getReservationCalendarContent, type Locale } from '@/lib/i18n';
 import { calendarWeekdayLabels, getCalendarMonths, getScheduledDepartures } from '@/lib/schedule';
 import type { TourEntry } from '@/lib/tours';
@@ -16,6 +16,9 @@ const departures = getScheduledDepartures(tours, locale, tour);
 const months = getCalendarMonths(departures, locale);
 const departuresByDate = new Map<string, typeof departures>();
 const calendarId = `reservation-calendar-${locale}-${tour?.data.translationKey ?? 'home'}`;
+const firstMonthLabel = months[0]?.label ?? '';
+const previousMonthLabel = locale === 'es' ? 'Mes anterior' : 'Previous month';
+const nextMonthLabel = locale === 'es' ? 'Mes siguiente' : 'Next month';
 
 for (const departure of departures) {
   const dateDepartures = departuresByDate.get(departure.date) ?? [];
@@ -36,10 +39,36 @@ for (const departure of departures) {
       </div>
 
       <div class="card overflow-hidden p-4 sm:p-6 lg:p-8" data-reservation-calendar>
+        <div class="month-controls mb-5 items-center justify-between gap-4 rounded-[1.25rem] bg-alhambra-sand/70 p-3 sm:p-4">
+          <button
+            class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-alhambra-wine/30 bg-white text-alhambra-wine transition hover:border-alhambra-wine hover:bg-alhambra-wine hover:text-white focus:outline-none focus:ring-2 focus:ring-alhambra-wine focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-40"
+            type="button"
+            aria-label={previousMonthLabel}
+            data-month-nav="prev"
+          >
+            <ChevronLeft class="h-5 w-5" aria-hidden="true" />
+          </button>
+          <p class="font-serif text-2xl font-bold capitalize text-alhambra-night" aria-live="polite" data-current-month-label>{firstMonthLabel}</p>
+          <button
+            class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-alhambra-wine/30 bg-white text-alhambra-wine transition hover:border-alhambra-wine hover:bg-alhambra-wine hover:text-white focus:outline-none focus:ring-2 focus:ring-alhambra-wine focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-40"
+            type="button"
+            aria-label={nextMonthLabel}
+            data-month-nav="next"
+          >
+            <ChevronRight class="h-5 w-5" aria-hidden="true" />
+          </button>
+        </div>
+
         <div class="grid gap-6 lg:grid-cols-[minmax(0,1.1fr)_24rem] lg:items-start">
-          <div class="grid gap-5 md:grid-cols-2">
-            {months.map((month) => (
-              <article class="rounded-[1.5rem] border border-alhambra-clay/10 bg-white/80 p-4" aria-labelledby={`${calendarId}-${month.key}`}>
+          <div class="grid gap-5" data-calendar-months>
+            {months.map((month, index) => (
+              <article
+                class="rounded-[1.5rem] border border-alhambra-wine/10 bg-white/80 p-4"
+                aria-labelledby={`${calendarId}-${month.key}`}
+                data-calendar-month
+                data-month-index={index}
+                data-month-label={month.label}
+              >
                 <h3 id={`${calendarId}-${month.key}`} class="font-serif text-2xl font-bold capitalize text-alhambra-night">
                   {month.label}
                 </h3>
@@ -57,14 +86,14 @@ for (const departure of departures) {
 
                     return isAvailable ? (
                       <button
-                        class="calendar-day min-h-11 rounded-2xl border border-alhambra-clay/30 bg-alhambra-clay/10 text-sm font-black text-alhambra-night transition hover:border-alhambra-clay hover:bg-alhambra-clay hover:text-white focus:outline-none focus:ring-2 focus:ring-alhambra-clay focus:ring-offset-2"
+                        class="calendar-day min-h-11 rounded-2xl border border-alhambra-wine/30 bg-alhambra-wine/10 text-sm font-black text-alhambra-night transition hover:border-alhambra-wine hover:bg-alhambra-wine hover:text-white focus:outline-none focus:ring-2 focus:ring-alhambra-wine focus:ring-offset-2"
                         type="button"
                         aria-label={`${day.dayNumber}. ${dayLabel}`}
                         aria-pressed="false"
                         data-calendar-day={day.date}
                       >
                         <span>{day.dayNumber}</span>
-                        <span class="mx-auto mt-1 block h-1.5 w-1.5 rounded-full bg-alhambra-clay" aria-hidden="true" />
+                        <span class="mx-auto mt-1 block h-1.5 w-1.5 rounded-full bg-alhambra-wine" aria-hidden="true" />
                       </button>
                     ) : (
                       <span
@@ -99,19 +128,19 @@ for (const departure of departures) {
                 <div class="grid gap-3" data-departure-card={date}>
                   {dateDepartures.map((departure) => (
                     <article class="rounded-[1.25rem] border border-white/10 bg-white/95 p-4 text-alhambra-night">
-                      <p class="text-sm font-black text-alhambra-clay capitalize">{departure.dateLabel}</p>
+                      <p class="text-sm font-black text-alhambra-wine capitalize">{departure.dateLabel}</p>
                       <h4 class="mt-2 font-serif text-xl font-bold">{departure.tour.data.title}</h4>
                       <div class="mt-3 grid gap-2 text-sm text-slate-700">
                         <p class="flex items-center gap-2">
-                          <Clock class="h-4 w-4 text-alhambra-clay" aria-hidden="true" />
+                          <Clock class="h-4 w-4 text-alhambra-wine" aria-hidden="true" />
                           {departure.time} · {copy.language}: {departure.language}
                         </p>
-                        <a class="flex items-center gap-2 font-bold text-alhambra-clay hover:text-alhambra-night" href={departure.tourPath}>
+                        <a class="flex items-center gap-2 font-bold text-alhambra-wine hover:text-alhambra-night" href={departure.tourPath}>
                           <MapPinned class="h-4 w-4" aria-hidden="true" />
                           {copy.viewTour}
                         </a>
                       </div>
-                      <a class="btn-primary mt-4 w-full" href={departure.reservationUrl}>
+                      <a class="mt-4 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-full bg-alhambra-wine px-5 py-3 text-center text-sm font-bold text-white shadow-warm transition hover:-translate-y-0.5 hover:bg-alhambra-night focus:outline-none focus:ring-2 focus:ring-alhambra-wine focus:ring-offset-2" href={departure.reservationUrl}>
                         <Mail class="h-4 w-4" aria-hidden="true" />
                         {copy.reserveDate}
                       </a>
@@ -131,14 +160,44 @@ for (const departure of departures) {
   for (const calendar of document.querySelectorAll('[data-reservation-calendar]')) {
     const buttons = Array.from(calendar.querySelectorAll<HTMLButtonElement>('[data-calendar-day]'));
     const cards = Array.from(calendar.querySelectorAll<HTMLElement>('[data-departure-card]'));
-    const selectDate = (date: string) => {
+    const months = Array.from(calendar.querySelectorAll<HTMLElement>('[data-calendar-month]'));
+    const monthLabel = calendar.querySelector<HTMLElement>('[data-current-month-label]');
+    const previousButton = calendar.querySelector<HTMLButtonElement>('[data-month-nav="prev"]');
+    const nextButton = calendar.querySelector<HTMLButtonElement>('[data-month-nav="next"]');
+    let activeMonthIndex = 0;
+
+    const selectDate = (date?: string) => {
       for (const button of buttons) {
         button.setAttribute('aria-pressed', String(button.dataset.calendarDay === date));
       }
 
       for (const card of cards) {
-        card.hidden = card.dataset.departureCard !== date;
+        card.hidden = !date || card.dataset.departureCard !== date;
       }
+    };
+
+    const showMonth = (index: number) => {
+      activeMonthIndex = Math.min(Math.max(index, 0), months.length - 1);
+
+      for (const month of months) {
+        month.hidden = Number(month.dataset.monthIndex) !== activeMonthIndex;
+      }
+
+      const activeMonth = months[activeMonthIndex];
+
+      if (monthLabel && activeMonth?.dataset.monthLabel) {
+        monthLabel.textContent = activeMonth.dataset.monthLabel;
+      }
+
+      if (previousButton) {
+        previousButton.disabled = activeMonthIndex === 0;
+      }
+
+      if (nextButton) {
+        nextButton.disabled = activeMonthIndex === months.length - 1;
+      }
+
+      selectDate(activeMonth?.querySelector<HTMLButtonElement>('[data-calendar-day]')?.dataset.calendarDay);
     };
 
     calendar.classList.add('is-enhanced');
@@ -151,20 +210,30 @@ for (const departure of departures) {
       });
     }
 
-    if (buttons[0]?.dataset.calendarDay) {
-      selectDate(buttons[0].dataset.calendarDay);
-    }
+    previousButton?.addEventListener('click', () => showMonth(activeMonthIndex - 1));
+    nextButton?.addEventListener('click', () => showMonth(activeMonthIndex + 1));
+
+    showMonth(0);
   }
 </script>
 
 <style>
+  .month-controls {
+    display: none;
+  }
+
+  .is-enhanced .month-controls {
+    display: flex;
+  }
+
+  .is-enhanced [data-calendar-month][hidden],
   .is-enhanced [data-departure-card][hidden] {
     display: none;
   }
 
   .calendar-day[aria-pressed='true'] {
-    background: #9d4f2e;
-    border-color: #9d4f2e;
+    background: #8a1538;
+    border-color: #8a1538;
     color: white;
   }
 

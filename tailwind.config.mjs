@@ -10,6 +10,7 @@ export default {
           night: '#14213d',
           sand: '#f5ead8',
           olive: '#6f7d46',
+          wine: '#8a1538',
         },
       },
       fontFamily: {
