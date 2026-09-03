@@ -1,6 +1,7 @@
 ---
 import { ArrowLeft, Clock, Languages, Mail, Ticket } from '@lucide/astro';
 import { getCollection, render } from 'astro:content';
+import ReservationCalendar from '@/components/ReservationCalendar.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { getLocaleConfig, type Locale } from '@/lib/i18n';
 import { createTourJsonLd } from '@/lib/seo';
@@ -24,6 +25,7 @@ const relatedLocales = await getCollection('tours', ({ data }) => {
 });
 const alternates = relatedLocales.map((item) => ({ locale: item.data.locale as Locale, path: getTourPath(item) }));
 const jsonLd = createTourJsonLd(tour, site);
+const localizedTours = await getPublishedTours(tour.data.locale);
 ---
 
 <BaseLayout
@@ -92,4 +94,6 @@ const jsonLd = createTourJsonLd(tour, site);
       </aside>
     </div>
   </article>
+
+  <ReservationCalendar locale={tour.data.locale} tours={localizedTours} tour={tour} />
 </BaseLayout>

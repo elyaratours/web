@@ -4,7 +4,7 @@ translationKey: granada-viewpoints-legends
 title: "Granada Viewpoints and Legends"
 routeSlug: "granada-viewpoints-legends"
 duration: "2.5 hours"
-price: "From 15 EUR"
+price: "From 12 EUR"
 languages:
   - "English"
   - "Spanish"

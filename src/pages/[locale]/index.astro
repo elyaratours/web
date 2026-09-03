@@ -1,5 +1,6 @@
 ---
 import { ArrowRight, Landmark, Mail, MapPinned } from '@lucide/astro';
+import ReservationCalendar from '@/components/ReservationCalendar.astro';
 import TailorMadeHomeSection from '@/components/TailorMadeHomeSection.astro';
 import TourCard from '@/components/TourCard.astro';
 import TravelerReviewsMosaic from '@/components/TravelerReviewsMosaic.astro';
@@ -70,6 +71,8 @@ const alternates = locales.map((item) => ({ locale: item, path: `/${item}/` }));
       </div>
     </div>
   </section>
+
+  <ReservationCalendar locale={locale} tours={tours} />
 
   <section class="section-shell py-8 sm:py-12" id="tours">
     <div class="mb-8 max-w-3xl">

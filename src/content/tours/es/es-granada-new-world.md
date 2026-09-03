@@ -4,7 +4,7 @@ translationKey: granada-new-world
 title: "1492 Nuevo Orden Mundial"
 routeSlug: "granada-nuevo-mundo"
 duration: "2.5 horas"
-price: "Desde 18 EUR"
+price: "Desde 12 EUR"
 languages:
   - "Espanol"
   - "English"

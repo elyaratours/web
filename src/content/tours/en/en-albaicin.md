@@ -4,7 +4,7 @@ translationKey: albaicin
 title: "The Soul of Granada"
 routeSlug: "albaicin"
 duration: "3 hours"
-price: "From 20 EUR"
+price: "From 15 EUR"
 languages:
   - "English"
   - "Spanish"

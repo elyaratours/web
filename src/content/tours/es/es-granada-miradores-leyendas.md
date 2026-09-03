@@ -4,7 +4,7 @@ translationKey: granada-viewpoints-legends
 title: "Granada entre miradores y leyendas"
 routeSlug: "granada-miradores-leyendas"
 duration: "2.5 horas"
-price: "Desde 15 EUR"
+price: "Desde 12 EUR"
 languages:
   - "Espanol"
   - "English"

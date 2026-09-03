@@ -155,6 +155,37 @@ export const contactContent = {
   }
 >;
 
+export const reservationCalendarContent = {
+  es: {
+    eyebrow: 'Proximas fechas',
+    title: 'Calendario de reservas',
+    intro: 'Consulta las salidas programadas de los proximos 2 meses y escribe por email para reservar tu plaza.',
+    tourTitle: 'Proximas salidas',
+    dateSelected: 'Fecha seleccionada',
+    availableDate: 'Fecha disponible',
+    noAvailability: 'No hay salidas programadas para esta fecha.',
+    viewTour: 'Ver ruta',
+    reserveDate: 'Reservar esta fecha',
+    at: 'a las',
+    route: 'Ruta',
+    language: 'Idioma',
+  },
+  en: {
+    eyebrow: 'Upcoming dates',
+    title: 'Booking calendar',
+    intro: 'Check the scheduled departures for the next 2 months and send an email to reserve your place.',
+    tourTitle: 'Upcoming departures',
+    dateSelected: 'Selected date',
+    availableDate: 'Available date',
+    noAvailability: 'There are no scheduled departures for this date.',
+    viewTour: 'View tour',
+    reserveDate: 'Reserve this date',
+    at: 'at',
+    route: 'Tour',
+    language: 'Language',
+  },
+} satisfies Record<Locale, Record<string, string>>;
+
 export const tailorMadeContent = {
   es: {
     routeSlug: 'viajes-a-medida',
@@ -297,6 +328,10 @@ export function getTailorMadeContent(locale: Locale) {
 
 export function getTailorMadePath(locale: Locale) {
   return `/${locale}/${tailorMadeContent[locale].routeSlug}/`;
+}
+
+export function getReservationCalendarContent(locale: Locale) {
+  return reservationCalendarContent[locale];
 }
 
 export function getEmailReservationUrl() {

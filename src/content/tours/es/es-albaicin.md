@@ -4,7 +4,7 @@ translationKey: albaicin
 title: "El alma de Granada"
 routeSlug: "albaicin"
 duration: "3 horas"
-price: "Desde 20 EUR"
+price: "Desde 15 EUR"
 languages:
   - "Espanol"
   - "English"
