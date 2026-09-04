@@ -11,6 +11,8 @@ languages:
 image: "/images/almagranada.jpg"
 imageAlt: "Narrow Albaicin lane with white houses"
 reservationUrl: "mailto:elyaratours@gmail.com?subject=The%20Soul%20of%20Granada"
+meetingPoint: "Plaza del Carmen, next to the City Hall"
+endingPoint: "Plaza Nueva"
 seoDescription: "Guided Albaicin walking route in Granada with viewpoints, Moorish history, quiet lanes and local atmosphere beyond the busiest paths."
 featured: true
 order: 2

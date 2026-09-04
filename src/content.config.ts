@@ -15,6 +15,8 @@ const tours = defineCollection({
     image: z.string().startsWith('/images/'),
     imageAlt: z.string().min(1),
     reservationUrl: z.url(),
+    meetingPoint: z.string().min(1).optional(),
+    endingPoint: z.string().min(1).optional(),
     seoDescription: z.string().min(50),
     featured: z.boolean().default(false),
     order: z.number().default(100),

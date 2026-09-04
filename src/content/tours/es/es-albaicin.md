@@ -11,6 +11,8 @@ languages:
 image: "/images/almagranada.jpg"
 imageAlt: "Calle estrecha del Albaicin con casas blancas"
 reservationUrl: "mailto:elyaratours@gmail.com?subject=El%20alma%20de%20Granada"
+meetingPoint: "Plaza del Carmen, junto al Ayuntamiento"
+endingPoint: "Plaza Nueva"
 seoDescription: "La forma más completa de descubrir Granada a través de los barrios, historias y culturas que han dado forma a su identidad."
 featured: true
 order: 2

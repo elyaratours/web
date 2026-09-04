@@ -26,6 +26,10 @@ const relatedLocales = await getCollection('tours', ({ data }) => {
 const alternates = relatedLocales.map((item) => ({ locale: item.data.locale as Locale, path: getTourPath(item) }));
 const jsonLd = createTourJsonLd(tour, site);
 const localizedTours = await getPublishedTours(tour.data.locale);
+const routePointLabels =
+  tour.data.locale === 'es'
+    ? { meetingPoint: 'Punto de encuentro', endingPoint: 'Final de la ruta' }
+    : { meetingPoint: 'Meeting point', endingPoint: 'End of the route' };
 ---
 
 <BaseLayout
@@ -78,10 +82,27 @@ const localizedTours = await getPublishedTours(tour.data.locale);
     </div>
 
     <div class="mt-10 grid gap-6 sm:mt-12 lg:grid-cols-[minmax(0,1fr)_22rem] lg:items-start">
-      <div class="card order-2 p-5 sm:p-8 lg:order-none">
-        <div class="prose prose-slate max-w-none prose-headings:font-serif prose-headings:text-alhambra-night prose-a:text-alhambra-clay">
-          <Content />
+      <div class="order-2 grid gap-4 lg:order-none">
+        <div class="card p-5 sm:p-8">
+          <div class="prose prose-slate max-w-none prose-headings:font-serif prose-headings:text-alhambra-night prose-a:text-alhambra-clay">
+            <Content />
+          </div>
         </div>
+
+        {tour.data.meetingPoint && tour.data.endingPoint && (
+          <div class="card p-5 text-sm leading-7 text-slate-700 sm:p-6">
+            <dl class="grid gap-3">
+              <div>
+                <dt class="inline font-bold text-alhambra-night">{routePointLabels.meetingPoint}:</dt>
+                <dd class="inline"> {tour.data.meetingPoint}</dd>
+              </div>
+              <div>
+                <dt class="inline font-bold text-alhambra-night">{routePointLabels.endingPoint}:</dt>
+                <dd class="inline"> {tour.data.endingPoint}</dd>
+              </div>
+            </dl>
+          </div>
+        )}
       </div>
       <aside class="card order-1 p-5 sm:p-6 lg:sticky lg:top-28 lg:order-none">
         <p class="eyebrow">{copy.reserve}</p>
