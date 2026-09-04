@@ -41,6 +41,6 @@ const fullTitle = `${title} | ${siteName}`;
 {alternates.map((alternate) => (
   <link rel="alternate" hreflang={getLocaleConfig(alternate.locale).htmlLang} href={absoluteUrl(alternate.path, site)} />
 ))}
-<link rel="alternate" hreflang="x-default" href={absoluteUrl('/', site)} />
+<link rel="alternate" hreflang="x-default" href={absoluteUrl('/es/', site)} />
 <link rel="icon" href="/images/elyara-favicon.png" type="image/png" />
 {jsonLd && <script type="application/ld+json" is:inline set:html={JSON.stringify(jsonLd)} />}

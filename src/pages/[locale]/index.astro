@@ -18,7 +18,7 @@ const tours = await getPublishedTours(locale);
 const alternates = locales.map((item) => ({ locale: item, path: `/${item}/` }));
 ---
 
-<BaseLayout title={copy.heroTitle} description={copy.metaHome} locale={locale} canonicalPath={`/${locale}/`} alternates={alternates}>
+<BaseLayout title={copy.heroTitle} description={copy.metaHome} locale={locale} canonicalPath={`/${locale}/`} image="/images/alhambra-clouds.jpeg" alternates={alternates}>
   <section class="section-shell grid gap-8 py-10 sm:py-16 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:py-24">
     <div>
       <p class="eyebrow">{copy.heroEyebrow}</p>
