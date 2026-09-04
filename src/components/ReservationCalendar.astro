@@ -1,6 +1,6 @@
 ---
 import { CalendarDays, ChevronLeft, ChevronRight, Clock, Mail, MapPinned } from '@lucide/astro';
-import { getReservationCalendarContent, type Locale } from '@/lib/i18n';
+import { contactEmail, getReservationCalendarContent, type Locale } from '@/lib/i18n';
 import { calendarWeekdayLabels, getCalendarMonths, getScheduledDepartures } from '@/lib/schedule';
 import type { TourEntry } from '@/lib/tours';
 
@@ -144,6 +144,7 @@ for (const departure of departures) {
                         <Mail class="h-4 w-4" aria-hidden="true" />
                         {copy.reserveDate}
                       </a>
+                      <p class="mt-3 select-all text-center text-sm font-bold text-alhambra-clay">{contactEmail}</p>
                     </article>
                   ))}
                 </div>

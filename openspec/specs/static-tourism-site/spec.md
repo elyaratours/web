@@ -64,6 +64,10 @@ The system SHALL start reservations through email links to `elyaratours@gmail.co
 - **THEN** the system opens a `mailto:elyaratours@gmail.com` link with prefilled subject or body text containing the selected tour name, date, time, and language
 - **AND** the email body prompts the visitor to provide at least name and number of people
 
+#### Scenario: Visitor sees a scheduled calendar reservation action
+- **WHEN** a visitor views a scheduled-date reservation card in the home or tour detail reservation calendar
+- **THEN** the system displays `elyaratours@gmail.com` directly below the `Reservar esta fecha` or `Reserve this date` action so the address can be copied directly
+
 #### Scenario: Visitor completes no internal checkout
 - **WHEN** a visitor browses tour pages or scheduled calendar availability
 - **THEN** the system does not require account creation, payment processing, internal form submission, or internal checkout to start a reservation
