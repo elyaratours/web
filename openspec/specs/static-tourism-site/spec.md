@@ -45,10 +45,19 @@ The system SHALL start reservations through email links to `elyaratours@gmail.co
 - **WHEN** a visitor activates a general reservation call to action that is not tied to a concrete tour or scheduled date
 - **THEN** the system opens a clean `mailto:elyaratours@gmail.com` link without prefilled subject or body text
 
+#### Scenario: Visitor sees a general home reserve action
+- **WHEN** a visitor views the localized home hero reservation call to action
+- **THEN** the system displays `elyaratours@gmail.com` next to the reservation action so the address can be copied directly
+
 #### Scenario: Visitor selects a concrete tour reserve action
 - **WHEN** a visitor activates a reservation call to action for a specific published tour that is not tied to a scheduled calendar date
 - **THEN** the system opens a `mailto:elyaratours@gmail.com` link with a prefilled subject containing only the selected tour name
 - **AND** the system does not prefill dates, group size, number of people, language, itinerary details, or body text
+- **AND** the system does not force the email link to open in a new browser tab or window
+
+#### Scenario: Visitor sees a concrete tour reserve action
+- **WHEN** a visitor views a published tour detail page reservation call to action
+- **THEN** the system displays `elyaratours@gmail.com` next to the reservation action so the address can be copied directly
 
 #### Scenario: Visitor selects a scheduled calendar reservation action
 - **WHEN** a visitor activates a reservation call to action for a scheduled calendar date
