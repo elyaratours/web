@@ -13,6 +13,11 @@ imageAlt: "Narrow Albaicin lane with white houses"
 reservationUrl: "mailto:elyaratours@gmail.com?subject=The%20Soul%20of%20Granada"
 meetingPoint: "Plaza del Carmen, next to the City Hall"
 endingPoint: "Plaza Nueva"
+faq:
+  - question: "Is this route suitable for a first visit to Granada?"
+    answer: "Yes. The route helps connect neighborhoods, viewpoints and local history so you can understand the city from your first walk."
+  - question: "Does the Albaicin route involve many hills?"
+    answer: "The Albaicin has slopes, but the walk is planned with a comfortable pace, pauses and time to enjoy the neighborhood calmly."
 seoDescription: "Guided Albaicin walking route in Granada with viewpoints, Moorish history, quiet lanes and local atmosphere beyond the busiest paths."
 featured: true
 order: 2

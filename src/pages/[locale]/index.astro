@@ -5,8 +5,10 @@ import TailorMadeHomeSection from '@/components/TailorMadeHomeSection.astro';
 import TourCard from '@/components/TourCard.astro';
 import TravelerReviewsMosaic from '@/components/TravelerReviewsMosaic.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
-import { contactEmail, getEmailReservationUrl, getLocaleConfig, locales, type Locale } from '@/lib/i18n';
-import { getPublishedTours } from '@/lib/tours';
+import { contactEmail, getCommercialToursPath, getEmailReservationUrl, getLocaleConfig, locales, type Locale } from '@/lib/i18n';
+import { reviewMosaicItems } from '@/lib/reviews';
+import { createItemListJsonLd, createReviewJsonLd, productionSiteUrl } from '@/lib/seo';
+import { getPublishedTours, getTourPath } from '@/lib/tours';
 
 export function getStaticPaths() {
   return locales.map((locale) => ({ params: { locale }, props: { locale } }));
@@ -16,9 +18,23 @@ const { locale } = Astro.props as { locale: Locale };
 const copy = getLocaleConfig(locale);
 const tours = await getPublishedTours(locale);
 const alternates = locales.map((item) => ({ locale: item, path: `/${item}/` }));
+const site = Astro.site ?? new URL(productionSiteUrl);
+const reviewJsonLd = createReviewJsonLd(
+  reviewMosaicItems
+    .filter((item) => item.type === 'review')
+    .map((item) => ({ traveler: item.traveler, text: item.excerpt[locale], route: item.route[locale] })),
+);
+const jsonLd = [
+  createItemListJsonLd(
+    copy.allTours,
+    tours.map((tour) => ({ name: tour.data.title, path: getTourPath(tour) })),
+    site,
+  ),
+  ...(reviewJsonLd ?? []),
+];
 ---
 
-<BaseLayout title={copy.heroTitle} description={copy.metaHome} locale={locale} canonicalPath={`/${locale}/`} image="/images/alhambra-clouds.jpeg" alternates={alternates}>
+<BaseLayout title={copy.heroTitle} description={copy.metaHome} locale={locale} canonicalPath={`/${locale}/`} image="/images/alhambra-clouds.jpeg" imageAlt={copy.heroImageAlt} alternates={alternates} jsonLd={jsonLd}>
   <section class="section-shell grid gap-8 py-10 sm:py-16 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:py-24">
     <div>
       <p class="eyebrow">{copy.heroEyebrow}</p>
@@ -34,12 +50,13 @@ const alternates = locales.map((item) => ({ locale: item, path: `/${item}/` }));
         <a class="btn-secondary w-full sm:w-auto" href={getEmailReservationUrl()}>
           {copy.reserve}
         </a>
+        <a class="btn-secondary w-full sm:w-auto" href={getCommercialToursPath(locale)}>{copy.navPrivateTours}</a>
         <span class="select-all text-center text-sm font-bold text-alhambra-clay sm:text-left">{contactEmail}</span>
       </div>
     </div>
     <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
       <div class="card overflow-hidden p-3 sm:p-4">
-        <img src="/images/alhambra-clouds.jpeg" alt={copy.heroImageAlt} class="h-56 w-full rounded-[1.25rem] object-cover sm:h-72 sm:rounded-[1.5rem]" />
+        <img src="/images/alhambra-clouds.jpeg" alt={copy.heroImageAlt} width="1200" height="800" decoding="async" fetchpriority="high" class="h-56 w-full rounded-[1.25rem] object-cover sm:h-72 sm:rounded-[1.5rem]" />
       </div>
       <div class="card grid gap-4 p-5 sm:content-center sm:p-6">
         <div class="flex items-start gap-4">

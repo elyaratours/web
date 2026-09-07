@@ -11,6 +11,11 @@ languages:
 image: "/images/alhambra.jpg"
 imageAlt: "Nasrid courtyard in the Alhambra at sunset"
 reservationUrl: "mailto:elyaratours@gmail.com?subject=Alhambra%3A%20Symbols%2C%20Power%20and%20Beauty"
+faq:
+  - question: "How long is the Alhambra visit?"
+    answer: "The route lasts around 3 hours, with a pace designed to understand courtyards, palaces, gardens and symbols without rushing."
+  - question: "Can this visit be booked as a private tour?"
+    answer: "Yes. You can email us to check availability, language and details for your group."
 seoDescription: "Discover the Alhambra through its symbolism, architecture and the stories of power that shaped the Nasrid Kingdom, as you explore its palaces, courtyards and gardens."
 featured: true
 order: 1

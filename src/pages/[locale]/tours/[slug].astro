@@ -1,10 +1,12 @@
 ---
 import { ArrowLeft, Clock, Languages, Mail, Ticket } from '@lucide/astro';
 import { getCollection, render } from 'astro:content';
+import FaqSection from '@/components/FaqSection.astro';
 import ReservationCalendar from '@/components/ReservationCalendar.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
-import { contactEmail, getLocaleConfig, type Locale } from '@/lib/i18n';
-import { createTourJsonLd } from '@/lib/seo';
+import { getBlogPostPath, getPublishedBlogPosts } from '@/lib/blog';
+import { contactEmail, getCommercialToursPath, getContactPath, getLocaleConfig, getTailorMadePath, type Locale } from '@/lib/i18n';
+import { createBreadcrumbJsonLd, createFaqJsonLd, createTourJsonLd, productionSiteUrl } from '@/lib/seo';
 import { getPublishedTours, getTourPath, type TourEntry } from '@/lib/tours';
 
 export async function getStaticPaths() {
@@ -19,13 +21,26 @@ export async function getStaticPaths() {
 const { tour } = Astro.props as { tour: TourEntry };
 const copy = getLocaleConfig(tour.data.locale);
 const { Content } = await render(tour);
-const site = Astro.site ?? new URL('https://web-elyara.example');
+const site = Astro.site ?? new URL(productionSiteUrl);
 const relatedLocales = await getCollection('tours', ({ data }) => {
   return data.published !== false && data.translationKey === tour.data.translationKey;
 });
 const alternates = relatedLocales.map((item) => ({ locale: item.data.locale as Locale, path: getTourPath(item) }));
-const jsonLd = createTourJsonLd(tour, site);
 const localizedTours = await getPublishedTours(tour.data.locale);
+const relatedPosts = (await getPublishedBlogPosts(tour.data.locale)).filter((post) => post.data.relatedTours.includes(tour.data.translationKey));
+const faqJsonLd = createFaqJsonLd(tour.data.faq);
+const jsonLd = [
+  createTourJsonLd(tour, site),
+  createBreadcrumbJsonLd(
+    [
+      { name: tour.data.locale === 'es' ? 'Inicio' : 'Home', path: `/${tour.data.locale}/` },
+      { name: copy.allTours, path: `/${tour.data.locale}/#tours` },
+      { name: tour.data.title, path: getTourPath(tour) },
+    ],
+    site,
+  ),
+  faqJsonLd,
+].filter((item) => item !== undefined);
 const routePointLabels =
   tour.data.locale === 'es'
     ? { meetingPoint: 'Punto de encuentro', endingPoint: 'Final de la ruta' }
@@ -38,6 +53,7 @@ const routePointLabels =
   locale={tour.data.locale}
   canonicalPath={getTourPath(tour)}
   image={tour.data.image}
+  imageAlt={tour.data.imageAlt}
   alternates={alternates}
   jsonLd={jsonLd}
 >
@@ -77,7 +93,7 @@ const routePointLabels =
         </div>
       </div>
       <div class="card overflow-hidden p-3 sm:p-4">
-        <img src={tour.data.image} alt={tour.data.imageAlt} class="h-64 w-full rounded-[1.25rem] object-cover sm:h-[28rem] sm:rounded-[1.5rem]" />
+        <img src={tour.data.image} alt={tour.data.imageAlt} width="1200" height="800" decoding="async" fetchpriority="high" class="h-64 w-full rounded-[1.25rem] object-cover sm:h-[28rem] sm:rounded-[1.5rem]" />
       </div>
     </div>
 
@@ -103,6 +119,20 @@ const routePointLabels =
             </dl>
           </div>
         )}
+
+        <FaqSection title={tour.data.locale === 'es' ? 'Preguntas frecuentes' : 'Frequently asked questions'} entries={tour.data.faq} />
+
+        <div class="card p-5 text-sm leading-7 text-slate-700 sm:p-6">
+          <h2 class="font-serif text-2xl font-bold text-alhambra-night">{tour.data.locale === 'es' ? 'Sigue explorando Granada' : 'Keep exploring Granada'}</h2>
+          <div class="mt-4 flex flex-wrap gap-3 font-bold">
+            <a class="text-alhambra-clay hover:text-alhambra-night" href={getCommercialToursPath(tour.data.locale)}>{copy.navPrivateTours}</a>
+            <a class="text-alhambra-clay hover:text-alhambra-night" href={getTailorMadePath(tour.data.locale)}>{copy.navTailorMade}</a>
+            <a class="text-alhambra-clay hover:text-alhambra-night" href={getContactPath(tour.data.locale)}>{copy.navContact}</a>
+            {relatedPosts.slice(0, 2).map((post) => (
+              <a class="text-alhambra-clay hover:text-alhambra-night" href={getBlogPostPath(post)}>{post.data.title}</a>
+            ))}
+          </div>
+        </div>
       </div>
       <aside class="card order-1 p-5 sm:p-6 lg:sticky lg:top-28 lg:order-none">
         <p class="eyebrow">{copy.reserve}</p>

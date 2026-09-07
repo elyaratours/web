@@ -10,6 +10,7 @@ export const localeConfig = {
     navBlog: 'Cuaderno',
     navAbout: 'La experiencia',
     navTailorMade: 'Viajes a medida',
+    navPrivateTours: 'Tours privados',
     navContact: 'Contacto',
     footerContact: 'Contacto',
     reserve: 'Reservar por email',
@@ -54,6 +55,7 @@ export const localeConfig = {
     navBlog: 'Journal',
     navAbout: 'Experience',
     navTailorMade: 'Tailor-made',
+    navPrivateTours: 'Private tours',
     navContact: 'Contact',
     footerContact: 'Contact',
     reserve: 'Reserve by email',
@@ -116,6 +118,16 @@ export const contactContent = {
     imageAlt: 'Ilustracion acuarela de un cuaderno de viaje sobre Granada y la Alhambra',
     metaDescription:
       'Contacta con Elyara Tours Granada por email o Instagram para rutas privadas, viajes a medida y preguntas sobre tu visita a Granada.',
+    faq: [
+      {
+        question: 'Como puedo reservar una ruta en Granada?',
+        answer: 'Puedes escribir directamente a elyaratours@gmail.com indicando fechas, numero de personas, idioma y la ruta que te interesa.',
+      },
+      {
+        question: 'Puedo pedir una ruta privada o personalizada?',
+        answer: 'Si. Puedes solicitar una ruta privada, una consultoria de viaje o una propuesta a medida segun tu tiempo e intereses en Granada.',
+      },
+    ],
   },
   en: {
     routeSlug: 'contact',
@@ -134,6 +146,16 @@ export const contactContent = {
     imageAlt: 'Watercolor illustration of a Granada travel notebook and the Alhambra',
     metaDescription:
       'Contact Elyara Tours Granada by email or Instagram for private routes, tailor-made trip planning and questions about visiting Granada.',
+    faq: [
+      {
+        question: 'How can I book a route in Granada?',
+        answer: 'You can write directly to elyaratours@gmail.com with your dates, group size, preferred language and the route you are interested in.',
+      },
+      {
+        question: 'Can I request a private or custom route?',
+        answer: 'Yes. You can request a private route, a trip consultation or a tailor-made proposal based on your time and interests in Granada.',
+      },
+    ],
   },
 } satisfies Record<
   Locale,
@@ -152,6 +174,7 @@ export const contactContent = {
     footerLink: string;
     imageAlt: string;
     metaDescription: string;
+    faq: { question: string; answer: string }[];
   }
 >;
 
@@ -224,6 +247,16 @@ export const tailorMadeContent = {
     pageTitle: 'Viajes y rutas a medida en Granada',
     metaDescription:
       'Consultoria de viaje y rutas privadas personalizadas en Granada para organizar tu visita segun fechas, intereses, idioma y ritmo.',
+    faq: [
+      {
+        question: 'Que diferencia hay entre consultoria y ruta personalizada?',
+        answer: 'La consultoria te ayuda a ordenar el viaje antes de llegar. La ruta personalizada es una visita privada guiada por Granada creada alrededor de tus intereses.',
+      },
+      {
+        question: 'Como se confirma una propuesta a medida?',
+        answer: 'Primero nos escribes por email con fechas, numero de personas, idioma y prioridades. Despues ajustamos la idea y cerramos la reserva por correo.',
+      },
+    ],
   },
   en: {
     routeSlug: 'tailor-made-trips',
@@ -262,6 +295,16 @@ export const tailorMadeContent = {
     pageTitle: 'Tailor-made trips and routes in Granada',
     metaDescription:
       'Trip consultation and personalized private routes in Granada to shape your visit around dates, interests, language and pace.',
+    faq: [
+      {
+        question: 'What is the difference between consultation and a custom route?',
+        answer: 'Consultation helps you shape the trip before arrival. A custom route is a private guided visit through Granada built around your interests.',
+      },
+      {
+        question: 'How is a tailor-made proposal confirmed?',
+        answer: 'You first email us your dates, group size, preferred language and priorities. Then we adjust the idea and confirm the reservation by email.',
+      },
+    ],
   },
 } satisfies Record<
   Locale,
@@ -286,6 +329,128 @@ export const tailorMadeContent = {
     details: string[];
     pageTitle: string;
     metaDescription: string;
+    faq: { question: string; answer: string }[];
+  }
+>;
+
+export const commercialToursContent = {
+  es: {
+    routeSlug: 'tours-privados-granada',
+    pageTitle: 'Tours privados en Granada',
+    metaDescription:
+      'Tours privados y visitas guiadas en Granada con rutas culturales por la Alhambra, Albaicin, centro historico, miradores y viajes a medida.',
+    eyebrow: 'Tours privados en Granada',
+    title: 'Visitas guiadas privadas para entender Granada sin correr',
+    intro:
+      'Si buscas un tour privado en Granada con contexto historico, ritmo tranquilo y una mirada cultural, Elyara organiza rutas a pie para descubrir la ciudad con una guia cercana y flexible.',
+    image: '/images/Granada-main.jpeg',
+    imageAlt: 'Vista de Granada y la Alhambra para tours privados culturales',
+    primaryCta: 'Reservar un tour privado',
+    secondaryCta: 'Ver rutas disponibles',
+    sections: [
+      {
+        title: 'Rutas culturales para viajeros curiosos',
+        text: 'No planteamos la visita como una lista de monumentos. Conectamos barrios, simbolos, personajes y paisajes para que cada paseo tenga sentido.',
+      },
+      {
+        title: 'Idiomas, ritmo y enfoque flexible',
+        text: 'Puedes escribirnos para ajustar idioma, duracion, intereses del grupo o una combinacion de rutas por Granada.',
+      },
+      {
+        title: 'Reserva directa por email',
+        text: 'La reserva empieza por correo, sin formularios largos, pagos internos ni checkout. Te respondemos con una propuesta clara.',
+      },
+    ],
+    tourSectionTitle: 'Rutas que puedes reservar de forma privada',
+    tourSectionText: 'Estas rutas publicadas pueden servir como punto de partida para tu visita guiada privada en Granada.',
+    editorialTitle: 'Antes de venir a Granada',
+    editorialText: 'Lee historias y consejos del cuaderno para preparar mejor tu visita.',
+    tailorMadeTitle: 'Quieres algo mas personal?',
+    tailorMadeText: 'Tambien podemos disenar una ruta o consultoria de viaje a medida para tus fechas, intereses y ritmo.',
+    faq: [
+      {
+        question: 'Cuanto dura un tour privado en Granada?',
+        answer: 'Depende de la ruta. Muchas visitas duran entre 2 y 3 horas, pero podemos ajustar el ritmo y la duracion por email segun el grupo.',
+      },
+      {
+        question: 'Se pueden hacer tours privados en espanol e ingles?',
+        answer: 'Si. Elyara ofrece rutas en espanol e ingles. Indica el idioma preferido cuando escribas para reservar.',
+      },
+      {
+        question: 'Como se reserva una visita guiada privada?',
+        answer: 'Escribenos a elyaratours@gmail.com con fecha, numero de personas, idioma e intereses. Confirmamos disponibilidad y detalles por email.',
+      },
+    ],
+  },
+  en: {
+    routeSlug: 'private-tours-granada',
+    pageTitle: 'Private tours in Granada',
+    metaDescription:
+      'Private tours and guided visits in Granada with cultural walking routes through the Alhambra, Albaicin, historic center, viewpoints and tailor-made trips.',
+    eyebrow: 'Private tours in Granada',
+    title: 'Private guided visits to understand Granada without rushing',
+    intro:
+      'If you are looking for a private tour in Granada with historical context, a calm pace and a cultural perspective, Elyara designs walking routes with a warm and flexible guide.',
+    image: '/images/Granada-main.jpeg',
+    imageAlt: 'View of Granada and the Alhambra for private cultural tours',
+    primaryCta: 'Reserve a private tour',
+    secondaryCta: 'View available routes',
+    sections: [
+      {
+        title: 'Cultural routes for curious travelers',
+        text: 'The visit is not treated as a checklist of monuments. We connect neighborhoods, symbols, characters and landscapes so the walk makes sense.',
+      },
+      {
+        title: 'Flexible language, pace and focus',
+        text: 'You can write to adjust the language, duration, group interests or a combination of Granada routes.',
+      },
+      {
+        title: 'Direct booking by email',
+        text: 'Booking starts by email, without long forms, internal payments or checkout. You receive a clear proposal in response.',
+      },
+    ],
+    tourSectionTitle: 'Routes you can book privately',
+    tourSectionText: 'These published routes can be a starting point for your private guided visit in Granada.',
+    editorialTitle: 'Before you come to Granada',
+    editorialText: 'Read journal stories and tips to prepare your visit with more context.',
+    tailorMadeTitle: 'Want something more personal?',
+    tailorMadeText: 'We can also design a custom route or trip consultation around your dates, interests and pace.',
+    faq: [
+      {
+        question: 'How long does a private tour in Granada last?',
+        answer: 'It depends on the route. Many visits last between 2 and 3 hours, but pace and duration can be adjusted by email for your group.',
+      },
+      {
+        question: 'Can private tours be in English or Spanish?',
+        answer: 'Yes. Elyara offers routes in English and Spanish. Tell us your preferred language when you write to reserve.',
+      },
+      {
+        question: 'How do I book a private guided visit?',
+        answer: 'Write to elyaratours@gmail.com with your date, group size, language and interests. We confirm availability and details by email.',
+      },
+    ],
+  },
+} satisfies Record<
+  Locale,
+  {
+    routeSlug: string;
+    pageTitle: string;
+    metaDescription: string;
+    eyebrow: string;
+    title: string;
+    intro: string;
+    image: string;
+    imageAlt: string;
+    primaryCta: string;
+    secondaryCta: string;
+    sections: { title: string; text: string }[];
+    tourSectionTitle: string;
+    tourSectionText: string;
+    editorialTitle: string;
+    editorialText: string;
+    tailorMadeTitle: string;
+    tailorMadeText: string;
+    faq: { question: string; answer: string }[];
   }
 >;
 
@@ -328,6 +493,14 @@ export function getTailorMadeContent(locale: Locale) {
 
 export function getTailorMadePath(locale: Locale) {
   return `/${locale}/${tailorMadeContent[locale].routeSlug}/`;
+}
+
+export function getCommercialToursContent(locale: Locale) {
+  return commercialToursContent[locale];
+}
+
+export function getCommercialToursPath(locale: Locale) {
+  return `/${locale}/${commercialToursContent[locale].routeSlug}/`;
 }
 
 export function getReservationCalendarContent(locale: Locale) {

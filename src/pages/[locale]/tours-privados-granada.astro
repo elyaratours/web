@@ -1,0 +1,9 @@
+---
+import CommercialToursPage from '@/components/CommercialToursPage.astro';
+
+export function getStaticPaths() {
+  return [{ params: { locale: 'es' }, props: { locale: 'es' } }];
+}
+---
+
+<CommercialToursPage locale="es" />

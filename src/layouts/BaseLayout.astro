@@ -1,8 +1,8 @@
 ---
 import { Mail } from '@lucide/astro';
 import SeoHead from '@/components/SeoHead.astro';
-import { contactEmail, getContactContent, getContactPath, getEmailReservationUrl, getLocaleConfig, getTailorMadePath, instagramHandle, instagramUrl, locales, type Locale } from '@/lib/i18n';
-import { siteName } from '@/lib/seo';
+import { contactEmail, getCommercialToursPath, getContactContent, getContactPath, getEmailReservationUrl, getLocaleConfig, getTailorMadePath, instagramHandle, instagramUrl, locales, type Locale } from '@/lib/i18n';
+import { productionSiteUrl, siteName, type JsonLdInput } from '@/lib/seo';
 import '@/styles/global.css';
 
 interface AlternateLink {
@@ -16,8 +16,9 @@ interface Props {
   locale?: Locale;
   canonicalPath?: string;
   image?: string;
+  imageAlt?: string;
   alternates?: AlternateLink[];
-  jsonLd?: Record<string, unknown>;
+  jsonLd?: JsonLdInput;
   ogType?: 'website' | 'article';
   hideReserveCta?: boolean;
 }
@@ -28,6 +29,7 @@ const {
   locale = 'es',
   canonicalPath = Astro.url.pathname,
   image,
+  imageAlt,
   alternates = locales.map((item) => ({ locale: item, path: `/${item}/` })),
   jsonLd,
   ogType = 'website',
@@ -35,7 +37,7 @@ const {
 } = Astro.props;
 const copy = getLocaleConfig(locale);
 const contact = getContactContent(locale);
-const site = Astro.site ?? new URL('https://web-elyara.example');
+const site = Astro.site ?? new URL(productionSiteUrl);
 const otherLocale = locale === 'es' ? 'en' : 'es';
 ---
 
@@ -49,6 +51,7 @@ const otherLocale = locale === 'es' ? 'en' : 'es';
       locale={locale}
       site={site}
       image={image}
+      imageAlt={imageAlt}
       alternates={alternates}
       jsonLd={jsonLd}
       ogType={ogType}
@@ -58,11 +61,12 @@ const otherLocale = locale === 'es' ? 'en' : 'es';
     <header class="sticky top-0 z-40 border-b border-white/60 bg-alhambra-sand/90 backdrop-blur-xl">
       <nav class="section-shell flex min-h-16 flex-wrap items-center justify-between gap-3 py-2 sm:min-h-20 sm:py-0" aria-label="Primary navigation">
         <a href={`/${locale}/`} class="flex min-w-0 items-center gap-2 font-serif text-sm font-bold tracking-tight text-alhambra-night sm:gap-3 sm:text-2xl">
-          <img src="/images/elyara-header-logo.png" alt="" class="h-10 w-10 shrink-0 object-contain sm:h-12 sm:w-12" aria-hidden="true" />
+          <img src="/images/elyara-header-logo.png" alt="" width="48" height="48" decoding="async" class="h-10 w-10 shrink-0 object-contain sm:h-12 sm:w-12" aria-hidden="true" />
           <span class="truncate">{siteName}</span>
         </a>
         <div class="hidden items-center gap-5 text-sm font-bold text-alhambra-night lg:gap-7 md:flex">
           <a class="hover:text-alhambra-clay" href={`/${locale}/#tours`}>{copy.navTours}</a>
+          <a class="hover:text-alhambra-clay" href={getCommercialToursPath(locale)}>{copy.navPrivateTours}</a>
           <a class="hover:text-alhambra-clay" href={getTailorMadePath(locale)}>{copy.navTailorMade}</a>
           <a class="hover:text-alhambra-clay" href={`/${locale}/blog/`}>{copy.navBlog}</a>
           <a class="hover:text-alhambra-clay" href={`/${locale}/#experience`}>{copy.navAbout}</a>
@@ -76,6 +80,7 @@ const otherLocale = locale === 'es' ? 'en' : 'es';
           <div class="absolute right-0 top-full mt-3 w-[min(20rem,calc(100vw-2rem))] rounded-[1.5rem] border border-white/80 bg-white/95 p-3 text-sm font-bold text-alhambra-night shadow-warm backdrop-blur-xl">
             <div class="grid gap-1">
               <a class="rounded-2xl px-4 py-3 hover:bg-alhambra-sand" href={`/${locale}/#tours`}>{copy.navTours}</a>
+              <a class="rounded-2xl px-4 py-3 hover:bg-alhambra-sand" href={getCommercialToursPath(locale)}>{copy.navPrivateTours}</a>
               <a class="rounded-2xl px-4 py-3 hover:bg-alhambra-sand" href={getTailorMadePath(locale)}>{copy.navTailorMade}</a>
               <a class="rounded-2xl px-4 py-3 hover:bg-alhambra-sand" href={`/${locale}/blog/`}>{copy.navBlog}</a>
               <a class="rounded-2xl px-4 py-3 hover:bg-alhambra-sand" href={`/${locale}/#experience`}>{copy.navAbout}</a>
@@ -126,6 +131,8 @@ const otherLocale = locale === 'es' ? 'en' : 'es';
         </div>
         <div class="flex flex-wrap gap-3 text-sm font-bold">
           <a href={`/${locale}/blog/`} class="hover:text-alhambra-sand">{copy.navBlog}</a>
+          <span class="text-white/30">/</span>
+          <a href={getCommercialToursPath(locale)} class="hover:text-alhambra-sand">{copy.navPrivateTours}</a>
           <span class="text-white/30">/</span>
           <a href="/es/" class="hover:text-alhambra-sand">ES</a>
           <span class="text-white/30">/</span>

@@ -4,8 +4,8 @@ import { render } from 'astro:content';
 import TourCard from '@/components/TourCard.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { getBlogAlternates, getBlogPostPath, getPublishedBlogPosts, getRelatedToursForPost, type BlogEntry } from '@/lib/blog';
-import { getBlogCategoryLabel, getEmailReservationUrl, getLocaleConfig } from '@/lib/i18n';
-import { createArticleJsonLd } from '@/lib/seo';
+import { getBlogCategoryLabel, getCommercialToursPath, getEmailReservationUrl, getLocaleConfig } from '@/lib/i18n';
+import { createArticleJsonLd, createBreadcrumbJsonLd, productionSiteUrl } from '@/lib/seo';
 
 export async function getStaticPaths() {
   const posts = await getPublishedBlogPosts();
@@ -19,10 +19,20 @@ export async function getStaticPaths() {
 const { post } = Astro.props as { post: BlogEntry };
 const copy = getLocaleConfig(post.data.locale);
 const { Content } = await render(post);
-const site = Astro.site ?? new URL('https://web-elyara.example');
+const site = Astro.site ?? new URL(productionSiteUrl);
 const alternates = await getBlogAlternates(post);
 const relatedTours = await getRelatedToursForPost(post);
-const jsonLd = createArticleJsonLd(post, site);
+const jsonLd = [
+  createArticleJsonLd(post, site),
+  createBreadcrumbJsonLd(
+    [
+      { name: post.data.locale === 'es' ? 'Inicio' : 'Home', path: `/${post.data.locale}/` },
+      { name: copy.blogEyebrow, path: `/${post.data.locale}/blog/` },
+      { name: post.data.title, path: getBlogPostPath(post) },
+    ],
+    site,
+  ),
+];
 const date = new Intl.DateTimeFormat(copy.htmlLang, { dateStyle: 'long' }).format(post.data.publishedDate);
 const imageStyle = post.data.imagePosition ? `object-position: ${post.data.imagePosition};` : undefined;
 ---
@@ -33,6 +43,7 @@ const imageStyle = post.data.imagePosition ? `object-position: ${post.data.image
   locale={post.data.locale}
   canonicalPath={getBlogPostPath(post)}
   image={post.data.image}
+  imageAlt={post.data.imageAlt ?? post.data.title}
   alternates={alternates}
   jsonLd={jsonLd}
   ogType="article"
@@ -55,7 +66,7 @@ const imageStyle = post.data.imagePosition ? `object-position: ${post.data.image
       </div>
       {post.data.image && (
         <div class="card overflow-hidden p-3 sm:p-4">
-          <img src={post.data.image} alt={post.data.imageAlt ?? post.data.title} class="h-64 w-full rounded-[1.25rem] object-cover sm:h-[28rem] sm:rounded-[1.5rem]" style={imageStyle} />
+          <img src={post.data.image} alt={post.data.imageAlt ?? post.data.title} width="1200" height="800" decoding="async" fetchpriority="high" class="h-64 w-full rounded-[1.25rem] object-cover sm:h-[28rem] sm:rounded-[1.5rem]" style={imageStyle} />
         </div>
       )}
     </div>
@@ -74,6 +85,7 @@ const imageStyle = post.data.imagePosition ? `object-position: ${post.data.image
           <Mail class="h-4 w-4" aria-hidden="true" />
           {copy.reserve}
         </a>
+        <a class="btn-secondary mt-3 w-full" href={getCommercialToursPath(post.data.locale)}>{copy.navPrivateTours}</a>
       </aside>
     </div>
 

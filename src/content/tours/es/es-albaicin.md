@@ -13,6 +13,11 @@ imageAlt: "Calle estrecha del Albaicin con casas blancas"
 reservationUrl: "mailto:elyaratours@gmail.com?subject=El%20alma%20de%20Granada"
 meetingPoint: "Plaza del Carmen, junto al Ayuntamiento"
 endingPoint: "Plaza Nueva"
+faq:
+  - question: "Es una ruta adecuada para una primera visita a Granada?"
+    answer: "Si. La ruta ayuda a situar barrios, miradores e historia local para entender mejor la ciudad desde el primer paseo."
+  - question: "La ruta por el Albaicin tiene muchas cuestas?"
+    answer: "El Albaicin tiene pendientes, pero el recorrido se plantea con un ritmo caminable, pausas y tiempo para mirar el barrio con calma."
 seoDescription: "La forma más completa de descubrir Granada a través de los barrios, historias y culturas que han dado forma a su identidad."
 featured: true
 order: 2

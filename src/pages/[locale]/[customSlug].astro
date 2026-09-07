@@ -1,5 +1,6 @@
 ---
 import { ArrowLeft, CalendarDays, CircleCheck, Compass, Mail, Sparkles } from '@lucide/astro';
+import FaqSection from '@/components/FaqSection.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import {
   getLocaleConfig,
@@ -9,6 +10,7 @@ import {
   locales,
   type Locale,
 } from '@/lib/i18n';
+import { createBreadcrumbJsonLd, createFaqJsonLd, productionSiteUrl } from '@/lib/seo';
 
 export function getStaticPaths() {
   return locales.map((locale) => {
@@ -26,6 +28,17 @@ const copy = getLocaleConfig(locale);
 const content = getTailorMadeContent(locale);
 const emailUrl = getTailorMadeEmailUrl();
 const alternates = locales.map((item) => ({ locale: item, path: getTailorMadePath(item) }));
+const site = Astro.site ?? new URL(productionSiteUrl);
+const jsonLd = [
+  createBreadcrumbJsonLd(
+    [
+      { name: locale === 'es' ? 'Inicio' : 'Home', path: `/${locale}/` },
+      { name: content.pageTitle, path: getTailorMadePath(locale) },
+    ],
+    site,
+  ),
+  createFaqJsonLd(content.faq),
+].filter((item) => item !== undefined);
 ---
 
 <BaseLayout
@@ -34,7 +47,9 @@ const alternates = locales.map((item) => ({ locale: item, path: getTailorMadePat
   locale={locale}
   canonicalPath={getTailorMadePath(locale)}
   image="/images/mapa.png"
+  imageAlt={content.imageAlt}
   alternates={alternates}
+  jsonLd={jsonLd}
 >
   <article class="section-shell py-8 sm:py-12 lg:py-20">
     <a href={`/${locale}/#tailor-made`} class="inline-flex items-center gap-2 text-sm font-bold text-alhambra-clay hover:text-alhambra-night">
@@ -56,7 +71,7 @@ const alternates = locales.map((item) => ({ locale: item, path: getTailorMadePat
         </div>
       </div>
       <div class="card overflow-hidden p-3 sm:p-4">
-        <img src="/images/mapa.png" alt={content.imageAlt} class="h-64 w-full rounded-[1.25rem] object-cover sm:h-[28rem] sm:rounded-[1.5rem]" />
+        <img src="/images/mapa.png" alt={content.imageAlt} width="1200" height="800" decoding="async" fetchpriority="high" class="h-64 w-full rounded-[1.25rem] object-cover sm:h-[28rem] sm:rounded-[1.5rem]" />
       </div>
     </section>
 
@@ -122,6 +137,10 @@ const alternates = locales.map((item) => ({ locale: item, path: getTailorMadePat
         <Mail class="h-4 w-4" aria-hidden="true" />
         {content.cta}
       </a>
+    </section>
+
+    <section class="mt-10 sm:mt-12">
+      <FaqSection title={locale === 'es' ? 'Preguntas frecuentes' : 'Frequently asked questions'} entries={content.faq} />
     </section>
   </article>
 </BaseLayout>

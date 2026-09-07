@@ -3,7 +3,8 @@ import { BookOpen, Feather } from '@lucide/astro';
 import BlogCard from '@/components/BlogCard.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { getLocaleConfig, locales, type Locale } from '@/lib/i18n';
-import { getPublishedBlogPosts } from '@/lib/blog';
+import { getBlogPostPath, getPublishedBlogPosts } from '@/lib/blog';
+import { createItemListJsonLd, productionSiteUrl } from '@/lib/seo';
 
 export function getStaticPaths() {
   return locales.map((locale) => ({ params: { locale }, props: { locale } }));
@@ -13,9 +14,15 @@ const { locale } = Astro.props as { locale: Locale };
 const copy = getLocaleConfig(locale);
 const posts = await getPublishedBlogPosts(locale);
 const alternates = locales.map((item) => ({ locale: item, path: `/${item}/blog/` }));
+const site = Astro.site ?? new URL(productionSiteUrl);
+const jsonLd = createItemListJsonLd(
+  copy.blogTitle,
+  posts.map((post) => ({ name: post.data.title, path: getBlogPostPath(post) })),
+  site,
+);
 ---
 
-<BaseLayout title={copy.blogTitle} description={copy.blogIntro} locale={locale} canonicalPath={`/${locale}/blog/`} alternates={alternates}>
+<BaseLayout title={copy.blogTitle} description={copy.blogIntro} locale={locale} canonicalPath={`/${locale}/blog/`} alternates={alternates} jsonLd={jsonLd}>
   <section class="section-shell grid gap-8 py-10 sm:py-16 lg:grid-cols-[0.95fr_1.05fr] lg:items-end lg:py-24">
     <div>
       <p class="eyebrow">{copy.blogEyebrow}</p>
