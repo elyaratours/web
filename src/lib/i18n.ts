@@ -290,6 +290,7 @@ export const tailorMadeContent = {
       'Consultoria de viaje y rutas personalizadas para descubrir Granada sin ir corriendo ni seguir un itinerario generico.',
     cta: 'Disenar mi ruta',
     secondaryCta: 'Ver como funciona',
+    whatsappCta: 'Consultar por WhatsApp',
     consultationTitle: 'Consultoria de viaje',
     consultationText:
       'Ordenamos tu visita a Granada segun tus dias, prioridades, entradas, barrios, ritmos y dudas practicas antes de llegar.',
@@ -338,6 +339,7 @@ export const tailorMadeContent = {
       'Trip consultation and personalized routes to discover Granada without rushing or following a generic itinerary.',
     cta: 'Plan my route',
     secondaryCta: 'See how it works',
+    whatsappCta: 'Inquire by WhatsApp',
     consultationTitle: 'Trip consultation',
     consultationText:
       'We help organize your Granada visit around your days, priorities, tickets, neighborhoods, pace and practical questions before you arrive.',
@@ -386,6 +388,7 @@ export const tailorMadeContent = {
     homeText: string;
     cta: string;
     secondaryCta: string;
+    whatsappCta: string;
     consultationTitle: string;
     consultationText: string;
     routeTitle: string;
