@@ -14,6 +14,10 @@ relatedTours:
   - "albaicin"
   - "alhambra"
   - "granada-two-worlds"
+relatedLandings:
+  - "guided-visits-granada"
+  - "private-alhambra-tour"
+  - "albaicin-guided-walk"
 featured: true
 order: 0
 published: true

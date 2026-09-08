@@ -11,6 +11,12 @@ languages:
 image: "/images/2mundos.jpeg"
 imageAlt: "View from a window toward Granada gardens and historic rooftops"
 reservationUrl: "mailto:elyaratours@gmail.com?subject=Granada%20Between%20Two%20Worlds"
+relatedLandings: ["guided-visits-granada", "free-tour-granada"]
+faq:
+  - question: "What does Granada Between Two Worlds mean?"
+    answer: "The route explores the transition between Andalusi Granada and the Christian city, connecting memory, power, symbols and urban change."
+  - question: "Can the route be done in English?"
+    answer: "Yes. Tell us your preferred language when you write by WhatsApp or email so availability and details can be confirmed."
 seoDescription: "Historical Granada walking route between the Andalusi world and the Christian city, connecting memory, power and urban change."
 featured: false
 order: 5

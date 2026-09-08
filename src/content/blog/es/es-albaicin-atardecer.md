@@ -13,6 +13,9 @@ author: "Elyara Tours Granada"
 seoDescription: "Recomendaciones para pasear por el Albaicin de Granada al atardecer, con miradores, calles tranquilas y claves para disfrutar el barrio con calma."
 relatedTours:
   - "albaicin"
+relatedLandings:
+  - "albaicin-guided-walk"
+  - "free-tour-granada"
 featured: true
 order: 1
 published: true

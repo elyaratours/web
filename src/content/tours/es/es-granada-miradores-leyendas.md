@@ -11,6 +11,12 @@ languages:
 image: "/images/miradoresyleyendas.jpg"
 imageAlt: "Ilustracion de una calle del Albaicin con la Alhambra al fondo"
 reservationUrl: "mailto:elyaratours@gmail.com?subject=Granada%20entre%20miradores%20y%20leyendas"
+relatedLandings: ["guided-visits-granada", "free-tour-granada", "albaicin-guided-walk"]
+faq:
+  - question: "La ruta incluye vistas de la Alhambra?"
+    answer: "Si. El recorrido se plantea alrededor de miradores y rincones desde los que entender la relacion entre Granada, el Albaicin, el Sacromonte y la Alhambra."
+  - question: "Es una ruta adecuada para familias o grupos tranquilos?"
+    answer: "Si. Podemos ajustar el ritmo por WhatsApp o email para dejar tiempo a pausas, fotografias y preguntas durante el paseo."
 seoDescription: "Ruta por Granada entre miradores, leyendas y rincones del Albaicin y Sacromonte para descubrir historias populares y vistas memorables de la ciudad."
 featured: false
 order: 4

@@ -13,6 +13,9 @@ author: "Elyara Tours Granada"
 seoDescription: "Tips for walking through Granada's Albaicin at sunset, with viewpoints, quiet streets and a slower way to experience the historic neighborhood."
 relatedTours:
   - "albaicin"
+relatedLandings:
+  - "albaicin-guided-walk"
+  - "free-tour-granada"
 featured: true
 order: 1
 published: true

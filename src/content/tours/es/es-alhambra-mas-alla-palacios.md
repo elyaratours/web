@@ -11,6 +11,12 @@ languages:
 image: "/images/puerta-del-vino-01.jpg"
 imageAlt: "Patio nazari de la Alhambra al caer la tarde"
 reservationUrl: "mailto:elyaratours@gmail.com?subject=La%20Alhambra%20m%C3%A1s%20all%C3%A1%20de%20los%20palacios"
+relatedLandings: ["private-alhambra-tour", "guided-visits-granada"]
+faq:
+  - question: "Esta ruta entra en los palacios nazaries?"
+    answer: "La ruta se centra en comprender la Alhambra mas alla de sus espacios mas conocidos. Escribenos para confirmar enfoque, accesos y disponibilidad."
+  - question: "Para quien es recomendable esta visita?"
+    answer: "Es una buena opcion para quienes quieren entender paisaje, agua, poder y vida cotidiana en la Alhambra con una mirada cultural mas amplia."
 seoDescription: "Visita cultural para entender la Alhambra mas alla de sus palacios, explorando simbolos, paisaje, poder, agua y vida cotidiana."
 featured: false
 order: 6

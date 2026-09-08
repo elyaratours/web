@@ -15,7 +15,8 @@ faq:
   - question: "How long is the Alhambra visit?"
     answer: "The route lasts around 3 hours, with a pace designed to understand courtyards, palaces, gardens and symbols without rushing."
   - question: "Can this visit be booked as a private tour?"
-    answer: "Yes. You can email us to check availability, language and details for your group."
+    answer: "Yes. You can write by WhatsApp or email to check availability, language and details for your group."
+relatedLandings: ["private-alhambra-tour", "guided-visits-granada"]
 seoDescription: "Discover the Alhambra through its symbolism, architecture and the stories of power that shaped the Nasrid Kingdom, as you explore its palaces, courtyards and gardens."
 featured: true
 order: 1

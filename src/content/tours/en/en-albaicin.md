@@ -18,6 +18,7 @@ faq:
     answer: "Yes. The route helps connect neighborhoods, viewpoints and local history so you can understand the city from your first walk."
   - question: "Does the Albaicin route involve many hills?"
     answer: "The Albaicin has slopes, but the walk is planned with a comfortable pace, pauses and time to enjoy the neighborhood calmly."
+relatedLandings: ["albaicin-guided-walk", "guided-visits-granada", "free-tour-granada"]
 seoDescription: "Guided Albaicin walking route in Granada with viewpoints, Moorish history, quiet lanes and local atmosphere beyond the busiest paths."
 featured: true
 order: 2

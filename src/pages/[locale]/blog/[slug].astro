@@ -6,6 +6,7 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import { getBlogAlternates, getBlogPostPath, getPublishedBlogPosts, getRelatedToursForPost, type BlogEntry } from '@/lib/blog';
 import { getBlogCategoryLabel, getCommercialToursPath, getEmailReservationUrl, getLocaleConfig, getWhatsAppReservationUrl } from '@/lib/i18n';
 import { createArticleJsonLd, createBreadcrumbJsonLd, productionSiteUrl } from '@/lib/seo';
+import { getSeoLandingPath, getSeoLandingsByKeys } from '@/lib/seo-landings';
 
 export async function getStaticPaths() {
   const posts = await getPublishedBlogPosts();
@@ -22,6 +23,7 @@ const { Content } = await render(post);
 const site = Astro.site ?? new URL(productionSiteUrl);
 const alternates = await getBlogAlternates(post);
 const relatedTours = await getRelatedToursForPost(post);
+const relatedLandings = await getSeoLandingsByKeys(post.data.locale, post.data.relatedLandings);
 const jsonLd = [
   createArticleJsonLd(post, site),
   createBreadcrumbJsonLd(
@@ -47,6 +49,8 @@ const imageStyle = post.data.imagePosition ? `object-position: ${post.data.image
   alternates={alternates}
   jsonLd={jsonLd}
   ogType="article"
+  publishedTime={post.data.publishedDate}
+  modifiedTime={post.data.updatedDate ?? post.data.publishedDate}
 >
   <article class="section-shell py-8 sm:py-12 lg:py-20">
     <a href={`/${post.data.locale}/blog/`} class="inline-flex items-center gap-2 text-sm font-bold text-alhambra-clay hover:text-alhambra-night">
@@ -90,6 +94,9 @@ const imageStyle = post.data.imagePosition ? `object-position: ${post.data.image
           {copy.reserveEmail}
         </a>
         <a class="btn-secondary mt-3 w-full" href={getCommercialToursPath(post.data.locale)}>{copy.navPrivateTours}</a>
+        {relatedLandings.map((landing) => (
+          <a class="btn-secondary mt-3 w-full" href={getSeoLandingPath(landing)}>{landing.data.title}</a>
+        ))}
       </aside>
     </div>
 

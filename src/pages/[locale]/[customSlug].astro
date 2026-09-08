@@ -1,6 +1,7 @@
 ---
 import { ArrowLeft, CalendarDays, CircleCheck, Compass, Mail, MessageCircle, Sparkles } from '@lucide/astro';
 import FaqSection from '@/components/FaqSection.astro';
+import SeoLandingPage from '@/components/SeoLandingPage.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import {
   getLocaleConfig,
@@ -12,19 +13,32 @@ import {
   type Locale,
 } from '@/lib/i18n';
 import { createBreadcrumbJsonLd, createFaqJsonLd, productionSiteUrl } from '@/lib/seo';
+import { getPublishedSeoLandings, type SeoLandingEntry } from '@/lib/seo-landings';
 
-export function getStaticPaths() {
-  return locales.map((locale) => {
+type PageProps = { kind: 'tailorMade'; locale: Locale } | { kind: 'seoLanding'; landing: SeoLandingEntry };
+
+export async function getStaticPaths() {
+  const seoLandings = await getPublishedSeoLandings();
+  const tailorMadePaths = locales.map((locale) => {
     const content = getTailorMadeContent(locale);
 
     return {
       params: { locale, customSlug: content.routeSlug },
-      props: { locale },
+      props: { kind: 'tailorMade', locale },
     };
   });
+
+  return [
+    ...tailorMadePaths,
+    ...seoLandings.map((landing) => ({
+      params: { locale: landing.data.locale, customSlug: landing.data.routeSlug },
+      props: { kind: 'seoLanding', landing },
+    })),
+  ];
 }
 
-const { locale } = Astro.props as { locale: Locale };
+const props = Astro.props as PageProps;
+const locale = props.kind === 'tailorMade' ? props.locale : props.landing.data.locale;
 const copy = getLocaleConfig(locale);
 const content = getTailorMadeContent(locale);
 const emailUrl = getTailorMadeEmailUrl();
@@ -43,21 +57,22 @@ const jsonLd = [
 ].filter((item) => item !== undefined);
 ---
 
-<BaseLayout
-  title={content.pageTitle}
-  description={content.metaDescription}
-  locale={locale}
-  canonicalPath={getTailorMadePath(locale)}
-  image="/images/mapa.png"
-  imageAlt={content.imageAlt}
-  alternates={alternates}
-  jsonLd={jsonLd}
->
-  <article class="section-shell py-8 sm:py-12 lg:py-20">
-    <a href={`/${locale}/#tailor-made`} class="inline-flex items-center gap-2 text-sm font-bold text-alhambra-clay hover:text-alhambra-night">
-      <ArrowLeft class="h-4 w-4" aria-hidden="true" />
-      {copy.navTailorMade}
-    </a>
+{props.kind === 'seoLanding' ? <SeoLandingPage landing={props.landing} /> : (
+  <BaseLayout
+    title={content.pageTitle}
+    description={content.metaDescription}
+    locale={locale}
+    canonicalPath={getTailorMadePath(locale)}
+    image="/images/mapa.png"
+    imageAlt={content.imageAlt}
+    alternates={alternates}
+    jsonLd={jsonLd}
+  >
+    <article class="section-shell py-8 sm:py-12 lg:py-20">
+      <a href={`/${locale}/#tailor-made`} class="inline-flex items-center gap-2 text-sm font-bold text-alhambra-clay hover:text-alhambra-night">
+        <ArrowLeft class="h-4 w-4" aria-hidden="true" />
+        {copy.navTailorMade}
+      </a>
 
     <section class="mt-7 grid gap-8 sm:mt-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
       <div>
@@ -154,5 +169,6 @@ const jsonLd = [
     <section class="mt-10 sm:mt-12">
       <FaqSection title={locale === 'es' ? 'Preguntas frecuentes' : 'Frequently asked questions'} entries={content.faq} />
     </section>
-  </article>
-</BaseLayout>
+    </article>
+  </BaseLayout>
+)}

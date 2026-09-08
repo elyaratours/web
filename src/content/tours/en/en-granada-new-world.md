@@ -11,6 +11,12 @@ languages:
 image: "/images/1492-new-world-order.webp"
 imageAlt: "Granada and the New World tour artwork"
 reservationUrl: "mailto:elyaratours@gmail.com?subject=1492%20Granada%20and%20the%20New%20World"
+relatedLandings: ["guided-visits-granada"]
+faq:
+  - question: "What does this historic Granada route cover?"
+    answer: "The route connects historic Granada, the memory of 1492, the Christian city and places such as the Cathedral and Royal Chapel depending on the agreed route."
+  - question: "Can this route be booked privately?"
+    answer: "Yes. Write by WhatsApp or email with your date, group size and preferred language to check availability and adapt the focus."
 seoDescription: "Historical Granada walking route about the New World, the Christian city, the Royal Chapel and the urban changes of the sixteenth century."
 featured: false
 order: 3

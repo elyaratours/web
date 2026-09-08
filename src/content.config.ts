@@ -18,8 +18,31 @@ const tours = defineCollection({
     meetingPoint: z.string().min(1).optional(),
     endingPoint: z.string().min(1).optional(),
     faq: z.array(z.object({ question: z.string().min(1), answer: z.string().min(1) })).default([]),
+    relatedLandings: z.array(z.string().min(1)).default([]),
     seoDescription: z.string().min(50),
     featured: z.boolean().default(false),
+    order: z.number().default(100),
+    published: z.boolean().default(true),
+  }),
+});
+
+const seoLandings = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/seo-landings' }),
+  schema: z.object({
+    locale: z.enum(['es', 'en']),
+    translationKey: z.string().min(1),
+    title: z.string().min(1),
+    heading: z.string().min(1),
+    routeSlug: z.string().min(1),
+    intro: z.string().min(80),
+    seoDescription: z.string().min(50),
+    targetIntent: z.string().min(1),
+    image: z.string().startsWith('/images/'),
+    imageAlt: z.string().min(1),
+    relatedTours: z.array(z.string().min(1)).default([]),
+    relatedArticles: z.array(z.string().min(1)).default([]),
+    relatedLandings: z.array(z.string().min(1)).default([]),
+    faq: z.array(z.object({ question: z.string().min(1), answer: z.string().min(1) })).default([]),
     order: z.number().default(100),
     published: z.boolean().default(true),
   }),
@@ -42,10 +65,11 @@ const blog = defineCollection({
     author: z.string().min(1).default('Elyara Tours Granada'),
     seoDescription: z.string().min(50),
     relatedTours: z.array(z.string().min(1)).default([]),
+    relatedLandings: z.array(z.string().min(1)).default([]),
     featured: z.boolean().default(false),
     order: z.number().default(100),
     published: z.boolean().default(true),
   }),
 });
 
-export const collections = { tours, blog };
+export const collections = { tours, seoLandings, blog };

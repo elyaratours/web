@@ -7,6 +7,7 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import { getBlogPostPath, getPublishedBlogPosts } from '@/lib/blog';
 import { contactEmail, getCommercialToursPath, getContactPath, getLocaleConfig, getTailorMadePath, getTourWhatsAppReservationUrl, whatsappDisplayNumber, type Locale } from '@/lib/i18n';
 import { createBreadcrumbJsonLd, createFaqJsonLd, createTourJsonLd, productionSiteUrl } from '@/lib/seo';
+import { getSeoLandingPath, getSeoLandingsByKeys } from '@/lib/seo-landings';
 import { getPublishedTours, getTourPath, type TourEntry } from '@/lib/tours';
 
 export async function getStaticPaths() {
@@ -28,6 +29,7 @@ const relatedLocales = await getCollection('tours', ({ data }) => {
 const alternates = relatedLocales.map((item) => ({ locale: item.data.locale as Locale, path: getTourPath(item) }));
 const localizedTours = await getPublishedTours(tour.data.locale);
 const relatedPosts = (await getPublishedBlogPosts(tour.data.locale)).filter((post) => post.data.relatedTours.includes(tour.data.translationKey));
+const relatedSeoLandings = await getSeoLandingsByKeys(tour.data.locale, tour.data.relatedLandings);
 const faqJsonLd = createFaqJsonLd(tour.data.faq);
 const jsonLd = [
   createTourJsonLd(tour, site),
@@ -129,6 +131,9 @@ const whatsappReservationUrl = getTourWhatsAppReservationUrl(tour.data.locale, t
             <a class="text-alhambra-clay hover:text-alhambra-night" href={getCommercialToursPath(tour.data.locale)}>{copy.navPrivateTours}</a>
             <a class="text-alhambra-clay hover:text-alhambra-night" href={getTailorMadePath(tour.data.locale)}>{copy.navTailorMade}</a>
             <a class="text-alhambra-clay hover:text-alhambra-night" href={getContactPath(tour.data.locale)}>{copy.navContact}</a>
+            {relatedSeoLandings.map((landing) => (
+              <a class="text-alhambra-clay hover:text-alhambra-night" href={getSeoLandingPath(landing)}>{landing.data.title}</a>
+            ))}
             {relatedPosts.slice(0, 2).map((post) => (
               <a class="text-alhambra-clay hover:text-alhambra-night" href={getBlogPostPath(post)}>{post.data.title}</a>
             ))}

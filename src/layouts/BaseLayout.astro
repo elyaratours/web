@@ -2,7 +2,7 @@
 import { Mail, MessageCircle } from '@lucide/astro';
 import SeoHead from '@/components/SeoHead.astro';
 import { contactEmail, getCommercialToursPath, getContactContent, getContactPath, getEmailReservationUrl, getLocaleConfig, getTailorMadePath, getWhatsAppReservationUrl, instagramHandle, instagramUrl, locales, whatsappDisplayNumber, whatsappUrl, type Locale } from '@/lib/i18n';
-import { productionSiteUrl, siteName, type JsonLdInput } from '@/lib/seo';
+import { getImageDimensions, productionSiteUrl, siteName, type JsonLdInput } from '@/lib/seo';
 import '@/styles/global.css';
 
 interface AlternateLink {
@@ -17,9 +17,13 @@ interface Props {
   canonicalPath?: string;
   image?: string;
   imageAlt?: string;
+  imageWidth?: number;
+  imageHeight?: number;
   alternates?: AlternateLink[];
   jsonLd?: JsonLdInput;
   ogType?: 'website' | 'article';
+  publishedTime?: Date;
+  modifiedTime?: Date;
   hideReserveCta?: boolean;
 }
 
@@ -30,15 +34,20 @@ const {
   canonicalPath = Astro.url.pathname,
   image,
   imageAlt,
+  imageWidth,
+  imageHeight,
   alternates = locales.map((item) => ({ locale: item, path: `/${item}/` })),
   jsonLd,
   ogType = 'website',
+  publishedTime,
+  modifiedTime,
   hideReserveCta = false,
 } = Astro.props;
 const copy = getLocaleConfig(locale);
 const contact = getContactContent(locale);
 const site = Astro.site ?? new URL(productionSiteUrl);
 const otherLocale = locale === 'es' ? 'en' : 'es';
+const fallbackImageDimensions = getImageDimensions(image);
 ---
 
 <!doctype html>
@@ -52,9 +61,13 @@ const otherLocale = locale === 'es' ? 'en' : 'es';
       site={site}
       image={image}
       imageAlt={imageAlt}
+      imageWidth={imageWidth ?? fallbackImageDimensions?.width}
+      imageHeight={imageHeight ?? fallbackImageDimensions?.height}
       alternates={alternates}
       jsonLd={jsonLd}
       ogType={ogType}
+      publishedTime={publishedTime}
+      modifiedTime={modifiedTime}
     />
   </head>
   <body class="font-sans antialiased">

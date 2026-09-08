@@ -11,6 +11,12 @@ languages:
 image: "/images/puerta-del-vino-01.jpg"
 imageAlt: "Nasrid courtyard in the Alhambra at sunset"
 reservationUrl: "mailto:elyaratours@gmail.com?subject=The%20Alhambra%20Beyond%20the%20Palaces"
+relatedLandings: ["private-alhambra-tour", "guided-visits-granada"]
+faq:
+  - question: "Does this route enter the Nasrid Palaces?"
+    answer: "The route focuses on understanding the Alhambra beyond its best-known spaces. Write to confirm focus, access and availability."
+  - question: "Who is this visit best for?"
+    answer: "It works well for travelers interested in landscape, water, power and daily life in the Alhambra through a broader cultural lens."
 seoDescription: "Cultural Alhambra visit beyond the palace highlights, exploring symbols, landscape, power, water and daily life in Granada."
 featured: false
 order: 6

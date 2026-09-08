@@ -12,6 +12,8 @@ author: "Elyara Tours Granada"
 seoDescription: "Dato curioso sobre el simbolo de la granada en Granada, su presencia en la ciudad historica y su relacion con la identidad local."
 relatedTours:
   - "granada-new-world"
+relatedLandings:
+  - "guided-visits-granada"
 featured: false
 order: 2
 published: true

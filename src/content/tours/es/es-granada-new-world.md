@@ -11,6 +11,12 @@ languages:
 image: "/images/1492-nuevo-orden-mundial.webp"
 imageAlt: "Ilustracion del tour 1492 Nuevo Orden Mundial"
 reservationUrl: "mailto:elyaratours@gmail.com?subject=1492%20Nuevo%20Orden%20Mundial"
+relatedLandings: ["guided-visits-granada"]
+faq:
+  - question: "Que se visita en esta ruta historica por Granada?"
+    answer: "La ruta conecta el centro historico, la memoria de 1492, la ciudad cristiana y espacios como la Catedral y la Capilla Real segun el recorrido acordado."
+  - question: "Puedo reservar esta ruta como visita privada?"
+    answer: "Si. Puedes escribir por WhatsApp o email con fecha, numero de personas e idioma para consultar disponibilidad y adaptar el enfoque del recorrido."
 seoDescription: "Ruta historica por Granada y su relacion con el Nuevo Mundo, el último baluarte musulmán, la ciudad cristiana, la Capilla Real y los cambios del siglo XVI."
 featured: false
 order: 3

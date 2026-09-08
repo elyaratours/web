@@ -11,6 +11,12 @@ languages:
 image: "/images/2mundos.jpeg"
 imageAlt: "Vista desde una ventana hacia jardines y tejados historicos de Granada"
 reservationUrl: "mailto:elyaratours@gmail.com?subject=Granada%20entre%20dos%20mundos"
+relatedLandings: ["guided-visits-granada", "free-tour-granada"]
+faq:
+  - question: "Que significa Granada entre dos mundos?"
+    answer: "La ruta observa la transicion entre la ciudad andalusi y la Granada cristiana, conectando memoria, poder, simbolos y transformacion urbana."
+  - question: "En que idioma se puede hacer esta ruta?"
+    answer: "La ruta puede consultarse en espanol o ingles. Indica el idioma preferido cuando escribas por WhatsApp o email para reservar."
 seoDescription: "Ruta historica por Granada entre el mundo andalusi y la ciudad cristiana, conectando memoria, poder y transformacion urbana."
 featured: false
 order: 5

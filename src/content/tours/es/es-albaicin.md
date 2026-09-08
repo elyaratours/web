@@ -18,6 +18,7 @@ faq:
     answer: "Si. La ruta ayuda a situar barrios, miradores e historia local para entender mejor la ciudad desde el primer paseo."
   - question: "La ruta por el Albaicin tiene muchas cuestas?"
     answer: "El Albaicin tiene pendientes, pero el recorrido se plantea con un ritmo caminable, pausas y tiempo para mirar el barrio con calma."
+relatedLandings: ["albaicin-guided-walk", "guided-visits-granada", "free-tour-granada"]
 seoDescription: "La forma más completa de descubrir Granada a través de los barrios, historias y culturas que han dado forma a su identidad."
 featured: true
 order: 2

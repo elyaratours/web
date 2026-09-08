@@ -12,6 +12,8 @@ author: "Elyara Tours Granada"
 seoDescription: "Curious note about the pomegranate symbol in Granada, its presence across the historic city and its connection with local identity."
 relatedTours:
   - "granada-new-world"
+relatedLandings:
+  - "guided-visits-granada"
 featured: false
 order: 2
 published: true

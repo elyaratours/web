@@ -11,6 +11,12 @@ languages:
 image: "/images/miradoresyleyendas.jpg"
 imageAlt: "Illustration of an Albaicin street with the Alhambra in the background"
 reservationUrl: "mailto:elyaratours@gmail.com?subject=Granada%20Viewpoints%20and%20Legends"
+relatedLandings: ["guided-visits-granada", "free-tour-granada", "albaicin-guided-walk"]
+faq:
+  - question: "Does the route include Alhambra views?"
+    answer: "Yes. The walk is shaped around viewpoints and corners that help connect Granada, the Albaicin, Sacromonte and the Alhambra."
+  - question: "Is this route suitable for slower groups?"
+    answer: "Yes. The pace can be adjusted by WhatsApp or email so there is time for pauses, photos and questions."
 seoDescription: "Granada walking route through viewpoints, legends and Albaicin corners to discover popular stories and memorable city views."
 featured: false
 order: 4
