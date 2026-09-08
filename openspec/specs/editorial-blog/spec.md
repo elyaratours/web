@@ -87,7 +87,7 @@ The system SHALL provide search engine metadata for blog listing and article det
 - **AND** the page exposes breadcrumb structured data for the localized blog hierarchy
 
 ### Requirement: Editorial-to-tour discovery
-The system SHALL allow editorial articles to connect readers to relevant published tours, commercial discovery pages, and email-based reservation actions without introducing an internal booking or payment flow.
+The system SHALL allow editorial articles to connect readers to relevant published tours, commercial discovery pages, and external WhatsApp and email reservation actions without introducing an internal booking or payment flow.
 
 #### Scenario: Article references related tours
 - **WHEN** a published article is associated with one or more published tours in the same language
@@ -100,13 +100,15 @@ The system SHALL allow editorial articles to connect readers to relevant publish
 
 #### Scenario: Visitor follows a reservation call to action from editorial content
 - **WHEN** a visitor activates a reservation-oriented action from editorial content that is not tied to one concrete tour
-- **THEN** the system opens a clean `mailto:elyaratours@gmail.com` link rather than an internal checkout or WhatsApp conversation
-- **AND** the system does not prefill subject or body text
+- **THEN** the selected WhatsApp action opens `https://wa.me/34611126979` with localized prefilled inquiry text rather than an internal checkout or booking conversation
+- **AND** the selected email action opens a clean `mailto:elyaratours@gmail.com` link rather than an internal checkout or booking conversation
+- **AND** the email action does not prefill subject or body text
 
 #### Scenario: Visitor reserves a specific related tour
 - **WHEN** a visitor reaches a specific related tour and activates that tour's reservation action
-- **THEN** the system opens a `mailto:elyaratours@gmail.com` link with a prefilled subject containing only the selected tour name rather than an internal checkout or WhatsApp conversation
-- **AND** the system does not prefill dates, group size, number of people, language, itinerary details, or body text
+- **THEN** the system offers external WhatsApp and email reservation actions for the selected tour rather than an internal checkout or booking conversation
+- **AND** the WhatsApp action identifies the selected tour name in localized prefilled text
+- **AND** the email action opens a `mailto:elyaratours@gmail.com` link with a prefilled subject containing only the selected tour name
 
 ### Requirement: Editorial topic clusters for Granada discovery
 The system SHALL support published localized editorial content that targets useful Granada visitor search intents and connects those topics to relevant Elyara routes.

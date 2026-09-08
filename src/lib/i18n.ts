@@ -13,7 +13,9 @@ export const localeConfig = {
     navPrivateTours: 'Tours privados',
     navContact: 'Contacto',
     footerContact: 'Contacto',
-    reserve: 'Reservar por email',
+    reserve: 'Reservar',
+    reserveWhatsapp: 'Reservar por WhatsApp',
+    reserveEmail: 'Reservar por email',
     viewTour: 'Ver ruta',
     readArticle: 'Leer historia',
     blogEyebrow: 'Cuaderno de Granada',
@@ -24,7 +26,7 @@ export const localeConfig = {
     backToBlog: 'Volver al cuaderno',
     publishedOn: 'Publicado',
     relatedToursTitle: 'Camina esta historia',
-    relatedToursText: 'Conecta este relato con una ruta guiada por Granada y reserva por email.',
+    relatedToursText: 'Conecta este relato con una ruta guiada por Granada y reserva por WhatsApp o email.',
     featuredTours: 'Rutas destacadas',
     allTours: 'Todas las rutas',
     duration: 'Duracion',
@@ -38,14 +40,14 @@ export const localeConfig = {
     heroImageAlt: 'La Alhambra bajo nubes dramaticas vista desde el Albaicin',
     footerIntro:
       'Tours privados y rutas a pie para descubrir la Alhambra, el Albaicin y la ciudad historica con una mirada cercana y cultural.',
-    catalogIntro: 'Elige una ruta y empieza la reserva por email.',
+    catalogIntro: 'Elige una ruta y empieza la reserva por WhatsApp o email.',
     experienceHistoricalTitle: 'Contexto historico',
     experienceHistoricalText:
       'Rutas narradas para entender monumentos, barrios y paisajes sin convertir la visita en una clase pesada.',
     experienceWalkableTitle: 'Ritmo caminable',
     experienceWalkableText: 'Itinerarios pensados para mirar, preguntar, hacer pausas y disfrutar de Granada con calma.',
     experienceDirectTitle: 'Reserva directa',
-    experienceDirectText: 'La reserva empieza por email. Sin cuentas, pagos internos ni checkout.',
+    experienceDirectText: 'La reserva empieza por WhatsApp o email. Sin cuentas, pagos internos ni checkout.',
     metaHome: 'Rutas turisticas y tours privados en Granada con experiencias culturales en espanol e ingles.',
   },
   en: {
@@ -58,7 +60,9 @@ export const localeConfig = {
     navPrivateTours: 'Private tours',
     navContact: 'Contact',
     footerContact: 'Contact',
-    reserve: 'Reserve by email',
+    reserve: 'Reserve',
+    reserveWhatsapp: 'Reserve by WhatsApp',
+    reserveEmail: 'Reserve by email',
     viewTour: 'View tour',
     readArticle: 'Read story',
     blogEyebrow: 'Granada Journal',
@@ -69,7 +73,7 @@ export const localeConfig = {
     backToBlog: 'Back to journal',
     publishedOn: 'Published',
     relatedToursTitle: 'Walk this story',
-    relatedToursText: 'Connect this story with a guided route through Granada and reserve by email.',
+    relatedToursText: 'Connect this story with a guided route through Granada and reserve by WhatsApp or email.',
     featuredTours: 'Featured tours',
     allTours: 'All tours',
     duration: 'Duration',
@@ -83,22 +87,77 @@ export const localeConfig = {
     heroImageAlt: 'The Alhambra beneath dramatic clouds from the Albaicin',
     footerIntro:
       'Private tours and walking routes to discover the Alhambra, the Albaicin and the historic city with a warm cultural perspective.',
-    catalogIntro: 'Choose a route and start booking by email.',
+    catalogIntro: 'Choose a route and start booking by WhatsApp or email.',
     experienceHistoricalTitle: 'Historical context',
     experienceHistoricalText:
       'Narrated routes to understand monuments, neighborhoods and landscapes without turning the visit into a heavy lecture.',
     experienceWalkableTitle: 'Walkable pace',
     experienceWalkableText: 'Itineraries designed to look around, ask questions, pause and enjoy Granada at a calm pace.',
     experienceDirectTitle: 'Direct booking',
-    experienceDirectText: 'Booking starts by email. No accounts, internal payments or checkout.',
+    experienceDirectText: 'Booking starts by WhatsApp or email. No accounts, internal payments or checkout.',
     metaHome: 'Tourism routes and private tours in Granada with cultural experiences in Spanish and English.',
   },
 } satisfies Record<Locale, Record<string, string>>;
 
 export const contactEmail = 'elyaratours@gmail.com';
+export const whatsappDisplayNumber = '+34 611 126 979';
+export const whatsappNumber = '34611126979';
+export const whatsappUrl = `https://wa.me/${whatsappNumber}`;
 export const instagramHandle = '@elyaratours';
 export const instagramUrl = 'https://instagram.com/elyaratours';
 export const emailReservationUrl = `mailto:${contactEmail}`;
+
+const whatsappMessageCopy = {
+  es: {
+    general: 'Hola, quiero reservar una ruta con Elyara Tours Granada.',
+    tour: (tourTitle: string) => `Hola, quiero reservar la ruta "${tourTitle}" con Elyara Tours Granada.`,
+    scheduled: ({ tourTitle, dateLabel, time, language }: ScheduledWhatsAppReservation) =>
+      [
+        'Hola, quiero reservar esta fecha con Elyara Tours Granada.',
+        '',
+        `Ruta: ${tourTitle}`,
+        `Fecha: ${dateLabel}`,
+        `Hora: ${time}`,
+        `Idioma: ${language}`,
+        '',
+        'Nombre:',
+        'Numero de personas:',
+      ].join('\n'),
+    tailorMade: 'Hola, quiero informacion para disenar una ruta o viaje a medida en Granada.',
+  },
+  en: {
+    general: 'Hello, I would like to book a tour with Elyara Tours Granada.',
+    tour: (tourTitle: string) => `Hello, I would like to book the "${tourTitle}" tour with Elyara Tours Granada.`,
+    scheduled: ({ tourTitle, dateLabel, time, language }: ScheduledWhatsAppReservation) =>
+      [
+        'Hello, I would like to book this date with Elyara Tours Granada.',
+        '',
+        `Tour: ${tourTitle}`,
+        `Date: ${dateLabel}`,
+        `Time: ${time}`,
+        `Language: ${language}`,
+        '',
+        'Name:',
+        'Number of people:',
+      ].join('\n'),
+    tailorMade: 'Hello, I would like information about a tailor-made route or trip in Granada.',
+  },
+} satisfies Record<
+  Locale,
+  {
+    general: string;
+    tour: (tourTitle: string) => string;
+    scheduled: (reservation: ScheduledWhatsAppReservation) => string;
+    tailorMade: string;
+  }
+>;
+
+interface ScheduledWhatsAppReservation {
+  tourTitle: string;
+  dateLabel: string;
+  time: string;
+  language: string;
+}
 
 export const contactContent = {
   es: {
@@ -107,21 +166,23 @@ export const contactContent = {
     eyebrow: 'Hablemos',
     heading: 'Hablemos de tu visita a Granada',
     intro:
-      'Si tienes una pregunta, quieres reservar una ruta privada o necesitas orientar tu viaje, puedes escribirnos directamente por correo o Instagram.',
+      'Si tienes una pregunta, quieres reservar una ruta privada o necesitas orientar tu viaje, puedes escribirnos directamente por WhatsApp, correo o Instagram.',
     emailLabel: 'Email',
+    whatsappLabel: 'WhatsApp',
     instagramLabel: 'Instagram',
     emailCta: 'Escribir un correo',
+    whatsappCta: 'Escribir por WhatsApp',
     instagramCta: 'Ver Instagram',
     reasonsTitle: 'Para que puedes escribirnos',
     reasons: ['Reservas de rutas', 'Rutas privadas', 'Viajes a medida', 'Dudas sobre Granada'],
     footerLink: 'Ver pagina de contacto',
     imageAlt: 'Ilustracion acuarela de un cuaderno de viaje sobre Granada y la Alhambra',
     metaDescription:
-      'Contacta con Elyara Tours Granada por email o Instagram para rutas privadas, viajes a medida y preguntas sobre tu visita a Granada.',
+      'Contacta con Elyara Tours Granada por WhatsApp, email o Instagram para rutas privadas, viajes a medida y preguntas sobre tu visita a Granada.',
     faq: [
       {
         question: 'Como puedo reservar una ruta en Granada?',
-        answer: 'Puedes escribir directamente a elyaratours@gmail.com indicando fechas, numero de personas, idioma y la ruta que te interesa.',
+        answer: 'Puedes escribir por WhatsApp al +34 611 126 979 o por email a elyaratours@gmail.com indicando fechas, numero de personas, idioma y la ruta que te interesa.',
       },
       {
         question: 'Puedo pedir una ruta privada o personalizada?',
@@ -135,21 +196,23 @@ export const contactContent = {
     eyebrow: 'Let us talk',
     heading: 'Let us talk about your visit to Granada',
     intro:
-      'If you have a question, want to book a private route or need help shaping your trip, you can contact us directly by email or Instagram.',
+      'If you have a question, want to book a private route or need help shaping your trip, you can contact us directly by WhatsApp, email or Instagram.',
     emailLabel: 'Email',
+    whatsappLabel: 'WhatsApp',
     instagramLabel: 'Instagram',
     emailCta: 'Send an email',
+    whatsappCta: 'Write on WhatsApp',
     instagramCta: 'View Instagram',
     reasonsTitle: 'What you can write about',
     reasons: ['Route reservations', 'Private routes', 'Tailor-made trip planning', 'Questions about Granada'],
     footerLink: 'View contact page',
     imageAlt: 'Watercolor illustration of a Granada travel notebook and the Alhambra',
     metaDescription:
-      'Contact Elyara Tours Granada by email or Instagram for private routes, tailor-made trip planning and questions about visiting Granada.',
+      'Contact Elyara Tours Granada by WhatsApp, email or Instagram for private routes, tailor-made trip planning and questions about visiting Granada.',
     faq: [
       {
         question: 'How can I book a route in Granada?',
-        answer: 'You can write directly to elyaratours@gmail.com with your dates, group size, preferred language and the route you are interested in.',
+        answer: 'You can write by WhatsApp to +34 611 126 979 or by email to elyaratours@gmail.com with your dates, group size, preferred language and the route you are interested in.',
       },
       {
         question: 'Can I request a private or custom route?',
@@ -166,8 +229,10 @@ export const contactContent = {
     heading: string;
     intro: string;
     emailLabel: string;
+    whatsappLabel: string;
     instagramLabel: string;
     emailCta: string;
+    whatsappCta: string;
     instagramCta: string;
     reasonsTitle: string;
     reasons: string[];
@@ -182,13 +247,15 @@ export const reservationCalendarContent = {
   es: {
     eyebrow: 'Proximas fechas',
     title: 'Calendario de reservas',
-    intro: 'Consulta las salidas programadas de los proximos 2 meses y escribe por email para reservar tu plaza.',
+    intro: 'Consulta las salidas programadas de los proximos 2 meses y reserva tu plaza por WhatsApp o email.',
     tourTitle: 'Proximas salidas',
     dateSelected: 'Fecha seleccionada',
     availableDate: 'Fecha disponible',
     noAvailability: 'No hay salidas programadas para esta fecha.',
     viewTour: 'Ver ruta',
     reserveDate: 'Reservar esta fecha',
+    reserveDateWhatsapp: 'Reservar por WhatsApp',
+    reserveDateEmail: 'Reservar por email',
     at: 'a las',
     route: 'Ruta',
     language: 'Idioma',
@@ -196,13 +263,15 @@ export const reservationCalendarContent = {
   en: {
     eyebrow: 'Upcoming dates',
     title: 'Booking calendar',
-    intro: 'Check the scheduled departures for the next 2 months and send an email to reserve your place.',
+    intro: 'Check the scheduled departures for the next 2 months and reserve your place by WhatsApp or email.',
     tourTitle: 'Upcoming departures',
     dateSelected: 'Selected date',
     availableDate: 'Available date',
     noAvailability: 'There are no scheduled departures for this date.',
     viewTour: 'View tour',
     reserveDate: 'Reserve this date',
+    reserveDateWhatsapp: 'Reserve by WhatsApp',
+    reserveDateEmail: 'Reserve by email',
     at: 'at',
     route: 'Tour',
     language: 'Language',
@@ -231,7 +300,7 @@ export const tailorMadeContent = {
     process: [
       'Nos cuentas fechas, numero de personas, idioma, ritmo e intereses.',
       'Te proponemos una idea realista para tu tiempo en Granada.',
-      'Ajustamos la ruta o consultoria y cerramos la reserva por email.',
+      'Ajustamos la ruta o consultoria y cerramos la reserva por WhatsApp o email.',
     ],
     inspirationTitle: 'Ideas para inspirarte',
     inspiration: [
@@ -254,7 +323,7 @@ export const tailorMadeContent = {
       },
       {
         question: 'Como se confirma una propuesta a medida?',
-        answer: 'Primero nos escribes por email con fechas, numero de personas, idioma y prioridades. Despues ajustamos la idea y cerramos la reserva por correo.',
+        answer: 'Primero nos escribes por WhatsApp o email con fechas, numero de personas, idioma y prioridades. Despues ajustamos la idea y cerramos la reserva por el canal que prefieras.',
       },
     ],
   },
@@ -279,7 +348,7 @@ export const tailorMadeContent = {
     process: [
       'Tell us your dates, group size, language, pace and interests.',
       'We suggest a realistic idea for your time in Granada.',
-      'We adjust the route or consultation and confirm everything by email.',
+      'We adjust the route or consultation and confirm everything by WhatsApp or email.',
     ],
     inspirationTitle: 'Ideas for inspiration',
     inspiration: [
@@ -302,7 +371,7 @@ export const tailorMadeContent = {
       },
       {
         question: 'How is a tailor-made proposal confirmed?',
-        answer: 'You first email us your dates, group size, preferred language and priorities. Then we adjust the idea and confirm the reservation by email.',
+        answer: 'You first write by WhatsApp or email with your dates, group size, preferred language and priorities. Then we adjust the idea and confirm the reservation through your preferred channel.',
       },
     ],
   },
@@ -357,8 +426,8 @@ export const commercialToursContent = {
         text: 'Puedes escribirnos para ajustar idioma, duracion, intereses del grupo o una combinacion de rutas por Granada.',
       },
       {
-        title: 'Reserva directa por email',
-        text: 'La reserva empieza por correo, sin formularios largos, pagos internos ni checkout. Te respondemos con una propuesta clara.',
+        title: 'Reserva directa por WhatsApp o email',
+        text: 'La reserva empieza por WhatsApp o correo, sin formularios largos, pagos internos ni checkout. Te respondemos con una propuesta clara.',
       },
     ],
     tourSectionTitle: 'Rutas que puedes reservar de forma privada',
@@ -370,7 +439,7 @@ export const commercialToursContent = {
     faq: [
       {
         question: 'Cuanto dura un tour privado en Granada?',
-        answer: 'Depende de la ruta. Muchas visitas duran entre 2 y 3 horas, pero podemos ajustar el ritmo y la duracion por email segun el grupo.',
+        answer: 'Depende de la ruta. Muchas visitas duran entre 2 y 3 horas, pero podemos ajustar el ritmo y la duracion por WhatsApp o email segun el grupo.',
       },
       {
         question: 'Se pueden hacer tours privados en espanol e ingles?',
@@ -378,7 +447,7 @@ export const commercialToursContent = {
       },
       {
         question: 'Como se reserva una visita guiada privada?',
-        answer: 'Escribenos a elyaratours@gmail.com con fecha, numero de personas, idioma e intereses. Confirmamos disponibilidad y detalles por email.',
+        answer: 'Escribenos por WhatsApp al +34 611 126 979 o por email a elyaratours@gmail.com con fecha, numero de personas, idioma e intereses. Confirmamos disponibilidad y detalles por el canal que prefieras.',
       },
     ],
   },
@@ -405,8 +474,8 @@ export const commercialToursContent = {
         text: 'You can write to adjust the language, duration, group interests or a combination of Granada routes.',
       },
       {
-        title: 'Direct booking by email',
-        text: 'Booking starts by email, without long forms, internal payments or checkout. You receive a clear proposal in response.',
+        title: 'Direct booking by WhatsApp or email',
+        text: 'Booking starts by WhatsApp or email, without long forms, internal payments or checkout. You receive a clear proposal in response.',
       },
     ],
     tourSectionTitle: 'Routes you can book privately',
@@ -418,7 +487,7 @@ export const commercialToursContent = {
     faq: [
       {
         question: 'How long does a private tour in Granada last?',
-        answer: 'It depends on the route. Many visits last between 2 and 3 hours, but pace and duration can be adjusted by email for your group.',
+        answer: 'It depends on the route. Many visits last between 2 and 3 hours, but pace and duration can be adjusted by WhatsApp or email for your group.',
       },
       {
         question: 'Can private tours be in English or Spanish?',
@@ -426,7 +495,7 @@ export const commercialToursContent = {
       },
       {
         question: 'How do I book a private guided visit?',
-        answer: 'Write to elyaratours@gmail.com with your date, group size, language and interests. We confirm availability and details by email.',
+        answer: 'Write by WhatsApp to +34 611 126 979 or by email to elyaratours@gmail.com with your date, group size, language and interests. We confirm availability and details through your preferred channel.',
       },
     ],
   },
@@ -511,12 +580,32 @@ export function getEmailReservationUrl() {
   return emailReservationUrl;
 }
 
+export function getWhatsAppUrl(message?: string) {
+  return message ? `${whatsappUrl}?text=${encodeURIComponent(message)}` : whatsappUrl;
+}
+
+export function getWhatsAppReservationUrl(locale: Locale) {
+  return getWhatsAppUrl(whatsappMessageCopy[locale].general);
+}
+
 export function getTourReservationEmailUrl(tourTitle: string) {
   return `${emailReservationUrl}?subject=${encodeURIComponent(tourTitle)}`;
 }
 
+export function getTourWhatsAppReservationUrl(locale: Locale, tourTitle: string) {
+  return getWhatsAppUrl(whatsappMessageCopy[locale].tour(tourTitle));
+}
+
+export function getScheduledWhatsAppReservationUrl(locale: Locale, reservation: ScheduledWhatsAppReservation) {
+  return getWhatsAppUrl(whatsappMessageCopy[locale].scheduled(reservation));
+}
+
 export function getTailorMadeEmailUrl() {
   return getEmailReservationUrl();
+}
+
+export function getTailorMadeWhatsAppUrl(locale: Locale) {
+  return getWhatsAppUrl(whatsappMessageCopy[locale].tailorMade);
 }
 
 export function isLocale(value: string): value is Locale {

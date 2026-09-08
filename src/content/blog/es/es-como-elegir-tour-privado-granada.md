@@ -9,7 +9,7 @@ publishedDate: "2026-09-07"
 image: "/images/Granada-main.jpeg"
 imageAlt: "Granada y la Alhambra vistas desde un mirador para preparar un tour privado"
 author: "Elyara Tours Granada"
-seoDescription: "Guia para elegir un tour privado en Granada con criterios de ritmo, idioma, enfoque cultural, barrios, monumentos y reserva directa por email."
+seoDescription: "Guia para elegir un tour privado en Granada con criterios de ritmo, idioma, enfoque cultural, barrios, monumentos y reserva directa por WhatsApp o email."
 relatedTours:
   - "albaicin"
   - "alhambra"
@@ -31,7 +31,7 @@ Tambien merece la pena mirar el enfoque. Algunas personas quieren arte y arquite
 
 Por eso un tour privado funciona mejor cuando parte de una conversacion sencilla: fechas, numero de personas, intereses, idioma y ritmo. Con esa informacion se puede proponer una ruta realista, evitar promesas imposibles y ajustar el paseo a la energia del grupo.
 
-En Elyara la reserva empieza por email. No necesitas crear una cuenta ni pasar por un checkout interno. Escribes con tu idea de viaje y recibes una respuesta para orientar la visita, ya sea a partir de una ruta publicada o de una propuesta personalizada.
+En Elyara la reserva empieza por WhatsApp o email. No necesitas crear una cuenta ni pasar por un checkout interno. Escribes con tu idea de viaje y recibes una respuesta para orientar la visita, ya sea a partir de una ruta publicada o de una propuesta personalizada.
 
 Si vienes por primera vez, una buena combinacion puede ser una ruta por el Albaicin para entender el paisaje urbano y otra visita centrada en la Alhambra o en la Granada historica. Si ya conoces la ciudad, puede tener mas sentido buscar una ruta tematica: miradores y leyendas, Granada entre dos mundos, o una lectura mas tranquila de la ciudad despues de 1492.
 

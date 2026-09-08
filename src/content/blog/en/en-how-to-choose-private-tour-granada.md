@@ -9,7 +9,7 @@ publishedDate: "2026-09-07"
 image: "/images/Granada-main.jpeg"
 imageAlt: "Granada and the Alhambra seen from a viewpoint while planning a private tour"
 author: "Elyara Tours Granada"
-seoDescription: "Guide to choosing a private tour in Granada based on pace, language, cultural focus, neighborhoods, monuments and direct booking by email."
+seoDescription: "Guide to choosing a private tour in Granada based on pace, language, cultural focus, neighborhoods, monuments and direct booking by WhatsApp or email."
 relatedTours:
   - "albaicin"
   - "alhambra"
@@ -31,7 +31,7 @@ The focus also matters. Some visitors want art and architecture; others are draw
 
 That is why a private tour works best when it begins with a simple conversation: dates, group size, interests, language and pace. With that information it is possible to suggest a realistic route, avoid impossible promises and adjust the walk to the group's energy.
 
-At Elyara, booking starts by email. You do not need to create an account or go through an internal checkout. You write with your travel idea and receive an answer to help shape the visit, either from a published route or from a custom proposal.
+At Elyara, booking starts by WhatsApp or email. You do not need to create an account or go through an internal checkout. You write with your travel idea and receive an answer to help shape the visit, either from a published route or from a custom proposal.
 
 If this is your first time in Granada, a good combination might be an Albaicin route to understand the urban landscape and another visit focused on the Alhambra or historic Granada. If you already know the city, a themed route may make more sense: viewpoints and legends, Granada between two worlds, or a slower reading of the city after 1492.
 

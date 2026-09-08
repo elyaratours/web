@@ -15,7 +15,7 @@ faq:
   - question: "Cuanto dura la visita a la Alhambra?"
     answer: "La ruta dura aproximadamente 3 horas, con un ritmo pensado para entender patios, palacios, jardines y simbolos sin correr."
   - question: "La visita se puede hacer como tour privado?"
-    answer: "Si. Puedes escribir por email para consultar disponibilidad, idioma y detalles para tu grupo."
+    answer: "Si. Puedes escribir por WhatsApp o email para consultar disponibilidad, idioma y detalles para tu grupo."
 seoDescription: "Descubre la Alhambra a través de sus símbolos, su arquitectura y las historias de poder que marcaron el reino nazarí, entre palacios, patios y jardines."
 featured: true
 order: 1

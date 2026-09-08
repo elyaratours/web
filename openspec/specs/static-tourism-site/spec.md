@@ -64,34 +64,40 @@ The system SHALL provide a public detail page for each published tour with at le
 - **THEN** the system does not display an empty route-point card
 
 ### Requirement: External reservation flow
-The system SHALL start reservations through email links to `elyaratours@gmail.com` rather than WhatsApp, internal booking forms, checkout, or payment flows.
+The system SHALL start reservations through external WhatsApp links to `+34 611 126 979` and email links to `elyaratours@gmail.com` rather than internal booking forms, checkout, or payment flows.
 
 #### Scenario: Visitor selects reserve action
 - **WHEN** a visitor activates a general reservation call to action that is not tied to a concrete tour or scheduled date
-- **THEN** the system opens a clean `mailto:elyaratours@gmail.com` link without prefilled subject or body text
+- **THEN** the system opens the selected external channel: `https://wa.me/34611126979` with localized prefilled inquiry text or a clean `mailto:elyaratours@gmail.com` link without prefilled subject or body text
+- **AND** the selected channel does not require account creation, internal form submission, checkout, or payment processing
 
 #### Scenario: Visitor sees a general home reserve action
 - **WHEN** a visitor views the localized home hero reservation call to action
-- **THEN** the system displays `elyaratours@gmail.com` next to the reservation action so the address can be copied directly
+- **THEN** the system displays WhatsApp and email as available external reservation channels
+- **AND** the system displays `+34 611 126 979` and `elyaratours@gmail.com` near the reservation actions so either contact value can be copied directly
 
 #### Scenario: Visitor selects a concrete tour reserve action
 - **WHEN** a visitor activates a reservation call to action for a specific published tour that is not tied to a scheduled calendar date
-- **THEN** the system opens a `mailto:elyaratours@gmail.com` link with a prefilled subject containing only the selected tour name
-- **AND** the system does not prefill dates, group size, number of people, language, itinerary details, or body text
+- **THEN** the selected WhatsApp action opens `https://wa.me/34611126979` with localized prefilled text that identifies the selected tour name
+- **AND** the selected email action opens a `mailto:elyaratours@gmail.com` link with a prefilled subject containing only the selected tour name
+- **AND** the system does not prefill dates, group size, number of people, language, itinerary details, or payment details unless they are part of the selected scheduled-date context
 - **AND** the system does not force the email link to open in a new browser tab or window
 
 #### Scenario: Visitor sees a concrete tour reserve action
 - **WHEN** a visitor views a published tour detail page reservation call to action
-- **THEN** the system displays `elyaratours@gmail.com` next to the reservation action so the address can be copied directly
+- **THEN** the system displays WhatsApp and email reservation actions for that tour
+- **AND** the system displays `+34 611 126 979` and `elyaratours@gmail.com` near the reservation actions so either contact value can be copied directly
 
 #### Scenario: Visitor selects a scheduled calendar reservation action
 - **WHEN** a visitor activates a reservation call to action for a scheduled calendar date
-- **THEN** the system opens a `mailto:elyaratours@gmail.com` link with prefilled subject or body text containing the selected tour name, date, time, and language
-- **AND** the email body prompts the visitor to provide at least name and number of people
+- **THEN** the selected WhatsApp action opens `https://wa.me/34611126979` with localized prefilled text containing the selected tour name, date, time, and language
+- **AND** the selected email action opens a `mailto:elyaratours@gmail.com` link with prefilled subject or body text containing the selected tour name, date, time, and language
+- **AND** the message prompts the visitor to provide at least name and number of people
 
 #### Scenario: Visitor sees a scheduled calendar reservation action
 - **WHEN** a visitor views a scheduled-date reservation card in the home or tour detail reservation calendar
-- **THEN** the system displays `elyaratours@gmail.com` directly below the `Reservar esta fecha` or `Reserve this date` action so the address can be copied directly
+- **THEN** the system displays WhatsApp and email reservation actions for that scheduled date
+- **AND** the system displays `+34 611 126 979` and `elyaratours@gmail.com` near the reservation actions so either contact value can be copied directly
 
 #### Scenario: Visitor completes no internal checkout
 - **WHEN** a visitor browses tour pages or scheduled calendar availability
@@ -122,14 +128,14 @@ The system SHALL display a localized reservation calendar on the Spanish and Eng
 
 #### Scenario: Visitor selects an available home calendar date
 - **WHEN** a visitor selects a date with scheduled availability on the localized home calendar
-- **THEN** the system displays the available route name, date, time, language, and a reservation email action for that date
+- **THEN** the system displays the available route name, date, time, language, and external WhatsApp and email reservation actions for that date
 
 #### Scenario: Visitor views a day without scheduled availability
 - **WHEN** a visitor views or selects a day without scheduled availability
 - **THEN** the system does not present that day as bookable
 
 ### Requirement: Tour detail reservation calendar
-The system SHALL display route-specific upcoming availability on tour detail pages one month at a time while preserving email-based reservation behavior for tours without scheduled dates.
+The system SHALL display route-specific upcoming availability on tour detail pages one month at a time while preserving external WhatsApp and email reservation behavior for tours without scheduled dates.
 
 #### Scenario: Visitor opens Spanish Soul of Granada route
 - **WHEN** a visitor opens the Spanish tour detail page for `El alma de Granada`
@@ -148,7 +154,7 @@ The system SHALL display route-specific upcoming availability on tour detail pag
 
 #### Scenario: Visitor opens a tour without scheduled availability
 - **WHEN** a visitor opens a published tour detail page that has no scheduled dates in the next 2 months
-- **THEN** the system preserves a clear email reservation or inquiry action for that tour
+- **THEN** the system preserves clear WhatsApp and email reservation or inquiry actions for that tour
 - **AND** the system does not display unrelated dates from other tours as bookable for that tour
 
 ### Requirement: Recurring Soul of Granada availability
@@ -332,11 +338,11 @@ The system SHALL provide localized commercial landing content for high-intent Gr
 
 #### Scenario: Spanish visitor opens private tours landing page
 - **WHEN** a visitor navigates to the Spanish commercial landing page for private or guided tours in Granada
-- **THEN** the system displays Spanish content explaining Elyara's private tours, cultural walking routes, languages, reservation channel, and links to relevant published tour pages
+- **THEN** the system displays Spanish content explaining Elyara's private tours, cultural walking routes, languages, reservation channels, and links to relevant published tour pages
 
 #### Scenario: English visitor opens private tours landing page
 - **WHEN** a visitor navigates to the English commercial landing page for private or guided tours in Granada
-- **THEN** the system displays English content explaining Elyara's private tours, cultural walking routes, languages, reservation channel, and links to relevant published tour pages
+- **THEN** the system displays English content explaining Elyara's private tours, cultural walking routes, languages, reservation channels, and links to relevant published tour pages
 
 #### Scenario: Search engine reads commercial landing metadata
 - **WHEN** a crawler reads a localized commercial landing page
@@ -344,7 +350,7 @@ The system SHALL provide localized commercial landing content for high-intent Gr
 
 #### Scenario: Visitor starts inquiry from commercial landing page
 - **WHEN** a visitor activates a reservation or inquiry call to action from a commercial landing page
-- **THEN** the system opens an external email flow to `elyaratours@gmail.com`
+- **THEN** the system opens an external WhatsApp or email flow to `+34 611 126 979` or `elyaratours@gmail.com`
 - **AND** the system does not require account creation, internal form submission, checkout, or payment processing
 
 ### Requirement: SEO-oriented internal linking
@@ -488,11 +494,12 @@ The system SHALL provide localized standalone pages explaining the tailor-made o
 - **THEN** the page exposes localized title, description, canonical URL, and language-aware alternate metadata
 
 ### Requirement: Tailor-made external inquiry flow
-The system SHALL start tailor-made trip and route inquiries through email links to `elyaratours@gmail.com` rather than WhatsApp, internal forms, account flows, checkout, or payment processing.
+The system SHALL start tailor-made trip and route inquiries through external WhatsApp links to `+34 611 126 979` and email links to `elyaratours@gmail.com` rather than internal forms, account flows, checkout, or payment processing.
 
 #### Scenario: Visitor starts tailor-made inquiry
 - **WHEN** a visitor activates a tailor-made inquiry call to action
-- **THEN** the system opens a clean `mailto:elyaratours@gmail.com` link without prefilled subject or body text
+- **THEN** the selected WhatsApp action opens `https://wa.me/34611126979` with localized prefilled text for a tailor-made trip or route inquiry
+- **AND** the selected email action opens a clean `mailto:elyaratours@gmail.com` link without prefilled subject or body text
 
 #### Scenario: Visitor browses tailor-made offer
 - **WHEN** a visitor browses the tailor-made home section or standalone page
@@ -503,11 +510,15 @@ The system SHALL present direct business contact information in the global foote
 
 #### Scenario: Visitor sees footer contact details
 - **WHEN** a visitor views the footer on any public page
-- **THEN** the footer displays `elyaratours@gmail.com` and Instagram handle `@elyaratours`
+- **THEN** the footer displays `elyaratours@gmail.com`, WhatsApp number `+34 611 126 979`, and Instagram handle `@elyaratours`
 
 #### Scenario: Visitor activates email contact
 - **WHEN** a visitor activates the footer email contact
 - **THEN** the system opens a `mailto:elyaratours@gmail.com` link
+
+#### Scenario: Visitor activates WhatsApp contact
+- **WHEN** a visitor activates the footer WhatsApp contact
+- **THEN** the system opens `https://wa.me/34611126979` as an external link
 
 #### Scenario: Visitor activates Instagram contact
 - **WHEN** a visitor activates the footer Instagram contact
@@ -515,18 +526,18 @@ The system SHALL present direct business contact information in the global foote
 
 #### Scenario: Footer keeps lightweight contact scope
 - **WHEN** the footer contact area is displayed
-- **THEN** the system does not introduce additional social network links, newsletter signup, internal forms, backend contact handling, account creation, checkout, or payment flow
+- **THEN** the system does not introduce newsletter signup, internal forms, backend contact handling, account creation, checkout, or payment flow
 
 ### Requirement: Localized contact pages
-The system SHALL provide localized contact pages that explain how visitors can contact Elyara using email and Instagram only.
+The system SHALL provide localized contact pages that explain how visitors can contact Elyara using email, WhatsApp, and Instagram.
 
 #### Scenario: Visitor opens Spanish contact page
 - **WHEN** a visitor navigates to `/es/contacto/`
-- **THEN** the system displays a Spanish contact page titled `Contacto` with email `elyaratours@gmail.com` and Instagram handle `@elyaratours`
+- **THEN** the system displays a Spanish contact page titled `Contacto` with email `elyaratours@gmail.com`, WhatsApp number `+34 611 126 979`, and Instagram handle `@elyaratours`
 
 #### Scenario: Visitor opens English contact page
 - **WHEN** a visitor navigates to `/en/contact/`
-- **THEN** the system displays an English contact page titled `Contact` with email `elyaratours@gmail.com` and Instagram handle `@elyaratours`
+- **THEN** the system displays an English contact page titled `Contact` with email `elyaratours@gmail.com`, WhatsApp number `+34 611 126 979`, and Instagram handle `@elyaratours`
 
 #### Scenario: Visitor reads contact page purpose
 - **WHEN** a visitor reads a localized contact page
@@ -539,13 +550,17 @@ The system SHALL expose the approved contact channels on localized contact pages
 - **WHEN** a visitor activates the email contact on a localized contact page
 - **THEN** the system opens a `mailto:elyaratours@gmail.com` link
 
+#### Scenario: Visitor activates contact page WhatsApp link
+- **WHEN** a visitor activates the WhatsApp contact on a localized contact page
+- **THEN** the system opens `https://wa.me/34611126979` as an external link
+
 #### Scenario: Visitor activates contact page Instagram link
 - **WHEN** a visitor activates the Instagram contact on a localized contact page
 - **THEN** the system opens `https://instagram.com/elyaratours` as an external link
 
 #### Scenario: Contact page excludes unapproved channels
 - **WHEN** a visitor views a localized contact page
-- **THEN** the page does not display WhatsApp, phone, physical address, additional social networks, newsletter signup, internal forms, backend contact handling, account creation, checkout, or payment flow
+- **THEN** the page does not display physical address, additional social networks, newsletter signup, internal forms, backend contact handling, account creation, checkout, or payment flow
 
 ### Requirement: Contact page discovery and metadata
 The system SHALL make localized contact pages discoverable from shared navigation and expose appropriate SEO metadata.
@@ -807,8 +822,8 @@ The system SHALL provide a polished mobile public experience across localized di
 
 #### Scenario: Mobile visitor starts an inquiry or reservation
 - **WHEN** a mobile visitor wants to reserve a tour, send a general inquiry, or start a tailor-made inquiry
-- **THEN** the relevant email call to action is easy to identify and activate without introducing internal booking, checkout, account creation, or payment behavior
+- **THEN** the relevant WhatsApp and email calls to action are easy to identify and activate without introducing internal booking, checkout, account creation, or payment behavior
 
 #### Scenario: Desktop experience remains intact
 - **WHEN** the mobile polish is applied
-- **THEN** the existing desktop visual language, localized content, route structure, data-driven tours, editorial pages, and external email reservation flow remain unchanged in purpose and behavior
+- **THEN** the existing desktop visual language, localized content, route structure, data-driven tours, editorial pages, and external reservation flow remain unchanged in purpose and behavior

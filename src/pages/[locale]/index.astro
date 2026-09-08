@@ -1,11 +1,11 @@
 ---
-import { ArrowRight, Landmark, Mail, MapPinned } from '@lucide/astro';
+import { ArrowRight, Landmark, Mail, MapPinned, MessageCircle } from '@lucide/astro';
 import ReservationCalendar from '@/components/ReservationCalendar.astro';
 import TailorMadeHomeSection from '@/components/TailorMadeHomeSection.astro';
 import TourCard from '@/components/TourCard.astro';
 import TravelerReviewsMosaic from '@/components/TravelerReviewsMosaic.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
-import { contactEmail, getCommercialToursPath, getEmailReservationUrl, getLocaleConfig, locales, type Locale } from '@/lib/i18n';
+import { contactEmail, getCommercialToursPath, getEmailReservationUrl, getLocaleConfig, getWhatsAppReservationUrl, locales, whatsappDisplayNumber, type Locale } from '@/lib/i18n';
 import { reviewMosaicItems } from '@/lib/reviews';
 import { createItemListJsonLd, createReviewJsonLd, productionSiteUrl } from '@/lib/seo';
 import { getPublishedTours, getTourPath } from '@/lib/tours';
@@ -47,10 +47,16 @@ const jsonLd = [
           {copy.allTours}
           <ArrowRight class="h-4 w-4" aria-hidden="true" />
         </a>
+        <a class="btn-secondary w-full sm:w-auto" href={getWhatsAppReservationUrl(locale)} target="_blank" rel="noreferrer">
+          <MessageCircle class="h-4 w-4" aria-hidden="true" />
+          {copy.reserveWhatsapp}
+        </a>
         <a class="btn-secondary w-full sm:w-auto" href={getEmailReservationUrl()}>
-          {copy.reserve}
+          <Mail class="h-4 w-4" aria-hidden="true" />
+          {copy.reserveEmail}
         </a>
         <a class="btn-secondary w-full sm:w-auto" href={getCommercialToursPath(locale)}>{copy.navPrivateTours}</a>
+        <span class="select-all text-center text-sm font-bold text-alhambra-clay sm:text-left">{whatsappDisplayNumber}</span>
         <span class="select-all text-center text-sm font-bold text-alhambra-clay sm:text-left">{contactEmail}</span>
       </div>
     </div>
@@ -83,7 +89,7 @@ const jsonLd = [
         <p class="mt-3 text-sm leading-7 text-slate-700">{copy.experienceWalkableText}</p>
       </div>
       <div>
-        <Mail class="h-8 w-8 text-alhambra-clay" aria-hidden="true" />
+        <MessageCircle class="h-8 w-8 text-alhambra-clay" aria-hidden="true" />
         <h2 class="mt-4 font-serif text-2xl font-bold text-alhambra-night">{copy.experienceDirectTitle}</h2>
         <p class="mt-3 text-sm leading-7 text-slate-700">{copy.experienceDirectText}</p>
       </div>

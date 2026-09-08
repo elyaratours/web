@@ -1,6 +1,6 @@
 ---
-import { ArrowRight, Compass, Mail, Sparkles } from '@lucide/astro';
-import { getTailorMadeContent, getTailorMadeEmailUrl, getTailorMadePath, type Locale } from '@/lib/i18n';
+import { ArrowRight, Compass, Mail, MessageCircle, Sparkles } from '@lucide/astro';
+import { getTailorMadeContent, getTailorMadeEmailUrl, getTailorMadePath, getTailorMadeWhatsAppUrl, type Locale } from '@/lib/i18n';
 
 interface Props {
   locale: Locale;
@@ -10,6 +10,7 @@ const { locale } = Astro.props;
 const content = getTailorMadeContent(locale);
 const pagePath = getTailorMadePath(locale);
 const emailUrl = getTailorMadeEmailUrl();
+const whatsappUrl = getTailorMadeWhatsAppUrl(locale);
 ---
 
 <section class="section-shell py-8 sm:py-12" id="tailor-made">
@@ -51,6 +52,10 @@ const emailUrl = getTailorMadeEmailUrl();
           <a class="btn-primary w-full bg-alhambra-sand text-alhambra-night hover:bg-white sm:w-auto" href={pagePath}>
             {content.cta}
             <ArrowRight class="h-4 w-4" aria-hidden="true" />
+          </a>
+          <a class="btn-secondary w-full border-white/20 bg-white/10 text-white hover:bg-white hover:text-alhambra-night sm:w-auto" href={whatsappUrl} target="_blank" rel="noreferrer">
+            <MessageCircle class="h-4 w-4" aria-hidden="true" />
+            WhatsApp
           </a>
           <a class="btn-secondary w-full border-white/20 bg-white/10 text-white hover:bg-white hover:text-alhambra-night sm:w-auto" href={emailUrl}>
             <Mail class="h-4 w-4" aria-hidden="true" />

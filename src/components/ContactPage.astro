@@ -1,5 +1,5 @@
 ---
-import { ArrowLeft, CircleCheck, Mail } from '@lucide/astro';
+import { ArrowLeft, CircleCheck, Mail, MessageCircle } from '@lucide/astro';
 import FaqSection from '@/components/FaqSection.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import {
@@ -9,6 +9,8 @@ import {
   instagramHandle,
   instagramUrl,
   locales,
+  whatsappDisplayNumber,
+  whatsappUrl,
   type Locale,
 } from '@/lib/i18n';
 import { createBreadcrumbJsonLd, createFaqJsonLd, productionSiteUrl } from '@/lib/seo';
@@ -62,12 +64,19 @@ const jsonLd = [
       </div>
     </section>
 
-    <section class="mt-10 grid gap-4 sm:mt-12 sm:gap-6 md:grid-cols-2">
+    <section class="mt-10 grid gap-4 sm:mt-12 sm:gap-6 md:grid-cols-3">
       <a href={`mailto:${contactEmail}`} class="card group block p-5 transition hover:-translate-y-1 hover:border-alhambra-clay/30 sm:p-7">
         <Mail class="h-8 w-8 text-alhambra-clay" aria-hidden="true" />
         <p class="mt-5 text-sm font-bold uppercase tracking-[0.28em] text-alhambra-clay">{content.emailLabel}</p>
         <h2 class="mt-3 break-words font-serif text-2xl font-bold text-alhambra-night sm:text-3xl">{contactEmail}</h2>
         <p class="mt-5 text-sm font-bold text-alhambra-clay">{content.emailCta}</p>
+      </a>
+
+      <a href={whatsappUrl} class="card group block p-5 transition hover:-translate-y-1 hover:border-alhambra-clay/30 sm:p-7" target="_blank" rel="noreferrer">
+        <MessageCircle class="h-8 w-8 text-alhambra-clay" aria-hidden="true" />
+        <p class="mt-5 text-sm font-bold uppercase tracking-[0.28em] text-alhambra-clay">{content.whatsappLabel}</p>
+        <h2 class="mt-3 break-words font-serif text-2xl font-bold text-alhambra-night sm:text-3xl">{whatsappDisplayNumber}</h2>
+        <p class="mt-5 text-sm font-bold text-alhambra-clay">{content.whatsappCta}</p>
       </a>
 
       <a href={instagramUrl} class="card group block p-5 transition hover:-translate-y-1 hover:border-alhambra-clay/30 sm:p-7" target="_blank" rel="noreferrer">

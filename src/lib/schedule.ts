@@ -1,5 +1,5 @@
 import type { Locale } from './i18n';
-import { contactEmail } from './i18n';
+import { contactEmail, getScheduledWhatsAppReservationUrl } from './i18n';
 import { getTourPath, type TourEntry } from './tours';
 
 type Weekday = 0 | 1 | 2 | 3 | 4 | 5 | 6;
@@ -23,6 +23,7 @@ export interface ScheduledDeparture {
   tour: TourEntry;
   tourPath: string;
   reservationUrl: string;
+  whatsappReservationUrl: string;
   weekdayLabel: string;
   dateLabel: string;
   monthKey: string;
@@ -129,6 +130,8 @@ export function getScheduledDepartures(tours: TourEntry[], locale: Locale, tourF
 
       const isoDate = toIsoDate(date);
 
+      const dateLabel = formatDate(date, locale);
+
       departures.push({
         id: `${rule.locale}-${rule.translationKey}-${isoDate}`,
         locale,
@@ -140,8 +143,14 @@ export function getScheduledDepartures(tours: TourEntry[], locale: Locale, tourF
         tour,
         tourPath: getTourPath(tour),
         reservationUrl: getScheduledReservationUrl(tour, isoDate, rule.time, rule.language),
+        whatsappReservationUrl: getScheduledWhatsAppReservationUrl(locale, {
+          tourTitle: tour.data.title,
+          dateLabel,
+          time: rule.time,
+          language: rule.language,
+        }),
         weekdayLabel: formatWeekday(date, locale),
-        dateLabel: formatDate(date, locale),
+        dateLabel,
         monthKey: getMonthKey(date),
       });
     }

@@ -1,7 +1,7 @@
 ---
-import { Mail } from '@lucide/astro';
+import { Mail, MessageCircle } from '@lucide/astro';
 import SeoHead from '@/components/SeoHead.astro';
-import { contactEmail, getCommercialToursPath, getContactContent, getContactPath, getEmailReservationUrl, getLocaleConfig, getTailorMadePath, instagramHandle, instagramUrl, locales, type Locale } from '@/lib/i18n';
+import { contactEmail, getCommercialToursPath, getContactContent, getContactPath, getEmailReservationUrl, getLocaleConfig, getTailorMadePath, getWhatsAppReservationUrl, instagramHandle, instagramUrl, locales, whatsappDisplayNumber, whatsappUrl, type Locale } from '@/lib/i18n';
 import { productionSiteUrl, siteName, type JsonLdInput } from '@/lib/seo';
 import '@/styles/global.css';
 
@@ -88,8 +88,11 @@ const otherLocale = locale === 'es' ? 'en' : 'es';
               <a class="rounded-2xl px-4 py-3 hover:bg-alhambra-sand" href={`/${otherLocale}/`}>{getLocaleConfig(otherLocale).label}</a>
               {
                 !hideReserveCta && (
-                  <a class="btn-primary mt-2 w-full px-4 py-3 text-xs" href={getEmailReservationUrl()}>
-                    {copy.reserve}
+                  <a class="btn-primary mt-2 w-full px-4 py-3 text-xs" href={getWhatsAppReservationUrl(locale)} target="_blank" rel="noreferrer">
+                    {copy.reserveWhatsapp}
+                  </a>
+                  <a class="btn-secondary w-full px-4 py-3 text-xs" href={getEmailReservationUrl()}>
+                    {copy.reserveEmail}
                   </a>
                 )
               }
@@ -98,9 +101,14 @@ const otherLocale = locale === 'es' ? 'en' : 'es';
         </details>
         {
           !hideReserveCta && (
-            <a class="btn-primary hidden px-4 py-2 text-xs md:inline-flex" href={getEmailReservationUrl()}>
-              {copy.reserve}
-            </a>
+            <div class="hidden gap-2 md:flex">
+              <a class="btn-primary px-4 py-2 text-xs" href={getWhatsAppReservationUrl(locale)} target="_blank" rel="noreferrer">
+                {copy.reserveWhatsapp}
+              </a>
+              <a class="btn-secondary px-4 py-2 text-xs" href={getEmailReservationUrl()}>
+                Email
+              </a>
+            </div>
           )
         }
       </nav>
@@ -121,6 +129,10 @@ const otherLocale = locale === 'es' ? 'en' : 'es';
             <a href={`mailto:${contactEmail}`} class="inline-flex items-center gap-2 hover:text-alhambra-sand">
               <Mail class="h-4 w-4" aria-hidden="true" />
               {contactEmail}
+            </a>
+            <a href={whatsappUrl} class="inline-flex items-center gap-2 hover:text-alhambra-sand" target="_blank" rel="noreferrer">
+              <MessageCircle class="h-4 w-4" aria-hidden="true" />
+              {whatsappDisplayNumber}
             </a>
             <a href={instagramUrl} class="inline-flex items-center gap-2 hover:text-alhambra-sand" target="_blank" rel="noreferrer">
               <span class="text-xs font-black" aria-hidden="true">IG</span>
