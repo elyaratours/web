@@ -1,4 +1,5 @@
 import { getPublishedBlogPosts, getBlogPostPath } from '@/lib/blog';
+import { getAuthorityPath } from '@/lib/authority';
 import { getCommercialToursPath, getContactPath, getDayTripsPath, getTailorMadePath, locales, type Locale } from '@/lib/i18n';
 import { productionSiteUrl } from '@/lib/seo';
 import { getPublishedSeoLandings, getSeoLandingPath } from '@/lib/seo-landings';
@@ -52,6 +53,7 @@ export async function GET() {
   const homeAlternates = locales.map((locale) => ({ locale, path: `/${locale}/` }));
   const blogAlternates = locales.map((locale) => ({ locale, path: `/${locale}/blog/` }));
   const contactAlternates = locales.map((locale) => ({ locale, path: getContactPath(locale) }));
+  const authorityAlternates = locales.map((locale) => ({ locale, path: getAuthorityPath(locale) }));
   const tailorMadeAlternates = locales.map((locale) => ({ locale, path: getTailorMadePath(locale) }));
   const commercialAlternates = locales.map((locale) => ({ locale, path: getCommercialToursPath(locale) }));
   const dayTripsAlternates = locales.map((locale) => ({ locale, path: getDayTripsPath(locale) }));
@@ -63,6 +65,7 @@ export async function GET() {
     ...locales.map((locale) => ({ path: `/${locale}/`, alternates: homeAlternates })),
     ...locales.map((locale) => ({ path: `/${locale}/blog/`, alternates: blogAlternates })),
     ...locales.map((locale) => ({ path: getContactPath(locale), alternates: contactAlternates })),
+    ...locales.map((locale) => ({ path: getAuthorityPath(locale), alternates: authorityAlternates })),
     ...locales.map((locale) => ({ path: getTailorMadePath(locale), alternates: tailorMadeAlternates })),
     ...locales.map((locale) => ({ path: getCommercialToursPath(locale), alternates: commercialAlternates })),
     ...locales.map((locale) => ({ path: getDayTripsPath(locale), alternates: dayTripsAlternates })),

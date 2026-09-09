@@ -10,8 +10,8 @@ targetIntent: "tour privado Alhambra, visita guiada Alhambra Granada"
 image: "/images/alhambra.jpg"
 imageAlt: "Patios y arquitectura de la Alhambra para una visita privada cultural"
 relatedTours: ["alhambra", "alhambra-beyond-palaces", "granada-new-world"]
-relatedArticles: ["private-tour-granada-guide"]
-relatedLandings: ["guided-visits-granada", "free-tour-granada"]
+relatedArticles: ["private-tour-granada-guide", "first-day-granada"]
+relatedLandings: ["guided-visits-granada", "private-guide-granada", "free-tour-granada", "granada-day-trips-from-malaga-cordoba"]
 faq:
   - question: "La entrada a la Alhambra esta incluida?"
     answer: "La web no vende entradas ni pagos internos. Escribenos para coordinar disponibilidad, condiciones de la visita y cualquier detalle practico antes de confirmar."
@@ -25,3 +25,11 @@ La Alhambra no se entiende solo por la belleza de sus patios. Es un conjunto de 
 La experiencia puede centrarse en simbolos, historia nazari, jardines, miradores, vida cotidiana o transformaciones posteriores. Tambien puede combinarse con otra lectura de Granada para conectar la ciudad palatina con el Albaicin, el centro historico o la Granada cristiana.
 
 Antes de reservar conviene aclarar fecha, numero de personas, idioma, entradas disponibles y expectativas del grupo. A partir de ahi se puede proponer una visita realista, sin prometer accesos imposibles ni procesos de pago dentro de la web.
+
+## Antes de confirmar
+
+La Alhambra depende de horarios, accesos y entradas. Por eso es importante escribir antes de cerrar el viaje y evitar planes que prometen mas de lo que el dia permite. Si no hay disponibilidad, se puede valorar otra lectura de Granada a traves del Albaicin, el centro historico o una ruta privada por la ciudad.
+
+## Con que combinarla
+
+Si tienes mas tiempo, la Alhambra gana sentido cuando se conecta con el paisaje urbano. Una ruta por el Albaicin muestra la ciudad que la mira desde enfrente; la Catedral y la Capilla Real explican otra etapa del poder granadino; y la Granada de 1492 ayuda a unir las capas historicas.

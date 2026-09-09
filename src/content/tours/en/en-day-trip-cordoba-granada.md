@@ -20,14 +20,14 @@ faq:
   - question: "Why is the price on request?"
     answer: "The final price depends on group size, pickup city, transport, monument tickets, lunch and the selected experience."
 relatedLandings: ["private-alhambra-tour", "albaicin-guided-walk"]
-seoDescription: "Private day trip from Cordoba to Granada with an official guide, optional transfer, Alhambra or Historic Centre and Albaicin experience, local lunch option and tailor-made timing."
+seoDescription: "Private day trip from Cordoba to Granada with a cultural guide, optional transfer, Alhambra or Historic Centre and Albaicin experience, local lunch option and tailor-made timing."
 featured: false
 order: 81
 ---
 
 Travel from Cordoba to Granada for a private day shaped around culture, timing and your group's interests. The proposal can include private transfer, or it can begin once you arrive in Granada independently.
 
-In Granada, choose one main experience for the day. The private Alhambra and Generalife option focuses on the monument with an official guide when tickets are available. The route depends on monument entry availability and will be confirmed before the proposal is finalized.
+In Granada, choose one main experience for the day. The private Alhambra and Generalife option focuses on the monument with a cultural guide when tickets are available. The route depends on monument entry availability and will be confirmed before the proposal is finalized.
 
 The Historic Centre and Albaicin option is designed as a complete alternative. It connects Granada's historic streets, heritage, viewpoints and neighborhoods, giving the day a strong cultural structure even without visiting the Alhambra.
 

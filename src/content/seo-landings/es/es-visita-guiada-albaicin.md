@@ -10,8 +10,8 @@ targetIntent: "visita guiada Albaicin Granada, ruta por miradores"
 image: "/images/almagranada.jpg"
 imageAlt: "Calles y miradores del Albaicin para una visita guiada por Granada"
 relatedTours: ["albaicin", "granada-viewpoints-legends"]
-relatedArticles: ["albaicin-atardecer", "private-tour-granada-guide"]
-relatedLandings: ["guided-visits-granada", "free-tour-granada"]
+relatedArticles: ["albaicin-atardecer", "albaicin-sacromonte-guide", "private-tour-granada-guide"]
+relatedLandings: ["guided-visits-granada", "albaicin-sacromonte-guided", "private-guide-granada", "free-tour-granada"]
 faq:
   - question: "La visita por el Albaicin tiene muchas cuestas?"
     answer: "El Albaicin tiene pendientes, pero la ruta puede plantearse con pausas, miradores y un ritmo caminable para disfrutar el barrio con calma."
@@ -25,3 +25,11 @@ El Albaicin no es solo un barrio bonito. Sus calles explican la forma de Granada
 Una visita guiada por el Albaicin debe dejar espacio para mirar. Hay cuestas, sombras, plazas pequenas y vistas que merecen una pausa. El recorrido puede funcionar como primera introduccion a Granada o como ruta mas lenta para quienes quieren salir de los itinerarios mas mecanicos.
 
 Si te interesan las leyendas, las fotografias al atardecer, los miradores o la historia urbana, esta zona permite construir una visita muy rica. La reserva se inicia por WhatsApp o email y puede adaptarse al idioma, al tiempo disponible y al ritmo del grupo.
+
+## Albaicin solo o con Sacromonte
+
+Si el grupo tiene poco tiempo o prefiere caminar sin demasiado desnivel, una visita centrada en el Albaicin puede ser suficiente. Si buscas una lectura mas amplia de los barrios altos, se puede valorar una conexion con Sacromonte, siempre teniendo en cuenta cuestas, luz y energia del grupo.
+
+## Que aporta una visita guiada
+
+Caminar con contexto ayuda a distinguir entre una calle bonita y una calle que explica una transformacion historica. La visita une miradores, agua, memoria urbana y vida local para que el barrio no sea solo un decorado para fotografias.

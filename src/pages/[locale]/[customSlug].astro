@@ -1,8 +1,10 @@
 ---
 import { ArrowLeft, CalendarDays, CircleCheck, Compass, Mail, MessageCircle, Sparkles } from '@lucide/astro';
+import AuthorityPage from '@/components/AuthorityPage.astro';
 import FaqSection from '@/components/FaqSection.astro';
 import SeoLandingPage from '@/components/SeoLandingPage.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import { getAuthorityContent } from '@/lib/authority';
 import {
   getLocaleConfig,
   getTailorMadeContent,
@@ -15,7 +17,7 @@ import {
 import { createBreadcrumbJsonLd, createFaqJsonLd, productionSiteUrl } from '@/lib/seo';
 import { getPublishedSeoLandings, type SeoLandingEntry } from '@/lib/seo-landings';
 
-type PageProps = { kind: 'tailorMade'; locale: Locale } | { kind: 'seoLanding'; landing: SeoLandingEntry };
+type PageProps = { kind: 'tailorMade'; locale: Locale } | { kind: 'authority'; locale: Locale } | { kind: 'seoLanding'; landing: SeoLandingEntry };
 
 export async function getStaticPaths() {
   const seoLandings = await getPublishedSeoLandings();
@@ -27,9 +29,18 @@ export async function getStaticPaths() {
       props: { kind: 'tailorMade', locale },
     };
   });
+  const authorityPaths = locales.map((locale) => {
+    const content = getAuthorityContent(locale);
+
+    return {
+      params: { locale, customSlug: content.routeSlug },
+      props: { kind: 'authority', locale },
+    };
+  });
 
   return [
     ...tailorMadePaths,
+    ...authorityPaths,
     ...seoLandings.map((landing) => ({
       params: { locale: landing.data.locale, customSlug: landing.data.routeSlug },
       props: { kind: 'seoLanding', landing },
@@ -38,7 +49,7 @@ export async function getStaticPaths() {
 }
 
 const props = Astro.props as PageProps;
-const locale = props.kind === 'tailorMade' ? props.locale : props.landing.data.locale;
+const locale = props.kind === 'seoLanding' ? props.landing.data.locale : props.locale;
 const copy = getLocaleConfig(locale);
 const content = getTailorMadeContent(locale);
 const emailUrl = getTailorMadeEmailUrl();
@@ -57,7 +68,7 @@ const jsonLd = [
 ].filter((item) => item !== undefined);
 ---
 
-{props.kind === 'seoLanding' ? <SeoLandingPage landing={props.landing} /> : (
+{props.kind === 'seoLanding' ? <SeoLandingPage landing={props.landing} /> : props.kind === 'authority' ? <AuthorityPage locale={props.locale} /> : (
   <BaseLayout
     title={content.pageTitle}
     description={content.metaDescription}

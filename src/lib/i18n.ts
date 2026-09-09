@@ -11,6 +11,7 @@ export const localeConfig = {
     navTailorMade: 'Viajes a medida',
     navPrivateTours: 'Tours privados',
     navDayTrips: 'Excursiones de un dia',
+    navAbout: 'Sobre Elyara',
     navContact: 'Contacto',
     footerContact: 'Contacto',
     reserve: 'Reservar',
@@ -53,6 +54,7 @@ export const localeConfig = {
     navTailorMade: 'Tailor-made',
     navPrivateTours: 'Private tours',
     navDayTrips: 'Day Trips',
+    navAbout: 'About Elyara',
     navContact: 'Contact',
     footerContact: 'Contact',
     reserve: 'Reserve',
@@ -423,7 +425,7 @@ export const dayTripsContent = {
     routeSlug: 'excursiones-un-dia-granada',
     pageTitle: 'Excursiones de un dia a Granada',
     metaDescription:
-      'Excursiones privadas de un dia a Granada desde Malaga, Costa del Sol o Cordoba con guia oficial, opciones culturales y propuesta a medida.',
+      'Excursiones privadas de un dia a Granada desde Malaga, Costa del Sol o Cordoba con guia cultural, opciones culturales y propuesta a medida.',
     eyebrow: 'Excursiones privadas a Granada',
     title: 'Excursiones de un dia a Granada disenadas para tu grupo',
     intro:
@@ -446,8 +448,8 @@ export const dayTripsContent = {
     experienceOptions: [
       {
         title: 'Alhambra privada',
-        text: 'Visita privada a la Alhambra y Generalife con guia oficial. El recorrido depende siempre de la disponibilidad de entradas a monumentos.',
-        details: ['Guia oficial', 'Palacios, Generalife y espacios disponibles', 'Tiempo libre, comida o actividad tranquila si el itinerario lo permite'],
+        text: 'Visita privada a la Alhambra y Generalife con guia cultural. El recorrido depende siempre de la disponibilidad de entradas a monumentos.',
+        details: ['Guia cultural', 'Palacios, Generalife y espacios disponibles', 'Tiempo libre, comida o actividad tranquila si el itinerario lo permite'],
       },
       {
         title: 'Centro Historico + Albaicin',
@@ -484,7 +486,7 @@ export const dayTripsContent = {
     routeSlug: 'day-trips-granada',
     pageTitle: 'Day Trips to Granada',
     metaDescription:
-      'Private day trips to Granada from Malaga, Costa del Sol or Cordoba with an official guide, cultural options and a tailor-made proposal.',
+      'Private day trips to Granada from Malaga, Costa del Sol or Cordoba with a cultural guide, cultural options and a tailor-made proposal.',
     eyebrow: 'Private day trips to Granada',
     title: 'Day trips to Granada designed around your group',
     intro:
@@ -507,8 +509,8 @@ export const dayTripsContent = {
     experienceOptions: [
       {
         title: 'Alhambra Private Tour',
-        text: 'Private visit to the Alhambra and Generalife with an official guide. The route always depends on monument ticket availability.',
-        details: ['Official guide', 'Palaces, Generalife and available spaces', 'Free time, lunch or a calm complementary activity if the itinerary allows'],
+        text: 'Private visit to the Alhambra and Generalife with a cultural guide. The route always depends on monument ticket availability.',
+        details: ['Cultural guide', 'Palaces, Generalife and available spaces', 'Free time, lunch or a calm complementary activity if the itinerary allows'],
       },
       {
         title: 'Historic Centre & Albaicin',

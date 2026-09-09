@@ -1,7 +1,7 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import { getPublishedBlogPosts } from './blog';
 import type { Locale } from './i18n';
-import { getPublishedTours } from './tours';
+import { getPublishedTourEntries } from './tours';
 
 export type SeoLandingEntry = CollectionEntry<'seoLandings'>;
 
@@ -39,7 +39,7 @@ export async function getRelatedToursForSeoLanding(landing: SeoLandingEntry) {
     return [];
   }
 
-  const tours = await getPublishedTours(landing.data.locale);
+  const tours = await getPublishedTourEntries(landing.data.locale);
   return landing.data.relatedTours.map((key) => tours.find((tour) => tour.data.translationKey === key)).filter((tour) => tour !== undefined);
 }
 

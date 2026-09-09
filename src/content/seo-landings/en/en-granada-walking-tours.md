@@ -10,8 +10,8 @@ targetIntent: "Granada walking tours, guided visits and cultural routes"
 image: "/images/Granada-main.jpeg"
 imageAlt: "Granada and the Alhambra from a viewpoint for planning a walking tour"
 relatedTours: ["albaicin", "alhambra", "cathedral-royal-chapel", "granada-two-worlds"]
-relatedArticles: ["private-tour-granada-guide", "albaicin-atardecer"]
-relatedLandings: ["free-tour-granada", "private-alhambra-tour", "albaicin-guided-walk"]
+relatedArticles: ["private-tour-granada-guide", "first-day-granada", "cathedral-royal-chapel-guide", "family-granada-guide"]
+relatedLandings: ["private-guide-granada", "free-tour-granada", "private-alhambra-tour", "albaicin-guided-walk", "family-tours-granada"]
 faq:
   - question: "Which Granada walking tour should I choose first?"
     answer: "For a first visit, an Albaicin or historic Granada route usually gives useful context. If you have Alhambra tickets, a focused Alhambra visit can be planned separately."
@@ -25,3 +25,13 @@ Granada is best understood on foot. The city changes between the Albaicin hill, 
 Elyara routes are designed with context, pauses and conversation. You can choose a published route or write to shape a private visit around your available time, group pace and language. Booking begins directly by WhatsApp or email, with no user account, long internal form, checkout or payment flow on the website.
 
 If you have limited time, choosing well matters. The Albaicin helps you read Granada from its lanes and viewpoints. The Alhambra asks for another kind of attention, focused on architecture, power, water and landscape. Historic Granada opens the story of the city after 1492.
+
+## How to choose around your trip
+
+If it is your first time in Granada, it is often useful to begin with a route that connects neighborhoods, landscape and the historic center. If you already have Alhambra tickets, leave enough time for that visit and avoid adding too many plans to the same day. If you travel with children or a group that needs pauses, a shorter route may work better.
+
+Guided walks can also help with practical decisions: what to see first, what to leave for another afternoon, when to go up to the Albaicin, how to avoid repeating routes and which itinerary makes sense around your accommodation or schedule.
+
+## Booking and contact
+
+Booking is confirmed by WhatsApp or email. Mention date, group size, preferred language and whether you want a published route, a private guide or a more personalized proposal for your time in Granada.

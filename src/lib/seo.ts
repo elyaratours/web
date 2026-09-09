@@ -37,6 +37,7 @@ const imageDimensions: Record<string, { width: number; height: number }> = {
   '/images/day-trip-cordoba-granada.webp': { width: 1448, height: 1086 },
   '/images/day-trip-malaga-granada.webp': { width: 1536, height: 1024 },
   '/images/granada-pomegranates.jpeg': { width: 1200, height: 800 },
+  '/images/Niños.jpg': { width: 6000, height: 4000 },
   '/images/main.jpeg': { width: 1200, height: 800 },
   '/images/mapa.png': { width: 1200, height: 800 },
   '/images/miradoresyleyendas.jpg': { width: 1200, height: 800 },

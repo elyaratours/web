@@ -10,8 +10,8 @@ targetIntent: "free tour Granada, rutas a pie y visitas culturales"
 image: "/images/alhambra-clouds.jpeg"
 imageAlt: "La Alhambra vista desde Granada para elegir una ruta a pie o free tour"
 relatedTours: ["albaicin", "granada-viewpoints-legends", "granada-two-worlds"]
-relatedArticles: ["private-tour-granada-guide", "albaicin-atardecer"]
-relatedLandings: ["guided-visits-granada", "albaicin-guided-walk"]
+relatedArticles: ["private-tour-granada-guide", "first-day-granada", "albaicin-atardecer"]
+relatedLandings: ["guided-visits-granada", "private-guide-granada", "albaicin-guided-walk", "family-tours-granada"]
 faq:
   - question: "Elyara ofrece un free tour con pago interno?"
     answer: "No hay checkout ni pago interno en la web. Puedes escribir por WhatsApp o email para consultar rutas, disponibilidad y condiciones de reserva."
@@ -25,3 +25,11 @@ Buscar un free tour en Granada es habitual cuando quieres una primera orientacio
 Esta pagina no promete un sistema de reserva gratuito ni un checkout interno. Su objetivo es ayudarte a entender que tipo de visita necesitas y ofrecerte una via directa de contacto. Si quieres una ruta cultural, una visita privada o una propuesta mas flexible, puedes escribir por WhatsApp o email con tus fechas, numero de personas e idioma preferido.
 
 Para muchos viajeros, el mejor punto de partida es una ruta por el Albaicin, los miradores o el centro historico. Si buscas algo mas especifico, la Alhambra, la Catedral y la Capilla Real o la Granada de 1492 pueden dar un contexto mas profundo a tu estancia.
+
+## Que conviene comparar
+
+Antes de elegir, mira si la visita explica claramente idioma, duracion, punto de encuentro, tamano aproximado del grupo y forma de reserva. Tambien conviene preguntarse si quieres solo orientarte o si prefieres una ruta con mas profundidad historica y tiempo para preguntas.
+
+## Alternativas culturales
+
+Una ruta privada o una visita guiada cultural puede ser mejor si viajas con familia, si buscas un idioma concreto, si tienes poco tiempo o si quieres conectar Albaicin, centro historico, Alhambra o miradores con una narracion mas personalizada.
