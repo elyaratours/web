@@ -9,6 +9,8 @@ import {
   getCommercialToursContent,
   getCommercialToursPath,
   getContactPath,
+  getDayTripsContent,
+  getDayTripsPath,
   getEmailReservationUrl,
   getLocaleConfig,
   getTailorMadePath,
@@ -25,6 +27,7 @@ interface Props {
 
 const { locale } = Astro.props;
 const content = getCommercialToursContent(locale);
+const dayTripsContent = getDayTripsContent(locale);
 const copy = getLocaleConfig(locale);
 const site = Astro.site ?? new URL(productionSiteUrl);
 const tours = await getPublishedTours(locale);
@@ -111,7 +114,7 @@ function siteNameForLocale(currentLocale: Locale) {
       </div>
     </section>
 
-    <section class="mt-10 grid gap-6 sm:mt-12 lg:grid-cols-2">
+    <section class="mt-10 grid gap-6 sm:mt-12 lg:grid-cols-3">
       <div class="card p-5 sm:p-7">
         <MapPinned class="h-8 w-8 text-alhambra-clay" aria-hidden="true" />
         <h2 class="mt-5 font-serif text-2xl font-bold text-alhambra-night sm:text-3xl">{content.tailorMadeTitle}</h2>
@@ -120,6 +123,12 @@ function siteNameForLocale(currentLocale: Locale) {
           <a class="btn-secondary" href={getTailorMadePath(locale)}>{copy.navTailorMade}</a>
           <a class="btn-secondary" href={getContactPath(locale)}>{copy.navContact}</a>
         </div>
+      </div>
+      <div class="card p-5 sm:p-7">
+        <MapPinned class="h-8 w-8 text-alhambra-clay" aria-hidden="true" />
+        <h2 class="mt-5 font-serif text-2xl font-bold text-alhambra-night sm:text-3xl">{dayTripsContent.pageTitle}</h2>
+        <p class="mt-4 leading-8 text-slate-700">{dayTripsContent.originsText}</p>
+        <a class="btn-secondary mt-6" href={getDayTripsPath(locale)}>{copy.navDayTrips}</a>
       </div>
       <div class="card p-5 sm:p-7">
         <h2 class="font-serif text-2xl font-bold text-alhambra-night sm:text-3xl">{content.editorialTitle}</h2>

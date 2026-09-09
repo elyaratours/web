@@ -1,0 +1,9 @@
+---
+import DayTripsPage from '@/components/DayTripsPage.astro';
+
+export function getStaticPaths() {
+  return [{ params: { locale: 'en' }, props: { locale: 'en' } }];
+}
+---
+
+<DayTripsPage locale="en" />

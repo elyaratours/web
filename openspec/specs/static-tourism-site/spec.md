@@ -227,20 +227,31 @@ The system SHALL present tours with a visual style appropriate for a Granada tou
 - **WHEN** a visitor views the home page or tour catalog
 - **THEN** the system emphasizes destination imagery, route discovery, human guide context, local atmosphere, and clear visitor-oriented calls to action
 
-### Requirement: Localized home experience cards
-The system SHALL display localized copy for the three introductory experience cards on the Spanish and English home pages.
+### Requirement: Localized home without experience section
+The system SHALL omit the introductory Experience/La experiencia card section from Spanish and English localized home pages while preserving the rest of the home discovery flow.
 
-#### Scenario: Spanish visitor sees Spanish experience cards
-- **WHEN** a visitor opens the Spanish home page at `/es/`
-- **THEN** the experience cards display Spanish titles and descriptions for historical context, walkable pace, and direct booking
+#### Scenario: Spanish visitor opens home without experience cards
+- **WHEN** a visitor opens `/es/`
+- **THEN** the page does not display the three-card `La experiencia` section for historical context, walkable pace, and direct booking
+- **AND** the page still displays the localized hero, tour catalog, reservation calendar, tailor-made section, traveler reviews, footer, and external WhatsApp/email reservation actions
 
-#### Scenario: English visitor sees English experience cards
-- **WHEN** a visitor opens the English home page at `/en/`
-- **THEN** the experience cards display English titles and descriptions for historical context, walkable pace, and direct booking
+#### Scenario: English visitor opens home without experience cards
+- **WHEN** a visitor opens `/en/`
+- **THEN** the page does not display the three-card `Experience` section for historical context, walkable pace, and direct booking
+- **AND** the page still displays the localized hero, tour catalog, reservation calendar, tailor-made section, traveler reviews, footer, and external WhatsApp/email reservation actions
 
-#### Scenario: Experience card layout remains unchanged
-- **WHEN** the localized home experience cards are displayed
-- **THEN** the system preserves the existing three-card order, icons, section placement, responsive layout, and booking behavior
+### Requirement: Navigation excludes removed experience anchor
+The system SHALL not expose localized navigation links to the removed home Experience/La experiencia section.
+
+#### Scenario: Visitor sees desktop navigation
+- **WHEN** a visitor views the desktop navigation on a localized public page
+- **THEN** the navigation does not display a `La experiencia` or `Experience` link that points to `#experience`
+- **AND** the remaining localized navigation links continue to provide access to tours, private tours, tailor-made content, blog, contact, and the alternate language
+
+#### Scenario: Visitor sees mobile navigation
+- **WHEN** a visitor opens the mobile navigation menu on a localized public page
+- **THEN** the menu does not display a `La experiencia` or `Experience` link that points to `#experience`
+- **AND** the remaining localized navigation links and reservation actions remain available
 
 ### Requirement: Localized home approved hero image
 The system SHALL display `/images/alhambra-clouds.jpeg` as the main hero image on the Spanish and English localized home pages, with localized accessible text and appropriate framing.

@@ -1,7 +1,7 @@
 ---
 import { Mail, MessageCircle } from '@lucide/astro';
 import SeoHead from '@/components/SeoHead.astro';
-import { contactEmail, getCommercialToursPath, getContactContent, getContactPath, getEmailReservationUrl, getLocaleConfig, getTailorMadePath, getWhatsAppReservationUrl, instagramHandle, instagramUrl, locales, whatsappDisplayNumber, whatsappUrl, type Locale } from '@/lib/i18n';
+import { contactEmail, getCommercialToursPath, getContactContent, getContactPath, getDayTripsPath, getEmailReservationUrl, getLocaleConfig, getTailorMadePath, getWhatsAppReservationUrl, instagramHandle, instagramUrl, locales, whatsappDisplayNumber, whatsappUrl, type Locale } from '@/lib/i18n';
 import { getImageDimensions, productionSiteUrl, siteName, type JsonLdInput } from '@/lib/seo';
 import '@/styles/global.css';
 
@@ -80,9 +80,9 @@ const fallbackImageDimensions = getImageDimensions(image);
         <div class="hidden items-center gap-5 text-sm font-bold text-alhambra-night lg:gap-7 md:flex">
           <a class="hover:text-alhambra-clay" href={`/${locale}/#tours`}>{copy.navTours}</a>
           <a class="hover:text-alhambra-clay" href={getCommercialToursPath(locale)}>{copy.navPrivateTours}</a>
+          <a class="hover:text-alhambra-clay" href={getDayTripsPath(locale)}>{copy.navDayTrips}</a>
           <a class="hover:text-alhambra-clay" href={getTailorMadePath(locale)}>{copy.navTailorMade}</a>
           <a class="hover:text-alhambra-clay" href={`/${locale}/blog/`}>{copy.navBlog}</a>
-          <a class="hover:text-alhambra-clay" href={`/${locale}/#experience`}>{copy.navAbout}</a>
           <a class="hover:text-alhambra-clay" href={getContactPath(locale)}>{copy.navContact}</a>
           <a class="hover:text-alhambra-clay" href={`/${otherLocale}/`}>{getLocaleConfig(otherLocale).label}</a>
         </div>
@@ -94,9 +94,9 @@ const fallbackImageDimensions = getImageDimensions(image);
             <div class="grid gap-1">
               <a class="rounded-2xl px-4 py-3 hover:bg-alhambra-sand" href={`/${locale}/#tours`}>{copy.navTours}</a>
               <a class="rounded-2xl px-4 py-3 hover:bg-alhambra-sand" href={getCommercialToursPath(locale)}>{copy.navPrivateTours}</a>
+              <a class="rounded-2xl px-4 py-3 hover:bg-alhambra-sand" href={getDayTripsPath(locale)}>{copy.navDayTrips}</a>
               <a class="rounded-2xl px-4 py-3 hover:bg-alhambra-sand" href={getTailorMadePath(locale)}>{copy.navTailorMade}</a>
               <a class="rounded-2xl px-4 py-3 hover:bg-alhambra-sand" href={`/${locale}/blog/`}>{copy.navBlog}</a>
-              <a class="rounded-2xl px-4 py-3 hover:bg-alhambra-sand" href={`/${locale}/#experience`}>{copy.navAbout}</a>
               <a class="rounded-2xl px-4 py-3 hover:bg-alhambra-sand" href={getContactPath(locale)}>{copy.navContact}</a>
               <a class="rounded-2xl px-4 py-3 hover:bg-alhambra-sand" href={`/${otherLocale}/`}>{getLocaleConfig(otherLocale).label}</a>
               {
@@ -158,6 +158,8 @@ const fallbackImageDimensions = getImageDimensions(image);
           <a href={`/${locale}/blog/`} class="hover:text-alhambra-sand">{copy.navBlog}</a>
           <span class="text-white/30">/</span>
           <a href={getCommercialToursPath(locale)} class="hover:text-alhambra-sand">{copy.navPrivateTours}</a>
+          <span class="text-white/30">/</span>
+          <a href={getDayTripsPath(locale)} class="hover:text-alhambra-sand">{copy.navDayTrips}</a>
           <span class="text-white/30">/</span>
           <a href="/es/" class="hover:text-alhambra-sand">ES</a>
           <span class="text-white/30">/</span>

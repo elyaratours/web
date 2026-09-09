@@ -1,8 +1,8 @@
 import { getPublishedBlogPosts, getBlogPostPath } from '@/lib/blog';
-import { getCommercialToursPath, getContactPath, getTailorMadePath, locales, type Locale } from '@/lib/i18n';
+import { getCommercialToursPath, getContactPath, getDayTripsPath, getTailorMadePath, locales, type Locale } from '@/lib/i18n';
 import { productionSiteUrl } from '@/lib/seo';
 import { getPublishedSeoLandings, getSeoLandingPath } from '@/lib/seo-landings';
-import { getPublishedTours, getTourPath } from '@/lib/tours';
+import { getPublishedTourEntries, getTourPath } from '@/lib/tours';
 
 const site = productionSiteUrl;
 
@@ -46,7 +46,7 @@ function groupByTranslationKey<T extends { data: { translationKey: string } }>(i
 }
 
 export async function GET() {
-  const tours = await getPublishedTours();
+  const tours = await getPublishedTourEntries();
   const posts = await getPublishedBlogPosts();
   const seoLandings = await getPublishedSeoLandings();
   const homeAlternates = locales.map((locale) => ({ locale, path: `/${locale}/` }));
@@ -54,6 +54,7 @@ export async function GET() {
   const contactAlternates = locales.map((locale) => ({ locale, path: getContactPath(locale) }));
   const tailorMadeAlternates = locales.map((locale) => ({ locale, path: getTailorMadePath(locale) }));
   const commercialAlternates = locales.map((locale) => ({ locale, path: getCommercialToursPath(locale) }));
+  const dayTripsAlternates = locales.map((locale) => ({ locale, path: getDayTripsPath(locale) }));
   const tourGroups = groupByTranslationKey(tours);
   const postGroups = groupByTranslationKey(posts);
   const seoLandingGroups = groupByTranslationKey(seoLandings);
@@ -64,6 +65,7 @@ export async function GET() {
     ...locales.map((locale) => ({ path: getContactPath(locale), alternates: contactAlternates })),
     ...locales.map((locale) => ({ path: getTailorMadePath(locale), alternates: tailorMadeAlternates })),
     ...locales.map((locale) => ({ path: getCommercialToursPath(locale), alternates: commercialAlternates })),
+    ...locales.map((locale) => ({ path: getDayTripsPath(locale), alternates: dayTripsAlternates })),
     ...tours.map((tour) => ({
       path: getTourPath(tour),
       alternates: tourGroups.get(tour.data.translationKey)?.map((item) => ({ locale: item.data.locale, path: getTourPath(item) })),

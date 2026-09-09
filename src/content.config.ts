@@ -9,6 +9,7 @@ const tours = defineCollection({
     translationKey: z.string().min(1),
     title: z.string().min(1),
     routeSlug: z.string().min(1),
+    category: z.enum(['local', 'day-trip']).default('local'),
     duration: z.string().min(1),
     price: z.string().min(1),
     languages: z.array(z.string().min(1)).min(1),

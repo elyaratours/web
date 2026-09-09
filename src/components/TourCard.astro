@@ -1,6 +1,6 @@
 ---
 import { ArrowRight, Clock, Languages, MessageCircle, Ticket } from '@lucide/astro';
-import { getLocaleConfig, getTourWhatsAppReservationUrl } from '@/lib/i18n';
+import { getDayTripsContent, getDayTripWhatsAppUrl, getLocaleConfig, getTourWhatsAppReservationUrl } from '@/lib/i18n';
 import { getTourPath, type TourEntry } from '@/lib/tours';
 
 interface Props {
@@ -11,7 +11,12 @@ interface Props {
 const { tour, showReservationCta = false } = Astro.props;
 const copy = getLocaleConfig(tour.data.locale);
 const href = getTourPath(tour);
-const whatsappReservationUrl = getTourWhatsAppReservationUrl(tour.data.locale, tour.data.title);
+const isDayTrip = tour.data.category === 'day-trip';
+const dayTripCopy = getDayTripsContent(tour.data.locale);
+const whatsappReservationUrl = isDayTrip
+  ? getDayTripWhatsAppUrl(tour.data.locale, tour.data.title)
+  : getTourWhatsAppReservationUrl(tour.data.locale, tour.data.title);
+const reservationLabel = isDayTrip ? dayTripCopy.primaryCta : copy.reserveWhatsapp;
 ---
 
 <article class="card group overflow-hidden">
@@ -65,7 +70,7 @@ const whatsappReservationUrl = getTourWhatsAppReservationUrl(tour.data.locale, t
         showReservationCta && (
           <a class="inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-alhambra-wine px-5 py-3 text-center text-sm font-bold text-white shadow-warm transition hover:-translate-y-0.5 hover:bg-alhambra-night focus:outline-none focus:ring-2 focus:ring-alhambra-wine focus:ring-offset-2" href={whatsappReservationUrl} target="_blank" rel="noreferrer">
             <MessageCircle class="h-4 w-4" aria-hidden="true" />
-            {copy.reserveWhatsapp}
+            {reservationLabel}
           </a>
         )
       }

@@ -8,9 +8,9 @@ export const localeConfig = {
     label: 'Espanol',
     navTours: 'Rutas',
     navBlog: 'Cuaderno',
-    navAbout: 'La experiencia',
     navTailorMade: 'Viajes a medida',
     navPrivateTours: 'Tours privados',
+    navDayTrips: 'Excursiones de un dia',
     navContact: 'Contacto',
     footerContact: 'Contacto',
     reserve: 'Reservar',
@@ -41,13 +41,6 @@ export const localeConfig = {
     footerIntro:
       'Tours privados y rutas a pie para descubrir la Alhambra, el Albaicin y la ciudad historica con una mirada cercana y cultural.',
     catalogIntro: 'Elige una ruta y empieza la reserva por WhatsApp o email.',
-    experienceHistoricalTitle: 'Contexto historico',
-    experienceHistoricalText:
-      'Rutas narradas para entender monumentos, barrios y paisajes sin convertir la visita en una clase pesada.',
-    experienceWalkableTitle: 'Ritmo caminable',
-    experienceWalkableText: 'Itinerarios pensados para mirar, preguntar, hacer pausas y disfrutar de Granada con calma.',
-    experienceDirectTitle: 'Reserva directa',
-    experienceDirectText: 'La reserva empieza por WhatsApp o email. Sin cuentas, pagos internos ni checkout.',
     metaHome: 'Rutas turisticas y tours privados en Granada con experiencias culturales en espanol e ingles.',
   },
   en: {
@@ -55,9 +48,9 @@ export const localeConfig = {
     label: 'English',
     navTours: 'Tours',
     navBlog: 'Journal',
-    navAbout: 'Experience',
     navTailorMade: 'Tailor-made',
     navPrivateTours: 'Private tours',
+    navDayTrips: 'Day Trips',
     navContact: 'Contact',
     footerContact: 'Contact',
     reserve: 'Reserve',
@@ -88,13 +81,6 @@ export const localeConfig = {
     footerIntro:
       'Private tours and walking routes to discover the Alhambra, the Albaicin and the historic city with a warm cultural perspective.',
     catalogIntro: 'Choose a route and start booking by WhatsApp or email.',
-    experienceHistoricalTitle: 'Historical context',
-    experienceHistoricalText:
-      'Narrated routes to understand monuments, neighborhoods and landscapes without turning the visit into a heavy lecture.',
-    experienceWalkableTitle: 'Walkable pace',
-    experienceWalkableText: 'Itineraries designed to look around, ask questions, pause and enjoy Granada at a calm pace.',
-    experienceDirectTitle: 'Direct booking',
-    experienceDirectText: 'Booking starts by WhatsApp or email. No accounts, internal payments or checkout.',
     metaHome: 'Tourism routes and private tours in Granada with cultural experiences in Spanish and English.',
   },
 } satisfies Record<Locale, Record<string, string>>;
@@ -124,6 +110,17 @@ const whatsappMessageCopy = {
         'Numero de personas:',
       ].join('\n'),
     tailorMade: 'Hola, quiero informacion para disenar una ruta o viaje a medida en Granada.',
+    dayTrip: (tourTitle: string) =>
+      [
+        `Hola, quiero solicitar la excursion privada "${tourTitle}" con Elyara Tours Granada.`,
+        '',
+        'Fecha aproximada:',
+        'Numero de personas:',
+        'Ciudad o zona de recogida:',
+        'Experiencia preferida en Granada: Alhambra / Centro Historico y Albaicin / a medida',
+        'Transporte privado: si / no / por confirmar',
+        'Comida en restaurante local: si / no / por confirmar',
+      ].join('\n'),
   },
   en: {
     general: 'Hello, I would like to book a tour with Elyara Tours Granada.',
@@ -141,6 +138,17 @@ const whatsappMessageCopy = {
         'Number of people:',
       ].join('\n'),
     tailorMade: 'Hello, I would like information about a tailor-made route or trip in Granada.',
+    dayTrip: (tourTitle: string) =>
+      [
+        `Hello, I would like to request the private day trip "${tourTitle}" with Elyara Tours Granada.`,
+        '',
+        'Approximate date:',
+        'Number of people:',
+        'Pickup city or area:',
+        'Preferred Granada experience: Alhambra / Historic Centre and Albaicin / tailor-made',
+        'Private transfer: yes / no / to confirm',
+        'Local restaurant lunch: yes / no / to confirm',
+      ].join('\n'),
   },
 } satisfies Record<
   Locale,
@@ -149,6 +157,7 @@ const whatsappMessageCopy = {
     tour: (tourTitle: string) => string;
     scheduled: (reservation: ScheduledWhatsAppReservation) => string;
     tailorMade: string;
+    dayTrip: (tourTitle: string) => string;
   }
 >;
 
@@ -405,6 +414,158 @@ export const tailorMadeContent = {
   }
 >;
 
+export const dayTripsContent = {
+  es: {
+    routeSlug: 'excursiones-un-dia-granada',
+    pageTitle: 'Excursiones de un dia a Granada',
+    metaDescription:
+      'Excursiones privadas de un dia a Granada desde Malaga, Costa del Sol o Cordoba con guia oficial, opciones culturales y propuesta a medida.',
+    eyebrow: 'Excursiones privadas a Granada',
+    title: 'Excursiones de un dia a Granada disenadas para tu grupo',
+    intro:
+      'Ven a Granada desde Malaga, la Costa del Sol o Cordoba con una propuesta privada, cultural y flexible. Elegimos juntos la experiencia principal, el ritmo, el transporte y los complementos para que el dia tenga sentido sin convertirse en una excursion masiva.',
+    image: '/images/Granada-main.jpeg',
+    imageAlt: 'Vista de Granada y la Alhambra para una excursion privada de un dia',
+    primaryCta: 'Solicita tu excursion privada',
+    emailCta: 'Solicitar por email',
+    secondaryCta: 'Ver ciudades de salida',
+    originsTitle: 'Elige tu ciudad de salida',
+    originsText: 'Estas propuestas son puntos de partida. Ajustamos horarios, recogida, transporte y experiencia segun disponibilidad e intereses.',
+    chooseTitle: 'Elige tu experiencia en Granada',
+    chooseText: 'Construye el dia alrededor de una experiencia principal. La Alhambra y el Centro Historico con Albaicin se presentan como alternativas completas, no como una lista obligatoria para hacer todo en pocas horas.',
+    completeTitle: 'Completa tu excursion',
+    completeText: 'Puedes anadir servicios opcionales para que el dia sea mas comodo, gastronomico o personalizado.',
+    requestTitle: 'Precio bajo consulta',
+    requestText:
+      'El precio depende del numero de personas, ciudad o zona de recogida, transporte, entradas, comida y experiencia seleccionada. Escribenos y prepararemos una propuesta clara para tu dia.',
+    detailEyebrow: 'Excursion privada a Granada',
+    experienceOptions: [
+      {
+        title: 'Alhambra privada',
+        text: 'Visita privada a la Alhambra y Generalife con guia oficial. El recorrido depende siempre de la disponibilidad de entradas a monumentos.',
+        details: ['Guia oficial', 'Palacios, Generalife y espacios disponibles', 'Tiempo libre, comida o actividad tranquila si el itinerario lo permite'],
+      },
+      {
+        title: 'Centro Historico + Albaicin',
+        text: 'Ruta privada a pie por el Centro Historico y el Albaicin: historia, patrimonio, miradores y barrios historicos de Granada como experiencia completa.',
+        details: ['Alternativa completa a la Alhambra', 'Historia urbana y patrimonio', 'Miradores, plazas y barrios historicos'],
+      },
+    ],
+    complements: [
+      {
+        title: 'Traslado privado',
+        text: 'Recogida opcional en hotel o punto acordado y traslado privado a Granada, segun ciudad de salida y disponibilidad.',
+      },
+      {
+        title: 'Experiencia gastronomica local',
+        text: 'Completa tu excursion con una comida en un restaurante local seleccionado segun disponibilidad, preferencias y presupuesto.',
+      },
+      {
+        title: 'Itinerario a medida',
+        text: 'Ajustamos la experiencia a tus intereses, horarios, ritmo del grupo y disponibilidad de entradas o servicios.',
+      },
+    ],
+    faq: [
+      {
+        question: 'Las entradas a la Alhambra estan incluidas?',
+        answer: 'Las entradas a monumentos dependen de disponibilidad y se confirman al preparar la propuesta. No se garantiza acceso a la Alhambra sin entradas disponibles.',
+      },
+      {
+        question: 'Puedo pedir transporte privado?',
+        answer: 'Si. El traslado privado puede anadirse desde Malaga, la Costa del Sol o Cordoba, con recogida en hotel o punto acordado cuando sea posible.',
+      },
+    ],
+  },
+  en: {
+    routeSlug: 'day-trips-granada',
+    pageTitle: 'Day Trips to Granada',
+    metaDescription:
+      'Private day trips to Granada from Malaga, Costa del Sol or Cordoba with an official guide, cultural options and a tailor-made proposal.',
+    eyebrow: 'Private day trips to Granada',
+    title: 'Day trips to Granada designed around your group',
+    intro:
+      'Travel to Granada from Malaga, the Costa del Sol or Cordoba with a private, cultural and flexible proposal. We shape the main experience, pace, transfer and optional complements together so the day feels personal rather than like a mass excursion.',
+    image: '/images/Granada-main.jpeg',
+    imageAlt: 'View of Granada and the Alhambra for a private day trip',
+    primaryCta: 'Request your private day trip',
+    emailCta: 'Request by email',
+    secondaryCta: 'View departure cities',
+    originsTitle: 'Choose your departure city',
+    originsText: 'These proposals are starting points. Timings, pickup, transfer and experience are adjusted around availability and your interests.',
+    chooseTitle: 'Choose your Granada experience',
+    chooseText: 'Build the day around one main experience. The Alhambra and the Historic Centre with Albaicin are presented as complete alternatives, not as a mandatory checklist to rush through in one day.',
+    completeTitle: 'Make your day complete',
+    completeText: 'You can add optional services to make the day more comfortable, gastronomic or personal.',
+    requestTitle: 'Price on request',
+    requestText:
+      'The price depends on group size, pickup city or area, transport, tickets, lunch and selected experience. Write to us and we will prepare a clear proposal for your day.',
+    detailEyebrow: 'Private day trip to Granada',
+    experienceOptions: [
+      {
+        title: 'Alhambra Private Tour',
+        text: 'Private visit to the Alhambra and Generalife with an official guide. The route always depends on monument ticket availability.',
+        details: ['Official guide', 'Palaces, Generalife and available spaces', 'Free time, lunch or a calm complementary activity if the itinerary allows'],
+      },
+      {
+        title: 'Historic Centre & Albaicin',
+        text: 'Private walking route through the Historic Centre and Albaicin: history, heritage, viewpoints and historic neighborhoods as a complete Granada experience.',
+        details: ['Complete alternative to the Alhambra', 'Urban history and heritage', 'Viewpoints, squares and historic neighborhoods'],
+      },
+    ],
+    complements: [
+      {
+        title: 'Private transfer',
+        text: 'Optional hotel or agreed pickup point and private transfer to Granada, depending on departure city and availability.',
+      },
+      {
+        title: 'Local restaurant lunch',
+        text: 'Complete your day with lunch at a carefully selected local restaurant, depending on availability, preferences and budget.',
+      },
+      {
+        title: 'Tailor-made itinerary',
+        text: 'We adapt the experience to your interests, timing, group pace and availability of tickets or services.',
+      },
+    ],
+    faq: [
+      {
+        question: 'Are Alhambra tickets included?',
+        answer: 'Monument tickets depend on availability and are confirmed while preparing the proposal. Alhambra access is not guaranteed without available tickets.',
+      },
+      {
+        question: 'Can I request private transport?',
+        answer: 'Yes. Private transfer can be added from Malaga, the Costa del Sol or Cordoba, with hotel or agreed pickup when possible.',
+      },
+    ],
+  },
+} satisfies Record<
+  Locale,
+  {
+    routeSlug: string;
+    pageTitle: string;
+    metaDescription: string;
+    eyebrow: string;
+    title: string;
+    intro: string;
+    image: string;
+    imageAlt: string;
+    primaryCta: string;
+    emailCta: string;
+    secondaryCta: string;
+    originsTitle: string;
+    originsText: string;
+    chooseTitle: string;
+    chooseText: string;
+    completeTitle: string;
+    completeText: string;
+    requestTitle: string;
+    requestText: string;
+    detailEyebrow: string;
+    experienceOptions: { title: string; text: string; details: string[] }[];
+    complements: { title: string; text: string }[];
+    faq: { question: string; answer: string }[];
+  }
+>;
+
 export const commercialToursContent = {
   es: {
     routeSlug: 'tours-privados-granada',
@@ -575,6 +736,14 @@ export function getCommercialToursPath(locale: Locale) {
   return `/${locale}/${commercialToursContent[locale].routeSlug}/`;
 }
 
+export function getDayTripsContent(locale: Locale) {
+  return dayTripsContent[locale];
+}
+
+export function getDayTripsPath(locale: Locale) {
+  return `/${locale}/${dayTripsContent[locale].routeSlug}/`;
+}
+
 export function getReservationCalendarContent(locale: Locale) {
   return reservationCalendarContent[locale];
 }
@@ -597,6 +766,10 @@ export function getTourReservationEmailUrl(tourTitle: string) {
 
 export function getTourWhatsAppReservationUrl(locale: Locale, tourTitle: string) {
   return getWhatsAppUrl(whatsappMessageCopy[locale].tour(tourTitle));
+}
+
+export function getDayTripWhatsAppUrl(locale: Locale, tourTitle: string) {
+  return getWhatsAppUrl(whatsappMessageCopy[locale].dayTrip(tourTitle));
 }
 
 export function getScheduledWhatsAppReservationUrl(locale: Locale, reservation: ScheduledWhatsAppReservation) {
