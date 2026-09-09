@@ -19,6 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       PUBLIC_SITE_URL: ${{ vars.PUBLIC_SITE_URL || 'https://elyaratours.com' }}
+      PUBLIC_GOOGLE_SITE_VERIFICATION: ${{ vars.PUBLIC_GOOGLE_SITE_VERIFICATION || '' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
