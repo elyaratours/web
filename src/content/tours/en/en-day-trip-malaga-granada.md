@@ -9,8 +9,8 @@ price: "Price on request"
 languages:
   - "English"
   - "Spanish"
-image: "/images/Granada-main.jpeg"
-imageAlt: "Granada and the Alhambra seen during a private day trip from Malaga"
+image: "/images/day-trip-malaga-granada.webp"
+imageAlt: "Panoramic view of Malaga and its port for a private day trip to Granada"
 reservationUrl: "mailto:elyaratours@gmail.com?subject=Private%20Day%20Trip%20from%20Malaga%20to%20Granada"
 faq:
   - question: "Can private transfer from Malaga or the Costa del Sol be included?"

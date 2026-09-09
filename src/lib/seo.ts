@@ -34,6 +34,8 @@ const imageDimensions: Record<string, { width: number; height: number }> = {
   '/images/alhambra-clouds.jpeg': { width: 1200, height: 800 },
   '/images/alhambra.jpg': { width: 1200, height: 800 },
   '/images/almagranada.jpg': { width: 1200, height: 800 },
+  '/images/day-trip-cordoba-granada.webp': { width: 1448, height: 1086 },
+  '/images/day-trip-malaga-granada.webp': { width: 1536, height: 1024 },
   '/images/granada-pomegranates.jpeg': { width: 1200, height: 800 },
   '/images/main.jpeg': { width: 1200, height: 800 },
   '/images/mapa.png': { width: 1200, height: 800 },

@@ -9,8 +9,8 @@ price: "Precio bajo consulta"
 languages:
   - "Espanol"
   - "English"
-image: "/images/Granada-main.jpeg"
-imageAlt: "Granada y la Alhambra durante una excursion privada de un dia desde Malaga"
+image: "/images/day-trip-malaga-granada.webp"
+imageAlt: "Vista panoramica de Malaga y su puerto para una excursion privada a Granada"
 reservationUrl: "mailto:elyaratours@gmail.com?subject=Excursion%20privada%20de%20un%20dia%20desde%20Malaga%20a%20Granada"
 faq:
   - question: "Se puede incluir traslado privado desde Malaga o la Costa del Sol?"

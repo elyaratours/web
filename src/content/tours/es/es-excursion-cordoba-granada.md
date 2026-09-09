@@ -9,8 +9,8 @@ price: "Precio bajo consulta"
 languages:
   - "Espanol"
   - "English"
-image: "/images/alhambra-clouds.jpeg"
-imageAlt: "La Alhambra y el paisaje de Granada para una excursion privada de un dia desde Cordoba"
+image: "/images/day-trip-cordoba-granada.webp"
+imageAlt: "Interior de la Mezquita-Catedral de Cordoba para una excursion privada a Granada"
 reservationUrl: "mailto:elyaratours@gmail.com?subject=Excursion%20privada%20de%20un%20dia%20desde%20Cordoba%20a%20Granada"
 faq:
   - question: "Se puede incluir traslado desde Cordoba?"

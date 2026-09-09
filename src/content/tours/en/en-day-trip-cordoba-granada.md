@@ -9,8 +9,8 @@ price: "Price on request"
 languages:
   - "English"
   - "Spanish"
-image: "/images/alhambra-clouds.jpeg"
-imageAlt: "The Alhambra and Granada landscape for a private day trip from Cordoba"
+image: "/images/day-trip-cordoba-granada.webp"
+imageAlt: "Interior of the Mosque-Cathedral of Cordoba for a private day trip to Granada"
 reservationUrl: "mailto:elyaratours@gmail.com?subject=Private%20Day%20Trip%20from%20Cordoba%20to%20Granada"
 faq:
   - question: "Can transfer from Cordoba be included?"
