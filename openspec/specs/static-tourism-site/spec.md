@@ -129,7 +129,7 @@ The system SHALL display a localized reservation calendar on the Spanish and Eng
 #### Scenario: Visitor sees calendar after the tour catalog
 - **WHEN** a visitor opens a localized home page
 - **THEN** the system displays the reservation calendar after the home tour catalog
-- **AND** the calendar remains before the Tailor-made/Viajes a medida section and traveler reviews section
+- **AND** the calendar remains before the Tailor-made/Viajes a medida section
 
 #### Scenario: Visitor sees one home calendar month at a time
 - **WHEN** a visitor views the localized home reservation calendar
@@ -233,12 +233,12 @@ The system SHALL omit the introductory Experience/La experiencia card section fr
 #### Scenario: Spanish visitor opens home without experience cards
 - **WHEN** a visitor opens `/es/`
 - **THEN** the page does not display the three-card `La experiencia` section for historical context, walkable pace, and direct booking
-- **AND** the page still displays the localized hero, tour catalog, reservation calendar, tailor-made section, traveler reviews, footer, and external WhatsApp/email reservation actions
+- **AND** the page still displays the localized hero, tour catalog, reservation calendar, tailor-made section, footer, and external WhatsApp/email reservation actions
 
 #### Scenario: English visitor opens home without experience cards
 - **WHEN** a visitor opens `/en/`
 - **THEN** the page does not display the three-card `Experience` section for historical context, walkable pace, and direct booking
-- **AND** the page still displays the localized hero, tour catalog, reservation calendar, tailor-made section, traveler reviews, footer, and external WhatsApp/email reservation actions
+- **AND** the page still displays the localized hero, tour catalog, reservation calendar, tailor-made section, footer, and external WhatsApp/email reservation actions
 
 ### Requirement: Navigation excludes removed experience anchor
 The system SHALL not expose localized navigation links to the removed home Experience/La experiencia section.
@@ -272,7 +272,7 @@ The system SHALL display `/images/alhambra-clouds.jpeg` as the main hero image o
 
 #### Scenario: Localized home behavior remains unchanged
 - **WHEN** the localized home page is displayed after the hero image update
-- **THEN** the system preserves the existing localized hero copy, calls to action, tour catalog, tailor-made section, traveler reviews section, and routing behavior
+- **THEN** the system preserves the existing localized hero copy, calls to action, tour catalog, tailor-made section, routing behavior, and visible reservation behavior
 
 #### Scenario: Root landing page remains unchanged
 - **WHEN** a visitor opens the root URL at `/` after root routing is updated
@@ -302,7 +302,7 @@ The system SHALL display the approved Spanish and English hero title and body co
 
 #### Scenario: Localized home behavior remains unchanged
 - **WHEN** the localized home page is displayed after the hero copy update
-- **THEN** the system preserves the existing hero image, calls to action, tour catalog, Tailor-made section, traveler reviews section, routing behavior, and reservation behavior
+- **THEN** the system preserves the existing hero image, calls to action, tour catalog, Tailor-made section, routing behavior, and reservation behavior
 
 ### Requirement: Search engine metadata and structured data
 The system SHALL provide complete SEO metadata for public pages, structured data for tour detail and relevant listing pages, and discoverability metadata for search engines.
@@ -408,53 +408,61 @@ The system SHALL present important public images with accessible text and perfor
 - **AND** the metadata image URL uses the configured production site URL
 
 ### Requirement: Traveler reviews mosaic
-The system SHALL present a localized traveler reviews section on the public home experience after the tour catalog, using a small emotional mosaic that interleaves traveler review cards and approved group photos.
+The system SHALL hide the localized traveler reviews mosaic from the public home experience in Spanish and English.
 
 #### Scenario: Visitor sees traveler reviews after tours
 - **WHEN** a visitor views the localized home page and reaches the content after the tour catalog
-- **THEN** the system displays a traveler reviews section titled "Opiniones de nuestros viajeros" in Spanish or "Travelers who walked Granada with us" in English
+- **THEN** the system does not display a traveler reviews section titled "Opiniones de nuestros viajeros" in Spanish or "Travelers who walked Granada with us" in English
 
 #### Scenario: Mosaic contains only reviews and group photos
-- **WHEN** the traveler reviews section is displayed
-- **THEN** the system presents a compact mosaic made of traveler review items and group photo items without social counters, statistics, booking widgets, or unrelated proof elements
+- **WHEN** the localized home page is displayed while the traveler reviews mosaic is hidden
+- **THEN** the system does not expose traveler review mosaic items, group photo items, social counters, statistics, booking widgets, or unrelated proof elements in the hidden section
 
 #### Scenario: Visitor opens a review item
-- **WHEN** a visitor activates a review item in the mosaic
-- **THEN** the system opens a popup that displays the full review text with its traveler attribution and localized content for the current language
+- **WHEN** the traveler reviews mosaic is hidden on a localized home page
+- **THEN** the page does not expose review item controls that open a traveler review popup
 
 #### Scenario: Visitor opens a group photo item
-- **WHEN** a visitor activates a group photo item in the mosaic
-- **THEN** the system opens a popup that displays the enlarged group photo with appropriate accessible text
+- **WHEN** the traveler reviews mosaic is hidden on a localized home page
+- **THEN** the page does not expose group photo controls that open an enlarged photo popup
 
 #### Scenario: Visitor uses the mosaic on mobile
-- **WHEN** a visitor views the traveler reviews section on a mobile viewport
-- **THEN** the system displays the mosaic in two columns while preserving readable review excerpts and tappable photo or review items
+- **WHEN** a visitor views a localized home page on a mobile viewport
+- **THEN** the system does not display the hidden traveler reviews mosaic or its popup controls
 
 #### Scenario: Launch has limited approved content
 - **WHEN** only a small number of approved group photos and real review entries are available
-- **THEN** the system still presents a complete compact mosaic without requiring placeholder social proof items
+- **THEN** the system does not require placeholder social proof items while the traveler reviews mosaic is hidden
+
+#### Scenario: Home discovery flow remains complete without reviews
+- **WHEN** the traveler reviews mosaic is hidden on a localized home page
+- **THEN** the page still presents the localized hero, tour catalog, reservation calendar, Tailor-made/Viajes a medida section, footer, and external WhatsApp/email reservation actions
 
 ### Requirement: Traveler reviews approved client photos
-The system SHALL display the provided client photos `foto-clientes-1.jpeg`, `Foto-clientes-2.jpeg`, and `Foto-clientes-3.jpeg` as the photo items in the localized traveler reviews mosaic, replacing the previous group photo assets.
+The system SHALL not display the approved client photos `foto-clientes-1.jpeg`, `Foto-clientes-2.jpeg`, and `Foto-clientes-3.jpeg` through the localized home traveler reviews mosaic while that mosaic is hidden.
 
 #### Scenario: Spanish visitor sees approved client photos in traveler reviews
-- **WHEN** a visitor views the Spanish home page and reaches the `Opiniones de nuestros viajeros` section
-- **THEN** the mosaic displays photo items using `/images/foto-clientes-1.jpeg`, `/images/Foto-clientes-2.jpeg`, and `/images/Foto-clientes-3.jpeg`
+- **WHEN** a visitor opens the Spanish home page at `/es/`
+- **THEN** the page does not display the traveler reviews mosaic photo items using `/images/foto-clientes-1.jpeg`, `/images/Foto-clientes-2.jpeg`, or `/images/Foto-clientes-3.jpeg`
 
 #### Scenario: English visitor sees approved client photos in traveler reviews
-- **WHEN** a visitor views the English home page and reaches the `Travelers who walked Granada with us` section
-- **THEN** the mosaic displays photo items using `/images/foto-clientes-1.jpeg`, `/images/Foto-clientes-2.jpeg`, and `/images/Foto-clientes-3.jpeg`
+- **WHEN** a visitor opens the English home page at `/en/`
+- **THEN** the page does not display the traveler reviews mosaic photo items using `/images/foto-clientes-1.jpeg`, `/images/Foto-clientes-2.jpeg`, or `/images/Foto-clientes-3.jpeg`
 
 #### Scenario: Visitor opens an approved client photo
-- **WHEN** a visitor activates one of the traveler review mosaic photo items
-- **THEN** the popup displays the enlarged approved client photo with appropriate accessible text for the current language
+- **WHEN** the traveler reviews mosaic is hidden on a localized home page
+- **THEN** the page does not expose approved client photo controls that open enlarged photo popups
 
 #### Scenario: Existing reviews mosaic behavior remains unchanged
-- **WHEN** the traveler reviews section is displayed after the photo update
-- **THEN** the system preserves existing review cards, localized section copy, popup behavior, and responsive mosaic layout
+- **WHEN** the traveler reviews mosaic is hidden
+- **THEN** the system preserves the existing review component, localized section copy, popup behavior, and responsive mosaic layout for possible future reuse without rendering it on the localized home page
+
+#### Scenario: Approved client photos remain available as assets
+- **WHEN** the traveler reviews mosaic is hidden
+- **THEN** the system does not require deleting the approved client photo assets from the site repository
 
 ### Requirement: Tailor-made trips home discovery
-The system SHALL present a localized tailor-made trips and routes section on the public home experience after the tour catalog and before traveler reviews.
+The system SHALL present a localized tailor-made trips and routes section on the public home experience after the tour catalog and reservation calendar.
 
 #### Scenario: Spanish visitor sees tailor-made offer on home
 - **WHEN** a visitor views the Spanish home page and reaches the content after the tour catalog
@@ -843,8 +851,8 @@ The system SHALL provide a polished mobile public experience across localized di
 - **THEN** cards use mobile-appropriate padding, spacing, typography, and tappable areas while preserving readable content hierarchy
 
 #### Scenario: Mobile visitor reviews traveler proof
-- **WHEN** a visitor views or opens the traveler reviews mosaic on a mobile viewport
-- **THEN** review excerpts, photo items, popup content, and close controls remain readable, tappable, and visually balanced
+- **WHEN** a visitor opens a localized home page on a mobile viewport
+- **THEN** the page does not display the hidden traveler reviews mosaic or its popup controls
 
 #### Scenario: Mobile visitor starts an inquiry or reservation
 - **WHEN** a mobile visitor wants to reserve a tour, send a general inquiry, or start a tailor-made inquiry

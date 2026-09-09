@@ -14,13 +14,19 @@ export async function getPublishedTourEntries(locale?: Locale) {
 export async function getPublishedTours(locale?: Locale) {
   const tours = await getPublishedTourEntries(locale);
 
-  return tours.filter((tour) => tour.data.category !== 'day-trip');
+  return tours.filter((tour) => tour.data.category === 'local');
 }
 
 export async function getPublishedDayTrips(locale?: Locale) {
   const tours = await getPublishedTourEntries(locale);
 
   return tours.filter((tour) => tour.data.category === 'day-trip');
+}
+
+export async function getPublishedKidsTours(locale?: Locale) {
+  const tours = await getPublishedTourEntries(locale);
+
+  return tours.filter((tour) => tour.data.category === 'kids');
 }
 
 export function getTourPath(tour: TourEntry) {
