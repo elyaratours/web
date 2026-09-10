@@ -10,6 +10,8 @@ const site = productionSiteUrl;
 interface SitemapEntry {
   path: string;
   lastmod?: Date;
+  changefreq?: 'weekly' | 'monthly';
+  priority?: string;
   alternates?: { locale: Locale; path: string }[];
 }
 
@@ -24,13 +26,17 @@ function escapeXml(value: string) {
 function entry(item: SitemapEntry) {
   const lastmod = item.lastmod ? `
     <lastmod>${item.lastmod.toISOString().slice(0, 10)}</lastmod>` : '';
+  const changefreq = item.changefreq ? `
+    <changefreq>${item.changefreq}</changefreq>` : '';
+  const priority = item.priority ? `
+    <priority>${item.priority}</priority>` : '';
   const alternates = item.alternates && item.alternates.length > 1
     ? item.alternates.map((alternate) => `
     <xhtml:link rel="alternate" hreflang="${alternate.locale}" href="${escapeXml(url(alternate.path))}" />`).join('')
     : '';
 
   return `  <url>
-    <loc>${escapeXml(url(item.path))}</loc>${lastmod}${alternates}
+    <loc>${escapeXml(url(item.path))}</loc>${lastmod}${changefreq}${priority}${alternates}
   </url>`;
 }
 
@@ -61,25 +67,31 @@ export async function GET() {
   const postGroups = groupByTranslationKey(posts);
   const seoLandingGroups = groupByTranslationKey(seoLandings);
   const entries: SitemapEntry[] = [
-    { path: '/' },
-    ...locales.map((locale) => ({ path: `/${locale}/`, alternates: homeAlternates })),
-    ...locales.map((locale) => ({ path: `/${locale}/blog/`, alternates: blogAlternates })),
-    ...locales.map((locale) => ({ path: getContactPath(locale), alternates: contactAlternates })),
-    ...locales.map((locale) => ({ path: getAuthorityPath(locale), alternates: authorityAlternates })),
-    ...locales.map((locale) => ({ path: getTailorMadePath(locale), alternates: tailorMadeAlternates })),
-    ...locales.map((locale) => ({ path: getCommercialToursPath(locale), alternates: commercialAlternates })),
-    ...locales.map((locale) => ({ path: getDayTripsPath(locale), alternates: dayTripsAlternates })),
+    { path: '/', changefreq: 'monthly', priority: '0.8' },
+    ...locales.map((locale) => ({ path: `/${locale}/`, alternates: homeAlternates, changefreq: 'weekly' as const, priority: '1.0' })),
+    ...locales.map((locale) => ({ path: `/${locale}/blog/`, alternates: blogAlternates, changefreq: 'weekly' as const, priority: '0.7' })),
+    ...locales.map((locale) => ({ path: getContactPath(locale), alternates: contactAlternates, changefreq: 'monthly' as const, priority: '0.6' })),
+    ...locales.map((locale) => ({ path: getAuthorityPath(locale), alternates: authorityAlternates, changefreq: 'monthly' as const, priority: '0.7' })),
+    ...locales.map((locale) => ({ path: getTailorMadePath(locale), alternates: tailorMadeAlternates, changefreq: 'monthly' as const, priority: '0.8' })),
+    ...locales.map((locale) => ({ path: getCommercialToursPath(locale), alternates: commercialAlternates, changefreq: 'monthly' as const, priority: '0.7' })),
+    ...locales.map((locale) => ({ path: getDayTripsPath(locale), alternates: dayTripsAlternates, changefreq: 'monthly' as const, priority: '0.8' })),
     ...tours.map((tour) => ({
       path: getTourPath(tour),
+      changefreq: 'monthly' as const,
+      priority: tour.data.category === 'day-trip' ? '0.8' : '0.9',
       alternates: tourGroups.get(tour.data.translationKey)?.map((item) => ({ locale: item.data.locale, path: getTourPath(item) })),
     })),
     ...posts.map((post) => ({
       path: getBlogPostPath(post),
       lastmod: post.data.updatedDate ?? post.data.publishedDate,
+      changefreq: 'monthly' as const,
+      priority: '0.6',
       alternates: postGroups.get(post.data.translationKey)?.map((item) => ({ locale: item.data.locale, path: getBlogPostPath(item) })),
     })),
     ...seoLandings.map((landing) => ({
       path: getSeoLandingPath(landing),
+      changefreq: 'monthly' as const,
+      priority: '0.8',
       alternates: seoLandingGroups.get(landing.data.translationKey)?.map((item) => ({ locale: item.data.locale, path: getSeoLandingPath(item) })),
     })),
   ];

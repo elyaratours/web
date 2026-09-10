@@ -409,6 +409,7 @@ The system SHALL provide complete SEO metadata for public pages, structured data
 - **THEN** the system serves a sitemap containing indexable public localized home, tour, blog, contact, tailor-made, and commercial landing URLs
 - **AND** sitemap URLs use the same configured production site URL as canonical metadata
 - **AND** sitemap entries include freshness metadata when the corresponding public content provides a reliable publication or update date
+- **AND** sitemap entries may include change frequency and priority hints that reflect each public page type without changing canonical URLs
 
 #### Scenario: Search engine reads robots instructions
 - **WHEN** a crawler requests `/robots.txt`

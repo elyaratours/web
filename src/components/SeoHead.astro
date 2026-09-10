@@ -1,6 +1,6 @@
 ---
 import { getLocaleConfig, type Locale } from '@/lib/i18n';
-import { absoluteUrl, createJsonLdGraph, siteName, type JsonLdInput } from '@/lib/seo';
+import { absoluteUrl, createJsonLdGraph, createWebPageJsonLd, siteName, type JsonLdInput } from '@/lib/seo';
 
 interface AlternateLink {
   locale: Locale;
@@ -28,7 +28,8 @@ const { title, description, canonicalPath, locale, site, image, imageAlt, imageW
 const canonical = absoluteUrl(canonicalPath, site);
 const imageUrl = image ? absoluteUrl(image, site) : undefined;
 const fullTitle = `${title} | ${siteName}`;
-const graph = createJsonLdGraph(site, jsonLd ?? []);
+const pageJsonLd = createWebPageJsonLd(locale, canonicalPath, fullTitle, description, image, site);
+const graph = createJsonLdGraph(site, [pageJsonLd, ...(Array.isArray(jsonLd) ? jsonLd : jsonLd ? [jsonLd] : [])]);
 const localeCode = locale === 'es' ? 'es_ES' : 'en_GB';
 const alternateLocaleCodes = alternates.filter((alternate) => alternate.locale !== locale).map((alternate) => (alternate.locale === 'es' ? 'es_ES' : 'en_GB'));
 const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION?.trim();
@@ -38,6 +39,8 @@ const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION?.
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>{fullTitle}</title>
 <meta name="description" content={description} />
+<meta name="author" content={siteName} />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 {googleSiteVerification && <meta name="google-site-verification" content={googleSiteVerification} />}
 <link rel="canonical" href={canonical} />
 <meta property="og:site_name" content={siteName} />
@@ -48,6 +51,7 @@ const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION?.
 <meta property="og:locale" content={localeCode} />
 {alternateLocaleCodes.map((alternateLocale) => <meta property="og:locale:alternate" content={alternateLocale} />)}
 {imageUrl && <meta property="og:image" content={imageUrl} />}
+{imageUrl && <meta property="og:image:secure_url" content={imageUrl} />}
 {imageUrl && imageAlt && <meta property="og:image:alt" content={imageAlt} />}
 {imageUrl && imageWidth && <meta property="og:image:width" content={String(imageWidth)} />}
 {imageUrl && imageHeight && <meta property="og:image:height" content={String(imageHeight)} />}

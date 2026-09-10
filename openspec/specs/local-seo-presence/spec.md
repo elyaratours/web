@@ -22,14 +22,20 @@ The system SHALL expose structured data that identifies Elyara Tours Granada as 
 - **THEN** the structured data references `https://instagram.com/elyaratours` as an approved public profile
 - **AND** the structured data does not invent unapproved phone numbers, physical addresses, payment details, or additional social profiles
 
-### Requirement: Website structured data
-The system SHALL expose structured data for the public website entity and connect it to the Elyara business identity.
+### Requirement: Website and page structured data
+The system SHALL expose structured data for the public website and each public page entity, connecting both to the Elyara business identity.
 
 #### Scenario: Search engine reads website entity data
 - **WHEN** a crawler reads a localized public page
 - **THEN** the page exposes structured data identifying the public website name as `Elyara Tours Granada`
 - **AND** the website entity URL uses the configured production site URL
 - **AND** the website entity is associated with the Elyara business entity
+
+#### Scenario: Search engine reads public page entity data
+- **WHEN** a crawler reads any indexable public page
+- **THEN** the page exposes a `WebPage` structured data node with a stable page URL and entity identifier
+- **AND** the page entity includes localized name, description, language, publisher, website relationship, and Elyara business relationship
+- **AND** the page entity references the visible primary image when the page provides one
 
 ### Requirement: Breadcrumb structured data
 The system SHALL expose breadcrumb structured data on public pages where the visitor's location in the site hierarchy is more specific than a localized home page.

@@ -69,8 +69,11 @@ export function createBusinessJsonLd(site: URL) {
     '@type': ['Organization', 'LocalBusiness', 'TravelAgency'],
     '@id': businessEntityId(site),
     name: siteName,
+    legalName: siteName,
+    description: 'Cultural walking routes and private group reservations in Granada in Spanish and English.',
     url: absoluteUrl('/', site),
     email: contactEmail,
+    telephone: whatsappDisplayNumber,
     logo: absoluteUrl(businessLogoPath, site),
     image: absoluteUrl(businessLogoPath, site),
     sameAs: [instagramUrl],
@@ -89,7 +92,19 @@ export function createBusinessJsonLd(site: URL) {
         name: 'Spain',
       },
     },
+    serviceArea: {
+      '@type': 'AdministrativeArea',
+      name: 'Granada, Andalusia, Spain',
+    },
     knowsLanguage: ['es', 'en'],
+    availableLanguage: ['Spanish', 'English'],
+    knowsAbout: [
+      'Granada history',
+      'Alhambra tours',
+      'Albaicin guided walks',
+      'Granada private group routes',
+      'Cultural tourism in Granada',
+    ],
   } satisfies JsonLdNode;
 }
 
@@ -113,6 +128,28 @@ export function createJsonLdGraph(site: URL, nodes: JsonLdInput = []) {
   } satisfies JsonLdNode;
 }
 
+export function createWebPageJsonLd(locale: Locale, path: string, title: string, description: string, image: string | undefined, site: URL) {
+  const url = absoluteUrl(path, site);
+
+  return {
+    '@type': 'WebPage',
+    '@id': `${url}#webpage`,
+    url,
+    name: title,
+    description,
+    inLanguage: locale,
+    isPartOf: { '@id': websiteEntityId(site) },
+    about: { '@id': businessEntityId(site) },
+    publisher: { '@id': businessEntityId(site) },
+    primaryImageOfPage: image
+      ? {
+          '@type': 'ImageObject',
+          url: absoluteUrl(image, site),
+        }
+      : undefined,
+  } satisfies JsonLdNode;
+}
+
 export function createTourJsonLd(tour: TourEntry, site: URL) {
   const url = absoluteUrl(`/${tour.data.locale}/tours/${tour.data.routeSlug}/`, site);
 
@@ -125,7 +162,9 @@ export function createTourJsonLd(tour: TourEntry, site: URL) {
     url,
     mainEntityOfPage: url,
     inLanguage: tour.data.locale,
-    touristType: tour.data.languages,
+    availableLanguage: tour.data.languages,
+    touristType: tour.data.locale === 'es' ? 'Viajeros culturales en Granada' : 'Cultural travelers in Granada',
+    serviceType: tour.data.category === 'day-trip' ? 'Granada day trip' : 'Granada guided route',
     location: {
       '@type': 'City',
       name: 'Granada',
@@ -141,7 +180,7 @@ export function createTourJsonLd(tour: TourEntry, site: URL) {
     offers: {
       '@type': 'Offer',
       price: tour.data.price,
-      url: tour.data.reservationUrl,
+      url,
       availability: 'https://schema.org/InStock',
       offeredBy: { '@id': businessEntityId(site) },
     },
