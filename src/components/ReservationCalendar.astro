@@ -1,6 +1,6 @@
 ---
 import { CalendarDays, ChevronLeft, ChevronRight, Clock, Mail, MapPinned, MessageCircle } from '@lucide/astro';
-import { contactEmail, getReservationCalendarContent, whatsappDisplayNumber, type Locale } from '@/lib/i18n';
+import { getReservationCalendarContent, type Locale } from '@/lib/i18n';
 import { calendarWeekdayLabels, getCalendarMonths, getScheduledDepartures } from '@/lib/schedule';
 import type { TourEntry } from '@/lib/tours';
 
@@ -148,10 +148,6 @@ for (const departure of departures) {
                         <Mail class="h-4 w-4" aria-hidden="true" />
                         {copy.reserveDateEmail}
                       </a>
-                      <div class="mt-3 grid gap-1 text-center text-sm font-bold text-alhambra-clay">
-                        <p class="select-all">{whatsappDisplayNumber}</p>
-                        <p class="select-all">{contactEmail}</p>
-                      </div>
                     </article>
                   ))}
                 </div>

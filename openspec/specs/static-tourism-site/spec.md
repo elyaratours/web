@@ -124,8 +124,8 @@ The system SHALL start reservations through external WhatsApp links to `+34 611 
 
 #### Scenario: Visitor sees a general home reserve action
 - **WHEN** a visitor views the localized home hero reservation call to action
-- **THEN** the system displays WhatsApp and email as available external reservation channels
-- **AND** the system displays `+34 611 126 979` and `elyaratours@gmail.com` near the reservation actions so either contact value can be copied directly
+- **THEN** the system displays WhatsApp and email as available external reservation button actions
+- **AND** the system does not display `+34 611 126 979` or `elyaratours@gmail.com` as visible text near those home reservation actions
 
 #### Scenario: Visitor sees home tour-card reserve actions
 - **WHEN** a visitor views published tour cards in the localized home tour catalog
@@ -157,8 +157,8 @@ The system SHALL start reservations through external WhatsApp links to `+34 611 
 
 #### Scenario: Visitor sees a scheduled calendar reservation action
 - **WHEN** a visitor views a scheduled-date reservation card in the home or tour detail reservation calendar
-- **THEN** the system displays WhatsApp and email reservation actions for that scheduled date
-- **AND** the system displays `+34 611 126 979` and `elyaratours@gmail.com` near the reservation actions so either contact value can be copied directly
+- **THEN** the system displays WhatsApp and email reservation button actions for that scheduled date
+- **AND** the system does not display `+34 611 126 979` or `elyaratours@gmail.com` as visible text near those scheduled calendar reservation actions
 
 #### Scenario: Visitor completes no internal checkout
 - **WHEN** a visitor browses tour pages or scheduled calendar availability
