@@ -31,4 +31,4 @@
 - [x] 5.2 Run `npm run build` and verify all localized authority, landing, tour, blog, sitemap, and robots outputs are generated successfully.
 - [x] 5.3 Inspect generated HTML for priority pages to verify no fake rankings, ratings, reviews, addresses, awards, official-guide claims, or unsupported business facts were introduced.
 - [x] 5.4 Run `openspec validate improve-search-ranking-foundation --type change --strict` and verify the change passes strict validation.
-- [ ] 5.5 After deployment, submit the sitemap and priority URLs in Google Search Console and verify indexing can be requested for the production domain.
+- [x] 5.5 After deployment, submit the sitemap and priority URLs in Google Search Console and verify indexing can be requested for the production domain.
