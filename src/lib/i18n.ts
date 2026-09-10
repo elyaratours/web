@@ -17,6 +17,9 @@ export const localeConfig = {
     reserve: 'Reservar',
     reserveWhatsapp: 'Reservar por WhatsApp',
     reserveEmail: 'Reservar por email',
+    reservePrivateGroup: 'Reservar grupo privado',
+    privateGroupTitle: 'Tambien para grupos privados',
+    privateGroupText: 'Puedes solicitar esta ruta como experiencia privada y adaptar idioma, ritmo e intereses del grupo por WhatsApp o email.',
     viewTour: 'Ver ruta',
     readArticle: 'Leer historia',
     blogEyebrow: 'Cuaderno de Granada',
@@ -39,12 +42,12 @@ export const localeConfig = {
     heroEyebrow: 'Rutas culturales en Granada',
     heroTitle: 'Granada, una historia en cada paso',
     heroText:
-      'Tours privados y rutas a pie para descubrir la historia, los personajes y los rincones que dan sentido a la ciudad.',
+      'Rutas a pie y reservas para grupos privados para descubrir la historia, los personajes y los rincones que dan sentido a la ciudad.',
     heroImageAlt: 'La Alhambra bajo nubes dramaticas vista desde el Albaicin',
     footerIntro:
-      'Tours privados y rutas a pie para descubrir la Alhambra, el Albaicin y la ciudad historica con una mirada cercana y cultural.',
-    catalogIntro: 'Elige una ruta y empieza la reserva por WhatsApp o email.',
-    metaHome: 'Rutas turisticas y tours privados en Granada con experiencias culturales en espanol e ingles.',
+      'Rutas a pie por la Alhambra, el Albaicin y la ciudad historica, con opcion de reserva privada y una mirada cercana y cultural.',
+    catalogIntro: 'Elige una ruta y, si vienes en grupo, puedes solicitarla como experiencia privada por WhatsApp o email.',
+    metaHome: 'Rutas turisticas en Granada con opcion de reserva privada y experiencias culturales en espanol e ingles.',
   },
   en: {
     htmlLang: 'en',
@@ -60,6 +63,9 @@ export const localeConfig = {
     reserve: 'Reserve',
     reserveWhatsapp: 'Reserve by WhatsApp',
     reserveEmail: 'Reserve by email',
+    reservePrivateGroup: 'Reserve private group',
+    privateGroupTitle: 'Also for private groups',
+    privateGroupText: 'You can request this route as a private experience and adapt language, pace and group interests by WhatsApp or email.',
     viewTour: 'View tour',
     readArticle: 'Read story',
     blogEyebrow: 'Granada Journal',
@@ -82,12 +88,12 @@ export const localeConfig = {
     heroEyebrow: 'Cultural routes in Granada',
     heroTitle: 'Granada, a story in every step',
     heroText:
-      'Private tours and walking routes to discover the history, characters and corners that give meaning to the city.',
+      'Walking routes and private group reservations to discover the history, characters and corners that give meaning to the city.',
     heroImageAlt: 'The Alhambra beneath dramatic clouds from the Albaicin',
     footerIntro:
-      'Private tours and walking routes to discover the Alhambra, the Albaicin and the historic city with a warm cultural perspective.',
-    catalogIntro: 'Choose a route and start booking by WhatsApp or email.',
-    metaHome: 'Tourism routes and private tours in Granada with cultural experiences in Spanish and English.',
+      'Walking routes through the Alhambra, the Albaicin and the historic city, with private booking available and a warm cultural perspective.',
+    catalogIntro: 'Choose a route and, if you are coming as a group, request it as a private experience by WhatsApp or email.',
+    metaHome: 'Tourism routes in Granada with private booking available and cultural experiences in Spanish and English.',
   },
 } satisfies Record<Locale, Record<string, string>>;
 
@@ -102,7 +108,17 @@ export const emailReservationUrl = `mailto:${contactEmail}`;
 const whatsappMessageCopy = {
   es: {
     general: 'Hola, quiero reservar una ruta con Elyara Tours Granada.',
+    privateGeneral: 'Hola, quiero solicitar una ruta para grupo privado con Elyara Tours Granada.',
     tour: (tourTitle: string) => `Hola, quiero reservar la ruta "${tourTitle}" con Elyara Tours Granada.`,
+    privateTour: (tourTitle: string) =>
+      [
+        `Hola, quiero reservar la ruta "${tourTitle}" como grupo privado con Elyara Tours Granada.`,
+        '',
+        'Fecha aproximada:',
+        'Numero de personas:',
+        'Idioma preferido:',
+        'Intereses del grupo:',
+      ].join('\n'),
     scheduled: ({ tourTitle, dateLabel, time, language }: ScheduledWhatsAppReservation) =>
       [
         'Hola, quiero reservar esta fecha con Elyara Tours Granada.',
@@ -130,7 +146,17 @@ const whatsappMessageCopy = {
   },
   en: {
     general: 'Hello, I would like to book a tour with Elyara Tours Granada.',
+    privateGeneral: 'Hello, I would like to request a route for a private group with Elyara Tours Granada.',
     tour: (tourTitle: string) => `Hello, I would like to book the "${tourTitle}" tour with Elyara Tours Granada.`,
+    privateTour: (tourTitle: string) =>
+      [
+        `Hello, I would like to book the "${tourTitle}" route as a private group with Elyara Tours Granada.`,
+        '',
+        'Approximate date:',
+        'Number of people:',
+        'Preferred language:',
+        'Group interests:',
+      ].join('\n'),
     scheduled: ({ tourTitle, dateLabel, time, language }: ScheduledWhatsAppReservation) =>
       [
         'Hello, I would like to book this date with Elyara Tours Granada.',
@@ -160,7 +186,9 @@ const whatsappMessageCopy = {
   Locale,
   {
     general: string;
+    privateGeneral: string;
     tour: (tourTitle: string) => string;
+    privateTour: (tourTitle: string) => string;
     scheduled: (reservation: ScheduledWhatsAppReservation) => string;
     tailorMade: string;
     dayTrip: (tourTitle: string) => string;
@@ -575,21 +603,21 @@ export const dayTripsContent = {
 export const commercialToursContent = {
   es: {
     routeSlug: 'tours-privados-granada',
-    pageTitle: 'Tours privados en Granada',
+    pageTitle: 'Rutas guiadas privadas en Granada',
     metaDescription:
-      'Tours privados y visitas guiadas en Granada con rutas culturales por la Alhambra, Albaicin, centro historico, miradores y viajes a medida.',
-    eyebrow: 'Tours privados en Granada',
-    title: 'Visitas guiadas privadas para entender Granada sin correr',
+      'Solicita rutas guiadas en Granada como grupo privado: Alhambra, Albaicin, centro historico, miradores y propuestas a medida.',
+    eyebrow: 'Reservas para grupos privados',
+    title: 'Elige una ruta de Granada y solicitala para tu grupo',
     intro:
-      'Si buscas un tour privado en Granada con contexto historico, ritmo tranquilo y una mirada cultural, Elyara organiza rutas a pie para descubrir la ciudad con una guia cercana y flexible.',
+      'Si buscas una visita privada en Granada, no necesitas elegir un catalogo distinto. Parte de una ruta publicada y escribenos para adaptarla a vuestro idioma, ritmo e intereses.',
     image: '/images/Granada-main.jpeg',
     imageAlt: 'Vista de Granada y la Alhambra para tours privados culturales',
-    primaryCta: 'Reservar un tour privado',
+    primaryCta: 'Solicitar grupo privado',
     secondaryCta: 'Ver rutas disponibles',
     sections: [
       {
-        title: 'Rutas culturales para viajeros curiosos',
-        text: 'No planteamos la visita como una lista de monumentos. Conectamos barrios, simbolos, personajes y paisajes para que cada paseo tenga sentido.',
+        title: 'Una ruta, una reserva privada',
+        text: 'Las rutas publicadas son el punto de partida. La modalidad privada se acuerda al reservar, sin crear una version duplicada de la visita.',
       },
       {
         title: 'Idiomas, ritmo y enfoque flexible',
@@ -600,8 +628,8 @@ export const commercialToursContent = {
         text: 'La reserva empieza por WhatsApp o correo, sin formularios largos, pagos internos ni checkout. Te respondemos con una propuesta clara.',
       },
     ],
-    tourSectionTitle: 'Rutas que puedes reservar de forma privada',
-    tourSectionText: 'Estas rutas publicadas pueden servir como punto de partida para tu visita guiada privada en Granada.',
+    tourSectionTitle: 'Empieza por una ruta publicada',
+    tourSectionText: 'Elige la ruta que encaje con tu viaje y solicitala como grupo privado desde la ficha de esa misma ruta.',
     editorialTitle: 'Antes de venir a Granada',
     editorialText: 'Lee historias y consejos del cuaderno para preparar mejor tu visita.',
     tailorMadeTitle: 'Quieres algo mas personal?',
@@ -623,21 +651,21 @@ export const commercialToursContent = {
   },
   en: {
     routeSlug: 'private-tours-granada',
-    pageTitle: 'Private tours in Granada',
+    pageTitle: 'Private guided routes in Granada',
     metaDescription:
-      'Private tours and guided visits in Granada with cultural walking routes through the Alhambra, Albaicin, historic center, viewpoints and tailor-made trips.',
-    eyebrow: 'Private tours in Granada',
-    title: 'Private guided visits to understand Granada without rushing',
+      'Request Granada guided routes as a private group: Alhambra, Albaicin, historic center, viewpoints and tailor-made proposals.',
+    eyebrow: 'Private group reservations',
+    title: 'Choose a Granada route and request it for your group',
     intro:
-      'If you are looking for a private tour in Granada with historical context, a calm pace and a cultural perspective, Elyara designs walking routes with a warm and flexible guide.',
+      'If you are looking for a private visit in Granada, you do not need a separate catalog. Start from a published route and write to adapt it to your language, pace and interests.',
     image: '/images/Granada-main.jpeg',
     imageAlt: 'View of Granada and the Alhambra for private cultural tours',
-    primaryCta: 'Reserve a private tour',
+    primaryCta: 'Request private group',
     secondaryCta: 'View available routes',
     sections: [
       {
-        title: 'Cultural routes for curious travelers',
-        text: 'The visit is not treated as a checklist of monuments. We connect neighborhoods, symbols, characters and landscapes so the walk makes sense.',
+        title: 'One route, one private request',
+        text: 'Published routes are the starting point. The private modality is agreed when booking, without creating a duplicated version of the visit.',
       },
       {
         title: 'Flexible language, pace and focus',
@@ -648,8 +676,8 @@ export const commercialToursContent = {
         text: 'Booking starts by WhatsApp or email, without long forms, internal payments or checkout. You receive a clear proposal in response.',
       },
     ],
-    tourSectionTitle: 'Routes you can book privately',
-    tourSectionText: 'These published routes can be a starting point for your private guided visit in Granada.',
+    tourSectionTitle: 'Start from a published route',
+    tourSectionText: 'Choose the route that fits your trip and request it as a private group from that same route page.',
     editorialTitle: 'Before you come to Granada',
     editorialText: 'Read journal stories and tips to prepare your visit with more context.',
     tailorMadeTitle: 'Want something more personal?',
@@ -766,12 +794,49 @@ export function getWhatsAppReservationUrl(locale: Locale) {
   return getWhatsAppUrl(whatsappMessageCopy[locale].general);
 }
 
+export function getPrivateGroupWhatsAppReservationUrl(locale: Locale) {
+  return getWhatsAppUrl(whatsappMessageCopy[locale].privateGeneral);
+}
+
 export function getTourReservationEmailUrl(tourTitle: string) {
   return `${emailReservationUrl}?subject=${encodeURIComponent(tourTitle)}`;
 }
 
+export function getPrivateTourReservationEmailUrl(locale: Locale, tourTitle: string) {
+  const subject = locale === 'es' ? `Grupo privado: ${tourTitle}` : `Private group: ${tourTitle}`;
+  const body = locale === 'es'
+    ? [
+        `Hola, quiero reservar la ruta "${tourTitle}" como grupo privado.`,
+        '',
+        'Fecha aproximada:',
+        'Numero de personas:',
+        'Idioma preferido:',
+        'Intereses del grupo:',
+      ].join('\n')
+    : [
+        `Hello, I would like to book the "${tourTitle}" route as a private group.`,
+        '',
+        'Approximate date:',
+        'Number of people:',
+        'Preferred language:',
+        'Group interests:',
+      ].join('\n');
+
+  return `${emailReservationUrl}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
+
+export function getPrivateGroupEmailReservationUrl(locale: Locale) {
+  const subject = locale === 'es' ? 'Ruta para grupo privado' : 'Private group route';
+
+  return `${emailReservationUrl}?subject=${encodeURIComponent(subject)}`;
+}
+
 export function getTourWhatsAppReservationUrl(locale: Locale, tourTitle: string) {
   return getWhatsAppUrl(whatsappMessageCopy[locale].tour(tourTitle));
+}
+
+export function getPrivateTourWhatsAppReservationUrl(locale: Locale, tourTitle: string) {
+  return getWhatsAppUrl(whatsappMessageCopy[locale].privateTour(tourTitle));
 }
 
 export function getDayTripWhatsAppUrl(locale: Locale, tourTitle: string) {

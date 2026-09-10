@@ -4,7 +4,7 @@ import ReservationCalendar from '@/components/ReservationCalendar.astro';
 import TailorMadeHomeSection from '@/components/TailorMadeHomeSection.astro';
 import TourCard from '@/components/TourCard.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
-import { getCommercialToursPath, getEmailReservationUrl, getLocaleConfig, getWhatsAppReservationUrl, locales, type Locale } from '@/lib/i18n';
+import { getEmailReservationUrl, getLocaleConfig, getWhatsAppReservationUrl, locales, type Locale } from '@/lib/i18n';
 import { createItemListJsonLd, productionSiteUrl } from '@/lib/seo';
 import { getPublishedKidsTours, getPublishedTours, getTourPath } from '@/lib/tours';
 
@@ -49,7 +49,6 @@ const jsonLd = [
           <Mail class="h-4 w-4" aria-hidden="true" />
           {copy.reserveEmail}
         </a>
-        <a class="btn-secondary w-full sm:w-auto" href={getCommercialToursPath(locale)}>{copy.navPrivateTours}</a>
       </div>
     </div>
     <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">

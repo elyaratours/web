@@ -254,7 +254,7 @@ export function createTourServiceJsonLd(locale: Locale, path: string, title: str
       name: 'Granada',
     },
     availableLanguage: locale === 'es' ? ['Spanish', 'English'] : ['English', 'Spanish'],
-    serviceType: locale === 'es' ? 'Tours privados y visitas guiadas en Granada' : 'Private tours and guided visits in Granada',
+    serviceType: locale === 'es' ? 'Rutas guiadas en Granada con reserva para grupos privados' : 'Guided Granada routes with private group reservations',
   } satisfies JsonLdNode;
 }
 

@@ -1,7 +1,6 @@
 import { getBlogPostPath, getPublishedBlogPosts } from './blog';
 import {
   contactEmail,
-  getCommercialToursPath,
   getContactPath,
   getDayTripsPath,
   getEmailReservationUrl,
@@ -122,14 +121,14 @@ export async function getAuthorityPosts(locale: Locale) {
 export function getAuthorityDiscoveryLinks(locale: Locale) {
   const labels = locale === 'es'
     ? {
-        privateTours: 'Tours privados en Granada',
+        routes: 'Rutas en Granada',
         dayTrips: 'Excursiones de un dia a Granada',
         tailorMade: 'Viajes y rutas a medida',
         contact: 'Contacto directo',
         blog: 'Cuaderno de Granada',
       }
     : {
-        privateTours: 'Private tours in Granada',
+        routes: 'Granada routes',
         dayTrips: 'Day trips to Granada',
         tailorMade: 'Tailor-made routes',
         contact: 'Direct contact',
@@ -137,7 +136,7 @@ export function getAuthorityDiscoveryLinks(locale: Locale) {
       };
 
   return [
-    { label: labels.privateTours, path: getCommercialToursPath(locale) },
+    { label: labels.routes, path: `/${locale}/#tours` },
     { label: labels.dayTrips, path: getDayTripsPath(locale) },
     { label: labels.tailorMade, path: getTailorMadePath(locale) },
     { label: labels.contact, path: getContactPath(locale) },

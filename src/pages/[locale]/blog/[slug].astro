@@ -4,7 +4,7 @@ import { render } from 'astro:content';
 import TourCard from '@/components/TourCard.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { getBlogAlternates, getBlogPostPath, getPublishedBlogPosts, getRelatedToursForPost, type BlogEntry } from '@/lib/blog';
-import { getBlogCategoryLabel, getCommercialToursPath, getEmailReservationUrl, getLocaleConfig, getWhatsAppReservationUrl } from '@/lib/i18n';
+import { getBlogCategoryLabel, getEmailReservationUrl, getLocaleConfig, getWhatsAppReservationUrl } from '@/lib/i18n';
 import { createArticleJsonLd, createBreadcrumbJsonLd, productionSiteUrl } from '@/lib/seo';
 import { getSeoLandingPath, getSeoLandingsByKeys } from '@/lib/seo-landings';
 
@@ -93,7 +93,6 @@ const imageStyle = post.data.imagePosition ? `object-position: ${post.data.image
           <Mail class="h-4 w-4" aria-hidden="true" />
           {copy.reserveEmail}
         </a>
-        <a class="btn-secondary mt-3 w-full" href={getCommercialToursPath(post.data.locale)}>{copy.navPrivateTours}</a>
         {relatedLandings.map((landing) => (
           <a class="btn-secondary mt-3 w-full" href={getSeoLandingPath(landing)}>{landing.data.title}</a>
         ))}
