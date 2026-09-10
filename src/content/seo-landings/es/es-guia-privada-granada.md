@@ -1,12 +1,12 @@
 ---
 locale: es
 translationKey: private-guide-granada
-title: "Guia privada en Granada"
+title: "Guia privada en Granada: rutas culturales a medida"
 heading: "Guia privada en Granada para una visita cultural y flexible"
 routeSlug: "guia-privada-granada"
-intro: "Una guia privada en Granada te ayuda a escoger una ruta realista, caminar con contexto y adaptar la visita al idioma, ritmo e intereses de tu grupo sin depender de un itinerario generico."
-seoDescription: "Guia privada en Granada para rutas culturales por Albaicin, centro historico, Alhambra y propuestas a medida con reserva directa por WhatsApp o email."
-targetIntent: "guia privada en Granada, tour privado y visita cultural personalizada"
+intro: "Una guia privada en Granada te ayuda a escoger una ruta realista, caminar con contexto y adaptar la visita al idioma, ritmo e intereses de tu grupo sin depender de un itinerario generico. Es una buena opcion para familias, grupos pequenos, viajeros con poco tiempo o visitas culturales mas concretas."
+seoDescription: "Guia privada en Granada para Albaicin, centro historico, Alhambra, miradores y rutas culturales a medida con reserva directa por WhatsApp."
+targetIntent: "guia privada en Granada, tour privado, visita cultural personalizada y rutas a medida"
 image: "/images/Granada-main.jpeg"
 imageAlt: "Vista de Granada y la Alhambra para organizar una visita con guia privada"
 relatedTours: ["albaicin", "cathedral-royal-chapel", "granada-two-worlds", "alhambra"]
@@ -17,6 +17,10 @@ faq:
     answer: "Puedes pedir una ruta publicada o una propuesta adaptada a tus fechas, idioma, numero de personas, intereses y ritmo del grupo."
   - question: "La reserva se hace dentro de la web?"
     answer: "No. La reserva empieza por WhatsApp o email para confirmar disponibilidad y ajustar los detalles de la visita."
+  - question: "Cuanto dura una visita con guia privada?"
+    answer: "Depende de la ruta y del grupo. Muchas visitas funcionan entre 2 y 3 horas, pero se puede ajustar el ritmo antes de confirmar."
+  - question: "Puedo combinar Albaicin, centro historico y Alhambra?"
+    answer: "Se puede valorar una combinacion, pero conviene evitar itinerarios demasiado cargados. La propuesta depende de entradas, horarios, distancia y energia del grupo."
 order: 20
 published: true
 ---
@@ -30,6 +34,16 @@ En Elyara la visita empieza con una conversacion sencilla. Nos cuentas cuando vi
 Para una primera visita, el Albaicin y el centro historico ayudan a entender como se organiza la ciudad. Si tienes entradas a la Alhambra, se puede plantear una lectura mas centrada en arquitectura, agua, poder y paisaje. La Catedral y la Capilla Real abren otra capa de Granada: la ciudad transformada tras 1492.
 
 La ventaja de una visita privada no es hacer mas cosas en menos tiempo. Es escoger mejor, preguntar mas, ajustar el ritmo y evitar que Granada se convierta en una lista de paradas sin relacion.
+
+## Cuando merece la pena una guia privada
+
+Una guia privada suele compensar cuando el viaje tiene condicionantes concretos: poco tiempo, ninos, movilidad tranquila, intereses muy definidos, visitas en ingles, horarios ajustados o ganas de hacer preguntas sin seguir el ritmo de un grupo abierto.
+
+Tambien es util si ya conoces Granada pero quieres mirar una parte concreta con mas profundidad: el Albaicin, la Catedral, la Capilla Real, la Alhambra, los miradores o las transformaciones de la ciudad tras 1492.
+
+## Zonas habituales de una visita privada
+
+El Albaicin funciona muy bien para entender la relacion entre paisaje, agua, memoria andalusi y vistas de la Alhambra. El centro historico ayuda a leer la ciudad cristiana y sus cambios urbanos. La Catedral y la Capilla Real explican poder, arte y memoria politica. La Alhambra requiere una planificacion mas cuidadosa por entradas y horarios.
 
 ## Como reservar
 

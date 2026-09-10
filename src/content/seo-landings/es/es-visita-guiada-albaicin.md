@@ -1,12 +1,12 @@
 ---
 locale: es
 translationKey: albaicin-guided-walk
-title: "Visita guiada por el Albaicin"
+title: "Visita guiada por el Albaicin de Granada"
 heading: "Visita guiada por el Albaicin para leer Granada desde sus miradores"
 routeSlug: "visita-guiada-albaicin"
-intro: "El Albaicin es una de las mejores formas de entrar en Granada: calles blancas, miradores, memoria andalusi, pendientes, patios y vistas de la Alhambra con una ruta pensada para caminar sin prisa."
-seoDescription: "Visita guiada por el Albaicin de Granada con miradores, historia local, calles tranquilas, vistas de la Alhambra y reserva por WhatsApp o email."
-targetIntent: "visita guiada Albaicin Granada, ruta por miradores"
+intro: "El Albaicin es una de las mejores formas de entrar en Granada: calles blancas, miradores, memoria andalusi, pendientes, patios y vistas de la Alhambra con una ruta pensada para caminar sin prisa. La visita puede enfocarse como primera introduccion, paseo cultural o grupo privado."
+seoDescription: "Visita guiada por el Albaicin de Granada con miradores, historia local, calles tranquilas, vistas de la Alhambra y reserva privada por WhatsApp."
+targetIntent: "visita guiada Albaicin Granada, ruta por miradores, tour Albaicin y guia privada"
 image: "/images/almagranada.jpg"
 imageAlt: "Calles y miradores del Albaicin para una visita guiada por Granada"
 relatedTours: ["albaicin", "granada-viewpoints-legends"]
@@ -17,6 +17,10 @@ faq:
     answer: "El Albaicin tiene pendientes, pero la ruta puede plantearse con pausas, miradores y un ritmo caminable para disfrutar el barrio con calma."
   - question: "Es buena opcion para una primera visita a Granada?"
     answer: "Si. El Albaicin ayuda a entender la relacion entre paisaje, historia, Alhambra, vida local y memoria urbana desde el primer paseo."
+  - question: "Se puede hacer al atardecer?"
+    answer: "Puede ser una buena opcion si la luz, el horario y el ritmo del grupo encajan. Conviene consultar disponibilidad antes de organizar el dia."
+  - question: "Puedo reservar la ruta por el Albaicin como grupo privado?"
+    answer: "Si. La ruta publicada puede solicitarse como grupo privado para adaptar idioma, ritmo, miradores y enfoque cultural."
 order: 40
 ---
 
@@ -26,9 +30,17 @@ Una visita guiada por el Albaicin debe dejar espacio para mirar. Hay cuestas, so
 
 Si te interesan las leyendas, las fotografias al atardecer, los miradores o la historia urbana, esta zona permite construir una visita muy rica. La reserva se inicia por WhatsApp o email y puede adaptarse al idioma, al tiempo disponible y al ritmo del grupo.
 
+## Por que visitar el Albaicin con guia
+
+El Albaicin puede parecer un laberinto de calles bonitas, pero con contexto se convierte en una lectura de Granada: puertas, aljibes, iglesias, plazas, miradores, pendientes y relaciones visuales con la Alhambra. Una guia ayuda a ordenar el paseo y a no reducir el barrio a una sucesion de fotografias.
+
+La ruta tambien permite hablar de memoria andalusi, transformaciones cristianas, vida cotidiana, paisaje y leyendas sin perder el ritmo caminable.
+
 ## Albaicin solo o con Sacromonte
 
 Si el grupo tiene poco tiempo o prefiere caminar sin demasiado desnivel, una visita centrada en el Albaicin puede ser suficiente. Si buscas una lectura mas amplia de los barrios altos, se puede valorar una conexion con Sacromonte, siempre teniendo en cuenta cuestas, luz y energia del grupo.
+
+Para una visita privada, el recorrido puede ajustar paradas y miradores. No se trata de verlo todo, sino de elegir un hilo claro para entender mejor el barrio.
 
 ## Que aporta una visita guiada
 

@@ -1,12 +1,12 @@
 ---
 locale: es
 translationKey: private-alhambra-tour
-title: "Tour privado de la Alhambra"
+title: "Tour privado de la Alhambra en Granada"
 heading: "Tour privado de la Alhambra con contexto historico y ritmo tranquilo"
 routeSlug: "tour-alhambra-privado"
-intro: "Una visita privada o personalizada a la Alhambra permite mirar sus espacios con calma, entender simbolos, agua, arquitectura y poder, y adaptar el recorrido al grupo cuando la disponibilidad lo permite."
-seoDescription: "Tour privado de la Alhambra en Granada con enfoque cultural, simbolos, arquitectura, jardines y reserva directa por WhatsApp o email."
-targetIntent: "tour privado Alhambra, visita guiada Alhambra Granada"
+intro: "Una visita privada o personalizada a la Alhambra permite mirar sus espacios con calma, entender simbolos, agua, arquitectura y poder, y adaptar el recorrido al grupo cuando la disponibilidad lo permite. Es una opcion pensada para quienes quieren contexto cultural y una conversacion mas flexible."
+seoDescription: "Tour privado de la Alhambra en Granada con enfoque cultural, simbolos, arquitectura, jardines, entradas bajo consulta y reserva por WhatsApp."
+targetIntent: "tour privado Alhambra, visita guiada Alhambra Granada y guia privada Alhambra"
 image: "/images/alhambra.jpg"
 imageAlt: "Patios y arquitectura de la Alhambra para una visita privada cultural"
 relatedTours: ["alhambra", "alhambra-beyond-palaces", "granada-new-world"]
@@ -17,6 +17,10 @@ faq:
     answer: "La web no vende entradas ni pagos internos. Escribenos para coordinar disponibilidad, condiciones de la visita y cualquier detalle practico antes de confirmar."
   - question: "Se puede adaptar el tour privado de la Alhambra?"
     answer: "Si. Podemos orientar el ritmo, el idioma y el enfoque cultural segun el grupo, siempre respetando entradas, horarios y condiciones de acceso."
+  - question: "Con cuanto tiempo conviene consultar?"
+    answer: "Cuanto antes, mejor, especialmente en temporada alta. La Alhambra depende de entradas nominativas, franjas horarias y disponibilidad real."
+  - question: "Que pasa si no hay entradas a la Alhambra?"
+    answer: "Se puede valorar otra ruta cultural por Granada, como Albaicin, centro historico, miradores o una lectura urbana relacionada con la Alhambra desde fuera."
 order: 30
 ---
 
@@ -26,9 +30,17 @@ La experiencia puede centrarse en simbolos, historia nazari, jardines, miradores
 
 Antes de reservar conviene aclarar fecha, numero de personas, idioma, entradas disponibles y expectativas del grupo. A partir de ahi se puede proponer una visita realista, sin prometer accesos imposibles ni procesos de pago dentro de la web.
 
+## Por que elegir un tour privado de la Alhambra
+
+La Alhambra concentra muchas capas: palacios, jardines, defensas, agua, escritura, paisaje y memoria politica. En una visita privada hay mas espacio para preguntas, pausas y conexiones con lo que el grupo ya conoce o quiere entender.
+
+Este formato resulta util si viajas con familia, si prefieres un ritmo tranquilo, si vienes en pareja, si necesitas una visita en ingles o si buscas una explicacion cultural mas ordenada que una visita rapida.
+
 ## Antes de confirmar
 
 La Alhambra depende de horarios, accesos y entradas. Por eso es importante escribir antes de cerrar el viaje y evitar planes que prometen mas de lo que el dia permite. Si no hay disponibilidad, se puede valorar otra lectura de Granada a traves del Albaicin, el centro historico o una ruta privada por la ciudad.
+
+La web no sustituye la gestion de entradas ni confirma automaticamente la visita. El primer paso es consultar por WhatsApp o email para revisar fecha, personas, idioma, expectativas y opciones viables.
 
 ## Con que combinarla
 

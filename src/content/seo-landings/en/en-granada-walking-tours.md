@@ -1,12 +1,12 @@
 ---
 locale: en
 translationKey: guided-visits-granada
-title: "Granada walking tours"
+title: "Granada walking tours: cultural guided routes"
 heading: "Granada walking tours with history, context and a calm pace"
 routeSlug: "granada-walking-tours"
-intro: "Cultural walking tours in Granada for travelers who want more than a checklist: Alhambra views, Albaicin lanes, historic center, viewpoints, symbols and direct booking by WhatsApp or email."
-seoDescription: "Granada walking tours in English and Spanish with cultural routes through the Alhambra, Albaicin, historic center, viewpoints and direct WhatsApp booking."
-targetIntent: "Granada walking tours, guided visits and cultural routes"
+intro: "Cultural walking tours in Granada for travelers who want more than a checklist: Alhambra views, Albaicin lanes, historic center, viewpoints, symbols and direct booking by WhatsApp or email. Compare routes for a first visit, a private group or a slower cultural walk."
+seoDescription: "Granada walking tours in English and Spanish: Alhambra, Albaicin, historic center, viewpoints, private groups and direct WhatsApp booking."
+targetIntent: "Granada walking tours, guided visits, cultural routes and private guide"
 image: "/images/Granada-main.jpeg"
 imageAlt: "Granada and the Alhambra from a viewpoint for planning a walking tour"
 relatedTours: ["albaicin", "alhambra", "cathedral-royal-chapel", "granada-two-worlds"]
@@ -17,6 +17,10 @@ faq:
     answer: "For a first visit, an Albaicin or historic Granada route usually gives useful context. If you have Alhambra tickets, a focused Alhambra visit can be planned separately."
   - question: "How do I book a Granada walking tour?"
     answer: "Write by WhatsApp or email with your date, group size, preferred language and interests. We confirm availability and details through your preferred channel."
+  - question: "Can I book a private walking tour in Granada?"
+    answer: "Yes. Choose a published route or describe your travel idea and the visit can be requested as a private group depending on availability, language and pace."
+  - question: "Which Granada areas are best with a guide?"
+    answer: "The Albaicin, Alhambra, Cathedral, Royal Chapel, historic center, viewpoints and upper neighborhoods are easier to understand with historical context and a well-ordered route."
 order: 10
 ---
 
@@ -26,11 +30,23 @@ Elyara routes are designed with context, pauses and conversation. You can choose
 
 If you have limited time, choosing well matters. The Albaicin helps you read Granada from its lanes and viewpoints. The Alhambra asks for another kind of attention, focused on architecture, power, water and landscape. Historic Granada opens the story of the city after 1492.
 
+## Which Granada walking tour to choose
+
+For a first time in Granada, an Albaicin or historic center route usually gives the clearest base: landscape, neighborhoods, power, urban memory and local life. If the Alhambra is your priority, it is better to keep enough time for that visit instead of adding too many plans to the same day.
+
+If you want viewpoints, photography or an atmospheric afternoon, the upper neighborhoods can work especially well. If you travel with children, older visitors or a group that needs pauses, the best route is usually the one with fewer stops and more time to understand them.
+
 ## How to choose around your trip
 
 If it is your first time in Granada, it is often useful to begin with a route that connects neighborhoods, landscape and the historic center. If you already have Alhambra tickets, leave enough time for that visit and avoid adding too many plans to the same day. If you travel with children or a group that needs pauses, a shorter route may work better.
 
 Guided walks can also help with practical decisions: what to see first, what to leave for another afternoon, when to go up to the Albaicin, how to avoid repeating routes and which itinerary makes sense around your accommodation or schedule.
+
+## Published route or private walking tour
+
+Published routes are a useful starting point because they already have a clear structure, duration and focus. The private group option is useful when you want to adjust language, pace, approximate timing or the themes your group cares about most.
+
+There is no need for a separate private tour catalog. Start from the Albaicin, Alhambra, Cathedral and Royal Chapel, viewpoints or historic center route, then write to request that same visit as a private group.
 
 ## Booking and contact
 
