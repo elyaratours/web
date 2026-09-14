@@ -7,7 +7,7 @@ routeSlug: "visita-guiada-catedral-capilla-real-granada"
 intro: "Una visita guiada a la Catedral y la Capilla Real permite leer la Granada posterior a 1492 desde el arte, la memoria dinastica, la transformacion urbana y los simbolos del nuevo poder."
 seoDescription: "Visita guiada a la Catedral de Granada y la Capilla Real con contexto historico, arte, Reyes Catolicos y reserva directa por WhatsApp o email."
 targetIntent: "visita guiada Catedral Granada, Capilla Real y centro historico"
-image: "/images/23.jpg"
+image: "/images/catedral-capilla-real-route.webp"
 imageAlt: "Interior de la Catedral de Granada para una visita guiada cultural"
 relatedTours: ["cathedral-royal-chapel", "granada-new-world", "granada-two-worlds"]
 relatedArticles: ["cathedral-royal-chapel-guide", "first-day-granada"]
@@ -17,6 +17,10 @@ faq:
     answer: "Se explican arte, poder, memoria de los Reyes Catolicos, transformacion urbana y la nueva imagen de Granada tras 1492."
   - question: "La visita se puede adaptar a un grupo privado?"
     answer: "Si. Puedes escribir por WhatsApp o email para consultar fecha, idioma, ritmo e intereses del grupo."
+  - question: "Sirve como complemento a la Alhambra?"
+    answer: "Si. La Alhambra explica la ciudad nazari; Catedral y Capilla Real ayudan a leer el nuevo proyecto cristiano, politico y urbano despues de 1492."
+  - question: "La web vende entradas para Catedral o Capilla Real?"
+    answer: "No. La reserva empieza por WhatsApp o email para revisar fecha, grupo, idioma y condiciones practicas antes de confirmar la visita."
 order: 30
 published: true
 ---
@@ -25,9 +29,21 @@ La Catedral y la Capilla Real no son solo dos monumentos del centro. Juntas cuen
 
 Esta visita ayuda a mirar fachadas, interiores, capillas, trazas urbanas y relatos politicos con mas calma. La clave no es acumular datos, sino entender por que estos lugares ocupan una posicion tan importante en la historia de la ciudad.
 
+La Catedral muestra la ambicion de construir una ciudad cristiana monumental y renacentista sobre un centro heredado de la Granada islamica. La Capilla Real, en cambio, concentra una memoria mas intima y politica: enterramientos, colecciones, legitimidad y la imagen de los Reyes Catolicos como protagonistas de un nuevo relato.
+
+El valor de una visita guiada esta en unir esos niveles. No basta con ver el edificio por dentro: conviene relacionarlo con la plaza, las calles comerciales, las antiguas tramas urbanas y las decisiones que transformaron el centro historico. Asi la visita no queda aislada, sino conectada con la ciudad que la rodea.
+
 ## Para quien tiene sentido
 
 Es una buena eleccion si te interesa la Granada posterior a 1492, el papel de los Reyes Catolicos, el arte religioso, la arquitectura renacentista o la relacion entre monumentos y ciudad. Tambien puede funcionar como complemento a una ruta por el Albaicin o a una visita general por el centro historico.
+
+Tambien es una opcion practica si ya tienes prevista la Alhambra y quieres completar el viaje con la otra gran lectura de Granada. En grupos privados se puede ajustar el ritmo, dedicar mas tiempo a arte y simbolos, o relacionar la visita con temas como 1492, memoria dinastica, transformacion urbana o convivencia de herencias culturales.
+
+## Como encajarla en tu viaje
+
+La visita funciona bien en una manana o tarde centrada en el centro historico. Si dispones de mas tiempo, puede combinarse con una ruta por el entorno de la Madraza, la Alcaiceria, Plaza Nueva o los recorridos sobre la Granada de 1492. Si vienes con poco margen, es mejor elegir un enfoque claro y no intentar mezclar demasiados monumentos en una misma franja.
+
+Para seguir comparando, puedes ver la ruta de [Catedral y Capilla Real](/es/tours/catedral-capilla-real/), las [visitas guiadas en Granada](/es/visitas-guiadas-granada/) o la opcion de [guia privada en Granada](/es/guia-privada-granada/).
 
 ## Reserva directa
 

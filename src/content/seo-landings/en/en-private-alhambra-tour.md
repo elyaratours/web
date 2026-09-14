@@ -7,10 +7,10 @@ routeSlug: "private-alhambra-tour"
 intro: "A private or personalized Alhambra visit helps you slow down, understand symbols, water, architecture and power, and shape the route around your group when access and availability allow it. It is designed for travelers who want cultural context and a more flexible conversation."
 seoDescription: "Private Alhambra tour in Granada with cultural focus, symbolism, architecture, gardens, ticket availability by inquiry and WhatsApp booking."
 targetIntent: "private Alhambra tour, guided Alhambra visit Granada and private Alhambra guide"
-image: "/images/alhambra.jpg"
+image: "/images/alhambra-route.webp"
 imageAlt: "Alhambra courtyards and architecture for a private cultural visit"
 relatedTours: ["alhambra", "alhambra-beyond-palaces", "granada-new-world"]
-relatedArticles: ["private-tour-granada-guide", "first-day-granada"]
+relatedArticles: ["private-tour-granada-guide", "first-day-granada", "albaicin-sacromonte-guide"]
 relatedLandings: ["guided-visits-granada", "private-guide-granada", "free-tour-granada", "granada-day-trips-from-malaga-cordoba"]
 faq:
   - question: "Are Alhambra tickets included?"
@@ -29,6 +29,18 @@ The Alhambra is not only beautiful architecture. It is a set of spaces where wat
 The experience can focus on Nasrid history, symbols, gardens, viewpoints, daily life or later transformations. It can also connect with another Granada route so the palace city is understood alongside the Albaicin, the historic center or Christian Granada.
 
 Before booking, it is useful to clarify date, group size, language, available tickets and expectations. From there, a realistic visit can be suggested without promising impossible access or moving the process into an internal payment system.
+
+## Tickets and availability
+
+The Alhambra works with named tickets, time slots and visitor limits that can sell out well in advance. That is why an inquiry should not be understood as automatic confirmation. First, the date, group size, language, available ticket type and access conditions need to be reviewed.
+
+If you already have tickets, mention this when writing by WhatsApp or email, including the exact Nasrid Palaces time if it appears on your booking. If you do not have tickets yet, the visit has to be shaped around real availability, without assuming every space will be accessible.
+
+## How to plan the timing
+
+A private visit can adapt to the group, but the Alhambra still requires respecting access times, internal distances and pauses. It is wise to leave margin before and after the visit, especially if you travel with children, older visitors or a group that prefers not to rush.
+
+It also helps to decide whether the Alhambra will be the main focus of the day or whether you want to connect it with another area. For many travelers, a complementary [Albaicin guided walk](/en/albaicin-guided-walk/) or historic-center route makes the relationship between the palace city and Granada clearer.
 
 ## Why choose a private Alhambra tour
 

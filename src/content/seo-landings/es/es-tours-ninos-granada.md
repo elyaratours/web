@@ -7,7 +7,7 @@ routeSlug: "tours-ninos-granada"
 intro: "Los tours para ninos en Granada funcionan mejor cuando son cortos, visuales y participativos. Elyara propone rutas familiares para descubrir historia y ciudad sin convertir la visita en una clase pesada."
 seoDescription: "Tours para ninos en Granada y rutas familiares con explicaciones adaptadas, ritmo tranquilo, Centro Historico y reserva directa por WhatsApp o email."
 targetIntent: "tours para ninos en Granada, ruta familiar y visita cultural con ninos"
-image: "/images/Niños.jpg"
+image: "/images/ninos-granada-route.webp"
 imageAlt: "Ninos observando una fuente en un jardin historico de Granada"
 relatedTours: ["granada-family-kids", "albaicin", "cathedral-royal-chapel"]
 relatedArticles: ["family-granada-guide", "first-day-granada"]

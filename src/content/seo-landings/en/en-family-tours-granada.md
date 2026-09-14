@@ -7,7 +7,7 @@ routeSlug: "family-tours-granada"
 intro: "Family tours in Granada work best when they are short, visual and participatory. Elyara offers routes for families who want children to discover history without turning the visit into a heavy lesson."
 seoDescription: "Family tours in Granada and child-friendly routes with adapted explanations, a calm pace, historic center context and direct WhatsApp or email booking."
 targetIntent: "family tours in Granada, kids tour and cultural visit with children"
-image: "/images/Niños.jpg"
+image: "/images/ninos-granada-route.webp"
 imageAlt: "Children observing a fountain in a historic Granada garden"
 relatedTours: ["granada-family-kids", "albaicin", "cathedral-royal-chapel"]
 relatedArticles: ["family-granada-guide", "first-day-granada"]

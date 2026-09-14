@@ -9,7 +9,7 @@ price: "7 EUR por persona; menores de 6 años gratis"
 languages:
   - "Espanol"
   - "English"
-image: "/images/Niños.jpg"
+image: "/images/ninos-granada-route.webp"
 imageAlt: "Niños observando una fuente en un jardin historico de Granada"
 reservationUrl: "mailto:elyaratours@gmail.com?subject=Granada%20en%20familia"
 faq:

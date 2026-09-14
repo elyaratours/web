@@ -7,10 +7,10 @@ routeSlug: "visitas-guiadas-granada"
 intro: "Rutas culturales a pie para descubrir Granada con contexto historico, ritmo caminable y reserva directa por WhatsApp o email. Compara opciones para Alhambra, Albaicin, centro historico, miradores y recorridos privados sin convertir la visita en una lista de paradas."
 seoDescription: "Visitas guiadas en Granada en espanol e ingles: Alhambra, Albaicin, centro historico, miradores, rutas privadas y reserva directa por WhatsApp."
 targetIntent: "visitas guiadas en Granada, rutas culturales, tours a pie y guia privada"
-image: "/images/Granada-main.jpeg"
+image: "/images/granada-main-route.webp"
 imageAlt: "Vista de Granada y la Alhambra para planificar visitas guiadas culturales"
 relatedTours: ["albaicin", "alhambra", "cathedral-royal-chapel", "granada-two-worlds"]
-relatedArticles: ["private-tour-granada-guide", "first-day-granada", "cathedral-royal-chapel-guide", "family-granada-guide"]
+relatedArticles: ["private-tour-granada-guide", "albaicin-sacromonte-guide", "first-day-granada", "cathedral-royal-chapel-guide", "family-granada-guide"]
 relatedLandings: ["private-guide-granada", "free-tour-granada", "private-alhambra-tour", "albaicin-guided-walk", "family-tours-granada"]
 faq:
   - question: "Que visita guiada elegir si es mi primera vez en Granada?"

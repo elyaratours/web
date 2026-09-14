@@ -11,7 +11,7 @@ image: "/images/alhambra-clouds.jpeg"
 imageAlt: "La Alhambra vista desde Granada para elegir una ruta a pie o free tour"
 relatedTours: ["albaicin", "granada-viewpoints-legends", "granada-two-worlds"]
 relatedArticles: ["private-tour-granada-guide", "first-day-granada", "albaicin-atardecer"]
-relatedLandings: ["guided-visits-granada", "private-guide-granada", "albaicin-guided-walk", "family-tours-granada"]
+relatedLandings: ["guided-visits-granada", "private-guide-granada", "private-alhambra-tour", "albaicin-guided-walk", "family-tours-granada"]
 faq:
   - question: "Elyara ofrece un free tour con pago interno?"
     answer: "No hay checkout ni pago interno en la web. Puedes escribir por WhatsApp o email para consultar rutas, disponibilidad y condiciones de reserva."
@@ -29,6 +29,14 @@ Para muchos viajeros, el mejor punto de partida es una ruta por el Albaicin, los
 ## Que conviene comparar
 
 Antes de elegir, mira si la visita explica claramente idioma, duracion, punto de encuentro, tamano aproximado del grupo y forma de reserva. Tambien conviene preguntarse si quieres solo orientarte o si prefieres una ruta con mas profundidad historica y tiempo para preguntas.
+
+El modelo de precio tambien cambia la experiencia. Un free tour suele funcionar con aportacion voluntaria o condiciones externas al final de la visita; una ruta privada se acuerda antes, con precio y disponibilidad claros para el grupo. Ningun formato es universalmente mejor: depende de presupuesto, expectativas, necesidad de idioma, flexibilidad y ganas de participar en un grupo mas grande o mas pequeno.
+
+## Grupo, ritmo y profundidad
+
+En un grupo amplio, la visita tiende a seguir un recorrido mas estandar y con menos margen para adaptar preguntas. En una visita privada, el ritmo puede ajustarse antes de confirmar: familias con ninos, viajeros que prefieren caminar despacio, personas interesadas en historia politica o grupos que quieren conectar [Albaicin](/es/visita-guiada-albaicin/), centro historico y miradores.
+
+Si tu prioridad es orientarte el primer dia, una visita general puede bastar. Si quieres tomar decisiones sobre entradas, barrios, idioma o una ruta centrada en la Alhambra, puede encajar mejor una [guia privada en Granada](/es/guia-privada-granada/) o una consulta directa por WhatsApp o email.
 
 ## Alternativas culturales
 

@@ -18,15 +18,22 @@ faq:
     answer: "Si. La ruta ayuda a situar barrios, miradores e historia local para entender mejor la ciudad desde el primer paseo."
   - question: "La ruta por el Albaicin tiene muchas cuestas?"
     answer: "El Albaicin tiene pendientes, pero el recorrido se plantea con un ritmo caminable, pausas y tiempo para mirar el barrio con calma."
+  - question: "Que diferencia esta ruta de una visita solo por miradores?"
+    answer: "Los miradores forman parte del recorrido, pero la ruta conecta Centro Historico, Albaicin, Sacromonte y Darro para entender como se formo la identidad de Granada."
+  - question: "Se puede adaptar para un grupo privado?"
+    answer: "Si. Podemos revisar por WhatsApp o email el ritmo, idioma, intereses y necesidades del grupo antes de proponer la mejor forma de hacerla."
 relatedLandings: ["albaicin-guided-walk", "guided-visits-granada", "free-tour-granada"]
 seoDescription: "La forma más completa de descubrir Granada a través de los barrios, historias y culturas que han dado forma a su identidad."
 featured: true
 order: 2
 ---
 
-Descubre las muchas caras de Granada en un recorrido por los barrios que han dado forma a su identidad a lo largo de los siglos. Cada uno cuenta una parte distinta de la historia de la ciudad, desde su pasado islámico y su transformación cristiana hasta las tradiciones, comunidades y formas de vida que todavía hoy le dan a Granada su carácter inconfundible.
+Descubre las muchas caras de Granada en un recorrido por los barrios que han dado forma a su identidad a lo largo de los siglos. Cada zona cuenta una parte distinta de la historia de la ciudad: el centro cristiano, el Albaicin heredero de la ciudad islamica, el Sacromonte vinculado a cuevas y memorias populares, y el Darro como eje visual entre la Alhambra y la ciudad baja.
 
+Esta es una ruta amplia para situarse en Granada mas alla de sus monumentos. A lo largo del paseo conectamos historia, cultura, paisaje y vida local: como se transformo la medina musulmana, que papel tuvieron las plazas y parroquias tras 1492, por que los miradores explican tanto la geografia como la memoria de la ciudad, y como cambian los barrios cuando se caminan despacio.
 
-Esta es la forma más completa de conocer la ciudad más allá de sus monumentos. A lo largo del recorrido descubrirás cómo la historia, la cultura, el paisaje y la vida local se entrelazan, conectando distintas partes de Granada en una misma historia y revelando la esencia que hace de esta ciudad un lugar tan especial.
+El recorrido incluye Centro Historico, Albaicin, Sacromonte y uno de los paseos mas emblematicos junto al Darro. No es solo una sucesion de miradores: la idea es entender por que cada barrio mira a la Alhambra de una forma distinta y como esas relaciones han construido la imagen de Granada.
 
-Un recorrido por el Centro Histórico, el Albaicín, el Sacromonte y uno de los paseos más emblemáticos junto al Darro.
+El Albaicin tiene cuestas y pavimento irregular en algunos tramos, pero el ritmo se adapta con pausas, explicaciones y tiempo para observar. Es una buena opcion para una primera visita, para viajeros que quieren orientarse en la ciudad y para grupos privados que buscan combinar historia, fotografias, ambiente local y contexto cultural.
+
+Si dudas entre esta ruta y una visita mas especifica, puedes comparar con la pagina de [visita guiada por el Albaicin](/es/visita-guiada-albaicin/) o con la opcion de [Albaicin y Sacromonte](/es/visita-guiada-albaicin-sacromonte-granada/). Para un ritmo completamente adaptado, escribe desde [viajes a medida](/es/viajes-a-medida/) o por los botones de reserva externa.

@@ -17,7 +17,7 @@ const { locale } = Astro.props as { locale: Locale };
 const copy = getLocaleConfig(locale);
 const tours = await getPublishedTours(locale);
 const kidsTours = await getPublishedKidsTours(locale);
-const planningLandings = await getSeoLandingsByKeys(locale, ['guided-visits-granada', 'private-guide-granada', 'private-alhambra-tour', 'albaicin-guided-walk']);
+const planningLandings = await getSeoLandingsByKeys(locale, ['guided-visits-granada', 'private-guide-granada', 'private-alhambra-tour', 'albaicin-guided-walk', 'free-tour-granada']);
 const alternates = locales.map((item) => ({ locale: item, path: `/${item}/` }));
 const site = Astro.site ?? new URL(productionSiteUrl);
 const listedTours = [...tours, ...kidsTours];
@@ -118,7 +118,7 @@ const jsonLd = [
           <h2 id="planning-links-title" class="mt-3 font-serif text-3xl font-bold text-alhambra-night sm:text-4xl">{planningCopy.title}</h2>
           <p class="mt-4 leading-8 text-slate-700">{planningCopy.text}</p>
         </div>
-        <div class="mt-7 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="mt-7 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
           {planningLandings.map((landing) => (
             <a class="rounded-2xl border border-alhambra-clay/15 bg-white/70 p-4 text-sm font-bold text-alhambra-night transition hover:-translate-y-0.5 hover:border-alhambra-clay hover:text-alhambra-clay" href={getSeoLandingPath(landing)}>
               {landing.data.title}

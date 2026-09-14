@@ -7,11 +7,11 @@ routeSlug: "guia-privada-granada"
 intro: "Una guia privada en Granada te ayuda a escoger una ruta realista, caminar con contexto y adaptar la visita al idioma, ritmo e intereses de tu grupo sin depender de un itinerario generico. Es una buena opcion para familias, grupos pequenos, viajeros con poco tiempo o visitas culturales mas concretas."
 seoDescription: "Guia privada en Granada para Albaicin, centro historico, Alhambra, miradores y rutas culturales a medida con reserva directa por WhatsApp."
 targetIntent: "guia privada en Granada, tour privado, visita cultural personalizada y rutas a medida"
-image: "/images/Granada-main.jpeg"
+image: "/images/granada-main-route.webp"
 imageAlt: "Vista de Granada y la Alhambra para organizar una visita con guia privada"
 relatedTours: ["albaicin", "cathedral-royal-chapel", "granada-two-worlds", "alhambra"]
-relatedArticles: ["private-tour-granada-guide", "first-day-granada"]
-relatedLandings: ["guided-visits-granada", "private-alhambra-tour", "cathedral-royal-chapel-guided", "family-tours-granada"]
+relatedArticles: ["private-tour-granada-guide", "albaicin-sacromonte-guide", "first-day-granada"]
+relatedLandings: ["guided-visits-granada", "free-tour-granada", "private-alhambra-tour", "cathedral-royal-chapel-guided", "family-tours-granada"]
 faq:
   - question: "Que puedo pedir a una guia privada en Granada?"
     answer: "Puedes pedir una ruta publicada o una propuesta adaptada a tus fechas, idioma, numero de personas, intereses y ritmo del grupo."
@@ -28,6 +28,8 @@ published: true
 Buscar una guia privada en Granada suele significar que quieres algo mas personal que una visita estandar. Puede que viajes con poco tiempo, con ninos, con personas que prefieren caminar despacio o con intereses muy concretos en historia, arquitectura, barrios o leyendas.
 
 En Elyara la visita empieza con una conversacion sencilla. Nos cuentas cuando vienes, cuantas personas sois, que idioma prefieres y que zonas te interesan. A partir de ahi se puede elegir una ruta ya publicada o preparar una propuesta a medida que tenga sentido para tu grupo.
+
+Si estas comparando formatos, puede ayudarte leer tambien la guia sobre [como elegir un tour privado en Granada](/es/blog/como-elegir-tour-privado-granada/) o la comparativa de [free tour Granada y rutas culturales](/es/free-tour-granada/).
 
 ## Rutas que suelen funcionar
 

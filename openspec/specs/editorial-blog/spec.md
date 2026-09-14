@@ -250,3 +250,92 @@ The system SHALL keep expanded editorial SEO content localized, useful, and safe
 #### Scenario: Search engine reads expanded editorial metadata
 - **WHEN** a crawler reads a published expanded editorial article
 - **THEN** the page exposes article metadata, language alternates when a translation exists, breadcrumb structured data, article structured data, and social preview metadata based on visible page content
+
+### Requirement: Local SEO long-tail editorial coverage
+The system SHALL publish useful localized editorial content for long-tail Granada guide and route search intents that supports discovery of Elyara routes without duplicating thin landing pages.
+
+#### Scenario: Spanish visitor researches choosing a private guide in Granada
+- **WHEN** a Spanish visitor opens editorial content about choosing a private guide or private guided visit in Granada
+- **THEN** the article provides substantial visitor-facing guidance about what a private guide can include, route focus, language, pace, group needs, and booking by WhatsApp or email
+- **AND** it links to relevant Spanish tour pages, SEO landing pages, or inquiry paths when those pages exist
+
+#### Scenario: English visitor researches choosing a private guide in Granada
+- **WHEN** an English visitor opens editorial content about choosing a private guide or private guided visit in Granada
+- **THEN** the article provides substantial visitor-facing guidance about what a private guide can include, route focus, language, pace, group needs, and booking by WhatsApp or email
+- **AND** it links to relevant English tour pages, SEO landing pages, or inquiry paths when those pages exist
+
+#### Scenario: Visitor researches an Alhambra guided visit before booking
+- **WHEN** a visitor opens localized editorial content about guided Alhambra visits or private Alhambra tours
+- **THEN** the article explains visitor-relevant booking considerations such as tickets, timing, realistic itinerary planning, private-group fit, and alternatives if access is unavailable
+- **AND** it does not promise unavailable access, internal ticket sales, or checkout inside the website
+
+#### Scenario: Visitor researches an Albaicin route or guided walk
+- **WHEN** a visitor opens localized editorial content about an Albaicin tour, guided walk, viewpoints, or Albaicin and Sacromonte route choice
+- **THEN** the article provides practical and cultural guidance about route focus, slopes, timing, viewpoints, group pace, and how the route connects to Granada's history
+- **AND** it links to matching Albaicin tours, SEO landing pages, or related editorial context when those pages exist
+
+#### Scenario: Visitor compares free tour and private guided visit options
+- **WHEN** a visitor opens localized editorial content comparing free tours, cultural guided routes, and private guided visits in Granada
+- **THEN** the article explains differences in pricing model, group size, flexibility, route depth, booking expectations, and fit for different travelers
+- **AND** it remains factual and visitor-facing rather than claiming Elyara is the best option without approved evidence
+
+### Requirement: Editorial local authority safeguards
+The system SHALL keep local SEO editorial content trustworthy by avoiding fake authority signals while Google Business Profile verification and real reviews are not yet available.
+
+#### Scenario: Editorial content references business trust
+- **WHEN** an editorial article mentions Elyara as a guide-led Granada route provider
+- **THEN** it may reference approved facts such as public name, Granada service area, Spanish/English support, direct WhatsApp/email contact, and external reservation flow
+- **AND** it does not claim verified Google Business Profile status, review ratings, awards, official credentials, or third-party endorsements unless those facts are approved and visible
+
+#### Scenario: Editorial content supports commercial discovery
+- **WHEN** a localized article targets a long-tail Granada tourism search intent
+- **THEN** it connects readers to relevant published tours, SEO landing pages, contact, or tailor-made inquiry paths when those pages exist
+- **AND** it does not replace route detail pages with duplicated tour descriptions
+
+### Requirement: Priority commercial editorial clusters
+The system SHALL publish substantial localized editorial clusters that answer priority Granada visitor questions and support discovery of related Elyara tours and commercial landing pages.
+
+#### Scenario: Spanish visitor researches a priority Granada planning topic
+- **WHEN** a Spanish visitor opens editorial content about private guide choice, Alhambra visit planning, Albaicin/Sacromonte route choice, free-tour versus private-visit comparison, family routes, day trips, or first-day Granada planning
+- **THEN** the article provides substantial Spanish visitor-facing guidance tailored to that topic
+- **AND** it links to relevant Spanish tours, SEO landing pages, contact, tailor-made inquiry, or related articles when those pages exist
+
+#### Scenario: English visitor researches a priority Granada planning topic
+- **WHEN** an English visitor opens editorial content about private guide choice, Alhambra visit planning, Albaicin/Sacromonte route choice, free-tour versus private-visit comparison, family routes, day trips, or first-day Granada planning
+- **THEN** the article provides substantial English visitor-facing guidance tailored to that topic
+- **AND** it links to relevant English tours, SEO landing pages, contact, tailor-made inquiry, or related articles when those pages exist
+
+#### Scenario: Editorial content supports a commercial landing page
+- **WHEN** a localized editorial article explains a topic served by a localized commercial or SEO landing page
+- **THEN** the article includes visible contextual links to that landing page and relevant tour detail pages
+- **AND** the matching landing page can link back to the article as supporting visitor context
+
+### Requirement: Editorial content quality safeguards for SEO expansion
+The system SHALL keep expanded SEO editorial content useful, localized, and safe to index rather than publishing thin, duplicated, or placeholder articles.
+
+#### Scenario: New or expanded SEO article is published
+- **WHEN** a new or expanded localized article is marked as published
+- **THEN** it includes localized title, excerpt, SEO description, publication date, category, body content, and visible internal links when relevant pages exist
+- **AND** the body content answers the article's visitor question directly instead of serving only as a doorway to commercial pages
+
+#### Scenario: SEO article is incomplete or duplicative
+- **WHEN** a localized SEO-oriented article lacks substantial visitor-facing content, duplicates another page's route description as its main body, or is not approved for publication
+- **THEN** the system does not expose it in public listings, sitemap entries, generated article pages, or structured data
+
+#### Scenario: Search engine reads expanded editorial metadata
+- **WHEN** a crawler reads an expanded published editorial article
+- **THEN** the page exposes article metadata, canonical URL, language alternates when a translation exists, breadcrumb structured data, article structured data, and social preview metadata based on visible page content
+- **AND** metadata does not claim ratings, review counts, third-party endorsements, official credentials, or guaranteed ranking outcomes unless those facts are approved and visible
+
+### Requirement: Editorial cluster navigation
+The system SHALL make topic clusters discoverable through visible links between related articles, tours, and landing pages in the same locale.
+
+#### Scenario: Visitor reads a cluster article
+- **WHEN** a visitor reads an article that belongs to a broader Granada planning cluster
+- **THEN** the article provides visible links to related articles, relevant tours, or matching landing pages when those pages exist
+- **AND** those links are localized to the visitor's current language whenever localized targets exist
+
+#### Scenario: Visitor opens the blog listing after cluster expansion
+- **WHEN** a visitor opens a localized blog listing after priority cluster articles are published
+- **THEN** the listing presents the published articles with localized titles, excerpts, imagery when available, category labels, publication dates, and links to detail pages
+- **AND** unpublished drafts remain absent from public listings and generated pages

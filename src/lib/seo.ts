@@ -31,15 +31,20 @@ const imageDimensions: Record<string, { width: number; height: number }> = {
   '/images/2mundos.jpeg': { width: 1200, height: 800 },
   '/images/Contacto.png': { width: 1200, height: 800 },
   '/images/Granada-main.jpeg': { width: 1200, height: 800 },
+  '/images/catedral-capilla-real-route.webp': { width: 1200, height: 800 },
   '/images/alhambra-clouds.jpeg': { width: 1200, height: 800 },
   '/images/alhambra.jpg': { width: 1200, height: 800 },
+  '/images/alhambra-route.webp': { width: 1200, height: 800 },
   '/images/almagranada.jpg': { width: 1200, height: 800 },
   '/images/day-trip-cordoba-granada.webp': { width: 1448, height: 1086 },
   '/images/day-trip-malaga-granada.webp': { width: 1536, height: 1024 },
+  '/images/granada-main-route.webp': { width: 1200, height: 800 },
   '/images/granada-pomegranates.jpeg': { width: 1200, height: 800 },
   '/images/Niños.jpg': { width: 6000, height: 4000 },
+  '/images/ninos-granada-route.webp': { width: 1400, height: 933 },
   '/images/main.jpeg': { width: 1200, height: 800 },
   '/images/mapa.png': { width: 1200, height: 800 },
+  '/images/mapa-route.webp': { width: 1200, height: 800 },
   '/images/miradoresyleyendas.jpg': { width: 1200, height: 800 },
   '/images/sunset.jpeg': { width: 1200, height: 800 },
 };
@@ -253,22 +258,6 @@ export function createItemListJsonLd(name: string, items: ListEntry[], site: URL
       url: absoluteUrl(item.path, site),
     })),
   } satisfies JsonLdNode;
-}
-
-export function createReviewJsonLd(
-  reviews: { traveler: string; text: string; route: string }[],
-) {
-  if (reviews.length === 0) {
-    return undefined;
-  }
-
-  return reviews.map((review) => ({
-    '@type': 'Review',
-    itemReviewed: { '@type': 'Organization', name: siteName },
-    author: { '@type': 'Person', name: review.traveler },
-    reviewBody: review.text,
-    name: review.route,
-  })) satisfies JsonLdNode[];
 }
 
 export function createTourServiceJsonLd(locale: Locale, path: string, title: string, description: string, site: URL) {

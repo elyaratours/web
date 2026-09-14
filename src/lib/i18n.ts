@@ -42,12 +42,12 @@ export const localeConfig = {
     heroEyebrow: 'Rutas culturales en Granada',
     heroTitle: 'Granada, una historia en cada paso',
     heroText:
-      'Rutas a pie y reservas para grupos privados para descubrir la historia, los personajes y los rincones que dan sentido a la ciudad.',
+      'Rutas culturales a pie en Granada y reservas para grupos privados, con atencion directa en espanol e ingles por WhatsApp o email.',
     heroImageAlt: 'La Alhambra bajo nubes dramaticas vista desde el Albaicin',
     footerIntro:
-      'Rutas a pie por la Alhambra, el Albaicin y la ciudad historica, con opcion de reserva privada y una mirada cercana y cultural.',
+      'Elyara Tours Granada ofrece rutas culturales a pie por la Alhambra, el Albaicin y la ciudad historica, con reserva privada disponible y contacto directo por WhatsApp o email.',
     catalogIntro: 'Elige una ruta y, si vienes en grupo, puedes solicitarla como experiencia privada por WhatsApp o email.',
-    metaHome: 'Rutas turisticas en Granada con opcion de reserva privada y experiencias culturales en espanol e ingles.',
+    metaHome: 'Elyara Tours Granada: rutas culturales en Granada, visitas en espanol e ingles, reserva privada y contacto directo por WhatsApp o email.',
   },
   en: {
     htmlLang: 'en',
@@ -88,12 +88,12 @@ export const localeConfig = {
     heroEyebrow: 'Cultural routes in Granada',
     heroTitle: 'Granada, a story in every step',
     heroText:
-      'Walking routes and private group reservations to discover the history, characters and corners that give meaning to the city.',
+      'Cultural walking routes in Granada and private group reservations, with direct support in Spanish and English by WhatsApp or email.',
     heroImageAlt: 'The Alhambra beneath dramatic clouds from the Albaicin',
     footerIntro:
-      'Walking routes through the Alhambra, the Albaicin and the historic city, with private booking available and a warm cultural perspective.',
+      'Elyara Tours Granada offers cultural walking routes through the Alhambra, the Albaicin and the historic city, with private booking available and direct WhatsApp or email contact.',
     catalogIntro: 'Choose a route and, if you are coming as a group, request it as a private experience by WhatsApp or email.',
-    metaHome: 'Tourism routes in Granada with private booking available and cultural experiences in Spanish and English.',
+    metaHome: 'Elyara Tours Granada: cultural routes in Granada, visits in Spanish and English, private booking and direct WhatsApp or email contact.',
   },
 } satisfies Record<Locale, Record<string, string>>;
 
@@ -209,7 +209,7 @@ export const contactContent = {
     eyebrow: 'Hablemos',
     heading: 'Hablemos de tu visita a Granada',
     intro:
-      'Si tienes una pregunta, quieres reservar una ruta privada o necesitas orientar tu viaje, puedes escribirnos directamente por WhatsApp, correo o Instagram.',
+      'Si tienes una pregunta, quieres reservar una ruta cultural en Granada, solicitar una visita privada o necesitas orientar tu viaje, puedes escribirnos directamente por WhatsApp, email o Instagram.',
     emailLabel: 'Email',
     whatsappLabel: 'WhatsApp',
     instagramLabel: 'Instagram',
@@ -217,7 +217,7 @@ export const contactContent = {
     whatsappCta: 'Escribir por WhatsApp',
     instagramCta: 'Ver Instagram',
     reasonsTitle: 'Para que puedes escribirnos',
-    reasons: ['Reservas de rutas', 'Rutas privadas', 'Viajes a medida', 'Dudas sobre Granada'],
+    reasons: ['Reservas de rutas en Granada', 'Rutas privadas en espanol o ingles', 'Viajes a medida', 'Dudas sobre ritmo, entradas o barrios'],
     footerLink: 'Ver pagina de contacto',
     imageAlt: 'Ilustracion acuarela de un cuaderno de viaje sobre Granada y la Alhambra',
     metaDescription:
@@ -225,11 +225,11 @@ export const contactContent = {
     faq: [
       {
         question: 'Como puedo reservar una ruta en Granada?',
-        answer: 'Puedes escribir por WhatsApp al +34 611 126 979 o por email a elyaratours@gmail.com indicando fechas, numero de personas, idioma y la ruta que te interesa.',
+        answer: 'Puedes escribir por WhatsApp al +34 611 126 979 o por email a elyaratours@gmail.com indicando fechas, numero de personas, idioma preferido, intereses y la ruta de Granada que te interesa.',
       },
       {
         question: 'Puedo pedir una ruta privada o personalizada?',
-        answer: 'Si. Puedes solicitar una ruta privada, una consultoria de viaje o una propuesta a medida segun tu tiempo e intereses en Granada.',
+        answer: 'Si. Puedes solicitar una ruta privada, una consultoria de viaje o una propuesta a medida segun tu tiempo, idioma, ritmo e intereses en Granada.',
       },
     ],
   },
@@ -239,7 +239,7 @@ export const contactContent = {
     eyebrow: 'Let us talk',
     heading: 'Let us talk about your visit to Granada',
     intro:
-      'If you have a question, want to book a private route or need help shaping your trip, you can contact us directly by WhatsApp, email or Instagram.',
+      'If you have a question, want to book a cultural route in Granada, request a private visit or need help shaping your trip, you can contact us directly by WhatsApp, email or Instagram.',
     emailLabel: 'Email',
     whatsappLabel: 'WhatsApp',
     instagramLabel: 'Instagram',
@@ -247,7 +247,7 @@ export const contactContent = {
     whatsappCta: 'Write on WhatsApp',
     instagramCta: 'View Instagram',
     reasonsTitle: 'What you can write about',
-    reasons: ['Route reservations', 'Private routes', 'Tailor-made trip planning', 'Questions about Granada'],
+    reasons: ['Granada route reservations', 'Private routes in English or Spanish', 'Tailor-made trip planning', 'Questions about pace, tickets or neighborhoods'],
     footerLink: 'View contact page',
     imageAlt: 'Watercolor illustration of a Granada travel notebook and the Alhambra',
     metaDescription:
@@ -255,11 +255,11 @@ export const contactContent = {
     faq: [
       {
         question: 'How can I book a route in Granada?',
-        answer: 'You can write by WhatsApp to +34 611 126 979 or by email to elyaratours@gmail.com with your dates, group size, preferred language and the route you are interested in.',
+        answer: 'You can write by WhatsApp to +34 611 126 979 or by email to elyaratours@gmail.com with your dates, group size, preferred language, interests and the Granada route you are interested in.',
       },
       {
         question: 'Can I request a private or custom route?',
-        answer: 'Yes. You can request a private route, a trip consultation or a tailor-made proposal based on your time and interests in Granada.',
+        answer: 'Yes. You can request a private route, a trip consultation or a tailor-made proposal based on your time, language, pace and interests in Granada.',
       },
     ],
   },
@@ -327,10 +327,10 @@ export const tailorMadeContent = {
     eyebrow: 'Viajes personalizados en Granada',
     title: 'Viajes y rutas disenadas para ti',
     intro:
-      'Si vienes con poco tiempo, intereses concretos o una idea especial, podemos ayudarte a organizar tu visita o disenar una ruta privada en Granada con un ritmo realista y una mirada cultural.',
+      'Si vienes con poco tiempo, intereses concretos o una idea especial, podemos ayudarte a organizar tu visita o disenar una ruta privada en Granada con un ritmo realista, una mirada cultural y atencion en espanol o ingles.',
     imageAlt: 'Mapa ilustrado de Granada con Albaicin, Sacromonte, Alhambra, Generalife, Realejo y Centro',
     homeText:
-      'Consultoria de viaje y rutas personalizadas para descubrir Granada sin ir corriendo ni seguir un itinerario generico.',
+      'Consultoria de viaje y rutas personalizadas para descubrir Granada sin ir corriendo, ajustando idioma, ritmo e intereses por WhatsApp o email.',
     cta: 'Disenar mi ruta',
     secondaryCta: 'Ver como funciona',
     whatsappCta: 'Consultar por WhatsApp',
@@ -376,10 +376,10 @@ export const tailorMadeContent = {
     eyebrow: 'Personalized trips in Granada',
     title: 'Tailor-made routes for your trip',
     intro:
-      'If you are traveling with limited time, specific interests or a special idea, we can help you shape your Granada visit or design a private route with a realistic pace and cultural perspective.',
+      'If you are traveling with limited time, specific interests or a special idea, we can help you shape your Granada visit or design a private route with a realistic pace, cultural perspective and support in English or Spanish.',
     imageAlt: 'Illustrated map of Granada with the Albaicin, Sacromonte, Alhambra, Generalife, Realejo and city center',
     homeText:
-      'Trip consultation and personalized routes to discover Granada without rushing or following a generic itinerary.',
+      'Trip consultation and personalized routes to discover Granada without rushing, adjusting language, pace and interests by WhatsApp or email.',
     cta: 'Plan my route',
     secondaryCta: 'See how it works',
     whatsappCta: 'Inquire by WhatsApp',
@@ -458,7 +458,7 @@ export const dayTripsContent = {
     title: 'Excursiones de un dia a Granada disenadas para tu grupo',
     intro:
       'Ven a Granada desde Malaga, la Costa del Sol o Cordoba con una propuesta privada, cultural y flexible. Elegimos juntos la experiencia principal, el ritmo, el transporte y los complementos para que el dia tenga sentido sin convertirse en una excursion masiva.',
-    image: '/images/Granada-main.jpeg',
+    image: '/images/granada-main-route.webp',
     imageAlt: 'Vista de Granada y la Alhambra para una excursion privada de un dia',
     primaryCta: 'Solicita tu excursion privada',
     emailCta: 'Solicitar por email',
@@ -519,7 +519,7 @@ export const dayTripsContent = {
     title: 'Day trips to Granada designed around your group',
     intro:
       'Travel to Granada from Malaga, the Costa del Sol or Cordoba with a private, cultural and flexible proposal. We shape the main experience, pace, transfer and optional complements together so the day feels personal rather than like a mass excursion.',
-    image: '/images/Granada-main.jpeg',
+    image: '/images/granada-main-route.webp',
     imageAlt: 'View of Granada and the Alhambra for a private day trip',
     primaryCta: 'Request your private day trip',
     emailCta: 'Request by email',
@@ -610,7 +610,7 @@ export const commercialToursContent = {
     title: 'Elige una ruta de Granada y solicitala para tu grupo',
     intro:
       'Si buscas una visita privada en Granada, no necesitas elegir un catalogo distinto. Parte de una ruta publicada y escribenos para adaptarla a vuestro idioma, ritmo e intereses.',
-    image: '/images/Granada-main.jpeg',
+    image: '/images/granada-main-route.webp',
     imageAlt: 'Vista de Granada y la Alhambra para tours privados culturales',
     primaryCta: 'Solicitar grupo privado',
     secondaryCta: 'Ver rutas disponibles',
@@ -658,7 +658,7 @@ export const commercialToursContent = {
     title: 'Choose a Granada route and request it for your group',
     intro:
       'If you are looking for a private visit in Granada, you do not need a separate catalog. Start from a published route and write to adapt it to your language, pace and interests.',
-    image: '/images/Granada-main.jpeg',
+    image: '/images/granada-main-route.webp',
     imageAlt: 'View of Granada and the Alhambra for private cultural tours',
     primaryCta: 'Request private group',
     secondaryCta: 'View available routes',

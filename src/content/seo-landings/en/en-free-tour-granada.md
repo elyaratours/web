@@ -11,7 +11,7 @@ image: "/images/alhambra-clouds.jpeg"
 imageAlt: "The Alhambra seen from Granada while choosing a walking route or free tour"
 relatedTours: ["albaicin", "granada-viewpoints-legends", "granada-two-worlds"]
 relatedArticles: ["private-tour-granada-guide", "first-day-granada", "albaicin-atardecer"]
-relatedLandings: ["guided-visits-granada", "private-guide-granada", "albaicin-guided-walk", "family-tours-granada"]
+relatedLandings: ["guided-visits-granada", "private-guide-granada", "private-alhambra-tour", "albaicin-guided-walk", "family-tours-granada"]
 faq:
   - question: "Does Elyara offer an internal free-tour checkout?"
     answer: "No. The website does not include an internal checkout or payment flow. You can write by WhatsApp or email to ask about routes, availability and booking conditions."
@@ -29,6 +29,14 @@ For many travelers, the best starting point is the Albaicin, the viewpoints or h
 ## What to compare
 
 Before choosing, check whether the visit clearly explains language, duration, meeting point, approximate group size and booking method. It is also worth asking whether you only want orientation or prefer a route with more historical depth and time for questions.
+
+The pricing model also changes the experience. A free tour usually works with a voluntary contribution or external conditions at the end of the visit; a private route is agreed in advance, with price and availability clear for the group. Neither format is universally better: it depends on budget, expectations, language needs, flexibility and whether you prefer joining a larger or smaller group.
+
+## Group size, pace and depth
+
+In a larger group, the visit usually follows a more standard route with less room for tailored questions. In a private visit, the pace can be adjusted before confirmation: families with children, travelers who prefer to walk slowly, visitors interested in political history or groups that want to connect the [Albaicin](/en/albaicin-guided-walk/), historic center and viewpoints.
+
+If your priority is orientation on the first day, a general visit may be enough. If you need help deciding around tickets, neighborhoods, language or an Alhambra-focused route, a [private guide in Granada](/en/private-guide-granada/) or a direct WhatsApp/email inquiry may fit better.
 
 ## Cultural alternatives
 
