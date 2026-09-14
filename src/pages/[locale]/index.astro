@@ -17,10 +17,12 @@ const { locale } = Astro.props as { locale: Locale };
 const copy = getLocaleConfig(locale);
 const tours = await getPublishedTours(locale);
 const kidsTours = await getPublishedKidsTours(locale);
+const homeCardTours = tours.filter((tour) => tour.data.translationKey !== 'cathedral-royal-chapel');
 const planningLandings = await getSeoLandingsByKeys(locale, ['guided-visits-granada', 'private-guide-granada', 'private-alhambra-tour', 'albaicin-guided-walk', 'free-tour-granada']);
 const alternates = locales.map((item) => ({ locale: item, path: `/${item}/` }));
 const site = Astro.site ?? new URL(productionSiteUrl);
 const listedTours = [...tours, ...kidsTours];
+const visibleHomeTours = [...homeCardTours, ...kidsTours];
 const planningCopy = locale === 'es'
   ? {
       eyebrow: 'Elige mejor tu visita',
@@ -35,7 +37,7 @@ const planningCopy = locale === 'es'
 const jsonLd = [
   createItemListJsonLd(
     copy.allTours,
-    listedTours.map((tour) => ({ name: tour.data.title, path: getTourPath(tour) })),
+    visibleHomeTours.map((tour) => ({ name: tour.data.title, path: getTourPath(tour) })),
     site,
   ),
   createItemListJsonLd(
@@ -92,7 +94,7 @@ const jsonLd = [
       <p class="mt-4 text-slate-700">{copy.catalogIntro}</p>
     </div>
     <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-      {tours.map((tour) => <TourCard tour={tour} showReservationCta />)}
+      {homeCardTours.map((tour) => <TourCard tour={tour} showReservationCta />)}
     </div>
     {
       kidsTours.length > 0 && (
