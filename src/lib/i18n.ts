@@ -41,13 +41,16 @@ export const localeConfig = {
     backToTours: 'Volver a rutas',
     heroEyebrow: 'Rutas culturales en Granada',
     heroTitle: 'Granada, una historia en cada paso',
+    homeSeoTitle: 'Visitas guiadas en Granada, Alhambra y Albaicin',
     heroText:
       'Rutas culturales a pie en Granada y reservas para grupos privados, con atencion directa en espanol e ingles por WhatsApp o email.',
     heroImageAlt: 'La Alhambra bajo nubes dramaticas vista desde el Albaicin',
     footerIntro:
       'Elyara Tours Granada ofrece rutas culturales a pie por la Alhambra, el Albaicin y la ciudad historica, con reserva privada disponible y contacto directo por WhatsApp o email.',
     catalogIntro: 'Elige una ruta y, si vienes en grupo, puedes solicitarla como experiencia privada por WhatsApp o email.',
-    metaHome: 'Elyara Tours Granada: rutas culturales en Granada, visitas en espanol e ingles, reserva privada y contacto directo por WhatsApp o email.',
+    metaHome: 'Visitas guiadas en Granada: Alhambra, Albaicin, Catedral, rutas privadas y tours culturales en espanol e ingles con reserva directa.',
+    blogSeoTitle: 'Guia de Granada: Alhambra, Albaicin y rutas culturales',
+    blogSeoDescription: 'Guia cultural de Granada con consejos sobre Alhambra, Albaicin, Catedral, rutas privadas, visitas con ninos y excursiones de un dia.',
   },
   en: {
     htmlLang: 'en',
@@ -87,13 +90,16 @@ export const localeConfig = {
     backToTours: 'Back to tours',
     heroEyebrow: 'Cultural routes in Granada',
     heroTitle: 'Granada, a story in every step',
+    homeSeoTitle: 'Granada guided tours, Alhambra and Albaicin walks',
     heroText:
       'Cultural walking routes in Granada and private group reservations, with direct support in Spanish and English by WhatsApp or email.',
     heroImageAlt: 'The Alhambra beneath dramatic clouds from the Albaicin',
     footerIntro:
       'Elyara Tours Granada offers cultural walking routes through the Alhambra, the Albaicin and the historic city, with private booking available and direct WhatsApp or email contact.',
     catalogIntro: 'Choose a route and, if you are coming as a group, request it as a private experience by WhatsApp or email.',
-    metaHome: 'Elyara Tours Granada: cultural routes in Granada, visits in Spanish and English, private booking and direct WhatsApp or email contact.',
+    metaHome: 'Granada guided tours: Alhambra, Albaicin, Cathedral, private routes and cultural walking tours in English or Spanish with direct booking.',
+    blogSeoTitle: 'Granada guide: Alhambra, Albaicin and cultural routes',
+    blogSeoDescription: 'Cultural Granada guide with tips about the Alhambra, Albaicin, Cathedral, private tours, family visits and one-day trips.',
   },
 } satisfies Record<Locale, Record<string, string>>;
 

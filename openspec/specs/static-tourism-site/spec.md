@@ -472,6 +472,12 @@ The system SHALL expose contextual internal links between public discovery, SEO 
 - **THEN** the page provides a clear internal path to tours, tailor-made content, contact content, blog content, and relevant SEO landing pages when appropriate
 - **AND** the home page does not require a separate `Tours privados` or `Private tours` navigation path for visitors to request a route privately
 
+#### Scenario: Visitor or crawler reads global discovery links
+- **WHEN** a visitor or crawler reaches the global footer on a localized public page
+- **THEN** the footer provides visible localized links to a small set of priority high-intent SEO landing pages for that locale
+- **AND** those links point to existing public landing pages for guided visits or walking tours, private Alhambra tours, private guides, Albaicin visits, and Cathedral/Royal Chapel visits
+- **AND** the footer still preserves localized contact, blog, day-trip, authority, and language navigation paths
+
 ### Requirement: Public image SEO and performance signals
 The system SHALL present important public images with accessible text and performance-friendly metadata suitable for static hosting.
 
@@ -969,7 +975,7 @@ The system SHALL provide localized public landing pages for high-intent Granada 
 - **AND** the page links visitors to relevant tours or direct WhatsApp/email inquiry channels
 
 ### Requirement: Enhanced social and search metadata
-The system SHALL expose richer metadata for public pages so search engines and social platforms can understand page language, preview imagery, publication dates, and localized alternates.
+The system SHALL expose richer metadata for public pages so search engines and social platforms can understand page language, preview imagery, publication dates, localized alternates, and search intent.
 
 #### Scenario: Social platform reads a page with image metadata
 - **WHEN** a crawler reads a public page that provides a visible page image or approved fallback share image
@@ -986,6 +992,12 @@ The system SHALL expose richer metadata for public pages so search engines and s
 - **WHEN** a crawler reads a published editorial article page
 - **THEN** the page exposes article publication and modification metadata when those dates are available
 - **AND** the page preserves article structured data for the same visible article content
+
+#### Scenario: Crawler reads home or blog listing metadata
+- **WHEN** a crawler reads a localized home or blog listing page
+- **THEN** the page title and description may use search-intent-specific wording for Granada guided tours, Alhambra, Albaicin, cultural routes, and practical Granada guide content
+- **AND** the visible H1 and body copy may retain a more editorial or brand-led tone as long as metadata remains accurate for the page content
+- **AND** metadata does not claim guaranteed rankings, fake popularity, reviews, ratings, awards, or unsupported credentials
 
 ### Requirement: Multilingual sitemap alternates
 The system SHALL expose multilingual alternate relationships in the sitemap for localized public pages that have equivalent Spanish and English versions.
@@ -1013,7 +1025,7 @@ The system SHALL provide localized visible FAQ content for every published tour 
 - **THEN** the page exposes FAQ structured data matching only the visible localized FAQ entries on that page
 
 ### Requirement: SEO-oriented landing page discovery
-The system SHALL connect public SEO landing pages, tours, blog articles, contact pages, and tailor-made pages through visible contextual links that help visitors and crawlers discover related content.
+The system SHALL connect public SEO landing pages, tours, blog articles, contact pages, tailor-made pages, and global discovery surfaces through visible contextual links that help visitors and crawlers discover related content.
 
 #### Scenario: Visitor reads an SEO landing page
 - **WHEN** a visitor reads a localized SEO landing page
@@ -1022,6 +1034,11 @@ The system SHALL connect public SEO landing pages, tours, blog articles, contact
 #### Scenario: Visitor reads a related tour or article
 - **WHEN** a visitor reads a tour or editorial article connected to a localized SEO landing page topic
 - **THEN** the page provides a visible contextual link back to the relevant SEO landing or commercial discovery page
+
+#### Scenario: Visitor reads any public page footer
+- **WHEN** a visitor reads the footer on a localized public page
+- **THEN** the footer exposes visible links to priority localized SEO landing pages for commercial discovery
+- **AND** the footer links use human-readable anchor text that matches the linked page intent without keyword stuffing
 
 ### Requirement: Search Console verification metadata
 The system SHALL publish Google Search Console verification metadata on public pages only when an approved verification token is configured.

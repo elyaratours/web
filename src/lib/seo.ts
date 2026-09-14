@@ -176,6 +176,10 @@ export function createWebPageJsonLd(locale: Locale, path: string, title: string,
 export function createTourJsonLd(tour: TourEntry, site: URL) {
   const url = absoluteUrl(`/${tour.data.locale}/tours/${tour.data.routeSlug}/`, site);
   const parsedPrice = parseEuroPrice(tour.data.price);
+  const itinerary = [
+    tour.data.meetingPoint ? { '@type': 'Place', name: tour.data.meetingPoint } : undefined,
+    tour.data.endingPoint ? { '@type': 'Place', name: tour.data.endingPoint } : undefined,
+  ].filter(Boolean);
 
   return {
     '@type': 'TouristTrip',
@@ -187,8 +191,15 @@ export function createTourJsonLd(tour: TourEntry, site: URL) {
     mainEntityOfPage: url,
     inLanguage: tour.data.locale,
     availableLanguage: tour.data.languages,
+    duration: tour.data.duration,
     touristType: tour.data.locale === 'es' ? 'Viajeros culturales en Granada' : 'Cultural travelers in Granada',
     serviceType: tour.data.category === 'day-trip' ? 'Granada day trip' : 'Granada guided route',
+    itinerary: itinerary.length > 0
+      ? {
+          '@type': 'ItemList',
+          itemListElement: itinerary.map((item, index) => ({ '@type': 'ListItem', position: index + 1, item })),
+        }
+      : undefined,
     location: {
       '@type': 'City',
       name: 'Granada',

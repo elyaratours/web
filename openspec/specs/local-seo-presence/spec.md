@@ -120,14 +120,15 @@ The system SHALL expose structured data that connects Elyara's localized tourism
 - **THEN** the page exposes structured data that represents the visible list and points each item to its corresponding localized tour detail page
 
 ### Requirement: Tourism entity relationships
-The system SHALL use truthful tourism-oriented structured data relationships for tours, places, services, offers, and articles where the page content supports those entities.
+The system SHALL use truthful tourism-oriented structured data relationships for tours, places, services, offers, itinerary points, and articles where the page content supports those entities.
 
 #### Scenario: Search engine reads a tour detail entity
 - **WHEN** a crawler reads a published tour detail page
 - **THEN** the tour structured data identifies the tour as a visitor experience in Granada
 - **AND** it connects the tour to Elyara as provider and to the page URL as the public entity URL
+- **AND** it may include duration and route-point itinerary metadata only when derived from visible tour content or approved tour metadata
 - **AND** it may include EUR offer metadata only when derived from visible price text, preserving descriptive price text when no numeric price is available
-- **AND** it does not invent ratings, review counts, physical addresses, unavailable tickets, unsupported schedules, or unavailable booking/payment capabilities
+- **AND** it does not invent ratings, review counts, physical addresses, unavailable tickets, unsupported schedules, route stops, or unavailable booking/payment capabilities
 
 #### Scenario: Search engine reads content about a Granada place
 - **WHEN** a public page visibly discusses a specific Granada place, monument, or neighborhood as part of the service or editorial content
@@ -154,12 +155,12 @@ The system SHALL keep SEO structured data consistent with visible content and pr
 #### Scenario: Static build generates structured data
 - **WHEN** the site builds public pages for production
 - **THEN** JSON-LD nodes use `https://elyaratours.com` URLs for public pages, images, and entity identifiers
-- **AND** page-specific JSON-LD does not reference unpublished tours, unpublished articles, or hidden FAQ entries
-- **AND** structured image, offer, article, website, webpage, service, and business nodes remain derived from page content or approved shared metadata
+- **AND** page-specific JSON-LD does not reference unpublished tours, unpublished articles, hidden FAQ entries, invented route stops, or unsupported business facts
+- **AND** structured image, offer, itinerary, article, website, webpage, service, and business nodes remain derived from page content or approved shared metadata
 
 #### Scenario: Search engine reads multiple page entities
 - **WHEN** a crawler reads any public page with multiple JSON-LD nodes
-- **THEN** the business, website, page-specific, breadcrumb, list, article, FAQ, offer, image, and service entities remain connected with stable identifiers where applicable
+- **THEN** the business, website, page-specific, breadcrumb, list, article, FAQ, offer, itinerary, image, and service entities remain connected with stable identifiers where applicable
 
 #### Scenario: Search engine reads local metadata signals
 - **WHEN** a crawler reads public page metadata

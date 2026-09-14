@@ -22,7 +22,7 @@ const jsonLd = createItemListJsonLd(
 );
 ---
 
-<BaseLayout title={copy.blogTitle} description={copy.blogIntro} locale={locale} canonicalPath={`/${locale}/blog/`} alternates={alternates} jsonLd={jsonLd}>
+<BaseLayout title={copy.blogSeoTitle} description={copy.blogSeoDescription} locale={locale} canonicalPath={`/${locale}/blog/`} alternates={alternates} jsonLd={jsonLd}>
   <section class="section-shell grid gap-8 py-10 sm:py-16 lg:grid-cols-[0.95fr_1.05fr] lg:items-end lg:py-24">
     <div>
       <p class="eyebrow">{copy.blogEyebrow}</p>
