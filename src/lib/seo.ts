@@ -92,6 +92,49 @@ export function websiteEntityId(site: URL) {
 }
 
 export function createBusinessJsonLd(site: URL) {
+  const serviceCatalog = [
+    {
+      name: 'Granada guided walking tours',
+      url: '/en/granada-walking-tours/',
+      serviceType: 'Cultural walking tours in Granada',
+    },
+    {
+      name: 'Visitas guiadas en Granada',
+      url: '/es/visitas-guiadas-granada/',
+      serviceType: 'Rutas culturales a pie en Granada',
+    },
+    {
+      name: 'Private Alhambra tour',
+      url: '/en/private-alhambra-tour/',
+      serviceType: 'Private Alhambra guided tour',
+    },
+    {
+      name: 'Tour privado de la Alhambra',
+      url: '/es/tour-alhambra-privado/',
+      serviceType: 'Visita privada a la Alhambra',
+    },
+    {
+      name: 'Albaicin guided walk',
+      url: '/en/albaicin-guided-walk/',
+      serviceType: 'Albaicin walking tour',
+    },
+    {
+      name: 'Visita guiada por el Albaicin',
+      url: '/es/visita-guiada-albaicin/',
+      serviceType: 'Ruta guiada por el Albaicin',
+    },
+    {
+      name: 'Family tours in Granada',
+      url: '/en/family-tours-granada/',
+      serviceType: 'Family-friendly Granada tours',
+    },
+    {
+      name: 'Tours para ninos en Granada',
+      url: '/es/tours-ninos-granada/',
+      serviceType: 'Rutas familiares en Granada',
+    },
+  ];
+
   return {
     '@type': ['Organization', 'LocalBusiness', 'TravelAgency'],
     '@id': businessEntityId(site),
@@ -126,6 +169,24 @@ export function createBusinessJsonLd(site: URL) {
     },
     knowsLanguage: ['es', 'en'],
     availableLanguage: ['Spanish', 'English'],
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Granada cultural tours and private routes',
+      itemListElement: serviceCatalog.map((service) => ({
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: service.name,
+          url: absoluteUrl(service.url, site),
+          serviceType: service.serviceType,
+          areaServed: {
+            '@type': 'City',
+            name: 'Granada',
+          },
+          provider: { '@id': businessEntityId(site) },
+        },
+      })),
+    },
     knowsAbout: [
       'Granada history',
       'Alhambra tours',

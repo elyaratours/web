@@ -18,7 +18,17 @@ const copy = getLocaleConfig(locale);
 const tours = await getPublishedTours(locale);
 const kidsTours = await getPublishedKidsTours(locale);
 const homeCardTours = tours.filter((tour) => tour.data.translationKey !== 'cathedral-royal-chapel');
-const planningLandings = await getSeoLandingsByKeys(locale, ['guided-visits-granada', 'private-guide-granada', 'private-alhambra-tour', 'albaicin-guided-walk', 'free-tour-granada']);
+const planningLandings = await getSeoLandingsByKeys(locale, [
+  'guided-visits-granada',
+  'private-alhambra-tour',
+  'private-guide-granada',
+  'albaicin-guided-walk',
+  'albaicin-sacromonte-guided',
+  'cathedral-royal-chapel-guided',
+  'family-tours-granada',
+  'granada-day-trips-from-malaga-cordoba',
+  'free-tour-granada',
+]);
 const alternates = locales.map((item) => ({ locale: item, path: `/${item}/` }));
 const site = Astro.site ?? new URL(productionSiteUrl);
 const listedTours = [...tours, ...kidsTours];
@@ -26,13 +36,13 @@ const visibleHomeTours = [...homeCardTours, ...kidsTours];
 const planningCopy = locale === 'es'
   ? {
       eyebrow: 'Elige mejor tu visita',
-      title: 'Rutas guiadas, guia privada y visitas culturales en Granada',
-      text: 'Si aun no sabes que ruta encaja con tu viaje, estas guias te ayudan a comparar opciones antes de escribir por WhatsApp o email.',
+      title: 'Planifica tu visita guiada en Granada',
+      text: 'Compara rutas por la Alhambra, el Albaicin, Sacromonte, Catedral, excursiones y visitas privadas antes de escribir por WhatsApp o email.',
     }
   : {
       eyebrow: 'Choose your visit well',
-      title: 'Walking tours, private guide and cultural visits in Granada',
-      text: 'If you are not sure which route fits your trip, these guides help you compare options before writing by WhatsApp or email.',
+      title: 'Plan your guided visit in Granada',
+      text: 'Compare Alhambra, Albaicin, Sacromonte, Cathedral, day trip and private visit options before writing by WhatsApp or email.',
     };
 const jsonLd = [
   createItemListJsonLd(
@@ -120,7 +130,7 @@ const jsonLd = [
           <h2 id="planning-links-title" class="mt-3 font-serif text-3xl font-bold text-alhambra-night sm:text-4xl">{planningCopy.title}</h2>
           <p class="mt-4 leading-8 text-slate-700">{planningCopy.text}</p>
         </div>
-        <div class="mt-7 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+        <div class="mt-7 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {planningLandings.map((landing) => (
             <a class="rounded-2xl border border-alhambra-clay/15 bg-white/70 p-4 text-sm font-bold text-alhambra-night transition hover:-translate-y-0.5 hover:border-alhambra-clay hover:text-alhambra-clay" href={getSeoLandingPath(landing)}>
               {landing.data.title}
