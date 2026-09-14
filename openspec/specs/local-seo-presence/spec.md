@@ -7,7 +7,7 @@ Provides local SEO presence signals for Elyara Tours Granada so search engines c
 ## Requirements
 
 ### Requirement: Local business structured data
-The system SHALL expose structured data that identifies Elyara Tours Granada as a Granada tourism business with its approved public name, website URL, contact email, served area, available languages, and approved public social profiles.
+The system SHALL expose structured data that identifies Elyara Tours Granada as a Granada tourism business with its approved public name, website URL, contact email, served area, available languages, approved public social profiles, and approved non-review trust facts.
 
 #### Scenario: Search engine reads localized public page business data
 - **WHEN** a crawler reads a localized public page
@@ -16,11 +16,17 @@ The system SHALL expose structured data that identifies Elyara Tours Granada as 
 - **AND** the structured data includes `elyaratours@gmail.com` as the contact email
 - **AND** the structured data includes Granada as the served tourism area
 - **AND** the structured data includes Spanish and English as supported visitor languages
+- **AND** the structured data may expose `EUR` as a broad approved price range signal without inventing specific unavailable prices
 
 #### Scenario: Approved social profile is available
 - **WHEN** a crawler reads business structured data
 - **THEN** the structured data references `https://instagram.com/elyaratours` as an approved public profile
-- **AND** the structured data does not invent unapproved phone numbers, physical addresses, payment details, or additional social profiles
+- **AND** the structured data does not invent unapproved phone numbers, physical addresses, payment details, additional social profiles, ratings, review counts, awards, credentials, or business hours
+
+#### Scenario: Search engine reads business imagery
+- **WHEN** a crawler reads business structured data
+- **THEN** logo and business image references use approved public image URLs
+- **AND** those image references may include structured image details such as content URL and known dimensions
 
 ### Requirement: Website and page structured data
 The system SHALL expose structured data for the public website and each public page entity, connecting both to the Elyara business identity.
@@ -35,7 +41,8 @@ The system SHALL expose structured data for the public website and each public p
 - **WHEN** a crawler reads any indexable public page
 - **THEN** the page exposes a `WebPage` structured data node with a stable page URL and entity identifier
 - **AND** the page entity includes localized name, description, language, publisher, website relationship, and Elyara business relationship
-- **AND** the page entity references the visible primary image when the page provides one
+- **AND** the page entity references the visible primary image or approved fallback share image when page-specific imagery is unavailable
+- **AND** the page image reference may include structured image details such as content URL and known dimensions
 
 ### Requirement: Breadcrumb structured data
 The system SHALL expose breadcrumb structured data on public pages where the visitor's location in the site hierarchy is more specific than a localized home page.
@@ -113,18 +120,24 @@ The system SHALL expose structured data that connects Elyara's localized tourism
 - **THEN** the page exposes structured data that represents the visible list and points each item to its corresponding localized tour detail page
 
 ### Requirement: Tourism entity relationships
-The system SHALL use truthful tourism-oriented structured data relationships for tours, places, services, and articles where the page content supports those entities.
+The system SHALL use truthful tourism-oriented structured data relationships for tours, places, services, offers, and articles where the page content supports those entities.
 
 #### Scenario: Search engine reads a tour detail entity
 - **WHEN** a crawler reads a published tour detail page
 - **THEN** the tour structured data identifies the tour as a visitor experience in Granada
 - **AND** it connects the tour to Elyara as provider and to the page URL as the public entity URL
-- **AND** it does not invent ratings, review counts, physical addresses, unavailable tickets, or unsupported schedules
+- **AND** it may include EUR offer metadata only when derived from visible price text, preserving descriptive price text when no numeric price is available
+- **AND** it does not invent ratings, review counts, physical addresses, unavailable tickets, unsupported schedules, or unavailable booking/payment capabilities
 
 #### Scenario: Search engine reads content about a Granada place
 - **WHEN** a public page visibly discusses a specific Granada place, monument, or neighborhood as part of the service or editorial content
 - **THEN** any place-oriented structured data remains consistent with that visible content
 - **AND** it does not claim Elyara owns, operates, or is physically located at that place
+
+#### Scenario: Search engine reads service or article imagery
+- **WHEN** a crawler reads structured data for a public service, landing page, tour, or editorial article with an approved image
+- **THEN** image references use production URLs and may include structured image details such as content URL and known dimensions
+- **AND** image structured data remains aligned with the visible or approved fallback page image
 
 ### Requirement: Approved contact channel structured data
 The system SHALL represent approved public contact and reservation channels in structured data without adding unapproved contact details.
@@ -142,10 +155,16 @@ The system SHALL keep SEO structured data consistent with visible content and pr
 - **WHEN** the site builds public pages for production
 - **THEN** JSON-LD nodes use `https://elyaratours.com` URLs for public pages, images, and entity identifiers
 - **AND** page-specific JSON-LD does not reference unpublished tours, unpublished articles, or hidden FAQ entries
+- **AND** structured image, offer, article, website, webpage, service, and business nodes remain derived from page content or approved shared metadata
 
 #### Scenario: Search engine reads multiple page entities
 - **WHEN** a crawler reads any public page with multiple JSON-LD nodes
-- **THEN** the business, website, page-specific, breadcrumb, list, article, FAQ, and service entities remain connected with stable identifiers where applicable
+- **THEN** the business, website, page-specific, breadcrumb, list, article, FAQ, offer, image, and service entities remain connected with stable identifiers where applicable
+
+#### Scenario: Search engine reads local metadata signals
+- **WHEN** a crawler reads public page metadata
+- **THEN** local geo metadata may identify Granada as the served place
+- **AND** that metadata does not introduce a physical street address, unsupported ownership claim, review rating, or unapproved credential
 
 ### Requirement: Search ranking improvement constraints
 The system SHALL improve crawlability, relevance, and trust signals without presenting search ranking guarantees as public or structured data claims.

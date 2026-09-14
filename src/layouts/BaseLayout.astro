@@ -3,7 +3,7 @@ import { Mail, MessageCircle } from '@lucide/astro';
 import SeoHead from '@/components/SeoHead.astro';
 import { getAuthorityPath } from '@/lib/authority';
 import { contactEmail, getContactContent, getContactPath, getDayTripsPath, getEmailReservationUrl, getLocaleConfig, getTailorMadePath, getWhatsAppReservationUrl, instagramHandle, instagramUrl, locales, whatsappDisplayNumber, whatsappUrl, type Locale } from '@/lib/i18n';
-import { getImageDimensions, productionSiteUrl, siteName, type JsonLdInput } from '@/lib/seo';
+import { defaultShareImagePath, getImageDimensions, productionSiteUrl, siteName, type JsonLdInput } from '@/lib/seo';
 import '@/styles/global.css';
 
 interface AlternateLink {
@@ -48,7 +48,9 @@ const copy = getLocaleConfig(locale);
 const contact = getContactContent(locale);
 const site = Astro.site ?? new URL(productionSiteUrl);
 const otherLocale = locale === 'es' ? 'en' : 'es';
-const fallbackImageDimensions = getImageDimensions(image);
+const seoImage = image ?? defaultShareImagePath;
+const seoImageAlt = imageAlt ?? copy.heroImageAlt;
+const fallbackImageDimensions = getImageDimensions(seoImage);
 ---
 
 <!doctype html>
@@ -60,8 +62,8 @@ const fallbackImageDimensions = getImageDimensions(image);
       canonicalPath={canonicalPath}
       locale={locale}
       site={site}
-      image={image}
-      imageAlt={imageAlt}
+      image={seoImage}
+      imageAlt={seoImageAlt}
       imageWidth={imageWidth ?? fallbackImageDimensions?.width}
       imageHeight={imageHeight ?? fallbackImageDimensions?.height}
       alternates={alternates}

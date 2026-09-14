@@ -5,6 +5,7 @@ import { contactEmail, instagramUrl, whatsappDisplayNumber, whatsappNumber, type
 export const siteName = 'Elyara Tours Granada';
 export const productionSiteUrl = 'https://elyaratours.com';
 export const businessLogoPath = '/images/elyara-header-logo.png';
+export const defaultShareImagePath = '/images/granada-main-route.webp';
 
 export interface FaqEntry {
   question: string;
@@ -38,6 +39,7 @@ const imageDimensions: Record<string, { width: number; height: number }> = {
   '/images/almagranada.jpg': { width: 1200, height: 800 },
   '/images/day-trip-cordoba-granada.webp': { width: 1448, height: 1086 },
   '/images/day-trip-malaga-granada.webp': { width: 1536, height: 1024 },
+  '/images/elyara-header-logo.png': { width: 1254, height: 1254 },
   '/images/granada-main-route.webp': { width: 1200, height: 800 },
   '/images/granada-pomegranates.jpeg': { width: 1200, height: 800 },
   '/images/Niños.jpg': { width: 6000, height: 4000 },
@@ -46,6 +48,7 @@ const imageDimensions: Record<string, { width: number; height: number }> = {
   '/images/mapa.png': { width: 1200, height: 800 },
   '/images/mapa-route.webp': { width: 1200, height: 800 },
   '/images/miradoresyleyendas.jpg': { width: 1200, height: 800 },
+  '/images/puerta-del-vino-01.jpg': { width: 528, height: 666 },
   '/images/sunset.jpeg': { width: 1200, height: 800 },
 };
 
@@ -55,6 +58,25 @@ export function absoluteUrl(path: string, site: URL) {
 
 export function getImageDimensions(path: string | undefined) {
   return path ? imageDimensions[path] : undefined;
+}
+
+function createImageObject(path: string, site: URL, name?: string) {
+  const dimensions = getImageDimensions(path);
+
+  return {
+    '@type': 'ImageObject',
+    url: absoluteUrl(path, site),
+    contentUrl: absoluteUrl(path, site),
+    name,
+    width: dimensions?.width,
+    height: dimensions?.height,
+  } satisfies JsonLdNode;
+}
+
+function parseEuroPrice(price: string) {
+  const match = price.match(/\d+(?:[.,]\d+)?/);
+
+  return match ? match[0].replace(',', '.') : undefined;
 }
 
 function entityId(path: string, fragment: string, site: URL) {
@@ -79,9 +101,10 @@ export function createBusinessJsonLd(site: URL) {
     url: absoluteUrl('/', site),
     email: contactEmail,
     telephone: whatsappDisplayNumber,
-    logo: absoluteUrl(businessLogoPath, site),
-    image: absoluteUrl(businessLogoPath, site),
+    logo: createImageObject(businessLogoPath, site, siteName),
+    image: createImageObject(businessLogoPath, site, siteName),
     sameAs: [instagramUrl],
+    priceRange: 'EUR',
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'customer service',
@@ -146,24 +169,20 @@ export function createWebPageJsonLd(locale: Locale, path: string, title: string,
     isPartOf: { '@id': websiteEntityId(site) },
     about: { '@id': businessEntityId(site) },
     publisher: { '@id': businessEntityId(site) },
-    primaryImageOfPage: image
-      ? {
-          '@type': 'ImageObject',
-          url: absoluteUrl(image, site),
-        }
-      : undefined,
+    primaryImageOfPage: image ? createImageObject(image, site, title) : undefined,
   } satisfies JsonLdNode;
 }
 
 export function createTourJsonLd(tour: TourEntry, site: URL) {
   const url = absoluteUrl(`/${tour.data.locale}/tours/${tour.data.routeSlug}/`, site);
+  const parsedPrice = parseEuroPrice(tour.data.price);
 
   return {
     '@type': 'TouristTrip',
     '@id': `${url}#tour`,
     name: tour.data.title,
     description: tour.data.seoDescription,
-    image: absoluteUrl(tour.data.image, site),
+    image: createImageObject(tour.data.image, site, tour.data.imageAlt),
     url,
     mainEntityOfPage: url,
     inLanguage: tour.data.locale,
@@ -184,7 +203,9 @@ export function createTourJsonLd(tour: TourEntry, site: URL) {
     },
     offers: {
       '@type': 'Offer',
-      price: tour.data.price,
+      price: parsedPrice,
+      priceCurrency: parsedPrice ? 'EUR' : undefined,
+      description: tour.data.price,
       url,
       availability: 'https://schema.org/InStock',
       offeredBy: { '@id': businessEntityId(site) },
@@ -200,7 +221,7 @@ export function createArticleJsonLd(post: BlogEntry, site: URL) {
     '@id': `${url}#article`,
     headline: post.data.title,
     description: post.data.seoDescription,
-    image: post.data.image ? absoluteUrl(post.data.image, site) : undefined,
+    image: post.data.image ? createImageObject(post.data.image, site, post.data.imageAlt ?? post.data.title) : undefined,
     url,
     mainEntityOfPage: url,
     datePublished: post.data.publishedDate.toISOString(),
@@ -209,6 +230,7 @@ export function createArticleJsonLd(post: BlogEntry, site: URL) {
     author: {
       '@type': 'Organization',
       name: post.data.author,
+      url: absoluteUrl('/', site),
     },
     publisher: {
       '@id': businessEntityId(site),
@@ -302,7 +324,7 @@ export function createSeoLandingServiceJsonLd(
     description,
     url: absoluteUrl(path, site),
     mainEntityOfPage: absoluteUrl(path, site),
-    image: absoluteUrl(image, site),
+    image: createImageObject(image, site, title),
     provider: { '@id': businessEntityId(site) },
     isPartOf: { '@id': websiteEntityId(site) },
     areaServed: {

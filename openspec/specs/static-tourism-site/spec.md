@@ -385,12 +385,13 @@ The system SHALL provide complete SEO metadata for public pages, structured data
 - **WHEN** a crawler reads a public home, catalog, contact, tailor-made, commercial landing, blog, or tour detail page
 - **THEN** the page exposes appropriate title, description, canonical metadata, and language-aware metadata
 - **AND** canonical, hreflang, Open Graph, image, and structured-data URLs use `https://elyaratours.com`
-- **AND** the page exposes social metadata sufficient for a useful large-image preview when a page image is available
+- **AND** the page exposes social metadata sufficient for a useful large-image preview, using a page-specific image when available and an approved default share image otherwise
+- **AND** the page exposes sitemap discovery metadata pointing to the production sitemap
 
 #### Scenario: Search engine reads localized alternates
 - **WHEN** a crawler reads language alternate metadata on a localized public page
 - **THEN** Spanish and English alternates point to the matching localized pages on `https://elyaratours.com`
-- **AND** the `x-default` alternate points to the Spanish home page at `https://elyaratours.com/es/`
+- **AND** the `x-default` alternate points to the matching Spanish page when a Spanish equivalent exists, otherwise to the Spanish home page at `https://elyaratours.com/es/`
 
 #### Scenario: Search engine reads the localized home page
 - **WHEN** a crawler reads `/es/` or `/en/`
@@ -406,9 +407,10 @@ The system SHALL provide complete SEO metadata for public pages, structured data
 
 #### Scenario: Search engine requests the sitemap
 - **WHEN** a crawler requests `/sitemap.xml`
-- **THEN** the system serves a sitemap containing indexable public localized home, tour, blog, contact, tailor-made, and commercial landing URLs
+- **THEN** the system serves a sitemap containing indexable public localized home, tour, blog, contact, tailor-made, authority, day-trip, and commercial landing URLs
 - **AND** sitemap URLs use the same configured production site URL as canonical metadata
-- **AND** sitemap entries include freshness metadata when the corresponding public content provides a reliable publication or update date
+- **AND** sitemap entries include freshness metadata for public pages when a reliable content update date or sitewide SEO update date is available
+- **AND** localized sitemap entries with known translations include Spanish and English alternate links plus an `x-default` link to the Spanish equivalent
 - **AND** sitemap entries may include change frequency and priority hints that reflect each public page type without changing canonical URLs
 
 #### Scenario: Search engine reads robots instructions
@@ -487,6 +489,8 @@ The system SHALL present important public images with accessible text and perfor
 - **WHEN** a public page provides an image for search or social metadata
 - **THEN** the metadata image matches a relevant visible page image whenever a visible image exists
 - **AND** the metadata image URL uses the configured production site URL
+- **AND** Open Graph metadata includes known image dimensions and image MIME type when those values are known
+- **AND** JSON-LD image references use structured image objects with known dimensions when those values are known
 
 ### Requirement: Traveler reviews mosaic
 The system SHALL hide the localized traveler reviews mosaic from the public home experience in Spanish and English.
@@ -968,14 +972,15 @@ The system SHALL provide localized public landing pages for high-intent Granada 
 The system SHALL expose richer metadata for public pages so search engines and social platforms can understand page language, preview imagery, publication dates, and localized alternates.
 
 #### Scenario: Social platform reads a page with image metadata
-- **WHEN** a crawler reads a public page that provides a visible page image
+- **WHEN** a crawler reads a public page that provides a visible page image or approved fallback share image
 - **THEN** the page exposes Open Graph and Twitter image metadata using the production site URL
-- **AND** the image metadata includes useful alt text and dimensions when dimensions are known
+- **AND** the image metadata includes useful alt text, dimensions when dimensions are known, and image MIME type when the type can be determined
 
 #### Scenario: Crawler reads localized alternate metadata
 - **WHEN** a crawler reads a localized public page that has an equivalent page in another language
 - **THEN** the page exposes Spanish and English alternate links for the equivalent localized URLs
 - **AND** the page exposes Open Graph locale alternate metadata for the other localized version
+- **AND** the page exposes an `x-default` link to the Spanish equivalent when one exists
 
 #### Scenario: Crawler reads an editorial article page
 - **WHEN** a crawler reads a published editorial article page
@@ -987,8 +992,10 @@ The system SHALL expose multilingual alternate relationships in the sitemap for 
 
 #### Scenario: Search engine reads localized sitemap entries
 - **WHEN** a crawler reads `/sitemap.xml`
-- **THEN** localized home, tour, blog, contact, tailor-made, and SEO landing entries with known translations include Spanish and English alternate relationships
+- **THEN** localized home, tour, blog, contact, tailor-made, authority, day-trip, and SEO landing entries with known translations include Spanish and English alternate relationships
 - **AND** every sitemap URL and alternate URL uses `https://elyaratours.com`
+- **AND** each translated group exposes an `x-default` alternate pointing to the Spanish equivalent URL
+- **AND** entries expose freshness metadata when a reliable update date is available
 
 #### Scenario: Page has no translated counterpart
 - **WHEN** a sitemap entry represents public content that exists only in one locale
