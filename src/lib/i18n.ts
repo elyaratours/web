@@ -40,10 +40,10 @@ export const localeConfig = {
     languages: 'Idiomas',
     backToTours: 'Volver a rutas',
     heroEyebrow: 'Rutas culturales en Granada',
-    heroTitle: 'Visitas guiadas en Granada, historia en cada paso',
-    homeSeoTitle: 'Visitas guiadas en Granada y tours privados',
+    heroTitle: 'Granada, una historia en cada paso',
+    homeSeoTitle: 'Granada, una historia en cada paso | Visitas guiadas',
     heroText:
-      'Rutas culturales a pie por la Alhambra, el Albaicin, Sacromonte y el centro historico, con atencion directa en espanol e ingles por WhatsApp o email.',
+      'Rutas a pie y reservas para grupos privados para descubrir la historia, los personajes y los rincones que dan sentido a la ciudad.',
     heroImageAlt: 'La Alhambra bajo nubes dramaticas vista desde el Albaicin',
     footerIntro:
       'Elyara Tours Granada ofrece rutas culturales a pie por la Alhambra, el Albaicin y la ciudad historica, con reserva privada disponible y contacto directo por WhatsApp o email.',
@@ -89,10 +89,10 @@ export const localeConfig = {
     languages: 'Languages',
     backToTours: 'Back to tours',
     heroEyebrow: 'Cultural routes in Granada',
-    heroTitle: 'Granada guided tours with history in every step',
-    homeSeoTitle: 'Granada guided tours and private routes',
+    heroTitle: 'Granada, a story in every step',
+    homeSeoTitle: 'Granada, a story in every step | Guided tours',
     heroText:
-      'Cultural walking routes through the Alhambra, Albaicin, Sacromonte and historic center, with direct support in English and Spanish by WhatsApp or email.',
+      'Walking routes and private group reservations to discover the history, characters and corners that give meaning to the city.',
     heroImageAlt: 'The Alhambra beneath dramatic clouds from the Albaicin',
     footerIntro:
       'Elyara Tours Granada offers cultural walking routes through the Alhambra, the Albaicin and the historic city, with private booking available and direct WhatsApp or email contact.',
@@ -109,6 +109,7 @@ export const whatsappNumber = '34611126979';
 export const whatsappUrl = `https://wa.me/${whatsappNumber}`;
 export const instagramHandle = '@elyaratours';
 export const instagramUrl = 'https://instagram.com/elyaratours';
+export const googleBusinessProfileUrl = import.meta.env.PUBLIC_GOOGLE_BUSINESS_PROFILE_URL?.trim() ?? '';
 export const emailReservationUrl = `mailto:${contactEmail}`;
 
 const whatsappMessageCopy = {
@@ -290,6 +291,234 @@ export const contactContent = {
     metaDescription: string;
     faq: { question: string; answer: string }[];
   }
+>;
+
+export const legalTrustPageKeys = ['legalNotice', 'privacy', 'cookies'] as const;
+
+export type LegalTrustPageKey = (typeof legalTrustPageKeys)[number];
+
+interface LegalTrustSection {
+  title: string;
+  body: string[];
+}
+
+export const legalTrustPages = {
+  es: {
+    legalNotice: {
+      key: 'legalNotice',
+      routeSlug: 'aviso-legal',
+      footerLabel: 'Aviso legal',
+      eyebrow: 'Informacion legal',
+      title: 'Aviso legal',
+      heading: 'Aviso legal de Elyara Tours Granada',
+      intro: 'Informacion publica sobre Elyara Tours Granada, sus canales de contacto y el uso general de esta web turistica.',
+      metaDescription: 'Aviso legal de Elyara Tours Granada con informacion publica de contacto, uso del sitio y reservas por WhatsApp o email.',
+      sections: [
+        {
+          title: 'Identificacion publica',
+          body: [
+            'Nombre publico: Elyara Tours Granada.',
+            `Email de contacto: ${contactEmail}.`,
+            `WhatsApp de informacion y reservas: ${whatsappDisplayNumber}.`,
+            'Zona de servicio: Granada y rutas conectadas bajo consulta.',
+          ],
+        },
+        {
+          title: 'Uso del sitio',
+          body: [
+            'La web presenta rutas culturales, propuestas privadas y contenido editorial para preparar una visita a Granada.',
+            'Los textos, imagenes y estructura del sitio se publican para informar a visitantes y no garantizan disponibilidad, entradas, horarios, precios cerrados ni posicionamiento en buscadores.',
+          ],
+        },
+        {
+          title: 'Reservas y contacto',
+          body: [
+            'Las solicitudes de informacion o reserva se gestionan por WhatsApp o email. La web no incluye checkout interno, pasarela de pago ni sistema propio de reservas.',
+            'La confirmacion de cualquier visita depende de disponibilidad, fecha, idioma, numero de personas e intereses del grupo.',
+          ],
+        },
+      ],
+    },
+    privacy: {
+      key: 'privacy',
+      routeSlug: 'privacidad',
+      footerLabel: 'Privacidad',
+      eyebrow: 'Datos personales',
+      title: 'Privacidad',
+      heading: 'Privacidad y contacto',
+      intro: 'Como tratamos la informacion que decides compartir cuando escribes a Elyara Tours Granada por los canales publicados.',
+      metaDescription: 'Politica de privacidad de Elyara Tours Granada para contacto por email, WhatsApp o Instagram y solicitudes de rutas en Granada.',
+      sections: [
+        {
+          title: 'Datos que puedes enviarnos',
+          body: [
+            'Cuando escribes por email, WhatsApp o Instagram puedes compartir nombre, contacto, fechas, numero de personas, idioma, intereses del grupo y preguntas sobre tu visita.',
+            'Usamos esa informacion para responder a tu solicitud, preparar una propuesta o gestionar una reserva por el canal que hayas elegido.',
+          ],
+        },
+        {
+          title: 'Canales externos',
+          body: [
+            'Email, WhatsApp e Instagram son servicios externos con sus propias condiciones y politicas de privacidad.',
+            'No solicitamos datos de pago ni documentos sensibles a traves de esta web estatica.',
+          ],
+        },
+        {
+          title: 'Conservacion y derechos',
+          body: [
+            `Puedes escribir a ${contactEmail} para solicitar informacion sobre tus mensajes, pedir correcciones o solicitar que dejemos de usar tus datos de contacto para una solicitud concreta.`,
+            'Conservamos solo la informacion necesaria para responder, coordinar una visita o mantener el historial basico de una conversacion iniciada por ti.',
+          ],
+        },
+      ],
+    },
+    cookies: {
+      key: 'cookies',
+      routeSlug: 'cookies',
+      footerLabel: 'Cookies',
+      eyebrow: 'Cookies',
+      title: 'Cookies',
+      heading: 'Informacion sobre cookies',
+      intro: 'Estado actual del uso de cookies en esta web estatica de Elyara Tours Granada.',
+      metaDescription: 'Informacion sobre cookies de Elyara Tours Granada y el uso actual de una web estatica sin checkout ni analitica propia.',
+      sections: [
+        {
+          title: 'Uso actual',
+          body: [
+            'Esta web estatica no anade por si misma un sistema propio de analitica, publicidad comportamental, cuenta de usuario, carrito o checkout interno.',
+            'Si en el futuro se incorporan herramientas que usen cookies no esenciales, esta informacion debera actualizarse antes de publicarlas.',
+          ],
+        },
+        {
+          title: 'Enlaces externos',
+          body: [
+            'Los enlaces a WhatsApp, Instagram u otros servicios externos pueden abrir plataformas que aplican sus propias cookies o tecnologias similares.',
+            'Esas plataformas se rigen por sus propias politicas y no por el funcionamiento tecnico interno de esta web.',
+          ],
+        },
+        {
+          title: 'Contacto',
+          body: [`Para cualquier duda sobre esta informacion puedes escribir a ${contactEmail}.`],
+        },
+      ],
+    },
+  },
+  en: {
+    legalNotice: {
+      key: 'legalNotice',
+      routeSlug: 'legal-notice',
+      footerLabel: 'Legal notice',
+      eyebrow: 'Legal information',
+      title: 'Legal notice',
+      heading: 'Legal notice for Elyara Tours Granada',
+      intro: 'Public information about Elyara Tours Granada, its contact channels and the general use of this tourism website.',
+      metaDescription: 'Legal notice for Elyara Tours Granada with public contact information, site use and bookings by WhatsApp or email.',
+      sections: [
+        {
+          title: 'Public identification',
+          body: [
+            'Public name: Elyara Tours Granada.',
+            `Contact email: ${contactEmail}.`,
+            `WhatsApp for information and reservations: ${whatsappDisplayNumber}.`,
+            'Service area: Granada and connected routes on request.',
+          ],
+        },
+        {
+          title: 'Site use',
+          body: [
+            'The website presents cultural routes, private proposals and editorial content to help visitors prepare a trip to Granada.',
+            'Texts, images and site structure are published for visitor information and do not guarantee availability, tickets, schedules, fixed prices or search rankings.',
+          ],
+        },
+        {
+          title: 'Reservations and contact',
+          body: [
+            'Information and reservation requests are handled by WhatsApp or email. The website does not include internal checkout, payment processing or its own booking system.',
+            'Any visit confirmation depends on availability, date, language, group size and interests.',
+          ],
+        },
+      ],
+    },
+    privacy: {
+      key: 'privacy',
+      routeSlug: 'privacy',
+      footerLabel: 'Privacy',
+      eyebrow: 'Personal data',
+      title: 'Privacy',
+      heading: 'Privacy and contact',
+      intro: 'How we handle information you choose to share when contacting Elyara Tours Granada through the published channels.',
+      metaDescription: 'Privacy information for Elyara Tours Granada contact by email, WhatsApp or Instagram and Granada route requests.',
+      sections: [
+        {
+          title: 'Data you may send',
+          body: [
+            'When you write by email, WhatsApp or Instagram you may share your name, contact details, dates, group size, language, interests and questions about your visit.',
+            'We use that information to reply to your request, prepare a proposal or coordinate a reservation through the channel you chose.',
+          ],
+        },
+        {
+          title: 'External channels',
+          body: [
+            'Email, WhatsApp and Instagram are external services with their own terms and privacy policies.',
+            'We do not request payment details or sensitive documents through this static website.',
+          ],
+        },
+        {
+          title: 'Retention and rights',
+          body: [
+            `You can write to ${contactEmail} to ask about your messages, request corrections or ask us to stop using your contact data for a specific request.`,
+            'We keep only the information needed to reply, coordinate a visit or maintain the basic history of a conversation you started.',
+          ],
+        },
+      ],
+    },
+    cookies: {
+      key: 'cookies',
+      routeSlug: 'cookies',
+      footerLabel: 'Cookies',
+      eyebrow: 'Cookies',
+      title: 'Cookies',
+      heading: 'Cookie information',
+      intro: 'Current cookie-use status for this static Elyara Tours Granada website.',
+      metaDescription: 'Cookie information for Elyara Tours Granada and the current use of a static website without internal checkout or first-party analytics.',
+      sections: [
+        {
+          title: 'Current use',
+          body: [
+            'This static website does not add its own analytics system, behavioral advertising, user account, cart or internal checkout.',
+            'If tools that use non-essential cookies are added in the future, this information must be updated before publication.',
+          ],
+        },
+        {
+          title: 'External links',
+          body: [
+            'Links to WhatsApp, Instagram or other external services may open platforms that apply their own cookies or similar technologies.',
+            'Those platforms follow their own policies and are not part of the internal technical behavior of this website.',
+          ],
+        },
+        {
+          title: 'Contact',
+          body: [`For questions about this information you can write to ${contactEmail}.`],
+        },
+      ],
+    },
+  },
+} satisfies Record<
+  Locale,
+  Record<
+    LegalTrustPageKey,
+    {
+      key: LegalTrustPageKey;
+      routeSlug: string;
+      footerLabel: string;
+      eyebrow: string;
+      title: string;
+      heading: string;
+      intro: string;
+      metaDescription: string;
+      sections: LegalTrustSection[];
+    }
+  >
 >;
 
 export const reservationCalendarContent = {
@@ -758,6 +987,26 @@ export function getContactContent(locale: Locale) {
 
 export function getContactPath(locale: Locale) {
   return `/${locale}/${contactContent[locale].routeSlug}/`;
+}
+
+export function getLegalTrustPages(locale: Locale) {
+  return legalTrustPageKeys.map((key) => legalTrustPages[locale][key]);
+}
+
+export function getLegalTrustPageContent(locale: Locale, key: LegalTrustPageKey) {
+  return legalTrustPages[locale][key];
+}
+
+export function getLegalTrustPageBySlug(locale: Locale, slug: string) {
+  return getLegalTrustPages(locale).find((page) => page.routeSlug === slug);
+}
+
+export function getLegalTrustPath(locale: Locale, key: LegalTrustPageKey) {
+  return `/${locale}/${legalTrustPages[locale][key].routeSlug}/`;
+}
+
+export function getLegalTrustAlternates(key: LegalTrustPageKey) {
+  return locales.map((locale) => ({ locale, path: getLegalTrustPath(locale, key) }));
 }
 
 export function getTailorMadeContent(locale: Locale) {

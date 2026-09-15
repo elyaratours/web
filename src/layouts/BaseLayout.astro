@@ -2,7 +2,7 @@
 import { Mail, MessageCircle } from '@lucide/astro';
 import SeoHead from '@/components/SeoHead.astro';
 import { getAuthorityPath } from '@/lib/authority';
-import { contactEmail, getCommercialToursPath, getContactContent, getContactPath, getDayTripsPath, getEmailReservationUrl, getLocaleConfig, getTailorMadePath, getWhatsAppReservationUrl, instagramHandle, instagramUrl, locales, whatsappDisplayNumber, whatsappUrl, type Locale } from '@/lib/i18n';
+import { contactEmail, getCommercialToursPath, getContactContent, getContactPath, getDayTripsPath, getEmailReservationUrl, getLegalTrustPages, getLegalTrustPath, getLocaleConfig, getTailorMadePath, getWhatsAppReservationUrl, googleBusinessProfileUrl, instagramHandle, instagramUrl, locales, whatsappDisplayNumber, whatsappUrl, type Locale } from '@/lib/i18n';
 import { defaultShareImagePath, getImageDimensions, productionSiteUrl, siteName, type JsonLdInput } from '@/lib/seo';
 import '@/styles/global.css';
 
@@ -52,6 +52,8 @@ const seoImage = image ?? defaultShareImagePath;
 const seoImageAlt = imageAlt ?? copy.heroImageAlt;
 const fallbackImageDimensions = getImageDimensions(seoImage);
 const footerDiscoveryTitle = locale === 'es' ? 'Busquedas frecuentes' : 'Popular searches';
+const footerLegalTitle = locale === 'es' ? 'Informacion legal' : 'Legal information';
+const footerLegalLinks = getLegalTrustPages(locale).map((page) => ({ label: page.footerLabel, href: getLegalTrustPath(locale, page.key) }));
 const footerDiscoveryLinks = locale === 'es'
   ? [
       { label: 'Visitas guiadas Granada', href: '/es/visitas-guiadas-granada/' },
@@ -170,6 +172,12 @@ const footerDiscoveryLinks = locale === 'es'
               <span class="text-xs font-black" aria-hidden="true">IG</span>
               {instagramHandle}
             </a>
+            {googleBusinessProfileUrl && (
+              <a href={googleBusinessProfileUrl} class="inline-flex items-center gap-2 hover:text-alhambra-sand" target="_blank" rel="noreferrer">
+                <span class="text-xs font-black" aria-hidden="true">GBP</span>
+                Google Business Profile
+              </a>
+            )}
             <a href={getContactPath(locale)} class="text-xs font-bold text-alhambra-sand hover:text-white">{contact.footerLink}</a>
           </div>
         </div>
@@ -192,6 +200,12 @@ const footerDiscoveryLinks = locale === 'es'
             <a href="/es/" class="hover:text-alhambra-sand">ES</a>
             <span class="text-white/30">/</span>
             <a href="/en/" class="hover:text-alhambra-sand">EN</a>
+          </div>
+          <div>
+            <p class="text-xs font-black uppercase tracking-[0.24em] text-alhambra-sand">{footerLegalTitle}</p>
+            <div class="mt-4 flex flex-wrap gap-3 text-xs font-bold text-white/70">
+              {footerLegalLinks.map((item) => <a href={item.href} class="hover:text-alhambra-sand">{item.label}</a>)}
+            </div>
           </div>
         </div>
       </div>

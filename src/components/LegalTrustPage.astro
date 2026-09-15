@@ -1,0 +1,97 @@
+---
+import { ArrowLeft, CircleCheck, Mail, MessageCircle } from '@lucide/astro';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import {
+  contactEmail,
+  getContactPath,
+  getLegalTrustAlternates,
+  getLegalTrustPath,
+  whatsappDisplayNumber,
+  whatsappUrl,
+  type LegalTrustPageKey,
+  type Locale,
+} from '@/lib/i18n';
+import { createBreadcrumbJsonLd, productionSiteUrl } from '@/lib/seo';
+
+interface Props {
+  locale: Locale;
+  pageKey: LegalTrustPageKey;
+  content: {
+    eyebrow: string;
+    title: string;
+    heading: string;
+    intro: string;
+    metaDescription: string;
+    sections: { title: string; body: string[] }[];
+  };
+}
+
+const { locale, pageKey, content } = Astro.props;
+const path = getLegalTrustPath(locale, pageKey);
+const site = Astro.site ?? new URL(productionSiteUrl);
+const labels = locale === 'es'
+  ? { home: 'Inicio', back: 'Volver a Elyara Tours Granada', contact: 'Contacto directo' }
+  : { home: 'Home', back: 'Back to Elyara Tours Granada', contact: 'Direct contact' };
+const jsonLd = createBreadcrumbJsonLd(
+  [
+    { name: labels.home, path: `/${locale}/` },
+    { name: content.title, path },
+  ],
+  site,
+);
+---
+
+<BaseLayout
+  title={content.title}
+  description={content.metaDescription}
+  locale={locale}
+  canonicalPath={path}
+  alternates={getLegalTrustAlternates(pageKey)}
+  jsonLd={jsonLd}
+  hideReserveCta
+>
+  <article class="section-shell py-8 sm:py-12 lg:py-20">
+    <a href={`/${locale}/`} class="inline-flex items-center gap-2 text-sm font-bold text-alhambra-clay hover:text-alhambra-night">
+      <ArrowLeft class="h-4 w-4" aria-hidden="true" />
+      {labels.back}
+    </a>
+
+    <section class="mt-7 grid gap-6 lg:grid-cols-[1fr_0.8fr] lg:items-start">
+      <div>
+        <p class="eyebrow">{content.eyebrow}</p>
+        <h1 class="mt-4 max-w-4xl font-serif text-4xl font-bold leading-tight text-alhambra-night sm:text-5xl lg:text-6xl">{content.heading}</h1>
+        <p class="mt-5 max-w-2xl text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">{content.intro}</p>
+      </div>
+      <aside class="card p-5 text-sm leading-7 text-slate-700 sm:p-6">
+        <p class="eyebrow">{labels.contact}</p>
+        <div class="mt-5 grid gap-3 font-bold text-alhambra-night">
+          <a href={`mailto:${contactEmail}`} class="inline-flex items-center gap-2 hover:text-alhambra-clay">
+            <Mail class="h-4 w-4" aria-hidden="true" />
+            {contactEmail}
+          </a>
+          <a href={whatsappUrl} class="inline-flex items-center gap-2 hover:text-alhambra-clay" target="_blank" rel="noreferrer">
+            <MessageCircle class="h-4 w-4" aria-hidden="true" />
+            {whatsappDisplayNumber}
+          </a>
+          <a href={getContactPath(locale)} class="text-alhambra-clay hover:text-alhambra-night">{labels.contact}</a>
+        </div>
+      </aside>
+    </section>
+
+    <section class="mt-10 grid gap-5 sm:mt-12">
+      {content.sections.map((section) => (
+        <section class="card p-5 sm:p-8" aria-labelledby={`${pageKey}-${section.title.toLowerCase().replaceAll(' ', '-')}`}>
+          <div class="flex items-start gap-3">
+            <CircleCheck class="mt-1 h-5 w-5 shrink-0 text-alhambra-clay" aria-hidden="true" />
+            <div>
+              <h2 id={`${pageKey}-${section.title.toLowerCase().replaceAll(' ', '-')}`} class="font-serif text-2xl font-bold text-alhambra-night sm:text-3xl">{section.title}</h2>
+              <div class="mt-4 grid gap-3 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
+                {section.body.map((paragraph) => <p>{paragraph}</p>)}
+              </div>
+            </div>
+          </div>
+        </section>
+      ))}
+    </section>
+  </article>
+</BaseLayout>

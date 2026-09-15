@@ -2,11 +2,14 @@
 import { ArrowLeft, CalendarDays, CircleCheck, Compass, Mail, MessageCircle, Sparkles } from '@lucide/astro';
 import AuthorityPage from '@/components/AuthorityPage.astro';
 import FaqSection from '@/components/FaqSection.astro';
+import LegalTrustPage from '@/components/LegalTrustPage.astro';
 import SeoLandingPage from '@/components/SeoLandingPage.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { getAuthorityContent } from '@/lib/authority';
 import {
   getLocaleConfig,
+  getLegalTrustPageBySlug,
+  getLegalTrustPages,
   getTailorMadeContent,
   getTailorMadePath,
   getTailorMadeEmailUrl,
@@ -17,7 +20,11 @@ import {
 import { createBreadcrumbJsonLd, createFaqJsonLd, productionSiteUrl } from '@/lib/seo';
 import { getPublishedSeoLandings, type SeoLandingEntry } from '@/lib/seo-landings';
 
-type PageProps = { kind: 'tailorMade'; locale: Locale } | { kind: 'authority'; locale: Locale } | { kind: 'seoLanding'; landing: SeoLandingEntry };
+type PageProps =
+  | { kind: 'tailorMade'; locale: Locale }
+  | { kind: 'authority'; locale: Locale }
+  | { kind: 'legalTrust'; locale: Locale; routeSlug: string }
+  | { kind: 'seoLanding'; landing: SeoLandingEntry };
 
 export async function getStaticPaths() {
   const seoLandings = await getPublishedSeoLandings();
@@ -37,10 +44,15 @@ export async function getStaticPaths() {
       props: { kind: 'authority', locale },
     };
   });
+  const legalTrustPaths = locales.flatMap((locale) => getLegalTrustPages(locale).map((page) => ({
+    params: { locale, customSlug: page.routeSlug },
+    props: { kind: 'legalTrust', locale, routeSlug: page.routeSlug },
+  })));
 
   return [
     ...tailorMadePaths,
     ...authorityPaths,
+    ...legalTrustPaths,
     ...seoLandings.map((landing) => ({
       params: { locale: landing.data.locale, customSlug: landing.data.routeSlug },
       props: { kind: 'seoLanding', landing },
@@ -51,6 +63,7 @@ export async function getStaticPaths() {
 const props = Astro.props as PageProps;
 const locale = props.kind === 'seoLanding' ? props.landing.data.locale : props.locale;
 const copy = getLocaleConfig(locale);
+const legalTrustContent = props.kind === 'legalTrust' ? getLegalTrustPageBySlug(locale, props.routeSlug) : undefined;
 const content = getTailorMadeContent(locale);
 const emailUrl = getTailorMadeEmailUrl();
 const whatsappUrl = getTailorMadeWhatsAppUrl(locale);
@@ -68,7 +81,7 @@ const jsonLd = [
 ].filter((item) => item !== undefined);
 ---
 
-{props.kind === 'seoLanding' ? <SeoLandingPage landing={props.landing} /> : props.kind === 'authority' ? <AuthorityPage locale={props.locale} /> : (
+{props.kind === 'seoLanding' ? <SeoLandingPage landing={props.landing} /> : props.kind === 'authority' ? <AuthorityPage locale={props.locale} /> : props.kind === 'legalTrust' && legalTrustContent ? <LegalTrustPage locale={props.locale} pageKey={legalTrustContent.key} content={legalTrustContent} /> : (
   <BaseLayout
     title={content.pageTitle}
     description={content.metaDescription}

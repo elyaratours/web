@@ -1,6 +1,6 @@
 import type { TourEntry } from './tours';
 import type { BlogEntry } from './blog';
-import { contactEmail, instagramUrl, whatsappDisplayNumber, whatsappNumber, type Locale } from './i18n';
+import { contactEmail, googleBusinessProfileUrl, instagramUrl, whatsappDisplayNumber, whatsappNumber, type Locale } from './i18n';
 
 export const siteName = 'Elyara Tours Granada';
 export const productionSiteUrl = 'https://elyaratours.com';
@@ -146,7 +146,7 @@ export function createBusinessJsonLd(site: URL) {
     telephone: whatsappDisplayNumber,
     logo: createImageObject(businessLogoPath, site, siteName),
     image: createImageObject(businessLogoPath, site, siteName),
-    sameAs: [instagramUrl],
+    sameAs: [instagramUrl, ...(googleBusinessProfileUrl ? [googleBusinessProfileUrl] : [])],
     priceRange: 'EUR',
     contactPoint: {
       '@type': 'ContactPoint',

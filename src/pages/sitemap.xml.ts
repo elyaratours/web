@@ -1,6 +1,6 @@
 import { getPublishedBlogPosts, getBlogPostPath } from '@/lib/blog';
 import { getAuthorityPath } from '@/lib/authority';
-import { getCommercialToursPath, getContactPath, getDayTripsPath, getLocaleConfig, getTailorMadePath, locales, type Locale } from '@/lib/i18n';
+import { getCommercialToursPath, getContactPath, getDayTripsPath, getLegalTrustPath, getLocaleConfig, getTailorMadePath, legalTrustPageKeys, locales, type Locale } from '@/lib/i18n';
 import { productionSiteUrl } from '@/lib/seo';
 import { getPublishedSeoLandings, getSeoLandingPath } from '@/lib/seo-landings';
 import { getPublishedTourEntries, getTourPath } from '@/lib/tours';
@@ -70,6 +70,7 @@ export async function GET() {
   const tailorMadeAlternates = locales.map((locale) => ({ locale, path: getTailorMadePath(locale) }));
   const commercialAlternates = locales.map((locale) => ({ locale, path: getCommercialToursPath(locale) }));
   const dayTripsAlternates = locales.map((locale) => ({ locale, path: getDayTripsPath(locale) }));
+  const legalTrustAlternates = legalTrustPageKeys.map((key) => locales.map((locale) => ({ locale, path: getLegalTrustPath(locale, key) })));
   const tourGroups = groupByTranslationKey(tours);
   const postGroups = groupByTranslationKey(posts);
   const seoLandingGroups = groupByTranslationKey(seoLandings);
@@ -82,6 +83,13 @@ export async function GET() {
     ...locales.map((locale) => ({ path: getTailorMadePath(locale), lastmod: siteContentLastmod, alternates: tailorMadeAlternates, changefreq: 'monthly' as const, priority: '0.8' })),
     ...locales.map((locale) => ({ path: getCommercialToursPath(locale), lastmod: siteContentLastmod, alternates: commercialAlternates, changefreq: 'monthly' as const, priority: '0.7' })),
     ...locales.map((locale) => ({ path: getDayTripsPath(locale), lastmod: siteContentLastmod, alternates: dayTripsAlternates, changefreq: 'monthly' as const, priority: '0.8' })),
+    ...legalTrustPageKeys.flatMap((key, index) => locales.map((locale) => ({
+      path: getLegalTrustPath(locale, key),
+      lastmod: siteContentLastmod,
+      alternates: legalTrustAlternates[index],
+      changefreq: 'monthly' as const,
+      priority: '0.3',
+    }))),
     ...tours.map((tour) => ({
       path: getTourPath(tour),
       lastmod: siteContentLastmod,
