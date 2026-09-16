@@ -10,7 +10,7 @@ targetIntent: "private Alhambra tour, guided Alhambra visit Granada and private 
 image: "/images/alhambra-route.webp"
 imageAlt: "Alhambra courtyards and architecture for a private cultural visit"
 relatedTours: ["alhambra", "alhambra-beyond-palaces", "granada-new-world"]
-relatedArticles: ["private-tour-granada-guide", "first-day-granada", "albaicin-sacromonte-guide"]
+relatedArticles: ["private-alhambra-tour-worth-it", "granada-two-days-itinerary", "private-tour-granada-guide", "first-day-granada", "albaicin-sacromonte-guide"]
 relatedLandings: ["guided-visits-granada", "private-guide-granada", "free-tour-granada", "granada-day-trips-from-malaga-cordoba"]
 faq:
   - question: "Are Alhambra tickets included?"

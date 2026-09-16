@@ -32,4 +32,8 @@ Granada tiene distancias, cuestas, accesos, colas posibles y momentos en los que
 
 Conviene tener claras la ciudad de salida, fecha aproximada, numero de personas, idioma, si necesitas traslado privado y si prefieres Alhambra, centro historico, Albaicin o una combinacion breve. Con esos datos se puede preparar una excursion mas honesta y disfrutable.
 
+Desde Malaga, el dia suele funcionar mejor si eliges una prioridad principal. Si la prioridad es la Alhambra, revisa primero disponibilidad de entradas y deja margen para comer o descansar. Si prefieres entender Granada sin depender de horarios monumentales, una ruta por centro historico y Albaicin puede ser mas flexible.
+
+Si quieres comparar propuestas, empieza por la pagina de [excursiones a Granada desde Malaga o Cordoba](/es/excursiones-granada-desde-malaga-cordoba/). Tambien puede ayudarte la guia de [Granada en dos dias](/es/blog/granada-en-dos-dias/) si dudas entre dormir en la ciudad o venir solo una jornada. Para grupos que necesitan ajustar transporte, idioma y ritmo, una [guia privada en Granada](/es/guia-privada-granada/) permite ordenar mejor la visita.
+
 La reserva o consulta se hace por WhatsApp o email, sin formulario interno ni pago dentro de la web.

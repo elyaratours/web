@@ -46,6 +46,8 @@ Tambien permite ajustar detalles practicos: idioma de la explicacion, ritmo de c
 
 Si aun no tienes claro que recorrido encaja, puedes partir de la pagina de [guia privada en Granada](/es/guia-privada-granada/) o escribir desde [contacto](/es/contacto/) con fecha aproximada, numero de personas, idioma preferido y barrios o monumentos que te interesan.
 
+Para comparar formatos antes de decidir, lee tambien la guia sobre [free tour o tour privado en Granada](/es/blog/free-tour-vs-tour-privado-granada/). Si la prioridad del grupo es la Alhambra, conviene revisar cuando merece la pena un [tour privado por la Alhambra](/es/blog/tour-privado-alhambra-vale-la-pena/).
+
 Si vienes por primera vez, una buena combinacion puede ser una ruta por el Albaicin para entender el paisaje urbano y otra visita centrada en la Alhambra o en la Granada historica. Si ya conoces la ciudad, puede tener mas sentido buscar una ruta tematica: miradores y leyendas, Granada entre dos mundos, o una lectura mas tranquila de la ciudad despues de 1492.
 
 Lo importante es que la visita no parezca intercambiable. Granada tiene capas, silencios y detalles. Un tour privado deberia ayudarte a leerlos con calma.

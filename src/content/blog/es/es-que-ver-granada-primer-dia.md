@@ -44,4 +44,4 @@ El orden depende de tu energia, la hora de llegada y el calor. Por la manana pue
 
 Una visita guiada no deberia obligarte a correr. Puede servir para orientar el viaje, elegir mejor las siguientes horas y descubrir que Granada tiene capas que no siempre aparecen en una busqueda rapida.
 
-Si quieres comparar formatos, mira las [visitas guiadas en Granada](/es/visitas-guiadas-granada/) o la guia sobre [free tour Granada y rutas culturales](/es/free-tour-granada/). Para grupos privados o viajeros con poco tiempo, una [guia privada en Granada](/es/guia-privada-granada/) permite ajustar ritmo, idioma e intereses.
+Si quieres comparar formatos, mira las [visitas guiadas en Granada](/es/visitas-guiadas-granada/) o la guia sobre [free tour Granada y rutas culturales](/es/free-tour-granada/). Para grupos privados o viajeros con poco tiempo, una [guia privada en Granada](/es/guia-privada-granada/) permite ajustar ritmo, idioma e intereses. Si vas a dormir otra noche, la guia de [Granada en dos dias](/es/blog/granada-en-dos-dias/) ayuda a repartir Alhambra, Albaicin y centro historico sin prisas.

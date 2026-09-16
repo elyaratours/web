@@ -109,7 +109,7 @@ export const whatsappNumber = '34611126979';
 export const whatsappUrl = `https://wa.me/${whatsappNumber}`;
 export const instagramHandle = '@elyaratours';
 export const instagramUrl = 'https://instagram.com/elyaratours';
-export const googleBusinessProfileUrl = import.meta.env.PUBLIC_GOOGLE_BUSINESS_PROFILE_URL?.trim() ?? '';
+export const googleBusinessProfileUrl = 'https://maps.app.goo.gl/9bterUh4xSYH5jCf6';
 export const emailReservationUrl = `mailto:${contactEmail}`;
 
 const whatsappMessageCopy = {
@@ -220,9 +220,11 @@ export const contactContent = {
     emailLabel: 'Email',
     whatsappLabel: 'WhatsApp',
     instagramLabel: 'Instagram',
+    googleBusinessProfileLabel: 'Perfil de Google',
     emailCta: 'Escribir un correo',
     whatsappCta: 'Escribir por WhatsApp',
     instagramCta: 'Ver Instagram',
+    googleBusinessProfileCta: 'Ver perfil publico',
     reasonsTitle: 'Para que puedes escribirnos',
     reasons: ['Reservas de rutas en Granada', 'Rutas privadas en espanol o ingles', 'Viajes a medida', 'Dudas sobre ritmo, entradas o barrios'],
     footerLink: 'Ver pagina de contacto',
@@ -250,9 +252,11 @@ export const contactContent = {
     emailLabel: 'Email',
     whatsappLabel: 'WhatsApp',
     instagramLabel: 'Instagram',
+    googleBusinessProfileLabel: 'Google Business Profile',
     emailCta: 'Send an email',
     whatsappCta: 'Write on WhatsApp',
     instagramCta: 'View Instagram',
+    googleBusinessProfileCta: 'View public profile',
     reasonsTitle: 'What you can write about',
     reasons: ['Granada route reservations', 'Private routes in English or Spanish', 'Tailor-made trip planning', 'Questions about pace, tickets or neighborhoods'],
     footerLink: 'View contact page',
@@ -281,9 +285,11 @@ export const contactContent = {
     emailLabel: string;
     whatsappLabel: string;
     instagramLabel: string;
+    googleBusinessProfileLabel: string;
     emailCta: string;
     whatsappCta: string;
     instagramCta: string;
+    googleBusinessProfileCta: string;
     reasonsTitle: string;
     reasons: string[];
     footerLink: string;

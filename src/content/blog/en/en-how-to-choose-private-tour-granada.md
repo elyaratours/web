@@ -46,6 +46,8 @@ It also helps adjust practical details: explanation language, walking pace, paus
 
 If you are not sure which route fits, you can start from the [private guide in Granada](/en/private-guide-granada/) page or write from [contact](/en/contact/) with an approximate date, group size, preferred language and the neighborhoods or monuments that interest you.
 
+To compare formats before deciding, also read the guide to [free tour or private tour in Granada](/en/blog/free-tour-vs-private-tour-granada/). If the group's priority is the Alhambra, it is worth checking when a [private Alhambra tour](/en/blog/private-alhambra-tour-worth-it/) makes sense.
+
 If this is your first time in Granada, a good combination might be an Albaicin route to understand the urban landscape and another visit focused on the Alhambra or historic Granada. If you already know the city, a themed route may make more sense: viewpoints and legends, Granada between two worlds, or a slower reading of the city after 1492.
 
 The important thing is that the visit should not feel interchangeable. Granada has layers, silences and details. A private tour should help you read them calmly.

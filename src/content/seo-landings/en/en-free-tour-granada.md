@@ -10,7 +10,7 @@ targetIntent: "free tour Granada, walking routes and cultural visits"
 image: "/images/alhambra-clouds.jpeg"
 imageAlt: "The Alhambra seen from Granada while choosing a walking route or free tour"
 relatedTours: ["albaicin", "granada-viewpoints-legends", "granada-two-worlds"]
-relatedArticles: ["private-tour-granada-guide", "first-day-granada", "albaicin-atardecer"]
+relatedArticles: ["free-tour-vs-private-tour-granada", "private-tour-granada-guide", "first-day-granada", "granada-two-days-itinerary", "albaicin-atardecer"]
 relatedLandings: ["guided-visits-granada", "private-guide-granada", "private-alhambra-tour", "albaicin-guided-walk", "family-tours-granada"]
 faq:
   - question: "Does Elyara offer an internal free-tour checkout?"

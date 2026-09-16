@@ -10,7 +10,7 @@ targetIntent: "Granada walking tours, guided visits, cultural routes and private
 image: "/images/granada-main-route.webp"
 imageAlt: "Granada and the Alhambra from a viewpoint for planning a walking tour"
 relatedTours: ["albaicin", "alhambra", "cathedral-royal-chapel", "granada-two-worlds"]
-relatedArticles: ["private-tour-granada-guide", "albaicin-sacromonte-guide", "first-day-granada", "cathedral-royal-chapel-guide", "family-granada-guide"]
+relatedArticles: ["private-tour-granada-guide", "free-tour-vs-private-tour-granada", "granada-two-days-itinerary", "private-alhambra-tour-worth-it", "albaicin-sacromonte-guide", "first-day-granada", "cathedral-royal-chapel-guide", "family-granada-guide"]
 relatedLandings: ["private-guide-granada", "free-tour-granada", "private-alhambra-tour", "albaicin-guided-walk", "family-tours-granada"]
 faq:
   - question: "Which Granada walking tour should I choose first?"

@@ -10,7 +10,7 @@ targetIntent: "Granada day trips from Malaga, Costa del Sol or Cordoba"
 image: "/images/day-trip-malaga-granada.webp"
 imageAlt: "View of Granada for planning a private day trip from Malaga or Cordoba"
 relatedTours: ["day-trip-malaga-granada", "day-trip-cordoba-granada", "alhambra", "albaicin"]
-relatedArticles: ["granada-day-trip-planning", "first-day-granada"]
+relatedArticles: ["granada-day-trip-planning", "granada-two-days-itinerary", "private-tour-granada-guide", "first-day-granada"]
 relatedLandings: ["guided-visits-granada", "private-guide-granada", "private-alhambra-tour"]
 faq:
   - question: "Can I do a private day trip from Malaga or Cordoba?"

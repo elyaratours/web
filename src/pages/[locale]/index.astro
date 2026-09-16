@@ -3,6 +3,7 @@ import { ArrowRight, Mail, MapPinned, MessageCircle } from '@lucide/astro';
 import ReservationCalendar from '@/components/ReservationCalendar.astro';
 import TailorMadeHomeSection from '@/components/TailorMadeHomeSection.astro';
 import TourCard from '@/components/TourCard.astro';
+import TravelerProof from '@/components/TravelerProof.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { getEmailReservationUrl, getLocaleConfig, getWhatsAppReservationUrl, locales, type Locale } from '@/lib/i18n';
 import { createItemListJsonLd, productionSiteUrl } from '@/lib/seo';
@@ -96,6 +97,8 @@ const jsonLd = [
       </div>
     </div>
   </section>
+
+  <TravelerProof locale={locale} />
 
   <section class="section-shell py-8 sm:py-12" id="tours">
     <div class="mb-8 max-w-3xl">

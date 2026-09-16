@@ -44,4 +44,4 @@ The best order depends on your arrival time, energy and heat. The historic cente
 
 A guided route should not force you to rush. It can help orient the trip, choose the next hours more intelligently and discover that Granada has layers that rarely appear in a quick search.
 
-If you are comparing formats, see [Granada walking tours](/en/granada-walking-tours/) or the guide to [free tour Granada and cultural routes](/en/free-tour-granada/). For private groups or travelers with limited time, a [private guide in Granada](/en/private-guide-granada/) can adapt pace, language and interests.
+If you are comparing formats, see [Granada walking tours](/en/granada-walking-tours/) or the guide to [free tour Granada and cultural routes](/en/free-tour-granada/). For private groups or travelers with limited time, a [private guide in Granada](/en/private-guide-granada/) can adapt pace, language and interests. If you are staying another night, the [Granada in two days](/en/blog/granada-in-two-days/) guide helps divide the Alhambra, Albaicin and historic center without rushing.

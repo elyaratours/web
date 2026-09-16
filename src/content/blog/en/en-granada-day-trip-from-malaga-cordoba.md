@@ -32,4 +32,8 @@ Granada has distances, slopes, access points, possible queues and moments when s
 
 It is useful to know your departure city, approximate date, group size, language, whether you need private transfer and whether you prefer the Alhambra, historic center, Albaicin or a short combination. With those details, the day can be more honest and enjoyable.
 
+From Malaga, the day usually works better if you choose one main priority. If the Alhambra is the priority, check ticket availability first and leave room for lunch or rest. If you prefer to understand Granada without depending on monument time slots, a historic center and Albaicin route can be more flexible.
+
+To compare proposals, start with the [Granada day trips from Malaga or Cordoba](/en/granada-day-trips-malaga-cordoba/) page. The [Granada in two days](/en/blog/granada-in-two-days/) guide may also help if you are deciding between staying overnight or visiting for one day only. For groups that need to adjust transfer, language and pace, a [private guide in Granada](/en/private-guide-granada/) can help shape the visit.
+
 Booking or inquiry is handled by WhatsApp or email, with no internal form or website payment.

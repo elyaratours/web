@@ -10,7 +10,7 @@ targetIntent: "tour privado Alhambra, visita guiada Alhambra Granada y guia priv
 image: "/images/alhambra-route.webp"
 imageAlt: "Patios y arquitectura de la Alhambra para una visita privada cultural"
 relatedTours: ["alhambra", "alhambra-beyond-palaces", "granada-new-world"]
-relatedArticles: ["private-tour-granada-guide", "first-day-granada", "albaicin-sacromonte-guide"]
+relatedArticles: ["private-alhambra-tour-worth-it", "granada-two-days-itinerary", "private-tour-granada-guide", "first-day-granada", "albaicin-sacromonte-guide"]
 relatedLandings: ["guided-visits-granada", "private-guide-granada", "free-tour-granada", "granada-day-trips-from-malaga-cordoba"]
 faq:
   - question: "La entrada a la Alhambra esta incluida?"

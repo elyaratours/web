@@ -10,7 +10,7 @@ targetIntent: "private guide in Granada, private tour, personalized cultural vis
 image: "/images/granada-main-route.webp"
 imageAlt: "View of Granada and the Alhambra for planning a visit with a private guide"
 relatedTours: ["albaicin", "cathedral-royal-chapel", "granada-two-worlds", "alhambra"]
-relatedArticles: ["private-tour-granada-guide", "albaicin-sacromonte-guide", "first-day-granada"]
+relatedArticles: ["private-tour-granada-guide", "free-tour-vs-private-tour-granada", "private-alhambra-tour-worth-it", "albaicin-sacromonte-guide", "granada-two-days-itinerary", "first-day-granada"]
 relatedLandings: ["guided-visits-granada", "free-tour-granada", "private-alhambra-tour", "cathedral-royal-chapel-guided", "family-tours-granada"]
 faq:
   - question: "What can I request from a private guide in Granada?"
