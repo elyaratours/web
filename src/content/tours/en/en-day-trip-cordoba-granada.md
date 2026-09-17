@@ -1,7 +1,7 @@
 ---
 locale: en
 translationKey: day-trip-cordoba-granada
-title: "Private Day Trip from Cordoba to Granada"
+title: "Private Group Day Trip from Cordoba to Granada"
 routeSlug: "day-trip-cordoba-granada"
 category: "day-trip"
 duration: "Full day, timing adapted to your plan"
@@ -20,12 +20,12 @@ faq:
   - question: "Why is the price on request?"
     answer: "The final price depends on group size, pickup city, transport, monument tickets, lunch and the selected experience."
 relatedLandings: ["private-alhambra-tour", "albaicin-guided-walk"]
-seoDescription: "Private day trip from Cordoba to Granada with a cultural guide, optional transfer, Alhambra or Historic Centre and Albaicin experience, local lunch option and tailor-made timing."
+seoDescription: "Private group day trip from Cordoba to Granada with a cultural guide, optional transfer, Alhambra or Historic Centre and Albaicin experience, local lunch option and tailor-made timing."
 featured: false
 order: 81
 ---
 
-Travel from Cordoba to Granada for a private day shaped around culture, timing and your group's interests. The proposal can include private transfer, or it can begin once you arrive in Granada independently.
+Travel from Cordoba to Granada for a private group day shaped around culture, timing and your group's interests. The proposal can include private transfer, or it can begin once you arrive in Granada independently.
 
 In Granada, choose one main experience for the day. The private Alhambra and Generalife option focuses on the monument with a cultural guide when tickets are available. The route depends on monument entry availability and will be confirmed before the proposal is finalized.
 

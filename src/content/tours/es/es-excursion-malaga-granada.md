@@ -1,7 +1,7 @@
 ---
 locale: es
 translationKey: day-trip-malaga-granada
-title: "Excursion privada de un dia desde Malaga a Granada"
+title: "Excursion privada de un dia para grupos desde Malaga a Granada"
 routeSlug: "excursion-malaga-granada"
 category: "day-trip"
 duration: "Dia completo, aprox. 8-10 horas"
@@ -20,12 +20,12 @@ faq:
   - question: "Se puede anadir comida?"
     answer: "Si. Se puede anadir una comida en un restaurante local seleccionado segun disponibilidad, preferencias y presupuesto. No se anuncia un restaurante ni menu fijo por adelantado."
 relatedLandings: ["private-alhambra-tour", "albaicin-guided-walk"]
-seoDescription: "Excursion privada de un dia desde Malaga o la Costa del Sol a Granada con guia cultural, traslado opcional, Alhambra o Centro Historico y Albaicin, y comida bajo consulta."
+seoDescription: "Excursion privada de un dia para grupos desde Malaga o la Costa del Sol a Granada con guia cultural, traslado opcional, Alhambra o Centro Historico y Albaicin, y comida bajo consulta."
 featured: false
 order: 80
 ---
 
-Viaja desde Malaga o la Costa del Sol a Granada en una excursion privada y cultural disenada alrededor de tu grupo. No es una salida masiva de autobus: la propuesta se adapta a tus horarios, intereses, ritmo y experiencia principal en Granada con guia cultural.
+Viaja desde Malaga o la Costa del Sol a Granada en una excursion privada y cultural para grupos, disenada alrededor de tu grupo. No es una salida masiva de autobus: la propuesta se adapta a tus horarios, intereses, ritmo y experiencia principal en Granada con guia cultural.
 
 El dia puede empezar con recogida opcional en tu hotel o en un punto acordado, seguida de traslado privado a Granada. Una vez en la ciudad, puedes elegir una experiencia principal: visita privada a la Alhambra y Generalife, o ruta privada por el Centro Historico y el Albaicin.
 

@@ -1,7 +1,7 @@
 ---
 locale: en
 translationKey: day-trip-malaga-granada
-title: "Private Day Trip from Malaga to Granada"
+title: "Private Group Day Trip from Malaga to Granada"
 routeSlug: "day-trip-malaga-granada"
 category: "day-trip"
 duration: "Full day, approx. 8-10 hours"
@@ -20,12 +20,12 @@ faq:
   - question: "Can lunch be arranged?"
     answer: "Yes. Lunch can be added at a carefully selected local restaurant, depending on availability, preferences and budget. No fixed restaurant or menu is promised in advance."
 relatedLandings: ["private-alhambra-tour", "albaicin-guided-walk"]
-seoDescription: "Private day trip from Malaga or the Costa del Sol to Granada with a cultural guide, optional transfer, Alhambra or Historic Centre and Albaicin experience, and lunch on request."
+seoDescription: "Private group day trip from Malaga or the Costa del Sol to Granada with a cultural guide, optional transfer, Alhambra or Historic Centre and Albaicin experience, and lunch on request."
 featured: false
 order: 80
 ---
 
-Travel from Malaga or the Costa del Sol to Granada for a private cultural day shaped around your group. This is not a mass coach excursion: the proposal is built around your timing, interests, preferred pace and the Granada experience you want to enjoy with a cultural guide.
+Travel from Malaga or the Costa del Sol to Granada for a private group cultural day shaped around your group. This is not a mass coach excursion: the proposal is built around your timing, interests, preferred pace and the Granada experience you want to enjoy with a cultural guide.
 
 The day can begin with optional pickup at your hotel or an agreed point, followed by private transfer to Granada. Once in the city, choose one main experience: a private Alhambra and Generalife visit, or a private walking route through the Historic Centre and Albaicin.
 
