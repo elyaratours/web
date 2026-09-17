@@ -39,3 +39,9 @@ La visita privada tambien puede tener sentido si ya conoces la Alhambra y quiere
 Si solo tienes un dia en Granada, puede interesarte combinar la Alhambra con una orientacion por el Albaicin o el centro historico. Pero esa combinacion debe ser realista. Intentar verlo todo en pocas horas puede agotar al grupo y reducir la calidad de la experiencia.
 
 Para comparar opciones, puedes leer tambien la guia sobre [que ver en Granada el primer dia](/es/blog/que-ver-granada-primer-dia/) o la comparativa entre [free tour y tour privado en Granada](/es/blog/free-tour-vs-tour-privado-granada/). Si buscas adaptar el recorrido a intereses concretos, una [guia privada en Granada](/es/guia-privada-granada/) ayuda a ordenar prioridades antes de reservar.
+
+## Preguntas utiles antes de escribir
+
+Antes de consultar, revisa si ya tienes entradas, la hora de Palacios Nazaries, el idioma del grupo, cuantas personas sois y si alguien necesita un ritmo tranquilo. Tambien ayuda saber si quieres una explicacion general o una lectura mas centrada en arte, agua, politica, jardines o relacion con la ciudad.
+
+Si no hay entradas o el horario no encaja, no todo esta perdido: una ruta por el [Albaicin](/es/visita-guiada-albaicin/) o una lectura urbana desde miradores puede explicar muy bien la presencia de la Alhambra en Granada sin prometer accesos imposibles.

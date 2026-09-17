@@ -45,3 +45,9 @@ Para una visita privada, el recorrido puede ajustar paradas y miradores. No se t
 ## Que aporta una visita guiada
 
 Caminar con contexto ayuda a distinguir entre una calle bonita y una calle que explica una transformacion historica. La visita une miradores, agua, memoria urbana y vida local para que el barrio no sea solo un decorado para fotografias.
+
+## Consejos antes de reservar
+
+El Albaicin tiene cuestas y pavimento irregular, asi que conviene elegir calzado comodo y avisar si el grupo necesita un ritmo tranquilo. Para una primera visita, una ruta centrada en el barrio puede ser suficiente; si quieres ampliar, compara con la [visita guiada por Albaicin y Sacromonte](/es/visita-guiada-albaicin-sacromonte-granada/).
+
+Si buscas una experiencia privada, indica idioma, horario preferido y si quieres priorizar miradores, historia urbana, fotografia o relacion con la Alhambra. Asi se evita una ruta demasiado cargada y se aprovecha mejor el barrio.

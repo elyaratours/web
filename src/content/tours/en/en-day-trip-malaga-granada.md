@@ -19,7 +19,7 @@ faq:
     answer: "No. Alhambra and monument entries depend on ticket availability. If tickets are not available, the Historic Centre and Albaicin option is a complete Granada experience."
   - question: "Can lunch be arranged?"
     answer: "Yes. Lunch can be added at a carefully selected local restaurant, depending on availability, preferences and budget. No fixed restaurant or menu is promised in advance."
-relatedLandings: ["private-alhambra-tour", "albaicin-guided-walk"]
+relatedLandings: ["granada-day-trips-from-malaga-cordoba", "private-alhambra-tour", "albaicin-guided-walk"]
 seoDescription: "Private group day trip from Malaga or the Costa del Sol to Granada with a cultural guide, optional transfer, Alhambra or Historic Centre and Albaicin experience, and lunch on request."
 featured: false
 order: 80

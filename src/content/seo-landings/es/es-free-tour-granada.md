@@ -17,6 +17,8 @@ faq:
     answer: "No hay checkout ni pago interno en la web. Puedes escribir por WhatsApp o email para consultar rutas, disponibilidad y condiciones de reserva."
   - question: "Que diferencia hay entre un free tour y una ruta privada?"
     answer: "Un free tour suele tener un formato mas abierto. Una ruta privada permite ajustar idioma, ritmo, enfoque e intereses del grupo antes de confirmar la visita."
+  - question: "Como elegir si quiero contexto historico?"
+    answer: "Compara duracion, tamano del grupo, idioma, posibilidad de preguntas y profundidad del recorrido. Si quieres adaptar la visita, consulta una ruta privada o una guia privada."
 order: 20
 ---
 
@@ -41,3 +43,9 @@ Si tu prioridad es orientarte el primer dia, una visita general puede bastar. Si
 ## Alternativas culturales
 
 Una ruta privada o una visita guiada cultural puede ser mejor si viajas con familia, si buscas un idioma concreto, si tienes poco tiempo o si quieres conectar Albaicin, centro historico, Alhambra o miradores con una narracion mas personalizada.
+
+## Que hacer despues de comparar
+
+Si quieres una primera orientacion, revisa las [visitas guiadas en Granada](/es/visitas-guiadas-granada/) y la [visita guiada por el Albaicin](/es/visita-guiada-albaicin/). Si buscas una experiencia mas ajustada al grupo, una [guia privada en Granada](/es/guia-privada-granada/) permite decidir antes el idioma, ritmo y enfoque.
+
+La reserva o consulta empieza por WhatsApp o email. Es util indicar fecha, numero de personas, idioma y si prefieres una ruta general, una visita privada o una propuesta centrada en Alhambra, Albaicin, centro historico o miradores.

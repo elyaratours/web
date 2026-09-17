@@ -37,3 +37,9 @@ From Malaga, the day usually works better if you choose one main priority. If th
 To compare proposals, start with the [Granada day trips from Malaga or Cordoba](/en/granada-day-trips-malaga-cordoba/) page. The [Granada in two days](/en/blog/granada-in-two-days/) guide may also help if you are deciding between staying overnight or visiting for one day only. For groups that need to adjust transfer, language and pace, a [private guide in Granada](/en/private-guide-granada/) can help shape the visit.
 
 Booking or inquiry is handled by WhatsApp or email, with no internal form or website payment.
+
+## What to choose if you only have one day
+
+If tickets are available and the group has energy, the Alhambra can be the focus of the day. If tickets are unavailable or you prefer a more flexible reading, historic center and Albaicin offer a complete experience without depending on monument time slots. In both cases, leave time for arrival, lunch, pauses and return.
+
+Day trips from Malaga, Costa del Sol or Cordoba work best as private group proposals. That way pickup, language, main experience and pace can be adjusted instead of turning the day into an impossible checklist.

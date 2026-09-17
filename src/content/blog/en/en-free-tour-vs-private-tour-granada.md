@@ -40,3 +40,9 @@ Time management changes too. If you only have half a day, a private tour can hel
 Choose an open format if you want simple orientation and do not need the experience to adapt. Choose a private route if you want to discuss tickets, mobility, language, children, photography, pace or a specific cultural interest.
 
 To compare commercial options, start with the [free tour Granada](/en/free-tour-granada/) and [private guide in Granada](/en/private-guide-granada/) pages. If the Alhambra is your priority, also read when a [private Alhambra tour](/en/blog/private-alhambra-tour-worth-it/) makes sense. For general walking routes, the [Granada walking tours](/en/granada-walking-tours/) page helps you compare alternatives before writing by WhatsApp or email.
+
+## Signs of a good choice
+
+Before booking, check whether the proposal explains language, approximate duration, pace, contact method and what happens if the group needs to adapt something. It is also worth checking whether the route fits your moment in the trip: general orientation on the first day, Albaicin near sunset, Alhambra with tickets or historic center to understand 1492.
+
+If you travel with children, older visitors or a group that wants many questions, the private format usually gives more room. If you only want a first impression and do not need to adapt language or pace, an open route may be enough.

@@ -17,7 +17,7 @@ faq:
     answer: "The visit is adapted for families with children, with short explanations, a calm pace and visual stops. Children under 6 join for free."
   - question: "What will we see on Granada for Families?"
     answer: "We will walk through the Historic Center to understand, in a simple and participatory way, how the Muslim medina became a Christian city."
-relatedLandings: ["guided-visits-granada", "free-tour-granada"]
+relatedLandings: ["family-tours-granada", "guided-visits-granada", "free-tour-granada"]
 seoDescription: "Family route through Granada's Historic Center for children, with adapted explanations about the transformation from Muslim medina to Christian city."
 featured: false
 order: 60

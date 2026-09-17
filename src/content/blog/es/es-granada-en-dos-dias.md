@@ -43,3 +43,9 @@ Reserva el segundo dia para la Alhambra si tus entradas encajan. Antes de elegir
 Despues de la Alhambra, no siempre hace falta anadir otra visita larga. Puede bastar una comida tranquila, un mirador o una lectura del centro historico si el grupo aun tiene energia. Para viajes con familia o grupos privados, conviene dejar margen.
 
 Si estas comparando formatos, revisa la pagina de [visitas guiadas en Granada](/es/visitas-guiadas-granada/) y la guia sobre [free tour o tour privado](/es/blog/free-tour-vs-tour-privado-granada/). Si quieres ajustar el plan a entradas, ritmo e idioma, escribe desde [contacto](/es/contacto/) con tus fechas y numero de personas.
+
+## Como repartir visitas guiadas
+
+Con dos dias, lo mas equilibrado suele ser una visita urbana el primer dia y la Alhambra el segundo, o al reves si tus entradas lo exigen. Una [guia privada en Granada](/es/guia-privada-granada/) puede ayudarte a adaptar ese orden si viajas en familia, en ingles, con poco margen o con intereses concretos.
+
+No necesitas contratar una visita para cada tramo. A veces basta con una ruta bien elegida para situarte y una experiencia mas profunda en la Alhambra o el Albaicin. Lo importante es que cada bloque tenga funcion: orientacion, monumento principal, barrio con miradores y tiempo libre para descansar.

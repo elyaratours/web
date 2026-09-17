@@ -17,6 +17,8 @@ faq:
     answer: "La ruta Granada en familia dura aproximadamente entre una hora y una hora y cuarto para mantener la atencion de los ninos."
   - question: "Se puede adaptar una visita privada si viajamos con ninos?"
     answer: "Si. Puedes escribir por WhatsApp o email para adaptar ritmo, paradas e intereses de la familia."
+  - question: "Que zonas funcionan mejor con ninos?"
+    answer: "El Centro Historico, algunas plazas, fuentes y recorridos cortos funcionan mejor que rutas largas con muchas cuestas o demasiados monumentos seguidos."
 order: 50
 published: true
 ---
@@ -32,3 +34,9 @@ El objetivo no es simplificarlo todo, sino escoger bien. Un nino puede entender 
 ## Como organizarla
 
 Antes de reservar conviene indicar edades, fecha aproximada, idioma y si el grupo prefiere un recorrido corto o una visita privada mas adaptada. La reserva se confirma por WhatsApp o email.
+
+## Ritmo familiar y contenido cultural
+
+Granada puede ser muy estimulante para ninos si la visita propone observar, buscar simbolos y relacionar edificios con historias sencillas. Conviene evitar demasiadas paradas y elegir una zona clara: Centro Historico para una ruta corta, Albaicin si el grupo acepta cuestas, o una propuesta privada si necesitas adaptar horarios, descansos o idioma.
+
+Si la familia tambien quiere conocer la Alhambra, es mejor tratarla como experiencia aparte y revisar entradas, cansancio y tiempos. Para una primera ruta infantil, [Granada en familia](/es/tours/granada-en-familia/) mantiene el foco en un recorrido breve y visual.

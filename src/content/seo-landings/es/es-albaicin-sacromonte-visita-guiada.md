@@ -48,3 +48,9 @@ La ruta permite entender por que el Albaicin mira constantemente a la Alhambra, 
 Esta pagina se relaciona con la ruta El alma de Granada, las lecturas del cuaderno sobre el Albaicin al atardecer y las visitas privadas para quienes prefieren adaptar horarios, idioma o intensidad del paseo.
 
 Tambien puedes comparar con la [visita guiada por el Albaicin](/es/visita-guiada-albaicin/) si quieres una ruta mas centrada en el barrio, o con las [visitas guiadas en Granada](/es/visitas-guiadas-granada/) si todavia estas decidiendo que zona encaja mejor en tu viaje.
+
+## Cuando elegir Albaicin y Sacromonte juntos
+
+Esta combinacion encaja si buscas una visita con paisaje, miradores y barrios altos, y si el grupo acepta caminar con desnivel. Para una primera toma de contacto muy tranquila, puede ser mejor solo Albaicin; para una lectura mas completa de las colinas frente a la Alhambra, Sacromonte aporta cuevas, caminos altos y memoria popular.
+
+Al escribir por WhatsApp o email, indica si prefieres una ruta cultural, fotografica, al atardecer o privada. La propuesta debe ajustar distancia y paradas al horario real, especialmente en verano, invierno o viajes con ninos.

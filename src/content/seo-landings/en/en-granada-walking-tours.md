@@ -21,6 +21,8 @@ faq:
     answer: "Yes. Choose a published route or describe your travel idea and the visit can be requested as a private group depending on availability, language and pace."
   - question: "Which Granada areas are best with a guide?"
     answer: "The Albaicin, Alhambra, Cathedral, Royal Chapel, historic center, viewpoints and upper neighborhoods are easier to understand with historical context and a well-ordered route."
+  - question: "Can Granada walking tours be in English?"
+    answer: "Yes. You can ask for Spanish or English guided walks with your date, preferred language, group size and the route you are interested in."
 order: 10
 ---
 
@@ -51,3 +53,9 @@ There is no need for a separate private tour catalog. Start from the Albaicin, A
 ## Booking and contact
 
 Booking is confirmed by WhatsApp or email. Mention date, group size, preferred language and whether you want a published route, a private guide or a more personalized proposal for your time in Granada.
+
+## Suggested routes by interest
+
+If you want a general cultural visit, start with the [Albaicin guided walk](/en/albaicin-guided-walk/) or historic center to read the city through its streets. If your trip revolves around the Alhambra, ask about a [private Alhambra tour](/en/private-alhambra-tour/) early because tickets shape timing and access. For families, a short visual route usually works better than a long itinerary.
+
+The point is not to combine every area in one day. A good Granada walking tour should help you choose: Alhambra with time, Albaicin with viewpoints, Cathedral and Royal Chapel for the 1492 story, or a private route if language, pace or interests need adapting.

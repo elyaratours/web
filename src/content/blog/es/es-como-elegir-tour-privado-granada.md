@@ -51,3 +51,9 @@ Para comparar formatos antes de decidir, lee tambien la guia sobre [free tour o 
 Si vienes por primera vez, una buena combinacion puede ser una ruta por el Albaicin para entender el paisaje urbano y otra visita centrada en la Alhambra o en la Granada historica. Si ya conoces la ciudad, puede tener mas sentido buscar una ruta tematica: miradores y leyendas, Granada entre dos mundos, o una lectura mas tranquila de la ciudad despues de 1492.
 
 Lo importante es que la visita no parezca intercambiable. Granada tiene capas, silencios y detalles. Un tour privado deberia ayudarte a leerlos con calma.
+
+## Checklist antes de pedir propuesta
+
+Antes de escribir, prepara cuatro datos: fecha aproximada, numero de personas, idioma preferido y prioridad del grupo. Esa prioridad puede ser orientarte el primer dia, profundizar en la Alhambra, caminar el Albaicin, visitar Catedral y Capilla Real o adaptar una ruta para ninos.
+
+Tambien ayuda indicar que no quieres hacer: demasiadas cuestas, visitas largas, horarios muy tempranos, exceso de monumentos o una explicacion demasiado tecnica. Con esos limites, la propuesta puede ser mas clara y util desde el primer mensaje.

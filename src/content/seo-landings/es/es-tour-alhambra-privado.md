@@ -21,6 +21,8 @@ faq:
     answer: "Cuanto antes, mejor, especialmente en temporada alta. La Alhambra depende de entradas nominativas, franjas horarias y disponibilidad real."
   - question: "Que pasa si no hay entradas a la Alhambra?"
     answer: "Se puede valorar otra ruta cultural por Granada, como Albaicin, centro historico, miradores o una lectura urbana relacionada con la Alhambra desde fuera."
+  - question: "Es mejor una visita privada o en grupo?"
+    answer: "Depende del viaje. La visita privada permite ajustar ritmo, idioma y preguntas del grupo, siempre dentro de las condiciones de acceso del monumento."
 order: 30
 ---
 
@@ -57,3 +59,9 @@ La web no sustituye la gestion de entradas ni confirma automaticamente la visita
 ## Con que combinarla
 
 Si tienes mas tiempo, la Alhambra gana sentido cuando se conecta con el paisaje urbano. Una ruta por el Albaicin muestra la ciudad que la mira desde enfrente; la Catedral y la Capilla Real explican otra etapa del poder granadino; y la Granada de 1492 ayuda a unir las capas historicas.
+
+## Para quien encaja esta visita
+
+El tour privado de la Alhambra encaja si quieres una explicacion cultural sin seguir un ritmo anonimo, si viajas con familia, si necesitas una visita en ingles o si el grupo quiere hacer preguntas sobre arquitectura, simbolos, jardines o historia nazari. Tambien es util cuando ya tienes entradas y necesitas organizar el tiempo de acceso a Palacios Nazaries, Generalife y espacios disponibles.
+
+Si estas comparando opciones, puedes revisar tambien las [visitas guiadas en Granada](/es/visitas-guiadas-granada/) o una [guia privada en Granada](/es/guia-privada-granada/) para adaptar el resto del viaje.

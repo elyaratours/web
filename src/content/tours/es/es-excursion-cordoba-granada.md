@@ -19,7 +19,7 @@ faq:
     answer: "Si. El dia se construye alrededor de una experiencia principal: Alhambra y Generalife cuando haya entradas disponibles, o Centro Historico y Albaicin como alternativa completa."
   - question: "Por que el precio es bajo consulta?"
     answer: "El precio final depende del numero de personas, ciudad de recogida, transporte, entradas a monumentos, comida y experiencia seleccionada."
-relatedLandings: ["private-alhambra-tour", "albaicin-guided-walk"]
+relatedLandings: ["granada-day-trips-from-malaga-cordoba", "private-alhambra-tour", "albaicin-guided-walk"]
 seoDescription: "Excursion privada de un dia para grupos desde Cordoba a Granada con guia cultural, traslado opcional, Alhambra o Centro Historico y Albaicin, comida opcional y horario a medida."
 featured: false
 order: 81

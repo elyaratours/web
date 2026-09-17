@@ -17,7 +17,7 @@ faq:
     answer: "La visita esta adaptada para familias con niños, con explicaciones breves, ritmo tranquilo y paradas visuales. Los menores de 6 años participan gratis."
   - question: "Que veremos durante Granada en familia?"
     answer: "Recorreremos el Centro Historico para entender, de forma sencilla y participativa, como la medina musulmana se transformo en ciudad cristiana."
-relatedLandings: ["guided-visits-granada", "free-tour-granada"]
+relatedLandings: ["family-tours-granada", "guided-visits-granada", "free-tour-granada"]
 seoDescription: "Ruta familiar por el Centro Historico de Granada para niños, con explicaciones adaptadas sobre la transformacion de medina musulmana a ciudad cristiana."
 featured: false
 order: 60

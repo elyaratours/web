@@ -50,3 +50,9 @@ El Albaicin funciona muy bien para entender la relacion entre paisaje, agua, mem
 ## Como reservar
 
 Escribenos por WhatsApp o email con la fecha aproximada, numero de personas, idioma y tipo de visita que imaginas. Respondemos con una propuesta clara y, si hace falta, alternativas segun disponibilidad, entradas o ritmo del grupo.
+
+## Que datos ayudan a preparar la propuesta
+
+Para orientar bien una guia privada en Granada conviene indicar alojamiento o zona de inicio aproximada, si ya tienes entradas a la Alhambra, si viajas con ninos o personas que prefieren caminar despacio, y si te interesa mas historia, fotografia, leyendas, patrimonio o una primera orientacion de la ciudad.
+
+Con esa informacion se puede recomendar una visita por el [Albaicin](/es/visita-guiada-albaicin/), una ruta por Catedral y Capilla Real, una lectura del centro historico o una propuesta centrada en la [Alhambra privada](/es/tour-alhambra-privado/) si hay disponibilidad real.

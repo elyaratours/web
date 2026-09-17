@@ -46,3 +46,9 @@ Sacromonte tiene sentido cuando quieres mirar Granada desde su paisaje social y 
 La mejor decision depende de fecha, luz, temperatura, energia del grupo e intereses. Por eso conviene escribir antes de reservar y confirmar una propuesta realista.
 
 Si quieres comparar posibilidades, puedes empezar por la pagina de [visitas guiadas en Granada](/es/visitas-guiadas-granada/) o escribir por WhatsApp/email indicando si prefieres miradores, historia urbana, fotografia, leyendas o un paseo mas tranquilo.
+
+## Como decidir segun tu viaje
+
+Elige solo Albaicin si es tu primera vez, si tienes poco tiempo o si prefieres una visita con menos desnivel. Elige Albaicin y Sacromonte si buscas una experiencia mas paisajistica, con miradores, ladera y memoria popular, y si el grupo acepta caminar mas.
+
+Para viajes en familia o grupos privados, la pregunta no es solo que barrios ver, sino cuanto esfuerzo tiene sentido. Una [guia privada en Granada](/es/guia-privada-granada/) permite ajustar paradas, idioma y regreso para que la ruta no se convierta en una subida sin contexto.

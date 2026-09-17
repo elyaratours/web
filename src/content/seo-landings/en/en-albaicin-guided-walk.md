@@ -45,3 +45,9 @@ For a private visit, stops and viewpoints can be adjusted. The goal is not to se
 ## What a guided walk adds
 
 Walking with context helps distinguish between a beautiful lane and a lane that explains a historical transformation. The visit connects viewpoints, water, urban memory and local life so the neighborhood is more than a backdrop for photos.
+
+## Before booking
+
+The Albaicin has slopes and uneven paving, so comfortable shoes help and it is worth mentioning if your group needs a slower pace. For a first visit, a focused neighborhood route may be enough; if you want to extend the walk, compare it with the [Albaicin and Sacromonte guided walk](/en/albaicin-sacromonte-guided-walk-granada/).
+
+For a private experience, mention language, preferred timing and whether you want to prioritize viewpoints, urban history, photography or the relationship with the Alhambra. That keeps the route useful rather than overloaded.

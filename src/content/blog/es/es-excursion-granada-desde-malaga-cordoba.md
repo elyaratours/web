@@ -37,3 +37,9 @@ Desde Malaga, el dia suele funcionar mejor si eliges una prioridad principal. Si
 Si quieres comparar propuestas, empieza por la pagina de [excursiones a Granada desde Malaga o Cordoba](/es/excursiones-granada-desde-malaga-cordoba/). Tambien puede ayudarte la guia de [Granada en dos dias](/es/blog/granada-en-dos-dias/) si dudas entre dormir en la ciudad o venir solo una jornada. Para grupos que necesitan ajustar transporte, idioma y ritmo, una [guia privada en Granada](/es/guia-privada-granada/) permite ordenar mejor la visita.
 
 La reserva o consulta se hace por WhatsApp o email, sin formulario interno ni pago dentro de la web.
+
+## Que elegir si vienes solo un dia
+
+Si hay entradas y el grupo tiene energia, la Alhambra puede ser el eje de la excursion. Si no hay entradas o prefieres una lectura mas flexible, centro historico y Albaicin ofrecen una experiencia completa sin depender de franjas monumentales. En ambos casos, conviene dejar tiempo para llegada, comida, pausas y regreso.
+
+Las excursiones desde Malaga, Costa del Sol o Cordoba funcionan mejor como propuestas para grupos privados. Asi se puede ajustar recogida, idioma, experiencia principal y ritmo sin convertir el dia en una lista imposible de paradas.

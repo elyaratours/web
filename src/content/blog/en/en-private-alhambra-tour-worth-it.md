@@ -39,3 +39,9 @@ A private visit can also make sense if you already know the Alhambra and want a 
 If you only have one day in Granada, you may want to combine the Alhambra with orientation in the Albaicin or historic center. That combination needs to be realistic. Trying to see everything in a few hours can tire the group and reduce the quality of the experience.
 
 To compare options, read the guide to [what to see in Granada on your first day](/en/blog/what-to-see-granada-first-day/) or the comparison between a [free tour and a private tour in Granada](/en/blog/free-tour-vs-private-tour-granada/). If you want to adapt the visit to specific interests, a [private guide in Granada](/en/private-guide-granada/) can help order priorities before booking.
+
+## Useful questions before writing
+
+Before inquiring, check whether you already have tickets, your Nasrid Palaces time, the group's language, group size and whether anyone needs a slower pace. It also helps to know whether you want a general explanation or a more focused reading around art, water, politics, gardens or the relationship with the city.
+
+If there are no tickets or the timing does not work, not everything is lost: an [Albaicin guided walk](/en/albaicin-guided-walk/) or an urban reading from viewpoints can explain the Alhambra's presence in Granada without promising impossible access.

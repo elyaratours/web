@@ -43,3 +43,9 @@ Reserve the second day for the Alhambra if your tickets fit. Before choosing a t
 After the Alhambra, you do not always need another long visit. A slow lunch, a viewpoint or a historic-center reading may be enough if the group still has energy. For families or private groups, leaving margin is usually the smarter choice.
 
 If you are comparing formats, see [Granada walking tours](/en/granada-walking-tours/) and the guide to [free tour or private tour](/en/blog/free-tour-vs-private-tour-granada/). If you want to adapt the plan to tickets, pace and language, write from [contact](/en/contact/) with your dates and group size.
+
+## How to distribute guided visits
+
+With two days, the most balanced plan is often an urban route on one day and the Alhambra on the other, unless your tickets require a different order. A [private guide in Granada](/en/private-guide-granada/) can help adapt that plan if you travel as a family, need English, have limited time or care about specific topics.
+
+You do not need a guided visit for every block. Sometimes one well-chosen route is enough for orientation, followed by a deeper Alhambra or Albaicin experience. Each block should have a purpose: orientation, main monument, neighborhood with viewpoints and free time to rest.

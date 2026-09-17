@@ -33,3 +33,9 @@ Para muchas familias, una hora o una hora y cuarto es suficiente para una primer
 Funcionan bien las comparaciones sencillas: como era una medina, que cambia cuando una ciudad se transforma, por que algunos simbolos aparecen en edificios y como las calles guardan pistas del pasado. Los adultos pueden recibir mas contexto sin romper el ritmo infantil.
 
 Antes de reservar, indica edades, idioma, fecha aproximada y si prefieres una ruta familiar concreta o una visita privada adaptada a vuestro grupo.
+
+## Zonas y tiempos que suelen funcionar
+
+El Centro Historico es practico para una primera ruta con ninos porque tiene plazas, fuentes, simbolos y distancias mas manejables. El Albaicin puede ser muy bonito, pero conviene valorar cuestas, calor y cansancio. La Alhambra exige otro tipo de planificacion: entradas, horarios, recorridos internos y descansos.
+
+Si buscas una ruta ya pensada para familias, mira [Granada en familia](/es/tours/granada-en-familia/) o la pagina de [tours para ninos en Granada](/es/tours-ninos-granada/). Para familias con necesidades concretas de idioma, ritmo o horario, una [guia privada](/es/guia-privada-granada/) permite ajustar la visita antes de confirmar.

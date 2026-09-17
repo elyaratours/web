@@ -38,12 +38,14 @@ const planningCopy = locale === 'es'
   ? {
       eyebrow: 'Elige mejor tu visita',
       title: 'Planifica tu visita guiada en Granada',
-      text: 'Compara rutas por la Alhambra, el Albaicin, Sacromonte, Catedral, excursiones y visitas privadas antes de escribir por WhatsApp o email.',
+      text: 'Compara visitas guiadas por la Alhambra, Albaicin, Sacromonte, Catedral, excursiones de un dia y tours privados antes de escribir por WhatsApp o email.',
+      routeTitle: 'Tours privados y rutas a pie',
     }
   : {
       eyebrow: 'Choose your visit well',
       title: 'Plan your guided visit in Granada',
-      text: 'Compare Alhambra, Albaicin, Sacromonte, Cathedral, day trip and private visit options before writing by WhatsApp or email.',
+      text: 'Compare Alhambra, Albaicin, Sacromonte, Cathedral, day trip and private tour options before writing by WhatsApp or email.',
+      routeTitle: 'Private tours and walking routes',
     };
 const jsonLd = [
   createItemListJsonLd(
@@ -90,7 +92,7 @@ const jsonLd = [
         <div class="flex items-start gap-4">
           <span class="rounded-2xl bg-alhambra-tile/10 p-3 text-alhambra-tile"><MapPinned class="h-6 w-6" aria-hidden="true" /></span>
           <div>
-            <h2 class="font-serif text-2xl font-bold text-alhambra-night">Granada, paso a paso</h2>
+            <h2 class="font-serif text-2xl font-bold text-alhambra-night">{planningCopy.routeTitle}</h2>
             <p class="mt-2 text-sm leading-7 text-slate-700">{copy.catalogIntro}</p>
           </div>
         </div>

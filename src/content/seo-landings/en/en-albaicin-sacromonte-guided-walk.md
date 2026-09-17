@@ -48,3 +48,9 @@ The route helps explain why the Albaicin constantly looks toward the Alhambra, h
 This page connects with the El alma de Granada route, journal readings about the Albaicin at sunset and private visits for travelers who want to adapt timing, language or walking intensity.
 
 You can also compare it with the [Albaicin guided walk](/en/albaicin-guided-walk/) if you want a more focused neighborhood route, or with [Granada walking tours](/en/granada-walking-tours/) if you are still deciding which area best fits your trip.
+
+## When to choose Albaicin and Sacromonte together
+
+This combination works well if you want landscape, viewpoints and upper neighborhoods, and if the group is comfortable with slopes. For a very calm first introduction, only the Albaicin may be better; for a wider reading of the hills facing the Alhambra, Sacromonte adds caves, higher paths and popular memory.
+
+When writing by WhatsApp or email, mention whether you prefer a cultural, photographic, sunset or private route. The proposal should adapt distance and stops to real timing, especially in summer, winter or trips with children.

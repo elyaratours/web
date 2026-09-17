@@ -21,6 +21,8 @@ faq:
     answer: "As early as possible, especially in high season. The Alhambra depends on named tickets, time slots and real availability."
   - question: "What if Alhambra tickets are not available?"
     answer: "Another cultural route in Granada can be considered, such as the Albaicin, historic center, viewpoints or an urban reading connected to the Alhambra from outside."
+  - question: "Is a private visit better than a group visit?"
+    answer: "It depends on the trip. A private visit can adapt pace, language and questions for the group, while still respecting monument access rules."
 order: 30
 ---
 
@@ -57,3 +59,9 @@ The website does not replace ticket management or automatically confirm the visi
 ## What to combine it with
 
 If you have more time, the Alhambra becomes clearer when it is connected with the urban landscape. An Albaicin route shows the city looking back at it; the Cathedral and Royal Chapel explain another phase of Granada's power; and the story of Granada after 1492 links different historical layers.
+
+## Who this visit is for
+
+A private Alhambra tour is a good fit if you want cultural explanation without following an anonymous rhythm, if you travel with family, need an English-language visit or want to ask about architecture, symbols, gardens or Nasrid history. It is also useful when you already have tickets and need to organize time around the Nasrid Palaces, Generalife and available spaces.
+
+If you are comparing options, you can also review [Granada walking tours](/en/granada-walking-tours/) or a [private guide in Granada](/en/private-guide-granada/) to shape the rest of your stay.

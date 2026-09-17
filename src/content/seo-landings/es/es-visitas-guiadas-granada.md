@@ -21,6 +21,8 @@ faq:
     answer: "Si. Elige una ruta publicada o cuentanos tu idea de viaje y la visita puede plantearse como grupo privado segun disponibilidad, idioma y ritmo."
   - question: "Que zonas de Granada conviene visitar con guia?"
     answer: "Albaicin, Alhambra, Catedral, Capilla Real, centro historico, miradores y barrios altos ganan sentido con contexto historico y una ruta bien ordenada."
+  - question: "Se pueden hacer visitas guiadas en ingles?"
+    answer: "Si. Puedes consultar visitas guiadas en espanol o ingles indicando fecha, idioma preferido, numero de personas y ruta que te interesa."
 order: 10
 ---
 
@@ -51,3 +53,9 @@ No hace falta entrar en un catalogo distinto de tours privados. Puedes empezar p
 ## Reserva y contacto
 
 La reserva se confirma por WhatsApp o email. Indica fecha, numero de personas, idioma y si buscas una ruta publicada, una guia privada o una propuesta mas personalizada para tu estancia en Granada.
+
+## Itinerarios recomendados segun intereses
+
+Si buscas una visita cultural general, empieza por el [Albaicin](/es/visita-guiada-albaicin/) o el centro historico para leer la ciudad desde sus calles. Si el viaje gira alrededor de la Alhambra, consulta el [tour privado de la Alhambra](/es/tour-alhambra-privado/) con antelacion porque las entradas condicionan horarios y recorrido. Para familias, una ruta corta y visual suele funcionar mejor que un itinerario largo.
+
+La clave esta en no mezclar demasiadas zonas el mismo dia. Una buena visita guiada en Granada debe ayudarte a escoger: Alhambra con calma, Albaicin con miradores, Catedral y Capilla Real para entender 1492, o una ruta privada si necesitas adaptar idioma, ritmo o intereses.

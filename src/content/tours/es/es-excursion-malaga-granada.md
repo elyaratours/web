@@ -19,7 +19,7 @@ faq:
     answer: "No. Las entradas a la Alhambra y otros monumentos dependen de disponibilidad. Si no hay entradas, la opcion de Centro Historico y Albaicin es una experiencia completa de Granada."
   - question: "Se puede anadir comida?"
     answer: "Si. Se puede anadir una comida en un restaurante local seleccionado segun disponibilidad, preferencias y presupuesto. No se anuncia un restaurante ni menu fijo por adelantado."
-relatedLandings: ["private-alhambra-tour", "albaicin-guided-walk"]
+relatedLandings: ["granada-day-trips-from-malaga-cordoba", "private-alhambra-tour", "albaicin-guided-walk"]
 seoDescription: "Excursion privada de un dia para grupos desde Malaga o la Costa del Sol a Granada con guia cultural, traslado opcional, Alhambra o Centro Historico y Albaicin, y comida bajo consulta."
 featured: false
 order: 80

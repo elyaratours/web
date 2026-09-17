@@ -46,3 +46,9 @@ Sacromonte makes sense when you want to see Granada through its social and visua
 The best decision depends on date, light, temperature, group energy and interests. That is why it is useful to write before booking and confirm a realistic proposal.
 
 If you want to compare possibilities, start from the [Granada walking tours](/en/granada-walking-tours/) page or write by WhatsApp/email saying whether you prefer viewpoints, urban history, photography, legends or a slower walk.
+
+## How to decide around your trip
+
+Choose only the Albaicin if it is your first time, if you have limited time or if you prefer a route with less climbing. Choose Albaicin and Sacromonte if you want a more landscape-based experience with viewpoints, hillside memory and popular stories, and if the group is comfortable walking more.
+
+For family trips or private groups, the question is not only which neighborhoods to see, but how much effort makes sense. A [private guide in Granada](/en/private-guide-granada/) can adjust stops, language and return timing so the route does not become a climb without context.

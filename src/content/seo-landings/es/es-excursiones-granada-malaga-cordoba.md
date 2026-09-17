@@ -17,6 +17,8 @@ faq:
     answer: "Si. Puedes solicitar una propuesta privada desde Malaga, Costa del Sol o Cordoba indicando fecha, numero de personas, recogida aproximada e intereses."
   - question: "Conviene visitar Alhambra y Albaicin el mismo dia?"
     answer: "Depende de entradas, horarios, transporte y ritmo del grupo. A veces es mejor escoger una experiencia principal y completar con una ruta mas breve."
+  - question: "La excursion es para grupos privados?"
+    answer: "Si. La propuesta se prepara para tu grupo segun ciudad de salida, horarios, transporte, entradas disponibles, idioma e intereses culturales."
 order: 60
 published: true
 ---
@@ -32,3 +34,9 @@ La Alhambra requiere entradas y un ritmo propio. El centro historico con Albaici
 ## Que necesitamos saber
 
 Para preparar una propuesta clara, escribe con ciudad o zona de salida, fecha aproximada, numero de personas, idioma, si necesitas traslado privado y que tipo de Granada quieres vivir. La respuesta llega por WhatsApp o email, sin formulario interno ni pago dentro de la web.
+
+## Malaga, Costa del Sol o Cordoba
+
+Desde Malaga o la Costa del Sol conviene calcular bien recogida, trafico, llegada a Granada y posible regreso. Desde Cordoba, la clave suele estar en coordinar horario de salida, experiencia principal y margen para comer o descansar. En ambos casos, la propuesta funciona mejor si el grupo elige una prioridad clara: [Alhambra privada](/es/tour-alhambra-privado/) cuando haya entradas, o Centro Historico y [Albaicin](/es/visita-guiada-albaicin/) como alternativa completa.
+
+Estas excursiones no son una salida masiva de autobus. Se plantean como consulta privada para ajustar traslado, guia cultural, idioma, ritmo y complementos segun disponibilidad real.

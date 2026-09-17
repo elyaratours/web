@@ -19,7 +19,7 @@ faq:
     answer: "Yes. The day is built around one main Granada experience: Alhambra and Generalife when tickets are available, or Historic Centre and Albaicin as a complete alternative."
   - question: "Why is the price on request?"
     answer: "The final price depends on group size, pickup city, transport, monument tickets, lunch and the selected experience."
-relatedLandings: ["private-alhambra-tour", "albaicin-guided-walk"]
+relatedLandings: ["granada-day-trips-from-malaga-cordoba", "private-alhambra-tour", "albaicin-guided-walk"]
 seoDescription: "Private group day trip from Cordoba to Granada with a cultural guide, optional transfer, Alhambra or Historic Centre and Albaicin experience, local lunch option and tailor-made timing."
 featured: false
 order: 81

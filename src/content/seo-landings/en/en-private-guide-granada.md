@@ -50,3 +50,9 @@ The Albaicin works very well for understanding landscape, water, Moorish memory 
 ## How to book
 
 Write by WhatsApp or email with your approximate date, group size, preferred language and the kind of visit you have in mind. We reply with a clear proposal and, when needed, alternatives based on availability, tickets or group pace.
+
+## Details that help shape the proposal
+
+To plan a private guide in Granada well, mention your approximate starting area, whether you already have Alhambra tickets, if you are traveling with children or slower walkers, and whether you care most about history, photography, legends, heritage or a first orientation of the city.
+
+With that information, the visit can point toward the [Albaicin](/en/albaicin-guided-walk/), Cathedral and Royal Chapel, historic center, or a [private Alhambra tour](/en/private-alhambra-tour/) if real availability allows it.

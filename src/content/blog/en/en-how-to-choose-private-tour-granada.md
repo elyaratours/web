@@ -51,3 +51,9 @@ To compare formats before deciding, also read the guide to [free tour or private
 If this is your first time in Granada, a good combination might be an Albaicin route to understand the urban landscape and another visit focused on the Alhambra or historic Granada. If you already know the city, a themed route may make more sense: viewpoints and legends, Granada between two worlds, or a slower reading of the city after 1492.
 
 The important thing is that the visit should not feel interchangeable. Granada has layers, silences and details. A private tour should help you read them calmly.
+
+## Checklist before asking for a proposal
+
+Before writing, prepare four details: approximate date, group size, preferred language and the group's priority. That priority may be orientation on the first day, going deeper into the Alhambra, walking the Albaicin, visiting the Cathedral and Royal Chapel or adapting a route for children.
+
+It also helps to say what you do not want: too many hills, long visits, very early timings, too many monuments or an explanation that feels too technical. With those limits, the proposal can be clearer and more useful from the first message.

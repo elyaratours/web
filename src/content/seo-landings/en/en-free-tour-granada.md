@@ -17,6 +17,8 @@ faq:
     answer: "No. The website does not include an internal checkout or payment flow. You can write by WhatsApp or email to ask about routes, availability and booking conditions."
   - question: "What is the difference between a free tour and a private route?"
     answer: "A free tour is usually a more open format. A private route can adapt language, pace, focus and group interests before the visit is confirmed."
+  - question: "How should I choose if I want historical context?"
+    answer: "Compare duration, group size, language, room for questions and route depth. If you want to adapt the visit, ask about a private route or private guide."
 order: 20
 ---
 
@@ -41,3 +43,9 @@ If your priority is orientation on the first day, a general visit may be enough.
 ## Cultural alternatives
 
 A private route or cultural guided visit may be a better fit if you travel with family, need a specific language, have limited time or want to connect the Albaicin, historic center, Alhambra or viewpoints through a more personalized narrative.
+
+## What to do after comparing
+
+If you want a first orientation, review [Granada walking tours](/en/granada-walking-tours/) and the [Albaicin guided walk](/en/albaicin-guided-walk/). If you need a visit shaped around your group, a [private guide in Granada](/en/private-guide-granada/) lets you decide language, pace and focus before confirming.
+
+The inquiry starts by WhatsApp or email. It helps to mention date, group size, language and whether you prefer a general route, a private visit or a proposal focused on the Alhambra, Albaicin, historic center or viewpoints.
