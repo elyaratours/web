@@ -8,7 +8,7 @@ category: "route-inspiration"
 publishedDate: "2026-09-10"
 image: "/images/alhambra-route.webp"
 imageAlt: "Alhambra patios and architecture while planning a private tour"
-author: "Elyara Tours Granada"
+author: "Laura Hdez. León"
 seoDescription: "Guide to deciding when to book a private Alhambra tour in Granada, with advice on pace, tickets, language, context and guided visits."
 relatedTours:
   - "alhambra"

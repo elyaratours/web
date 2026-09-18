@@ -8,7 +8,7 @@ category: "route-inspiration"
 publishedDate: "2026-09-08"
 image: "/images/alhambra-clouds.jpeg"
 imageAlt: "The Alhambra and Granada while planning what to see on a first day"
-author: "Elyara Tours Granada"
+author: "Laura Hdez. León"
 seoDescription: "Guide to what to see in Granada on your first day, including the Albaicin, viewpoints, historic center, Alhambra and calm guided routes."
 relatedTours:
   - "albaicin"

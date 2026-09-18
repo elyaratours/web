@@ -9,7 +9,7 @@ publishedDate: "2026-08-20"
 image: "/images/sunset.jpeg"
 imagePosition: "center bottom"
 imageAlt: "Sunset over the Albaicin and Granada"
-author: "Elyara Tours Granada"
+author: "Laura Hdez. León"
 seoDescription: "Tips for walking through Granada's Albaicin at sunset, with viewpoints, quiet streets and a slower way to experience the historic neighborhood."
 relatedTours:
   - "albaicin"

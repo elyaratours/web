@@ -8,7 +8,7 @@ category: "curiosity"
 publishedDate: "2026-08-18"
 image: "/images/granada-pomegranates.jpeg"
 imageAlt: "Pomegranate tree with fruit in a Granada garden"
-author: "Elyara Tours Granada"
+author: "Laura Hdez. León"
 seoDescription: "Curious note about the pomegranate symbol in Granada, its presence across the historic city and its connection with local identity."
 relatedTours:
   - "granada-new-world"

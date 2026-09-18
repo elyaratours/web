@@ -8,7 +8,7 @@ category: "recommendation"
 publishedDate: "2026-09-10"
 image: "/images/granada-main-route.webp"
 imageAlt: "Calles de Granada para comparar free tour y tour privado"
-author: "Elyara Tours Granada"
+author: "Laura Hdez. León"
 seoDescription: "Comparativa entre free tour y tour privado en Granada para elegir segun presupuesto, idioma, ritmo, grupo, Alhambra, Albaicin y centro historico."
 relatedTours:
   - "albaicin"

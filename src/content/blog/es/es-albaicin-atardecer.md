@@ -9,7 +9,7 @@ publishedDate: "2026-08-20"
 image: "/images/sunset.jpeg"
 imagePosition: "center bottom"
 imageAlt: "Atardecer sobre el Albaicin y Granada"
-author: "Elyara Tours Granada"
+author: "Laura Hdez. León"
 seoDescription: "Recomendaciones para pasear por el Albaicin de Granada al atardecer, con miradores, calles tranquilas y claves para disfrutar el barrio con calma."
 relatedTours:
   - "albaicin"

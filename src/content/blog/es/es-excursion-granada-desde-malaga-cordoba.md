@@ -8,7 +8,7 @@ category: "recommendation"
 publishedDate: "2026-09-09"
 image: "/images/day-trip-malaga-granada.webp"
 imageAlt: "Vista de Granada para preparar una excursion desde Malaga o Cordoba"
-author: "Elyara Tours Granada"
+author: "Laura Hdez. León"
 seoDescription: "Consejos para organizar una excursion de un dia a Granada desde Malaga o Cordoba, elegir Alhambra, centro historico, Albaicin y ritmo realista."
 relatedTours:
   - "day-trip-malaga-granada"

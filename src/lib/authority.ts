@@ -9,6 +9,7 @@ import {
   getWhatsAppReservationUrl,
   type Locale,
 } from './i18n';
+import { getGuideAuthorityPath, getGuideProfileContent } from './guide';
 import { absoluteUrl, businessEntityId, websiteEntityId, type JsonLdNode } from './seo';
 import { getTourPath, getPublishedTourEntries } from './tours';
 
@@ -29,6 +30,8 @@ export const authorityContent = {
     factsTitle: 'Datos publicos de Elyara',
     facts: [
       'Nombre publico: Elyara Tours Granada',
+      `Guía: ${getGuideProfileContent('es').publicName}`,
+      getGuideProfileContent('es').role,
       'Zona de servicio: Granada y rutas conectadas desde Malaga o Cordoba bajo consulta',
       'Idiomas de atencion: espanol e ingles',
       'Enfoque: rutas culturales a pie, Alhambra, Albaicin, centro historico, miradores y propuestas privadas',
@@ -60,6 +63,8 @@ export const authorityContent = {
     factsTitle: 'Public Elyara details',
     facts: [
       'Public name: Elyara Tours Granada',
+      `Guide: ${getGuideProfileContent('en').publicName}`,
+      getGuideProfileContent('en').role,
       'Service area: Granada and connected routes from Malaga or Cordoba on request',
       'Visitor languages: English and Spanish',
       'Focus: cultural walking routes, Alhambra, Albaicin, historic center, viewpoints and private proposals',
@@ -104,7 +109,7 @@ export function getAuthorityContent(locale: Locale) {
 }
 
 export function getAuthorityPath(locale: Locale) {
-  return `/${locale}/${authorityContent[locale].routeSlug}/`;
+  return getGuideAuthorityPath(locale);
 }
 
 export function getAuthorityAlternates() {

@@ -8,7 +8,7 @@ category: "route-inspiration"
 publishedDate: "2026-09-07"
 image: "/images/granada-main-route.webp"
 imageAlt: "Granada and the Alhambra seen from a viewpoint while planning a private tour"
-author: "Elyara Tours Granada"
+author: "Laura Hdez. León"
 seoDescription: "Guide to choosing a private tour in Granada based on pace, language, cultural focus, neighborhoods, monuments and direct booking by WhatsApp or email."
 relatedTours:
   - "albaicin"

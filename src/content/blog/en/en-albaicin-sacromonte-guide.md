@@ -8,7 +8,7 @@ category: "route-inspiration"
 publishedDate: "2026-09-09"
 image: "/images/almagranada.jpg"
 imageAlt: "White Albaicin lane for planning a route through Granada's historic neighborhoods"
-author: "Elyara Tours Granada"
+author: "Laura Hdez. León"
 seoDescription: "Tips for choosing a guided walk through Granada's Albaicin and Sacromonte with viewpoints, urban history, pace and cultural context."
 relatedTours:
   - "albaicin"

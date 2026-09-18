@@ -8,7 +8,7 @@ category: "route-inspiration"
 publishedDate: "2026-09-09"
 image: "/images/almagranada.jpg"
 imageAlt: "Calle blanca del Albaicin para preparar una ruta por barrios historicos"
-author: "Elyara Tours Granada"
+author: "Laura Hdez. León"
 seoDescription: "Consejos para elegir una ruta guiada por el Albaicin y el Sacromonte de Granada con miradores, historia urbana, ritmo y contexto cultural."
 relatedTours:
   - "albaicin"

@@ -8,7 +8,7 @@ category: "history"
 publishedDate: "2026-09-09"
 image: "/images/catedral-capilla-real-route.webp"
 imageAlt: "Interior of Granada Cathedral for preparing a cultural visit"
-author: "Elyara Tours Granada"
+author: "Laura Hdez. León"
 seoDescription: "Cultural guide to Granada Cathedral and the Royal Chapel, explaining their historical, artistic and urban role before a guided visit."
 relatedTours:
   - "cathedral-royal-chapel"

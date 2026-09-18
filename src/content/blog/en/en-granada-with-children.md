@@ -8,7 +8,7 @@ category: "recommendation"
 publishedDate: "2026-09-09"
 image: "/images/ninos-granada-route.webp"
 imageAlt: "Children observing a fountain during a family visit in Granada"
-author: "Elyara Tours Granada"
+author: "Laura Hdez. León"
 seoDescription: "Tips for visiting Granada with children: short routes, calm pace, visual stops, historic center context and adapted family visits."
 relatedTours:
   - "granada-family-kids"

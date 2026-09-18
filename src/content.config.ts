@@ -1,6 +1,7 @@
 import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
+import { guidePublicName } from './lib/guide';
 
 const tours = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/tours' }),
@@ -63,7 +64,7 @@ const blog = defineCollection({
     image: z.string().startsWith('/images/').optional(),
     imagePosition: z.enum(['center', 'top', 'bottom', 'left', 'right', 'center top', 'center bottom']).optional(),
     imageAlt: z.string().min(1).optional(),
-    author: z.string().min(1).default('Elyara Tours Granada'),
+    author: z.string().min(1).default(guidePublicName),
     seoDescription: z.string().min(50),
     relatedTours: z.array(z.string().min(1)).default([]),
     relatedLandings: z.array(z.string().min(1)).default([]),

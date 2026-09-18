@@ -8,7 +8,7 @@ category: "recommendation"
 publishedDate: "2026-09-10"
 image: "/images/granada-main-route.webp"
 imageAlt: "Granada streets while comparing a free tour and a private tour"
-author: "Elyara Tours Granada"
+author: "Laura Hdez. León"
 seoDescription: "Comparison between free tours and private tours in Granada, with advice on budget, language, pace, group needs, Alhambra, Albaicin and historic center."
 relatedTours:
   - "albaicin"

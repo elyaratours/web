@@ -1,10 +1,11 @@
 ---
-import { ArrowRight, Mail, MapPinned, MessageCircle } from '@lucide/astro';
+import { ArrowRight, CircleCheck, Mail, MapPinned, MessageCircle } from '@lucide/astro';
 import ReservationCalendar from '@/components/ReservationCalendar.astro';
 import TailorMadeHomeSection from '@/components/TailorMadeHomeSection.astro';
 import TourCard from '@/components/TourCard.astro';
 import TravelerProof from '@/components/TravelerProof.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import { getGuideAuthorityPath, getGuideProfileContent } from '@/lib/guide';
 import { getEmailReservationUrl, getLocaleConfig, getWhatsAppReservationUrl, locales, type Locale } from '@/lib/i18n';
 import { createItemListJsonLd, productionSiteUrl } from '@/lib/seo';
 import { getSeoLandingPath, getSeoLandingsByKeys } from '@/lib/seo-landings';
@@ -16,6 +17,7 @@ export function getStaticPaths() {
 
 const { locale } = Astro.props as { locale: Locale };
 const copy = getLocaleConfig(locale);
+const guide = getGuideProfileContent(locale);
 const tours = await getPublishedTours(locale);
 const kidsTours = await getPublishedKidsTours(locale);
 const homeCardTours = tours.filter((tour) => tour.data.translationKey !== 'cathedral-royal-chapel');
@@ -97,6 +99,13 @@ const jsonLd = [
           </div>
         </div>
       </div>
+      <a href={getGuideAuthorityPath(locale)} class="card flex items-start gap-4 p-5 transition hover:-translate-y-0.5 hover:border-alhambra-clay/30 sm:p-6">
+        <span class="rounded-2xl bg-alhambra-clay/10 p-3 text-alhambra-clay"><CircleCheck class="h-6 w-6" aria-hidden="true" /></span>
+        <span>
+          <span class="block font-serif text-2xl font-bold text-alhambra-night">{guide.homeTrustTitle}</span>
+          <span class="mt-2 block text-sm leading-7 text-slate-700">{guide.homeTrustText}</span>
+        </span>
+      </a>
     </div>
   </section>
 

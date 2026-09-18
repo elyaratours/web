@@ -1,5 +1,6 @@
 import type { TourEntry } from './tours';
 import type { BlogEntry } from './blog';
+import { getGuideAuthorityPath, getGuideProfileContent, guidePublicName, isGuideAuthor } from './guide';
 import { contactEmail, googleBusinessProfileUrl, instagramUrl, whatsappDisplayNumber, whatsappNumber, type Locale } from './i18n';
 
 export const siteName = 'Elyara Tours Granada';
@@ -87,6 +88,10 @@ export function businessEntityId(site: URL) {
   return entityId('/', 'business', site);
 }
 
+export function guidePersonEntityId(site: URL) {
+  return entityId('/es/sobre-elyara/', 'guide-laura-hdez-leon', site);
+}
+
 export function websiteEntityId(site: URL) {
   return entityId('/', 'website', site);
 }
@@ -165,7 +170,7 @@ export function createBusinessJsonLd(site: URL) {
     },
     serviceArea: {
       '@type': 'AdministrativeArea',
-      name: 'Granada, Andalusia, Spain',
+      name: 'Granada, Spain',
     },
     knowsLanguage: ['es', 'en'],
     availableLanguage: ['Spanish', 'English'],
@@ -205,6 +210,37 @@ export function createWebsiteJsonLd(site: URL) {
     url: absoluteUrl('/', site),
     publisher: { '@id': businessEntityId(site) },
     inLanguage: ['es', 'en'],
+  } satisfies JsonLdNode;
+}
+
+export function createGuidePersonJsonLd(locale: Locale, site: URL) {
+  const guide = getGuideProfileContent(locale);
+
+  return {
+    '@type': 'Person',
+    '@id': guidePersonEntityId(site),
+    name: guide.publicName,
+    jobTitle: guide.role,
+    description: guide.structuredDescription,
+    url: absoluteUrl(getGuideAuthorityPath(locale), site),
+    worksFor: { '@id': businessEntityId(site) },
+    affiliation: { '@id': businessEntityId(site) },
+    knowsLanguage: guide.structuredLanguages,
+    knowsAbout: guide.knowsAbout,
+    hasCredential: [
+      {
+        '@type': 'EducationalOccupationalCredential',
+        name: guide.credential,
+      },
+      {
+        '@type': 'EducationalOccupationalCredential',
+        name: guide.education,
+      },
+      {
+        '@type': 'EducationalOccupationalCredential',
+        name: guide.training,
+      },
+    ],
   } satisfies JsonLdNode;
 }
 
@@ -287,6 +323,7 @@ export function createTourJsonLd(tour: TourEntry, site: URL) {
 
 export function createArticleJsonLd(post: BlogEntry, site: URL) {
   const url = absoluteUrl(`/${post.data.locale}/blog/${post.data.postSlug}/`, site);
+  const authorIsGuide = isGuideAuthor(post.data.author);
 
   return {
     '@type': 'BlogPosting',
@@ -299,11 +336,18 @@ export function createArticleJsonLd(post: BlogEntry, site: URL) {
     datePublished: post.data.publishedDate.toISOString(),
     dateModified: (post.data.updatedDate ?? post.data.publishedDate).toISOString(),
     inLanguage: post.data.locale,
-    author: {
-      '@type': 'Organization',
-      name: post.data.author,
-      url: absoluteUrl('/', site),
-    },
+    author: authorIsGuide
+      ? {
+          '@type': 'Person',
+          '@id': guidePersonEntityId(site),
+          name: guidePublicName,
+          url: absoluteUrl(getGuideAuthorityPath(post.data.locale), site),
+        }
+      : {
+          '@type': 'Organization',
+          name: post.data.author,
+          url: absoluteUrl('/', site),
+        },
     publisher: {
       '@id': businessEntityId(site),
     },

@@ -8,7 +8,7 @@ category: "route-inspiration"
 publishedDate: "2026-09-10"
 image: "/images/alhambra-clouds.jpeg"
 imageAlt: "Vista de la Alhambra y Granada para planificar dos dias de visita"
-author: "Elyara Tours Granada"
+author: "Laura Hdez. León"
 seoDescription: "Itinerario para ver Granada en dos dias con Alhambra, Albaicin, centro historico, miradores, visitas guiadas privadas y ritmo realista."
 relatedTours:
   - "alhambra"

@@ -8,7 +8,7 @@ category: "recommendation"
 publishedDate: "2026-09-09"
 image: "/images/ninos-granada-route.webp"
 imageAlt: "Ninos observando una fuente durante una visita familiar por Granada"
-author: "Elyara Tours Granada"
+author: "Laura Hdez. León"
 seoDescription: "Consejos para visitar Granada con ninos: rutas cortas, ritmo tranquilo, paradas visuales, Centro Historico y visitas familiares adaptadas."
 relatedTours:
   - "granada-family-kids"

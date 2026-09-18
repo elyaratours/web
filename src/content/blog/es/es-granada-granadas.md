@@ -8,7 +8,7 @@ category: "curiosity"
 publishedDate: "2026-08-18"
 image: "/images/granada-pomegranates.jpeg"
 imageAlt: "Granado con frutos en un jardin de Granada"
-author: "Elyara Tours Granada"
+author: "Laura Hdez. León"
 seoDescription: "Dato curioso sobre el simbolo de la granada en Granada, su presencia en la ciudad historica y su relacion con la identidad local."
 relatedTours:
   - "granada-new-world"

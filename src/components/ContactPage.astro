@@ -2,6 +2,7 @@
 import { ArrowLeft, CircleCheck, Mail, MessageCircle } from '@lucide/astro';
 import FaqSection from '@/components/FaqSection.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import { getGuideAuthorityPath, getGuideProfileContent } from '@/lib/guide';
 import {
   contactEmail,
   getContactContent,
@@ -22,6 +23,7 @@ interface Props {
 
 const { locale } = Astro.props;
 const content = getContactContent(locale);
+const guide = getGuideProfileContent(locale);
 const alternates = locales.map((item) => ({ locale: item, path: getContactPath(item) }));
 const contactImage = '/images/Contacto.png';
 const site = Astro.site ?? new URL(productionSiteUrl);
@@ -63,6 +65,15 @@ const jsonLd = [
       <div class="card overflow-hidden p-3 sm:p-4">
         <img src={contactImage} alt={content.imageAlt} width="1200" height="800" decoding="async" fetchpriority="high" class="h-64 w-full rounded-[1.25rem] object-cover sm:h-[24rem] sm:rounded-[1.5rem]" />
       </div>
+    </section>
+
+    <section class="mt-10 card grid gap-5 p-5 sm:mt-12 sm:grid-cols-[1fr_auto] sm:items-center sm:p-8">
+      <div>
+        <p class="eyebrow">{guide.profileEyebrow}</p>
+        <h2 class="mt-3 font-serif text-2xl font-bold text-alhambra-night sm:text-3xl">{guide.contactTrustTitle}</h2>
+        <p class="mt-4 leading-8 text-slate-700">{guide.contactTrustText}</p>
+      </div>
+      <a class="btn-secondary w-full sm:w-auto" href={getGuideAuthorityPath(locale)}>{guide.contactTrustCta}</a>
     </section>
 
     <section class="mt-10 grid gap-4 sm:mt-12 sm:gap-6 md:grid-cols-2 xl:grid-cols-4">

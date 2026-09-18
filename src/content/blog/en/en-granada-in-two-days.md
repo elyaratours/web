@@ -8,7 +8,7 @@ category: "route-inspiration"
 publishedDate: "2026-09-10"
 image: "/images/alhambra-clouds.jpeg"
 imageAlt: "View of the Alhambra and Granada while planning a two-day visit"
-author: "Elyara Tours Granada"
+author: "Laura Hdez. León"
 seoDescription: "Two-day Granada itinerary with the Alhambra, Albaicin, historic center, viewpoints, private guided visits and realistic pacing."
 relatedTours:
   - "alhambra"
