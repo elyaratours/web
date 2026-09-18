@@ -6,11 +6,12 @@ heading: "Private Alhambra tour with history, symbolism and a calm pace"
 routeSlug: "private-alhambra-tour"
 intro: "A private or personalized Alhambra visit helps you slow down, understand symbols, water, architecture and power, and shape the route around your group when access and availability allow it. It is designed for travelers who want cultural context and a more flexible conversation."
 seoDescription: "Private Alhambra tour in Granada with cultural focus, symbolism, architecture, gardens, ticket availability by inquiry and WhatsApp booking."
+updatedDate: "2026-09-18"
 targetIntent: "private Alhambra tour, guided Alhambra visit Granada and private Alhambra guide"
 image: "/images/alhambra-route.webp"
 imageAlt: "Alhambra courtyards and architecture for a private cultural visit"
 relatedTours: ["alhambra", "alhambra-beyond-palaces", "granada-new-world"]
-relatedArticles: ["private-alhambra-tour-worth-it", "granada-two-days-itinerary", "private-tour-granada-guide", "first-day-granada", "albaicin-sacromonte-guide"]
+relatedArticles: ["private-alhambra-guide-cost", "alhambra-tickets-sold-out", "private-alhambra-tour-worth-it", "granada-two-days-itinerary", "private-tour-granada-guide", "first-day-granada", "albaicin-sacromonte-guide"]
 relatedLandings: ["guided-visits-granada", "private-guide-granada", "free-tour-granada", "granada-day-trips-from-malaga-cordoba"]
 faq:
   - question: "Are Alhambra tickets included?"
@@ -31,6 +32,8 @@ The Alhambra is not only beautiful architecture. It is a set of spaces where wat
 The experience can focus on Nasrid history, symbols, gardens, viewpoints, daily life or later transformations. It can also connect with another Granada route so the palace city is understood alongside the Albaicin, the historic center or Christian Granada.
 
 Before booking, it is useful to clarify date, group size, language, available tickets and expectations. From there, a realistic visit can be suggested without promising impossible access or moving the process into an internal payment system.
+
+If you are comparing options before writing, these guides can help: [how much a private Alhambra guide costs](/en/blog/private-alhambra-guide-cost/) and [what to do when Alhambra tickets are sold out](/en/blog/alhambra-tickets-sold-out-what-to-do/).
 
 ## Tickets and availability
 

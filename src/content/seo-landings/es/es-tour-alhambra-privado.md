@@ -6,11 +6,12 @@ heading: "Tour privado de la Alhambra con contexto historico y ritmo tranquilo"
 routeSlug: "tour-alhambra-privado"
 intro: "Una visita privada o personalizada a la Alhambra permite mirar sus espacios con calma, entender simbolos, agua, arquitectura y poder, y adaptar el recorrido al grupo cuando la disponibilidad lo permite. Es una opcion pensada para quienes quieren contexto cultural y una conversacion mas flexible."
 seoDescription: "Tour privado de la Alhambra en Granada con enfoque cultural, simbolos, arquitectura, jardines, entradas bajo consulta y reserva por WhatsApp."
+updatedDate: "2026-09-18"
 targetIntent: "tour privado Alhambra, visita guiada Alhambra Granada y guia privada Alhambra"
 image: "/images/alhambra-route.webp"
 imageAlt: "Patios y arquitectura de la Alhambra para una visita privada cultural"
 relatedTours: ["alhambra", "alhambra-beyond-palaces", "granada-new-world"]
-relatedArticles: ["private-alhambra-tour-worth-it", "granada-two-days-itinerary", "private-tour-granada-guide", "first-day-granada", "albaicin-sacromonte-guide"]
+relatedArticles: ["private-alhambra-guide-cost", "alhambra-tickets-sold-out", "private-alhambra-tour-worth-it", "granada-two-days-itinerary", "private-tour-granada-guide", "first-day-granada", "albaicin-sacromonte-guide"]
 relatedLandings: ["guided-visits-granada", "private-guide-granada", "free-tour-granada", "granada-day-trips-from-malaga-cordoba"]
 faq:
   - question: "La entrada a la Alhambra esta incluida?"
@@ -31,6 +32,8 @@ La Alhambra no se entiende solo por la belleza de sus patios. Es un conjunto de 
 La experiencia puede centrarse en simbolos, historia nazari, jardines, miradores, vida cotidiana o transformaciones posteriores. Tambien puede combinarse con otra lectura de Granada para conectar la ciudad palatina con el Albaicin, el centro historico o la Granada cristiana.
 
 Antes de reservar conviene aclarar fecha, numero de personas, idioma, entradas disponibles y expectativas del grupo. A partir de ahi se puede proponer una visita realista, sin prometer accesos imposibles ni procesos de pago dentro de la web.
+
+Si estas comparando antes de escribir, pueden ayudarte estas guias: [cuanto cuesta una guia privada para la Alhambra](/es/blog/cuanto-cuesta-guia-privado-alhambra/) y [que hacer si no hay entradas para la Alhambra](/es/blog/alhambra-entradas-agotadas-que-hacer/).
 
 ## Entradas y disponibilidad
 

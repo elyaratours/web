@@ -92,7 +92,7 @@ export async function GET() {
     }))),
     ...tours.map((tour) => ({
       path: getTourPath(tour),
-      lastmod: siteContentLastmod,
+      lastmod: tour.data.updatedDate ?? siteContentLastmod,
       changefreq: 'monthly' as const,
       priority: tour.data.category === 'day-trip' ? '0.8' : '0.9',
       alternates: tourGroups.get(tour.data.translationKey)?.map((item) => ({ locale: item.data.locale, path: getTourPath(item) })),
@@ -106,7 +106,7 @@ export async function GET() {
     })),
     ...seoLandings.map((landing) => ({
       path: getSeoLandingPath(landing),
-      lastmod: siteContentLastmod,
+      lastmod: landing.data.updatedDate ?? siteContentLastmod,
       changefreq: 'monthly' as const,
       priority: '0.8',
       alternates: seoLandingGroups.get(landing.data.translationKey)?.map((item) => ({ locale: item.data.locale, path: getSeoLandingPath(item) })),
