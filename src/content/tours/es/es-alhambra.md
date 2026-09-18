@@ -4,7 +4,7 @@ translationKey: alhambra
 title: "Alhambra: símbolos, poder y belleza"
 routeSlug: "alhambra"
 duration: "3 horas"
-price: "Desde 40 EUR"
+price: "Desde 150 EUR por grupo, entradas no incluidas"
 languages:
   - "Espanol"
   - "English"
