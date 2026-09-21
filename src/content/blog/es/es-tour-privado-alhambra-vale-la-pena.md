@@ -1,15 +1,15 @@
 ---
 locale: es
 translationKey: private-alhambra-tour-worth-it
-title: "Tour privado por la Alhambra: cuando merece la pena"
+title: "Cuando merece la pena visitar la Alhambra con guia privada"
 postSlug: "tour-privado-alhambra-vale-la-pena"
-excerpt: "Un tour privado por la Alhambra merece la pena cuando quieres ajustar ritmo, idioma, contexto historico y preguntas sin convertir la visita en una explicacion generica."
+excerpt: "Una visita a la Alhambra con guia privada puede tener sentido cuando quieres ajustar ritmo, idioma, contexto historico y preguntas sin convertir el recorrido en una explicacion generica."
 category: "route-inspiration"
 publishedDate: "2026-09-10"
 image: "/images/alhambra-route.webp"
 imageAlt: "Patios y arquitectura de la Alhambra para preparar un tour privado"
 author: "Laura Hdez. León"
-seoDescription: "Guia para decidir cuando reservar un tour privado por la Alhambra de Granada, con consejos sobre ritmo, entradas, idioma, contexto y visita guiada."
+seoDescription: "Criterios para decidir si te conviene visitar la Alhambra con guia privada: ritmo, entradas, idioma, contexto cultural y expectativas del grupo."
 relatedTours:
   - "alhambra"
   - "alhambra-beyond-palaces"
@@ -22,7 +22,7 @@ order: 1
 published: true
 ---
 
-La Alhambra puede visitarse de muchas formas, pero no todas funcionan igual para todos los viajeros. Un tour privado por la Alhambra merece la pena cuando no quieres limitarte a seguir un relato estandar, sino entender el monumento con un ritmo adaptado a tu grupo, tus dudas y tu forma de mirar.
+La Alhambra puede visitarse de muchas formas, pero no todas funcionan igual para todos los viajeros. Una guia privada merece la pena cuando no quieres limitarte a seguir un relato estandar, sino entender el monumento con un ritmo adaptado a tu grupo, tus dudas y tu forma de mirar.
 
 La primera ventaja es el ritmo. La Alhambra combina palacios, patios, jardines, accesos, desniveles y tiempos de entrada que conviene respetar. En una visita privada es mas facil ajustar las pausas, detenerse ante un detalle concreto o avanzar cuando el grupo ya ha entendido una idea. Esto ayuda especialmente si viajas con familia, personas mayores, estudiantes, fotografos o un grupo que necesita explicaciones en ingles y espanol.
 
@@ -30,7 +30,7 @@ Tambien importa el enfoque. Hay viajeros que quieren arte nazari y arquitectura;
 
 ## Entradas y expectativas
 
-Un guia privado no sustituye la necesidad de entradas cuando el recorrido incluye espacios con aforo o horario propio. Antes de reservar, conviene confirmar que entradas tienes, a que hora accedes a Palacios Nazaries si corresponde y cuanto tiempo real quieres dedicar al conjunto. Si todavia no sabes que formato elegir, puedes partir de la pagina de [tour privado por la Alhambra](/es/tour-alhambra-privado/) y escribir con fecha, numero de personas e idioma preferido.
+Un guia privado no sustituye la necesidad de entradas cuando el recorrido incluye espacios con aforo o horario propio. Antes de reservar, conviene confirmar que entradas tienes, a que hora accedes a Palacios Nazaries si corresponde y cuanto tiempo real quieres dedicar al conjunto. Si todavia no sabes que formato elegir, puedes partir de la pagina de [visita privada a la Alhambra](/es/tour-alhambra-privado/) y escribir con fecha, numero de personas e idioma preferido.
 
 La visita privada tambien puede tener sentido si ya conoces la Alhambra y quieres una lectura distinta. En ese caso, una ruta centrada en simbolos, miradores, agua o relacion con la ciudad puede ser mas interesante que repetir el mismo itinerario monumental.
 

@@ -34,4 +34,4 @@ La ruta encaja especialmente bien con viajeros que quieren ir mas alla de la fot
 
 La Alhambra requiere entradas nominativas y horarios concretos, por eso una consulta por WhatsApp o email no es una confirmacion automatica. Primero revisamos fecha, numero de personas, idioma, tipo de entrada disponible y expectativas del grupo. Si necesitas una alternativa porque no hay acceso a determinados espacios, tambien podemos orientar la visita hacia otros recorridos historicos de Granada.
 
-Si estas comparando opciones, esta pagina se relaciona con la landing de [tour privado de la Alhambra](/es/tour-alhambra-privado/) y con las [visitas guiadas en Granada](/es/visitas-guiadas-granada/). Para grupos con intereses muy concretos, la pagina de [viajes a medida](/es/viajes-a-medida/) permite plantear una ruta mas personalizada.
+Si estas comparando opciones, esta ficha se relaciona con la [visita privada a la Alhambra](/es/tour-alhambra-privado/) y con las [visitas guiadas en Granada](/es/visitas-guiadas-granada/). Para grupos con intereses muy concretos, la pagina de [viajes a medida](/es/viajes-a-medida/) permite plantear una ruta mas personalizada.

@@ -55,4 +55,4 @@ Escribenos por WhatsApp o email con la fecha aproximada, numero de personas, idi
 
 Para orientar bien una guia privada en Granada conviene indicar alojamiento o zona de inicio aproximada, si ya tienes entradas a la Alhambra, si viajas con ninos o personas que prefieren caminar despacio, y si te interesa mas historia, fotografia, leyendas, patrimonio o una primera orientacion de la ciudad.
 
-Con esa informacion se puede recomendar una visita por el [Albaicin](/es/visita-guiada-albaicin/), una ruta por Catedral y Capilla Real, una lectura del centro historico o una propuesta centrada en la [Alhambra privada](/es/tour-alhambra-privado/) si hay disponibilidad real.
+Con esa informacion se puede recomendar una visita por el [Albaicin](/es/visita-guiada-albaicin/), una ruta por Catedral y Capilla Real, una lectura del centro historico o una propuesta privada centrada en la [Alhambra](/es/tour-alhambra-privado/) si hay disponibilidad real.

@@ -1,13 +1,13 @@
 ---
 locale: es
 translationKey: private-alhambra-tour
-title: "Tour privado de la Alhambra en Granada"
-heading: "Tour privado de la Alhambra con contexto historico y ritmo tranquilo"
+title: "Tour privado de la Alhambra | Guía oficial en Granada"
+heading: "Tour privado de la Alhambra en Granada"
 routeSlug: "tour-alhambra-privado"
-intro: "Una visita privada o personalizada a la Alhambra permite mirar sus espacios con calma, entender simbolos, agua, arquitectura y poder, y adaptar el recorrido al grupo cuando la disponibilidad lo permite. Es una opcion pensada para quienes quieren contexto cultural y una conversacion mas flexible."
-seoDescription: "Tour privado de la Alhambra en Granada con enfoque cultural, simbolos, arquitectura, jardines, entradas bajo consulta y reserva por WhatsApp."
-updatedDate: "2026-09-18"
-targetIntent: "tour privado Alhambra, visita guiada Alhambra Granada y guia privada Alhambra"
+intro: "Reserva una visita privada a la Alhambra con guia oficial en Granada, pensada para tu grupo y adaptada a idioma, ritmo e intereses siempre segun entradas y disponibilidad real. La consulta empieza por WhatsApp o email para revisar fecha, personas y condiciones antes de confirmar."
+seoDescription: "Reserva una visita privada a la Alhambra con guía oficial en Granada. Recorrido adaptado a tu grupo, en español o inglés, según entradas y disponibilidad."
+updatedDate: "2026-09-21"
+targetIntent: "tour privado Alhambra, visita privada Alhambra y guia oficial Alhambra Granada"
 image: "/images/alhambra-route.webp"
 imageAlt: "Patios y arquitectura de la Alhambra para una visita privada cultural"
 relatedTours: ["alhambra", "alhambra-beyond-palaces", "granada-new-world"]
@@ -27,7 +27,7 @@ faq:
 order: 30
 ---
 
-La Alhambra no se entiende solo por la belleza de sus patios. Es un conjunto de espacios donde arquitectura, agua, paisaje y poder construyen un relato complejo. Un tour privado permite detenerse mas en los detalles, preguntar y adaptar el ritmo sin convertir la visita en una carrera.
+La Alhambra no se entiende solo por la belleza de sus patios. Es un conjunto de espacios donde arquitectura, agua, paisaje y poder construyen un relato complejo. Una visita privada permite reservar tiempo para tu grupo, detenerse en los detalles, preguntar y adaptar el ritmo sin convertir el recorrido en una carrera.
 
 La experiencia puede centrarse en simbolos, historia nazari, jardines, miradores, vida cotidiana o transformaciones posteriores. Tambien puede combinarse con otra lectura de Granada para conectar la ciudad palatina con el Albaicin, el centro historico o la Granada cristiana.
 

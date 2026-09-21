@@ -56,6 +56,6 @@ La reserva se confirma por WhatsApp o email. Indica fecha, numero de personas, i
 
 ## Itinerarios recomendados segun intereses
 
-Si buscas una visita cultural general, empieza por el [Albaicin](/es/visita-guiada-albaicin/) o el centro historico para leer la ciudad desde sus calles. Si el viaje gira alrededor de la Alhambra, consulta el [tour privado de la Alhambra](/es/tour-alhambra-privado/) con antelacion porque las entradas condicionan horarios y recorrido. Para familias, una ruta corta y visual suele funcionar mejor que un itinerario largo.
+Si buscas una visita cultural general, empieza por el [Albaicin](/es/visita-guiada-albaicin/) o el centro historico para leer la ciudad desde sus calles. Si el viaje gira alrededor de la Alhambra, consulta la [visita privada a la Alhambra](/es/tour-alhambra-privado/) con antelacion porque las entradas condicionan horarios y recorrido. Para familias, una ruta corta y visual suele funcionar mejor que un itinerario largo.
 
 La clave esta en no mezclar demasiadas zonas el mismo dia. Una buena visita guiada en Granada debe ayudarte a escoger: Alhambra con calma, Albaicin con miradores, Catedral y Capilla Real para entender 1492, o una ruta privada si necesitas adaptar idioma, ritmo o intereses.

@@ -39,7 +39,7 @@ Tambien cambia la gestion del tiempo. Si solo tienes medio dia, un tour privado 
 
 Elige un formato abierto si buscas una orientacion sencilla y no necesitas adaptar la experiencia. Elige una ruta privada si quieres conversar sobre entradas, movilidad, idioma, ninos, fotografia, ritmo o un interes cultural concreto.
 
-Para comparar opciones comerciales, puedes empezar por la pagina de [free tour Granada](/es/free-tour-granada/) y la de [guia privada en Granada](/es/guia-privada-granada/). Si tu prioridad es la Alhambra, revisa tambien cuando conviene un [tour privado por la Alhambra](/es/blog/tour-privado-alhambra-vale-la-pena/). Para rutas a pie generales, la pagina de [visitas guiadas en Granada](/es/visitas-guiadas-granada/) permite ver alternativas antes de escribir por WhatsApp o email.
+Para comparar opciones comerciales, puedes empezar por la pagina de [free tour Granada](/es/free-tour-granada/) y la de [guia privada en Granada](/es/guia-privada-granada/). Si tu prioridad es la Alhambra, revisa tambien la [visita privada con guia oficial](/es/tour-alhambra-privado/). Para rutas a pie generales, la pagina de [visitas guiadas en Granada](/es/visitas-guiadas-granada/) permite ver alternativas antes de escribir por WhatsApp o email.
 
 ## Senales de una buena eleccion
 

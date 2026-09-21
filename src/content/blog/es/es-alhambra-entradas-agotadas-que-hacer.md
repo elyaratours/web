@@ -37,7 +37,7 @@ Si ya tienes una entrada, indica tambien la hora de Palacios Nazaries si aparece
 
 Cuando una fecha esta agotada, desconfia de quien prometa acceso sin explicar condiciones. Una guia oficial de turismo puede ayudarte a interpretar el monumento y ordenar una visita, pero no debe convertir una consulta en una garantia de entradas inexistentes.
 
-Laura Hdez. León, guia oficial de turismo, trabaja con un enfoque cultural y realista. Puedes conocer el contexto de Elyara en la pagina [sobre Elyara](/es/sobre-elyara/), y consultar la pagina de [tour privado de la Alhambra](/es/tour-alhambra-privado/) si quieres revisar como se plantea la visita cuando hay disponibilidad.
+Laura Hdez. León, guia oficial de turismo, trabaja con un enfoque cultural y realista. Puedes conocer el contexto de Elyara en la pagina [sobre Elyara](/es/sobre-elyara/), y consultar la pagina de [visita privada a la Alhambra con guia oficial](/es/tour-alhambra-privado/) si quieres revisar como se plantea la visita cuando hay disponibilidad.
 
 ## Alternativas si no puedes entrar
 

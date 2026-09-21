@@ -38,7 +38,7 @@ Si llegas tarde, no fuerces demasiado. Un paseo por miradores o una ruta breve d
 
 ## Dia 2: Alhambra y una lectura mas profunda
 
-Reserva el segundo dia para la Alhambra si tus entradas encajan. Antes de elegir hora, revisa desplazamientos, calor y tiempo de descanso. Un [tour privado por la Alhambra](/es/blog/tour-privado-alhambra-vale-la-pena/) puede tener sentido si quieres adaptar idioma, ritmo y preguntas.
+Reserva el segundo dia para la Alhambra si tus entradas encajan. Antes de elegir hora, revisa desplazamientos, calor y tiempo de descanso. Una [visita privada de la Alhambra](/es/tour-alhambra-privado/) puede tener sentido si quieres adaptar idioma, ritmo y preguntas.
 
 Despues de la Alhambra, no siempre hace falta anadir otra visita larga. Puede bastar una comida tranquila, un mirador o una lectura del centro historico si el grupo aun tiene energia. Para viajes con familia o grupos privados, conviene dejar margen.
 

@@ -42,7 +42,7 @@ Por eso una consulta por WhatsApp o email no es una confirmacion automatica. Sir
 
 Laura Hdez. León es guia oficial de turismo y explica Granada desde una mirada cultural: historia, arte, simbolos y tradiciones locales. Puedes conocer mejor su perfil en la pagina [sobre Elyara](/es/sobre-elyara/). Esta referencia no sustituye las condiciones concretas de cada visita, pero si ayuda a entender el enfoque del acompanamiento.
 
-Para comparar formatos, revisa tambien la pagina de [tour privado de la Alhambra](/es/tour-alhambra-privado/) o la guia sobre [cuando merece la pena un tour privado por la Alhambra](/es/blog/tour-privado-alhambra-vale-la-pena/).
+Para comparar formatos, revisa tambien la pagina de [opcion privada para visitar la Alhambra](/es/tour-alhambra-privado/) o la guia sobre [cuando merece la pena ir con guia privada](/es/blog/tour-privado-alhambra-vale-la-pena/).
 
 ## Como pedir una orientacion realista
 
