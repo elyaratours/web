@@ -53,16 +53,17 @@ const otherLocale = locale === 'es' ? 'en' : 'es';
 const seoImage = image ?? defaultShareImagePath;
 const seoImageAlt = imageAlt ?? copy.heroImageAlt;
 const fallbackImageDimensions = getImageDimensions(seoImage);
-const footerDiscoveryTitle = locale === 'es' ? 'Busquedas frecuentes' : 'Popular searches';
-const footerLegalTitle = locale === 'es' ? 'Informacion legal' : 'Legal information';
+const footerDiscoveryTitle = locale === 'es' ? 'Búsquedas frecuentes' : 'Popular searches';
+const footerLegalTitle = locale === 'es' ? 'Información legal' : 'Legal information';
 const footerLegalLinks = getLegalTrustPages(locale).map((page) => ({ label: page.footerLabel, href: getLegalTrustPath(locale, page.key) }));
 const footerDiscoveryLinks = locale === 'es'
   ? [
       { label: 'Visitas guiadas en Granada', href: '/es/visitas-guiadas-granada/' },
-      { label: 'Alhambra con guia privada', href: '/es/tour-alhambra-privado/' },
-      { label: 'Guia privada en Granada', href: '/es/guia-privada-granada/' },
-      { label: 'Visita guiada Albaicin Granada', href: '/es/visita-guiada-albaicin/' },
-      { label: 'Excursiones de un dia a Granada', href: '/es/excursiones-un-dia-granada/' },
+      { label: 'Alhambra con guía privada', href: '/es/tour-alhambra-privado/' },
+      { label: 'Guía privada en Granada', href: '/es/guia-privada-granada/' },
+      { label: 'Visita guiada Albaicín Granada', href: '/es/visita-guiada-albaicin/' },
+      { label: 'Excursiones de un día a Granada', href: '/es/excursiones-un-dia-granada/' },
+      { label: 'Tours para familias y niños en Granada', href: '/es/tours-ninos-granada/' },
       { label: 'Visita guiada Catedral y Capilla Real', href: '/es/visita-guiada-catedral-capilla-real-granada/' },
     ]
   : [
