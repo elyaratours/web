@@ -1,15 +1,15 @@
 ---
 locale: es
 translationKey: granada-day-trip-planning
-title: "Excursion a Granada desde Malaga o Cordoba: que elegir en un dia"
+title: "Como planificar una excursion de un dia a Granada"
 postSlug: "excursion-granada-desde-malaga-cordoba"
-excerpt: "Una excursion de un dia a Granada desde Malaga o Cordoba funciona mejor si eliges una experiencia principal y ajustas transporte, entradas y ritmo."
+excerpt: "Claves para planificar una excursion de un dia a Granada: experiencia principal, tiempos reales, entradas, comida, pausas y ritmo del grupo."
 category: "recommendation"
 publishedDate: "2026-09-09"
 image: "/images/day-trip-malaga-granada.webp"
 imageAlt: "Vista de Granada para preparar una excursion desde Malaga o Cordoba"
 author: "Laura Hdez. León"
-seoDescription: "Consejos para organizar una excursion de un dia a Granada desde Malaga o Cordoba, elegir Alhambra, centro historico, Albaicin y ritmo realista."
+seoDescription: "Guia para planificar una excursion de un dia a Granada con tiempos realistas, Alhambra, centro historico, Albaicin, pausas y ritmo del grupo."
 relatedTours:
   - "day-trip-malaga-granada"
   - "day-trip-cordoba-granada"
@@ -20,7 +20,7 @@ order: 5
 published: true
 ---
 
-Hacer una excursion de un dia a Granada desde Malaga, la Costa del Sol o Cordoba puede ser una experiencia muy completa si se planifica bien. Tambien puede convertirse en un dia agotador si se intenta meter todo en pocas horas.
+Hacer una excursion de un dia a Granada puede ser una experiencia muy completa si se planifica bien. Tambien puede convertirse en un dia agotador si se intenta meter todo en pocas horas, especialmente cuando se viene desde Malaga, la Costa del Sol o Cordoba.
 
 La primera decision deberia ser la experiencia principal. Para algunas personas sera la Alhambra, siempre condicionada por disponibilidad de entradas y horarios. Para otras, tendra mas sentido una ruta por el centro historico y el Albaicin, que permite entender la ciudad sin depender de un monumento concreto.
 
@@ -34,7 +34,7 @@ Conviene tener claras la ciudad de salida, fecha aproximada, numero de personas,
 
 Desde Malaga, el dia suele funcionar mejor si eliges una prioridad principal. Si la prioridad es la Alhambra, revisa primero disponibilidad de entradas y deja margen para comer o descansar. Si prefieres entender Granada sin depender de horarios monumentales, una ruta por centro historico y Albaicin puede ser mas flexible.
 
-Si quieres comparar propuestas, empieza por la pagina de [excursiones a Granada desde Malaga o Cordoba](/es/excursiones-granada-desde-malaga-cordoba/). Tambien puede ayudarte la guia de [Granada en dos dias](/es/blog/granada-en-dos-dias/) si dudas entre dormir en la ciudad o venir solo una jornada. Para grupos que necesitan ajustar transporte, idioma y ritmo, una [guia privada en Granada](/es/guia-privada-granada/) permite ordenar mejor la visita.
+Si quieres comparar ciudades de salida, empieza por la pagina de [excursiones Granada desde Malaga o Cordoba](/es/excursiones-granada-desde-malaga-cordoba/). Si ya tienes claro el origen, revisa la ficha de [excursion desde Malaga a Granada](/es/tours/excursion-malaga-granada/) o la de [excursion desde Cordoba a Granada](/es/tours/excursion-cordoba-granada/). Tambien puede ayudarte la guia de [Granada en dos dias](/es/blog/granada-en-dos-dias/) si dudas entre dormir en la ciudad o venir solo una jornada.
 
 La reserva o consulta se hace por WhatsApp o email, sin formulario interno ni pago dentro de la web.
 

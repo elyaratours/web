@@ -1,7 +1,7 @@
 ---
 locale: es
 translationKey: day-trip-cordoba-granada
-title: "Excursion privada de un dia para grupos desde Cordoba a Granada"
+title: "Excursion Granada desde Cordoba para grupos privados"
 routeSlug: "excursion-cordoba-granada"
 category: "day-trip"
 duration: "Dia completo, horario adaptable"
@@ -20,12 +20,12 @@ faq:
   - question: "Por que el precio es bajo consulta?"
     answer: "El precio final depende del numero de personas, ciudad de recogida, transporte, entradas a monumentos, comida y experiencia seleccionada."
 relatedLandings: ["granada-day-trips-from-malaga-cordoba", "private-alhambra-tour", "albaicin-guided-walk"]
-seoDescription: "Excursion privada de un dia para grupos desde Cordoba a Granada con guia cultural, traslado opcional, Alhambra o Centro Historico y Albaicin, comida opcional y horario a medida."
+seoDescription: "Ficha de excursion Granada desde Cordoba para grupos privados, con guia cultural, traslado opcional, Alhambra o Centro Historico y Albaicin bajo consulta."
 featured: false
 order: 81
 ---
 
-Viaja desde Cordoba a Granada en una excursion privada para grupos, pensada alrededor de la cultura, los horarios y los intereses de tu grupo. La propuesta puede incluir traslado privado, o empezar directamente cuando llegues a Granada por tu cuenta.
+Esta ficha corresponde a la excursion Granada desde Cordoba para grupos privados, pensada alrededor de la cultura, los horarios y los intereses de tu grupo. La propuesta puede incluir traslado privado, o empezar directamente cuando llegues a Granada por tu cuenta.
 
 En Granada eliges una experiencia principal para el dia. La opcion de Alhambra y Generalife se centra en el monumento con guia cultural cuando haya entradas disponibles. El recorrido depende de la disponibilidad de entradas a monumentos y se confirma antes de cerrar la propuesta.
 
@@ -33,4 +33,4 @@ La opcion de Centro Historico y Albaicin esta disenada como una alternativa comp
 
 La comida puede anadirse en un restaurante local cuidadosamente seleccionado. La eleccion dependera de disponibilidad, preferencias y presupuesto, por lo que no se fija todavia restaurante ni menu.
 
-El itinerario se adapta segun intereses, horarios de llegada y regreso, disponibilidad de monumentos y ritmo deseado para el dia.
+El itinerario se adapta segun intereses, horarios de llegada y regreso, disponibilidad de monumentos y ritmo deseado para el dia. Si necesitas comparar salidas desde diferentes ciudades, revisa la pagina de [excursiones Granada desde Malaga o Cordoba](/es/excursiones-granada-desde-malaga-cordoba/) o el resumen general de [excursiones de un dia en Granada](/es/excursiones-un-dia-granada/).

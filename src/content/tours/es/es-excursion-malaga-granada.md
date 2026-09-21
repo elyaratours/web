@@ -1,7 +1,7 @@
 ---
 locale: es
 translationKey: day-trip-malaga-granada
-title: "Excursion privada de un dia para grupos desde Malaga a Granada"
+title: "Excursion Granada desde Malaga para grupos privados"
 routeSlug: "excursion-malaga-granada"
 category: "day-trip"
 duration: "Dia completo, aprox. 8-10 horas"
@@ -20,12 +20,12 @@ faq:
   - question: "Se puede anadir comida?"
     answer: "Si. Se puede anadir una comida en un restaurante local seleccionado segun disponibilidad, preferencias y presupuesto. No se anuncia un restaurante ni menu fijo por adelantado."
 relatedLandings: ["granada-day-trips-from-malaga-cordoba", "private-alhambra-tour", "albaicin-guided-walk"]
-seoDescription: "Excursion privada de un dia para grupos desde Malaga o la Costa del Sol a Granada con guia cultural, traslado opcional, Alhambra o Centro Historico y Albaicin, y comida bajo consulta."
+seoDescription: "Ficha de excursion Granada desde Malaga o Costa del Sol para grupos privados, con guia cultural, traslado opcional, Alhambra o Centro Historico y Albaicin bajo consulta."
 featured: false
 order: 80
 ---
 
-Viaja desde Malaga o la Costa del Sol a Granada en una excursion privada y cultural para grupos, disenada alrededor de tu grupo. No es una salida masiva de autobus: la propuesta se adapta a tus horarios, intereses, ritmo y experiencia principal en Granada con guia cultural.
+Esta ficha corresponde a la excursion Granada desde Malaga o la Costa del Sol para grupos privados. Es una propuesta cultural disenada alrededor de tu grupo, no una salida masiva de autobus: se adapta a tus horarios, intereses, ritmo y experiencia principal en Granada con guia cultural.
 
 El dia puede empezar con recogida opcional en tu hotel o en un punto acordado, seguida de traslado privado a Granada. Una vez en la ciudad, puedes elegir una experiencia principal: visita privada a la Alhambra y Generalife, o ruta privada por el Centro Historico y el Albaicin.
 
@@ -35,4 +35,4 @@ La opcion de Centro Historico y Albaicin es una alternativa completa a la Alhamb
 
 Tambien puedes anadir una experiencia gastronomica local con comida en un restaurante cuidadosamente seleccionado. La eleccion dependera de disponibilidad, preferencias y presupuesto, por eso no se publica todavia un restaurante ni menu fijo.
 
-Al finalizar, regreso a Malaga o la Costa del Sol en traslado privado si esta incluido en tu propuesta.
+Al finalizar, regreso a Malaga o la Costa del Sol en traslado privado si esta incluido en tu propuesta. Si todavia dudas entre salir desde Malaga o Cordoba, puedes comparar ambas opciones en la pagina de [excursiones Granada desde Malaga o Cordoba](/es/excursiones-granada-desde-malaga-cordoba/) o revisar el enfoque general de [excursiones de un dia en Granada](/es/excursiones-un-dia-granada/).
