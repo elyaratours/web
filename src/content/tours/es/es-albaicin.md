@@ -23,7 +23,7 @@ faq:
   - question: "Se puede adaptar para un grupo privado?"
     answer: "Si. Podemos revisar por WhatsApp o email el ritmo, idioma, intereses y necesidades del grupo antes de proponer la mejor forma de hacerla."
 relatedLandings: ["albaicin-guided-walk", "guided-visits-granada", "free-tour-granada"]
-seoDescription: "La forma más completa de descubrir Granada a través de los barrios, historias y culturas que han dado forma a su identidad."
+seoDescription: "Ficha de la ruta El alma de Granada por Centro Historico, Albaicin, Sacromonte y Darro, con miradores, historia local y ritmo caminable."
 featured: true
 order: 2
 ---
@@ -36,4 +36,4 @@ El recorrido incluye Centro Historico, Albaicin, Sacromonte y uno de los paseos 
 
 El Albaicin tiene cuestas y pavimento irregular en algunos tramos, pero el ritmo se adapta con pausas, explicaciones y tiempo para observar. Es una buena opcion para una primera visita, para viajeros que quieren orientarse en la ciudad y para grupos privados que buscan combinar historia, fotografias, ambiente local y contexto cultural.
 
-Si dudas entre esta ruta y una visita mas especifica, puedes comparar con la pagina de [visita guiada por el Albaicin](/es/visita-guiada-albaicin/) o con la opcion de [Albaicin y Sacromonte](/es/visita-guiada-albaicin-sacromonte-granada/). Para un ritmo completamente adaptado, escribe desde [viajes a medida](/es/viajes-a-medida/) o por los botones de reserva externa.
+Si dudas entre esta ruta y una visita mas especifica, puedes comparar con la pagina de [Albaicin con guia en Granada](/es/visita-guiada-albaicin/) o con la opcion de [ruta por Albaicin y Sacromonte](/es/visita-guiada-albaicin-sacromonte-granada/). Para un ritmo completamente adaptado, escribe desde [viajes a medida](/es/viajes-a-medida/) o por los botones de reserva externa.

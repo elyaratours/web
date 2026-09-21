@@ -1,12 +1,12 @@
 ---
 locale: es
 translationKey: albaicin-guided-walk
-title: "Visita guiada por el Albaicin de Granada"
-heading: "Visita guiada por el Albaicin para leer Granada desde sus miradores"
+title: "Visita guiada Albaicin Granada | Tour por el barrio historico"
+heading: "Visita guiada por el Albaicin en Granada"
 routeSlug: "visita-guiada-albaicin"
-intro: "El Albaicin es una de las mejores formas de entrar en Granada: calles blancas, miradores, memoria andalusi, pendientes, patios y vistas de la Alhambra con una ruta pensada para caminar sin prisa. La visita puede enfocarse como primera introduccion, paseo cultural o grupo privado."
-seoDescription: "Visita guiada por el Albaicin de Granada con miradores, historia local, calles tranquilas, vistas de la Alhambra y reserva privada por WhatsApp."
-targetIntent: "visita guiada Albaicin Granada, ruta por miradores, tour Albaicin y guia privada"
+intro: "Recorre el Albaicin de Granada con una visita guiada por calles blancas, miradores, memoria andalusi, pendientes, patios y vistas de la Alhambra. Es una ruta centrada en el barrio, pensada para entender su historia y paisaje sin convertir el paseo en una lista de paradas."
+seoDescription: "Visita guiada por el Albaicin de Granada con miradores, historia local, calles tranquilas y vistas de la Alhambra. Ruta cultural en espanol o ingles."
+targetIntent: "visita guiada Albaicin, tour Albaicin Granada y guia Albaicin Granada"
 image: "/images/almagranada.jpg"
 imageAlt: "Calles y miradores del Albaicin para una visita guiada por Granada"
 relatedTours: ["albaicin", "granada-viewpoints-legends"]

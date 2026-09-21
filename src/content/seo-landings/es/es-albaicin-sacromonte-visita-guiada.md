@@ -1,12 +1,12 @@
 ---
 locale: es
 translationKey: albaicin-sacromonte-guided
-title: "Visita guiada Albaicin y Sacromonte"
-heading: "Albaicin y Sacromonte para entender el paisaje historico de Granada"
+title: "Visita guiada Albaicin y Sacromonte Granada"
+heading: "Visita guiada por Albaicin y Sacromonte"
 routeSlug: "visita-guiada-albaicin-sacromonte-granada"
-intro: "Una visita guiada por el Albaicin y el Sacromonte permite mirar Granada desde sus barrios altos: calles, miradores, memoria urbana, vida local y relacion visual con la Alhambra."
-seoDescription: "Visita guiada por Albaicin y Sacromonte en Granada con miradores, historia urbana, barrios altos y reserva directa por WhatsApp o email."
-targetIntent: "visita guiada Albaicin Sacromonte, barrios historicos y miradores de Granada"
+intro: "Una visita guiada por Albaicin y Sacromonte permite mirar Granada desde sus barrios altos: calles, miradores, memoria urbana, cuevas, vida local y relacion visual con la Alhambra. Es una ruta para quienes quieren unir ambos barrios en un mismo recorrido, con ritmo y desnivel ajustados al grupo."
+seoDescription: "Visita guiada por Albaicin y Sacromonte en Granada con miradores, historia urbana, barrios altos, cuevas y reserva directa por WhatsApp o email."
+targetIntent: "visita guiada Albaicin y Sacromonte, tour Albaicin y Sacromonte y ruta Albaicin Sacromonte"
 image: "/images/almagranada.jpg"
 imageAlt: "Calle del Albaicin para una visita guiada por barrios historicos de Granada"
 relatedTours: ["albaicin", "granada-viewpoints-legends", "granada-two-worlds"]
