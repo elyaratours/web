@@ -1,12 +1,12 @@
 ---
 locale: es
 translationKey: cathedral-royal-chapel-guided
-title: "Visita guiada a Catedral y Capilla Real"
-heading: "Catedral y Capilla Real de Granada con contexto historico"
+title: "Visita guiada Catedral y Capilla Real de Granada"
+heading: "Visita guiada a la Catedral y Capilla Real de Granada"
 routeSlug: "visita-guiada-catedral-capilla-real-granada"
-intro: "Una visita guiada a la Catedral y la Capilla Real permite leer la Granada posterior a 1492 desde el arte, la memoria dinastica, la transformacion urbana y los simbolos del nuevo poder."
-seoDescription: "Visita guiada a la Catedral de Granada y la Capilla Real con contexto historico, arte, Reyes Catolicos y reserva directa por WhatsApp o email."
-targetIntent: "visita guiada Catedral Granada, Capilla Real y centro historico"
+intro: "Descubre la Catedral y la Capilla Real de Granada con una visita guiada centrada en arte, Reyes Catolicos, poder y transformacion de la ciudad tras 1492. La ruta ayuda a leer ambos monumentos dentro del centro historico, sin separarlos de las calles y memorias que los rodean."
+seoDescription: "Descubre la Catedral y la Capilla Real de Granada con una visita guiada sobre arte, Reyes Católicos, poder y transformación de la ciudad tras 1492."
+targetIntent: "visita guiada Catedral Granada, visita guiada Capilla Real Granada y visita guiada Catedral y Capilla Real Granada"
 image: "/images/catedral-capilla-real-route.webp"
 imageAlt: "Interior de la Catedral de Granada para una visita guiada cultural"
 relatedTours: ["cathedral-royal-chapel", "granada-new-world", "granada-two-worlds"]
@@ -25,7 +25,7 @@ order: 30
 published: true
 ---
 
-La Catedral y la Capilla Real no son solo dos monumentos del centro. Juntas cuentan como Granada quiso presentarse despues de la conquista cristiana: una ciudad con nuevos simbolos, nuevos espacios de poder y una memoria dinastica muy visible.
+La Catedral y la Capilla Real no son solo dos monumentos del centro. En una visita guiada, juntas cuentan como Granada quiso presentarse despues de la conquista cristiana: una ciudad con nuevos simbolos, nuevos espacios de poder y una memoria dinastica muy visible.
 
 Esta visita ayuda a mirar fachadas, interiores, capillas, trazas urbanas y relatos politicos con mas calma. La clave no es acumular datos, sino entender por que estos lugares ocupan una posicion tan importante en la historia de la ciudad.
 

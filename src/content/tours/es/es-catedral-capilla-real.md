@@ -34,4 +34,4 @@ La Capilla Real permite hablar de enterramiento, legitimidad, colecciones artist
 
 Es una ruta especialmente util para quienes ya han visitado o van a visitar la Alhambra y quieren completar el relato de Granada desde otro angulo. Tambien encaja con viajeros interesados en arte, historia urbana, simbolos de poder y visitas privadas de ritmo mas tranquilo.
 
-Si quieres ampliar contexto antes o despues de la visita, puedes consultar la landing de [visita guiada a Catedral y Capilla Real](/es/visita-guiada-catedral-capilla-real-granada/) y los articulos del cuaderno relacionados con el centro historico. Para reservar, usa WhatsApp o email indicando fecha, numero de personas e idioma preferido.
+Si quieres ampliar contexto antes o despues de la visita, puedes consultar la pagina sobre [Catedral y Capilla Real con guia](/es/visita-guiada-catedral-capilla-real-granada/) y los articulos del cuaderno relacionados con el centro historico. Para reservar, usa WhatsApp o email indicando fecha, numero de personas e idioma preferido.

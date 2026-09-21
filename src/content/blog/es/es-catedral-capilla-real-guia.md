@@ -1,7 +1,7 @@
 ---
 locale: es
 translationKey: cathedral-royal-chapel-guide
-title: "Catedral y Capilla Real: claves para visitar Granada"
+title: "Catedral y Capilla Real de Granada: claves culturales"
 postSlug: "catedral-capilla-real-guia"
 excerpt: "La Catedral y la Capilla Real ayudan a entender la Granada posterior a 1492: poder, memoria, arte y transformacion urbana en pleno centro historico."
 category: "history"
@@ -9,7 +9,7 @@ publishedDate: "2026-09-09"
 image: "/images/catedral-capilla-real-route.webp"
 imageAlt: "Interior de la Catedral de Granada para preparar una visita cultural"
 author: "Laura Hdez. León"
-seoDescription: "Guia cultural sobre la Catedral de Granada y la Capilla Real para entender su papel historico, artistico y urbano antes de una visita guiada."
+seoDescription: "Guia cultural sobre la Catedral de Granada y la Capilla Real: arte, Reyes Catolicos, poder y transformacion urbana tras 1492."
 relatedTours:
   - "cathedral-royal-chapel"
   - "granada-new-world"
@@ -43,4 +43,4 @@ Si es tu primera vez en la ciudad, esta visita puede combinarse con una introduc
 
 Antes de reservar, conviene indicar fecha, idioma, numero de personas y si quieres una visita centrada solo en Catedral y Capilla Real o una ruta mas amplia por la Granada historica.
 
-Para profundizar, puedes consultar la [visita guiada a Catedral y Capilla Real](/es/visita-guiada-catedral-capilla-real-granada/) o la ruta de [Catedral y Capilla Real](/es/tours/catedral-capilla-real/). Si buscas un recorrido mas flexible por el centro, la pagina de [guia privada en Granada](/es/guia-privada-granada/) ayuda a plantear ritmo, idioma e intereses.
+Para profundizar, puedes consultar la [visita guiada por la Catedral y la Capilla Real](/es/visita-guiada-catedral-capilla-real-granada/) o la ruta de [Catedral y Capilla Real](/es/tours/catedral-capilla-real/). Si buscas un recorrido mas flexible por el centro, la pagina de [guia privada en Granada](/es/guia-privada-granada/) ayuda a plantear ritmo, idioma e intereses.
