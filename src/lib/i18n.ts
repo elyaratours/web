@@ -39,16 +39,16 @@ export const localeConfig = {
     price: 'Precio',
     languages: 'Idiomas',
     backToTours: 'Volver a rutas',
-    heroEyebrow: 'Visitas guiadas en Granada',
-    heroTitle: 'Visitas guiadas en Granada con rutas culturales privadas',
-    homeSeoTitle: 'Visitas guiadas en Granada | Tours privados Alhambra y Albaicin',
+    heroEyebrow: 'Tours privados en Granada',
+    heroTitle: 'Tours privados y visitas guiadas en Granada',
+    homeSeoTitle: 'Tours privados en Granada | Guia oficial',
     heroText:
-      'Tours privados y rutas culturales a pie por la Alhambra, el Albaicin, Sacromonte y el centro historico, con reserva directa por WhatsApp o email.',
+      'Descubre Granada con una guia oficial en visitas privadas y rutas culturales por la Alhambra, Albaicin, Sacromonte y centro historico, con reserva directa por WhatsApp o email.',
     heroImageAlt: 'La Alhambra bajo nubes dramaticas vista desde el Albaicin',
     footerIntro:
       'Elyara Tours Granada ofrece rutas culturales a pie por la Alhambra, el Albaicin y la ciudad historica, con reserva privada disponible y contacto directo por WhatsApp o email.',
-    catalogIntro: 'Elige una visita guiada en Granada y solicita un tour privado por la Alhambra, el Albaicin, Sacromonte, miradores o centro historico segun idioma, ritmo e intereses.',
-    metaHome: 'Visitas guiadas en Granada, tours privados por Alhambra, Albaicin, Sacromonte y centro historico, rutas culturales en espanol e ingles.',
+    catalogIntro: 'Elige un tour privado en Granada por la Alhambra, el Albaicin, Sacromonte, miradores o centro historico segun idioma, ritmo e intereses.',
+    metaHome: 'Descubre Granada con una guia oficial en visitas privadas y rutas culturales por la Alhambra, Albaicin, Sacromonte y centro historico. Tours en espanol e ingles.',
     blogSeoTitle: 'Guia de Granada: Alhambra, Albaicin y rutas culturales',
     blogSeoDescription: 'Guia cultural de Granada con consejos sobre Alhambra, Albaicin, Catedral, rutas privadas, visitas con ninos y excursiones de un dia.',
   },
@@ -844,20 +844,20 @@ export const dayTripsContent = {
 export const commercialToursContent = {
   es: {
     routeSlug: 'tours-privados-granada',
-    pageTitle: 'Rutas guiadas privadas en Granada',
+    pageTitle: 'Rutas para grupos privados en Granada',
     metaDescription:
-      'Solicita rutas guiadas en Granada como grupo privado: Alhambra, Albaicin, centro historico, miradores y propuestas a medida.',
+      'Elige una ruta cultural de Granada y solicitala para tu grupo privado. Albaicin, Alhambra, centro historico, miradores y propuestas adaptadas.',
     eyebrow: 'Reservas para grupos privados',
-    title: 'Elige una ruta de Granada y solicitala para tu grupo',
+    title: 'Rutas de Granada para grupos privados',
     intro:
-      'Si buscas una visita privada en Granada, no necesitas elegir un catalogo distinto. Parte de una ruta publicada y escribenos para adaptarla a vuestro idioma, ritmo e intereses.',
+      'Si viajas en grupo y quieres una visita privada en Granada, puedes partir de una ruta publicada y escribirnos para adaptarla a vuestro idioma, ritmo e intereses.',
     image: '/images/granada-main-route.webp',
     imageAlt: 'Vista de Granada y la Alhambra para tours privados culturales',
     primaryCta: 'Solicitar grupo privado',
     secondaryCta: 'Ver rutas disponibles',
     sections: [
       {
-        title: 'Una ruta, una reserva privada',
+        title: 'Una ruta publicada, una reserva privada',
         text: 'Las rutas publicadas son el punto de partida. La modalidad privada se acuerda al reservar, sin crear una version duplicada de la visita.',
       },
       {
@@ -869,7 +869,7 @@ export const commercialToursContent = {
         text: 'La reserva empieza por WhatsApp o correo, sin formularios largos, pagos internos ni checkout. Te respondemos con una propuesta clara.',
       },
     ],
-    tourSectionTitle: 'Empieza por una ruta publicada',
+    tourSectionTitle: 'Catalogo de rutas para grupos privados',
     tourSectionText: 'Elige la ruta que encaje con tu viaje y solicitala como grupo privado desde la ficha de esa misma ruta.',
     editorialTitle: 'Antes de venir a Granada',
     editorialText: 'Lee historias y consejos del cuaderno para preparar mejor tu visita.',

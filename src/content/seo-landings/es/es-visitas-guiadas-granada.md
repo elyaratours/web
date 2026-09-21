@@ -1,12 +1,12 @@
 ---
 locale: es
 translationKey: guided-visits-granada
-title: "Visitas guiadas en Granada: rutas culturales a pie"
-heading: "Visitas guiadas en Granada para entender la ciudad sin correr"
+title: "Visitas guiadas en Granada | Rutas culturales"
+heading: "Visitas guiadas en Granada"
 routeSlug: "visitas-guiadas-granada"
-intro: "Rutas culturales a pie para descubrir Granada con contexto historico, ritmo caminable y reserva directa por WhatsApp o email. Compara opciones para Alhambra, Albaicin, centro historico, miradores y recorridos privados sin convertir la visita en una lista de paradas."
-seoDescription: "Visitas guiadas en Granada en espanol e ingles: Alhambra, Albaicin, centro historico, miradores, rutas privadas y reserva directa por WhatsApp."
-targetIntent: "visitas guiadas en Granada, rutas culturales, tours a pie y guia privada"
+intro: "Rutas culturales a pie para descubrir Granada con contexto historico, ritmo caminable y reserva directa por WhatsApp o email. Compara opciones para Alhambra, Albaicin, Sacromonte, centro historico y miradores sin convertir la visita en una lista de paradas."
+seoDescription: "Explora Granada con visitas guiadas por la Alhambra, Albaicin, Sacromonte y centro historico. Rutas culturales en espanol e ingles."
+targetIntent: "visitas guiadas Granada, rutas guiadas Granada, visitas culturales Granada y tours culturales Granada"
 image: "/images/granada-main-route.webp"
 imageAlt: "Vista de Granada y la Alhambra para planificar visitas guiadas culturales"
 relatedTours: ["albaicin", "alhambra", "cathedral-royal-chapel", "granada-two-worlds"]
@@ -44,7 +44,7 @@ Si es tu primera vez en Granada, suele ser util empezar por una ruta que conecte
 
 Las visitas guiadas tambien pueden servir para ordenar decisiones practicas: que ver antes, que dejar para otra tarde, cuando subir al Albaicin, como evitar itinerarios repetidos y que recorrido tiene mas sentido segun el alojamiento o los horarios.
 
-## Visita guiada privada o ruta publicada
+## Ruta publicada o visita adaptada
 
 Las rutas publicadas sirven como punto de partida porque ya tienen una estructura, duracion y enfoque claros. La modalidad privada es util cuando quieres ajustar el idioma, el ritmo, el horario aproximado o los temas que mas interesan al grupo.
 

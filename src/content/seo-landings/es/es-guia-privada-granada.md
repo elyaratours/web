@@ -1,12 +1,12 @@
 ---
 locale: es
 translationKey: private-guide-granada
-title: "Guia privada en Granada: rutas culturales a medida"
-heading: "Guia privada en Granada para una visita cultural y flexible"
+title: "Guia privada en Granada | Tours a medida"
+heading: "Guia privada en Granada para visitas a medida"
 routeSlug: "guia-privada-granada"
-intro: "Una guia privada en Granada te ayuda a escoger una ruta realista, caminar con contexto y adaptar la visita al idioma, ritmo e intereses de tu grupo sin depender de un itinerario generico. Es una buena opcion para familias, grupos pequenos, viajeros con poco tiempo o visitas culturales mas concretas."
-seoDescription: "Guia privada en Granada para Albaicin, centro historico, Alhambra, miradores y rutas culturales a medida con reserva directa por WhatsApp."
-targetIntent: "guia privada en Granada, tour privado, visita cultural personalizada y rutas a medida"
+intro: "Una guia privada en Granada te ayuda a escoger una ruta realista, caminar con contexto y adaptar la visita a tu tiempo, idioma, ritmo e intereses sin depender de un itinerario generico. Es una buena opcion para familias, grupos pequenos, viajeros con poco tiempo o visitas culturales mas concretas."
+seoDescription: "Descubre Granada con una guia privada y rutas adaptadas a tu tiempo e intereses. Alhambra, Albaicin, Sacromonte, centro historico y mas."
+targetIntent: "guia privada Granada, guia oficial Granada, guia turistica privada Granada, visitas privadas Granada y guia local Granada"
 image: "/images/granada-main-route.webp"
 imageAlt: "Vista de Granada y la Alhambra para organizar una visita con guia privada"
 relatedTours: ["albaicin", "cathedral-royal-chapel", "granada-two-worlds", "alhambra"]

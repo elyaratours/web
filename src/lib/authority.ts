@@ -129,7 +129,7 @@ export function getAuthorityDiscoveryLinks(locale: Locale) {
   const labels = locale === 'es'
     ? {
         routes: 'Rutas en Granada',
-        privateTours: 'Tours privados en Granada',
+        privateTours: 'Rutas para grupos privados',
         dayTrips: 'Excursiones de un dia a Granada',
         tailorMade: 'Viajes y rutas a medida',
         contact: 'Contacto directo',
