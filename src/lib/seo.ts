@@ -4,7 +4,6 @@ import { getGuideAuthorityPath, getGuideProfileContent, guidePublicName, isGuide
 import { contactEmail, googleBusinessProfileUrl, instagramUrl, whatsappDisplayNumber, whatsappNumber, type Locale } from './i18n';
 
 export const siteName = 'Elyara Tours Granada';
-export const productionSiteUrl = 'https://elyaratours.com';
 export const businessLogoPath = '/images/elyara-header-logo.png';
 export const defaultShareImagePath = '/images/granada-main-route.webp';
 
@@ -25,6 +24,7 @@ export interface ListEntry {
 
 export type JsonLdNode = Record<string, unknown>;
 export type JsonLdInput = JsonLdNode | JsonLdNode[];
+export type PageSchemaType = 'WebPage' | 'AboutPage';
 
 const imageDimensions: Record<string, { width: number; height: number }> = {
   '/images/1492-new-world-order.webp': { width: 1200, height: 800 },
@@ -55,6 +55,14 @@ const imageDimensions: Record<string, { width: number; height: number }> = {
 
 export function absoluteUrl(path: string, site: URL) {
   return new URL(path, site).toString();
+}
+
+export function getConfiguredSite(site: URL | undefined) {
+  if (!site) {
+    throw new Error('Astro site config is required to build absolute SEO URLs.');
+  }
+
+  return site;
 }
 
 export function getImageDimensions(path: string | undefined) {
@@ -253,11 +261,11 @@ export function createJsonLdGraph(site: URL, nodes: JsonLdInput = []) {
   } satisfies JsonLdNode;
 }
 
-export function createWebPageJsonLd(locale: Locale, path: string, title: string, description: string, image: string | undefined, site: URL) {
+export function createWebPageJsonLd(locale: Locale, path: string, title: string, description: string, image: string | undefined, site: URL, pageType: PageSchemaType = 'WebPage') {
   const url = absoluteUrl(path, site);
 
   return {
-    '@type': 'WebPage',
+    '@type': pageType,
     '@id': `${url}#webpage`,
     url,
     name: title,

@@ -7,7 +7,7 @@ import TravelerProof from '@/components/TravelerProof.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { getGuideAuthorityPath, getGuideProfileContent } from '@/lib/guide';
 import { getEmailReservationUrl, getLocaleConfig, getWhatsAppReservationUrl, locales, type Locale } from '@/lib/i18n';
-import { createItemListJsonLd, productionSiteUrl } from '@/lib/seo';
+import { createItemListJsonLd, getConfiguredSite } from '@/lib/seo';
 import { getSeoLandingPath, getSeoLandingsByKeys } from '@/lib/seo-landings';
 import { getPublishedKidsTours, getPublishedTours, getTourPath } from '@/lib/tours';
 
@@ -33,7 +33,7 @@ const planningLandings = await getSeoLandingsByKeys(locale, [
   'free-tour-granada',
 ]);
 const alternates = locales.map((item) => ({ locale: item, path: `/${item}/` }));
-const site = Astro.site ?? new URL(productionSiteUrl);
+const site = getConfiguredSite(Astro.site);
 const listedTours = [...tours, ...kidsTours];
 const visibleHomeTours = [...homeCardTours, ...kidsTours];
 const planningCopy = locale === 'es'

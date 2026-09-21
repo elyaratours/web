@@ -3,7 +3,7 @@ import { Mail, MessageCircle } from '@lucide/astro';
 import SeoHead from '@/components/SeoHead.astro';
 import { getAuthorityPath } from '@/lib/authority';
 import { contactEmail, getCommercialToursPath, getContactContent, getContactPath, getDayTripsPath, getEmailReservationUrl, getLegalTrustPages, getLegalTrustPath, getLocaleConfig, getTailorMadePath, getWhatsAppReservationUrl, googleBusinessProfileUrl, instagramHandle, instagramUrl, locales, whatsappDisplayNumber, whatsappUrl, type Locale } from '@/lib/i18n';
-import { defaultShareImagePath, getImageDimensions, productionSiteUrl, siteName, type JsonLdInput } from '@/lib/seo';
+import { defaultShareImagePath, getConfiguredSite, getImageDimensions, siteName, type JsonLdInput, type PageSchemaType } from '@/lib/seo';
 import '@/styles/global.css';
 
 interface AlternateLink {
@@ -22,6 +22,7 @@ interface Props {
   imageHeight?: number;
   alternates?: AlternateLink[];
   jsonLd?: JsonLdInput;
+  pageType?: PageSchemaType;
   ogType?: 'website' | 'article';
   publishedTime?: Date;
   modifiedTime?: Date;
@@ -39,6 +40,7 @@ const {
   imageHeight,
   alternates = locales.map((item) => ({ locale: item, path: `/${item}/` })),
   jsonLd,
+  pageType,
   ogType = 'website',
   publishedTime,
   modifiedTime,
@@ -46,7 +48,7 @@ const {
 } = Astro.props;
 const copy = getLocaleConfig(locale);
 const contact = getContactContent(locale);
-const site = Astro.site ?? new URL(productionSiteUrl);
+const site = getConfiguredSite(Astro.site);
 const otherLocale = locale === 'es' ? 'en' : 'es';
 const seoImage = image ?? defaultShareImagePath;
 const seoImageAlt = imageAlt ?? copy.heroImageAlt;
@@ -86,6 +88,7 @@ const footerDiscoveryLinks = locale === 'es'
       imageHeight={imageHeight ?? fallbackImageDimensions?.height}
       alternates={alternates}
       jsonLd={jsonLd}
+      pageType={pageType}
       ogType={ogType}
       publishedTime={publishedTime}
       modifiedTime={modifiedTime}

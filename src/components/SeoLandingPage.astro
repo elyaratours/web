@@ -6,7 +6,7 @@ import FaqSection from '@/components/FaqSection.astro';
 import TourCard from '@/components/TourCard.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { contactEmail, getContactPath, getEmailReservationUrl, getLocaleConfig, getTailorMadePath, getWhatsAppReservationUrl, whatsappDisplayNumber } from '@/lib/i18n';
-import { createBreadcrumbJsonLd, createFaqJsonLd, createItemListJsonLd, createSeoLandingServiceJsonLd, productionSiteUrl } from '@/lib/seo';
+import { createBreadcrumbJsonLd, createFaqJsonLd, createItemListJsonLd, createSeoLandingServiceJsonLd, getConfiguredSite } from '@/lib/seo';
 import {
   getRelatedPostsForSeoLanding,
   getRelatedSeoLandingsForSeoLanding,
@@ -26,7 +26,7 @@ const locale = landing.data.locale;
 const copy = getLocaleConfig(locale);
 const { Content } = await render(landing);
 const path = getSeoLandingPath(landing);
-const site = Astro.site ?? new URL(productionSiteUrl);
+const site = getConfiguredSite(Astro.site);
 const alternates = await getSeoLandingAlternates(landing);
 const relatedTours = await getRelatedToursForSeoLanding(landing);
 const relatedPosts = await getRelatedPostsForSeoLanding(landing);

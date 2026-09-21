@@ -4,7 +4,7 @@ import BlogCard from '@/components/BlogCard.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { getLocaleConfig, locales, type Locale } from '@/lib/i18n';
 import { getBlogPostPath, getPublishedBlogPosts } from '@/lib/blog';
-import { createItemListJsonLd, productionSiteUrl } from '@/lib/seo';
+import { createItemListJsonLd, getConfiguredSite } from '@/lib/seo';
 
 export function getStaticPaths() {
   return locales.map((locale) => ({ params: { locale }, props: { locale } }));
@@ -14,7 +14,7 @@ const { locale } = Astro.props as { locale: Locale };
 const copy = getLocaleConfig(locale);
 const posts = await getPublishedBlogPosts(locale);
 const alternates = locales.map((item) => ({ locale: item, path: `/${item}/blog/` }));
-const site = Astro.site ?? new URL(productionSiteUrl);
+const site = getConfiguredSite(Astro.site);
 const jsonLd = createItemListJsonLd(
   copy.blogTitle,
   posts.map((post) => ({ name: post.data.title, path: getBlogPostPath(post) })),

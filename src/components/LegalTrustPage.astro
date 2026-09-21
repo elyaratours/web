@@ -11,7 +11,7 @@ import {
   type LegalTrustPageKey,
   type Locale,
 } from '@/lib/i18n';
-import { createBreadcrumbJsonLd, productionSiteUrl } from '@/lib/seo';
+import { createBreadcrumbJsonLd, getConfiguredSite } from '@/lib/seo';
 
 interface Props {
   locale: Locale;
@@ -28,7 +28,7 @@ interface Props {
 
 const { locale, pageKey, content } = Astro.props;
 const path = getLegalTrustPath(locale, pageKey);
-const site = Astro.site ?? new URL(productionSiteUrl);
+const site = getConfiguredSite(Astro.site);
 const labels = locale === 'es'
   ? { home: 'Inicio', back: 'Volver a Elyara Tours Granada', contact: 'Contacto directo' }
   : { home: 'Home', back: 'Back to Elyara Tours Granada', contact: 'Direct contact' };

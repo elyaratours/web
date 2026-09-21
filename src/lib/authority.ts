@@ -10,7 +10,6 @@ import {
   type Locale,
 } from './i18n';
 import { getGuideAuthorityPath, getGuideProfileContent } from './guide';
-import { absoluteUrl, businessEntityId, websiteEntityId, type JsonLdNode } from './seo';
 import { getTourPath, getPublishedTourEntries } from './tours';
 
 export const authorityContent = {
@@ -153,22 +152,6 @@ export function getAuthorityDiscoveryLinks(locale: Locale) {
     { label: labels.contact, path: getContactPath(locale) },
     { label: labels.blog, path: `/${locale}/blog/` },
   ];
-}
-
-export function getAuthorityJsonLd(locale: Locale, site: URL) {
-  const content = getAuthorityContent(locale);
-  const path = getAuthorityPath(locale);
-
-  return {
-    '@type': 'AboutPage',
-    '@id': `${absoluteUrl(path, site)}#webpage`,
-    name: content.title,
-    description: content.metaDescription,
-    url: absoluteUrl(path, site),
-    inLanguage: locale,
-    isPartOf: { '@id': websiteEntityId(site) },
-    about: { '@id': businessEntityId(site) },
-  } satisfies JsonLdNode;
 }
 
 export type { Locale };

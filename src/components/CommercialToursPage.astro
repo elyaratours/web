@@ -18,7 +18,7 @@ import {
   locales,
   type Locale,
 } from '@/lib/i18n';
-import { createBreadcrumbJsonLd, createFaqJsonLd, createTourServiceJsonLd, productionSiteUrl } from '@/lib/seo';
+import { createBreadcrumbJsonLd, createFaqJsonLd, createTourServiceJsonLd, getConfiguredSite } from '@/lib/seo';
 import { getPublishedTours } from '@/lib/tours';
 
 interface Props {
@@ -29,7 +29,7 @@ const { locale } = Astro.props;
 const content = getCommercialToursContent(locale);
 const dayTripsContent = getDayTripsContent(locale);
 const copy = getLocaleConfig(locale);
-const site = Astro.site ?? new URL(productionSiteUrl);
+const site = getConfiguredSite(Astro.site);
 const tours = await getPublishedTours(locale);
 const posts = (await getPublishedBlogPosts(locale)).slice(0, 3);
 const alternates = locales.map((item) => ({ locale: item, path: getCommercialToursPath(item) }));

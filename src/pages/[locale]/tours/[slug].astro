@@ -6,7 +6,7 @@ import ReservationCalendar from '@/components/ReservationCalendar.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { getBlogPostPath, getPublishedBlogPosts } from '@/lib/blog';
 import { contactEmail, getContactPath, getDayTripsContent, getDayTripsPath, getDayTripWhatsAppUrl, getLocaleConfig, getPrivateTourReservationEmailUrl, getPrivateTourWhatsAppReservationUrl, getTailorMadePath, whatsappDisplayNumber, type Locale } from '@/lib/i18n';
-import { createBreadcrumbJsonLd, createFaqJsonLd, createTourJsonLd, productionSiteUrl } from '@/lib/seo';
+import { createBreadcrumbJsonLd, createFaqJsonLd, createTourJsonLd, getConfiguredSite } from '@/lib/seo';
 import { getSeoLandingPath, getSeoLandingsByKeys } from '@/lib/seo-landings';
 import { getPublishedTourEntries, getPublishedTours, getTourPath, type TourEntry } from '@/lib/tours';
 
@@ -24,7 +24,7 @@ const copy = getLocaleConfig(tour.data.locale);
 const isDayTrip = tour.data.category === 'day-trip';
 const dayTripCopy = getDayTripsContent(tour.data.locale);
 const { Content } = await render(tour);
-const site = Astro.site ?? new URL(productionSiteUrl);
+const site = getConfiguredSite(Astro.site);
 const relatedLocales = await getCollection('tours', ({ data }) => {
   return data.published !== false && data.translationKey === tour.data.translationKey;
 });

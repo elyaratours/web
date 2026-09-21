@@ -1,6 +1,8 @@
 ---
+import { getConfiguredSite } from '@/lib/seo';
+
 const destination = '/es/';
-const canonicalUrl = new URL(destination, Astro.site ?? Astro.url).toString();
+const canonicalUrl = new URL(destination, getConfiguredSite(Astro.site)).toString();
 ---
 
 <!doctype html>

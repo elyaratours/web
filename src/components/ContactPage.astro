@@ -15,7 +15,7 @@ import {
   whatsappUrl,
   type Locale,
 } from '@/lib/i18n';
-import { createBreadcrumbJsonLd, createFaqJsonLd, productionSiteUrl } from '@/lib/seo';
+import { createBreadcrumbJsonLd, createFaqJsonLd, getConfiguredSite } from '@/lib/seo';
 
 interface Props {
   locale: Locale;
@@ -26,7 +26,7 @@ const content = getContactContent(locale);
 const guide = getGuideProfileContent(locale);
 const alternates = locales.map((item) => ({ locale: item, path: getContactPath(item) }));
 const contactImage = '/images/Contacto.png';
-const site = Astro.site ?? new URL(productionSiteUrl);
+const site = getConfiguredSite(Astro.site);
 const jsonLd = [
   createBreadcrumbJsonLd(
     [
