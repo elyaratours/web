@@ -944,6 +944,17 @@ The system SHALL display the provided `alhambra.jpg` image as the public tour im
 - **WHEN** visitors view other tours
 - **THEN** the system preserves their existing configured tour images unless they explicitly reference the same approved image
 
+### Requirement: Alhambra group price
+The system SHALL display the localized Alhambra tour group price as 120 EUR, while continuing to communicate that Alhambra tickets are not included in that price.
+
+#### Scenario: Spanish visitor sees the Alhambra price
+- **WHEN** a visitor views the Spanish `Alhambra: símbolos, poder y belleza` tour card or detail page
+- **THEN** the price communicates `Desde 120 EUR por grupo, entradas no incluidas`
+
+#### Scenario: English visitor sees the Alhambra price
+- **WHEN** a visitor views the English `Alhambra: Symbols, Power and Beauty` tour card or detail page
+- **THEN** the price communicates `From €120 per group, tickets not included`
+
 ### Requirement: Alhambra beyond the palaces approved image
 The system SHALL display the provided `puerta-del-vino-01.jpg` image as the public tour image for the Spanish `La Alhambra más allá de los palacios` tour and the English `The Alhambra Beyond the Palaces` tour wherever those tours' images are rendered.
 
